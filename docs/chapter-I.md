@@ -203,7 +203,7 @@ En esta sección se formulan las hipótesis del producto a partir de los supuest
 
 **Cuando veamos** que al menos el 60% de los decisores entrevistados en sesiones de validación comercial identifican el monitoreo en tiempo real como el principal valor diferencial de la solución.
 ##### 1.2.2.4. Lean UX Canvas
-![Lean UX Canvas](../assets/img/chapter-I/lean-ux-canvas/lean-ux.png)
+![Lean UX Canvas](../assets/img/chapter-I/lean-ux.png)
 ### 1.3. Segmentos objetivo
 
 
