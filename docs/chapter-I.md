@@ -26,16 +26,6 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
 <table border="1" width="100%">
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/RenatoCalvo.jpeg" alt="Renato Photo" width="120" />
-    </td>
-    <td valign="top">
-      <strong>Renato Guillermo Calvo Yalan - (U202217053)</strong> - Ingeniería de Software<br><br>
-      Tengo 21 años. Me interesa la ciberseguridad y la inteligencia artificial; mi principal fortaleza es liderar equipos de trabajo. Además, soy perseverante, manejo algunos lenguajes de programación y quiero seguir aprendiendo. Espero realizar un gran proyecto con mi grupo de manera exitosa.
-    </td>
-  </tr>
-
-  <tr>
-    <td width="140" valign="top" align="center">
       <img src="../assets/img/chapter-I/team-member-profiles/RenzoLlerena.jpg" alt="Renzo Photo" width="120" />
     </td>
     <td valign="top">
@@ -59,18 +49,15 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
     <td valign="top">
     </td>
   </tr>
-
-  <tr>
+    <tr>
     <td width="140" valign="top" align="center">
       <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
     </td>
     <td valign="top">
-      <strong></strong> - Ingeniería de Software<br><br>
-      
     </td>
   </tr>
-<tr>
-    <td width="140" valign="top" align="center">
+
+  <td width="140" valign="top" align="center">
       <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
     </td>
     <td valign="top">
