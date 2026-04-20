@@ -26,7 +26,7 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
 <table border="1" width="100%">
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/RenzoLlerena.jpg" alt="Renzo Photo" width="120" />
+      <img src="../assets/img/chapter-I/RenzoLlerena.jpg" alt="Renzo Photo" width="120" />
     </td>
     <td valign="top">
       <strong>Renzo Miguel Llerena Delgado - (U202312399)</strong> - Ingeniería de Software<br><br>
