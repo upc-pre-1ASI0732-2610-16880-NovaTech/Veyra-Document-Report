@@ -21,11 +21,69 @@ Desarrollar soluciones tecnológicas innovadoras que permitan a las organizacion
 Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS (aplicaciones web y móviles), destacando por su innovación, escalabilidad y enfoque centrado en el usuario.
 
 #### 1.1.2. Perfiles de integrantes del equipo
+<div style="page-break-after: always;"></div>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/RenatoCalvo.jpeg" alt="Renato Photo" width="120" />
+    </td>
+    <td valign="top">
+      <strong>Renato Guillermo Calvo Yalan - (U202217053)</strong> - Ingeniería de Software<br><br>
+      Tengo 21 años. Me interesa la ciberseguridad y la inteligencia artificial; mi principal fortaleza es liderar equipos de trabajo. Además, soy perseverante, manejo algunos lenguajes de programación y quiero seguir aprendiendo. Espero realizar un gran proyecto con mi grupo de manera exitosa.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/RenzoLlerena.jpg" alt="Renzo Photo" width="120" />
+    </td>
+    <td valign="top">
+      <strong>Renzo Miguel Llerena Delgado - (U202312399)</strong> - Ingeniería de Software<br><br>
+      Tengo 19 años, soy una persona tranquila, colaborativa y adaptable. Me gusta trabajar en equipo, aportando ideas y soluciones. Cuento con conocimientos en C++ y Python y siempre busco formas de hacer las cosas de manera eficiente.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+    </td>
+    <td valign="top">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+    </td>
+    <td valign="top">
+    </td>
+  </tr>
+
+  <tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+    </td>
+    <td valign="top">
+      <strong></strong> - Ingeniería de Software<br><br>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="140" valign="top" align="center">
+      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+    </td>
+    <td valign="top">
+    </td>
+  </tr>  
+</table>
+
 ### 1.2. Solution Profile
 Veyra es una plataforma digital integral basada en un modelo SaaS, diseñada para mejorar la gestión de información clínica y operativa en casas de reposo. Permite el acceso remoto a datos relevantes tanto para el personal asistencial como para los familiares, facilitando la transparencia y la toma de decisiones informadas.
 #### 1.2.1. Antecedentes y problemática
 
 **1. ANTECEDENTES**
+
 El envejecimiento poblacional en América Latina representa un desafío creciente para los sistemas de salud. En Perú, el porcentaje de adultos mayores ha aumentado de manera sostenida, lo que incrementa la demanda de servicios geriátricos especializados.
 
 Asimismo, un alto porcentaje de esta población presenta enfermedades crónicas que requieren seguimiento constante, lo que hace indispensable contar con sistemas eficientes de registro y monitoreo de información clínica.
@@ -33,6 +91,7 @@ Asimismo, un alto porcentaje de esta población presenta enfermedades crónicas 
 Sin embargo, el sistema de salud peruano presenta limitaciones estructurales relacionadas con la fragmentación de la información y la baja interoperabilidad entre instituciones. Esto se traduce en dificultades para acceder a datos clínicos oportunos y confiables.
 
 En el caso específico de las casas de reposo, muchas aún operan con procesos manuales o sistemas no integrados, lo que genera ineficiencias, errores y falta de trazabilidad. Además, existe una desconexión entre las instituciones y los familiares, quienes no cuentan con acceso constante a la información del estado de sus seres queridos.
+
 **2. PROBLEMÁTICA**
 
 Comunicación deficiente: Falta de canales digitales eficientes entre el personal y los familiares.
