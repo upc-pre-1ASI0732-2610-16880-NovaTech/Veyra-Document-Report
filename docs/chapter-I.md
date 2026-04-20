@@ -74,6 +74,73 @@ La gestión actual en casas de reposo no satisface las expectativas de transpare
 
 ##### 1.2.2.2. Lean UX Assumptions
 En esta sección se declaran las creencias fundamentales del equipo sobre las que se construye la propuesta de valor de Veyra. Bajo el marco de trabajo Lean UX, estos supuestos identifican las áreas de mayor riesgo e incertidumbre, sirviendo como base estratégica para la creación de hipótesis y experimentos de validación.
+
+**Assumptions Worksheet (Síntesis del Proyecto)**
+
+| #  | Supuesto Estratégico aplicado a Veyra |
+|----|---------------------------------------|
+| 1  | Creemos que los familiares de adultos mayores experimentan altos niveles de ansiedad debido a la opacidad y lentitud de los reportes tradicionales de salud. |
+| 2  | Asumimos que los administradores de casas de reposo ven en la transparencia de datos una ventaja competitiva clave para justificar sus tarifas y mejorar su reputación. |
+| 3  | La necesidad de visibilidad se resolverá con un ecosistema IoT + Cloud que automatice la captura de data crítica, eliminando el sesgo y error del registro manual. |
+| 4  | El modelo de ingresos será un SaaS B2B escalable por número de residentes monitoreados, complementado con accesos premium para familiares. |
+| 5  | El mayor riesgo de adopción es la resistencia al cambio del personal asistencial; se mitigará mediante interfaces de baja fricción y automatización de toma de datos. |
+
+**Supuestos por Dimensión**
+
+**Business Assumptions (Viabilidad y Mercado)**
+
+* Asumimos que las casas de reposo privadas en zonas urbanas están dispuestas a invertir en tecnología para diferenciarse de la competencia informal y mejorar su estándar de servicio.
+* Asumimos que el modelo de suscripción escalonado permite la captación de instituciones pequeñas y medianas sin comprometer la rentabilidad operativa.
+* Asumimos que la propuesta de valor integrada (Web/Móvil/IoT) justifica el costo de implementación frente a soluciones de software tradicionales.
+
+**User Assumptions (Comportamiento y Segmentación)**
+
+* **Personal Asistencial:** Asumimos que adoptarán el registro digital solo si este reduce su carga administrativa operativa al cierre de cada turno.
+* **Administradores:** Asumimos que requieren una visión centralizada del estado de salud de todos los residentes para mitigar riesgos legales y operativos.
+* **Familiares:** Asumimos que prefieren el autoservicio de información a través de una aplicación móvil que depender de llamadas telefónicas o mensajes de WhatsApp.
+
+**Problem Assumptions (Deseabilidad y Dolores)**
+
+* Creemos que la dependencia de registros manuales y comunicación informal (papel/voz) genera pérdida de trazabilidad y lentitud en la detección de crisis.
+* Asumimos que existe una brecha de confianza entre la institución y la familia debido a la falta de pruebas objetivas sobre la frecuencia y calidad del cuidado.
+* Creemos que el personal médico gasta tiempo crítico en tareas de digitación manual que restan calidad a la atención directa del residente.
+
+**Solution Assumptions (Factibilidad y Valor)**
+
+* Creemos que la captura automática vía dispositivos IoT proporcionará una fuente de verdad única que reducirá fricciones y reclamos por parte de los familiares.
+* Asumimos que una plataforma en la nube facilitará la gestión de alertas preventivas, permitiendo una reacción médica hasta un 40% más rápida.
+* Creemos que el acceso remoto continuo aumentará la percepción de valor del servicio prestado por la casa de reposo.
+
+**Assumptions Priority (Matriz de Riesgo x Incertidumbre)**
+
+| Prioridad | Supuesto a validar | Riesgo | Incertidumbre |
+|----------:|--------------------|:------:|:-------------:|
+| 1 | El personal asistencial adoptará el registro digital continuo sin afectar su flujo operativo actual. | Alto | Alto |
+| 2 | Los sensores IoT mantendrán la precisión y conectividad necesaria para generar alertas confiables. | Alto | Medio |
+| 3 | Las instituciones aceptarán el modelo de suscripción SaaS por el valor percibido de la transparencia. | Medio | Alto |
+| 4 | Los familiares usarán la plataforma de forma recurrente como canal principal de seguimiento. | Medio | Bajo |
+
+**Outcomes Esperados (Métricas de Éxito)**
+
+*Business Outcomes:*
+
+* Lograr que al menos 3 instituciones piloto completen el ciclo de validación de 6 meses.
+* Reducir en un 25% los costos operativos relacionados con la gestión de información clínica.
+* Incrementar en un 15% la tasa de captación de nuevos residentes tras la implementación tecnológica.
+
+*User Outcomes:*
+
+* Reducir el tiempo de registro manual del personal asistencial en un 35% por turno.
+* Lograr que los familiares consulten la plataforma un promedio de 3 veces por semana, reduciendo las llamadas de consulta externa.
+* Disminuir el tiempo de respuesta ante alertas críticas en al menos un 40%.
+
+**Features mínimas para validación (MVP)**
+
+1. **Dashboard de Monitoreo:** Panel centralizado para administradores con el estado de salud global.
+2. **Registro de Signos Vitales IoT:** Captura y visualización en tiempo real de data biométrica.
+3. **Módulo de Alertas:** Notificaciones automáticas ante variaciones críticas de salud.
+4. **Portal Familiar:** Aplicación de consulta de historial clínico, medicación y actividades diarias.
+
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 
 ##### 1.2.2.4. Lean UX Canvas
