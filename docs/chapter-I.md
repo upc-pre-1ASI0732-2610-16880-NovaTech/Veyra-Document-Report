@@ -36,7 +36,7 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
 
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+      <img src="../assets/img/chapter-I/juan.png" alt="" width="120" />
     </td>
     <td valign="top">
       <strong>Juan Manuel Santos Torres - (U20221A371)</strong> - Ingeniería de Software<br><br>
