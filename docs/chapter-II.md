@@ -145,7 +145,79 @@ A través de este análisis, establecemos tácticas ofensivas para explotar nues
 | **Debilidades (D)**<br>1. Bajo reconocimiento de marca (proyecto nuevo).<br>2. Recursos limitados (equipo y presupuesto) frente a los competidores.<br>3. Madurez limitada en integraciones empresariales completas (Facturación, contabilidad).<br>4. Necesidad de localización y validación en múltiples países de LATAM. | **Estrategia (DO) — Reorientación**<br>1. Validación rápida con Lean UX: ejecutar pruebas de usabilidad y pilotos documentados (usar wireframes, mockups y Product Backlog del repo) para generar testimonios y material comercial publicable.<br>2. Buscar subvenciones, programas públicos y fondos de digitalización para financiar pilotos y reducir el coste inicial para residencias piloto.<br>3. Generar contenido técnico y autoridad: whitepapers, casos de estudio y guías para decisores (directores clínicos / gerentes de casas de reposo) enfatizando seguridad.<br>4. Priorizar desarrollo de APIs públicas y conectores básicos (facturación, contabilidad, laboratorios) y ofrecer SDKs/documentación para integradores; esto reduce fricción de adopción en clientes con sistemas legados.<br>5. Crear un programa de partners/implementadores locales (consultoras e integradores) que permitan escalar despliegues sin aumentar fuertemente la plantilla interna. | **Estrategia (DA) — Supervivencia**<br>1. Priorizar seguridad e infraestructura crítica: backups automáticos, alta disponibilidad, pruebas de penetración periódicas y planes de recuperación ante desastres para minimizar riesgos operacionales.<br>2. Aplicar una política de precios defensiva inicial: oferta entry-level competitiva y promociones temporales para ganar masa crítica en mercados clave y bloquear nichos frente a competidores low-cost.<br>3. Contratar auditorías externas y obtener certificaciones de seguridad/compliance que sirvan como sello de confianza ante reguladores y clientes institucionales.<br>4. Buscar aceleradoras, grants o socios estratégicos (capital/mentoría) que aporten recursos sin diluir el control del producto; negociar alianzas que incluyan soporte de implementación.<br>5. Formalizar un plan de gestión de incidentes y comunicación (scripts, FAQs, canales dedicados) para notificar rápidamente a residencias y familias y reducir impacto reputacional. |
 
 ## 2.2. Entrevistas. 
+
+Para que Veyra pase de ser una idea a una solución útil, necesitamos salir de la oficina y validar nuestras hipótesis con las personas que viven el día a día del cuidado geriátrico. La recolección de información mediante entrevistas directas nos permite entender no solo qué funciones necesitan los usuarios, sino cómo se sienten y qué problemas reales enfrentan.
+
+En esta sección, dejamos de lado las suposiciones para escuchar la voz de los administradores y familiares, asegurando que nuestra propuesta tecnológica sea intuitiva y genere un impacto positivo en su rutina.
+
 ### 2.2.1. Diseño de entrevistas. 
+Para que las conversaciones sean productivas y comparables, hemos estructurado guías de entrevista específicas para cada segmento. El objetivo no es solo obtener datos demográficos, sino identificar "puntos de dolor" críticos, como la fragmentación de la información clínica o la ansiedad de los familiares por la falta de comunicación. A continuación, presentamos los cuestionarios diseñados para Administradores y Familiares:
+#### Segmento objetivo: Administrador de casa de reposo
+
+#### Preguntas Personales:
+
+¿Cuál es su nombre?
+
+¿Cuál es su edad?
+
+¿Qué marca de celular usa?
+
+¿Cuál es su rol dentro de la casa de reposo?
+
+¿Cuántos años de experiencia tiene en el sector de casas de reposo?
+
+
+
+#### Preguntas específicas:
+
+¿Cómo se comunican actualmente con los familiares para informarles sobre el estado de salud, citas médicas o incidencias?
+
+¿Qué tipo de dispositivo (PC, laptop, tablet, teléfono, sistema interno, apps) utiliza para realizar sus actividades administrativas diarias?
+
+¿Que navegador web utiliza con más frecuencia?
+
+¿Cuáles son los mayores desafíos o inconvenientes que enfrentan en la gestión diaria de la información y el cuidado de los residentes?
+
+¿Qué sistema o método utilizan actualmente para gestionar la información de los residentes (historias clínicas, medicamentos, citas, alertas)?
+
+¿Qué funcionalidades consideran esenciales en una plataforma de gestión para mejorar sus operaciones?
+
+¿Qué procesos considera más urgentes de digitalizar o automatizar dentro de la casa de reposo?
+
+#### Segmento objetivo: Familiares de adultos mayores
+
+#### Preguntas Personales:
+
+¿Cuál es su nombre?
+
+¿Cuál es su edad?
+
+¿Qué marca de celular usa?
+
+¿Usa computadora de escritorio o laptop?
+
+¿Cuál es su relación con el adulto mayor que reside en la casa de reposo?
+
+¿Cuál es su ocupación?
+
+¿Dónde reside actualmente?
+
+#### Preguntas específicas :
+
+¿Qué dificultades ha tenido para acceder a información sobre la salud o atención de su familiar?
+
+¿Qué tipo de información le gustaría poder consultar de manera más frecuente y organizada?
+
+¿Qué tan cómodo se sentiría utilizando plataformas web o aplicaciones móviles para consultar información médica sobre su adulto mayor?
+
+Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo demora en recibir la notificación?
+
+¿Qué aspectos le generarían más confianza al usar una plataforma de este tipo?
+
+¿Qué tipo de dispositivo utiliza con más frecuencia para comunicarse con la casa de reposo o revisar información (celular, laptop, tablet, PC)?
+
+¿Por qué medio prefiere recibir notificaciones importantes? (WhatsApp, SMS, llamada, correo, app)
+
 ### 2.2.2. Registro de entrevistas. 
 ### 2.2.3. Análisis de entrevistas. 
 ## 2.3. Needfinding. 
