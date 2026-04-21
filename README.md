@@ -1,6 +1,6 @@
 # Universidad Peruana de Ciencias Aplicadas
 
-![UPC Logo](assets/img/introduction/university-logo/UPC.png)
+![UPC Logo](assets/img/introduction/UPC.png)
 
 **Facultad de Ingeniería**
 
