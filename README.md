@@ -92,7 +92,7 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
 
 
 ---
-## ABET – EAC - Student Outcome 3
+## ABET – EAC - Student Outcome 4
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 4**
