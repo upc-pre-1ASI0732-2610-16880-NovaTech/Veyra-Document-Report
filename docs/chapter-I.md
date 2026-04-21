@@ -39,6 +39,8 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
       <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
     </td>
     <td valign="top">
+      <strong>Juan Manuel Santos Torres - (U20221A371)</strong> - Ingeniería de Software<br><br>
+      Me gusta mucho buscar la manera más sencilla y rápida de resolver cualquier problema, usando herramientas digitales para que el trabajo sea menos pesado. Soy alguien que siempre está metido en nuevos proyectos y me encanta trabajar con más personas para intercambiar ideas. Tengo 21 años y trato de que todo lo que hago, ya sea en los estudios o en el trabajo, tenga un orden y un propósito claro.
     </td>
   </tr>
 
