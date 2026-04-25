@@ -233,6 +233,32 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 ¿Por qué medio prefiere recibir notificaciones importantes? (WhatsApp, SMS, llamada, correo, app)
 
 ### 2.2.2. Registro de entrevistas. 
+**Segmento 1: Administrador de casas de reposo**
+| Campo                             | Información |
+|----------------------------------|-------------|
+| Entrevista                       | #1 |
+| Nombre                           |   |
+| Apellidos                        |  |
+| Edad                             |   |
+| Distrito                         |  |
+| Evidencia                        | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista1-segmento2.png) |
+| Link                             | [Link Entrevistas](https://shorturl.at/vQBoO) |
+| Inicio de la entrevista          |  |
+| Duración de la entrevista        | |
+| Resumen                          | |
+**Segmento 2: Familiares de adultos mayores**
+| Campo                             | Información |
+|----------------------------------|-------------|
+| Entrevista                       | #1 |
+| Nombre                           | José Carlos |
+| Apellidos                        | Vargas Enríquez |
+| Edad                             | 25 años |
+| Distrito                         | Chorrillos |
+| Evidencia                        | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista1-segmento2.png) |
+| Link                             | [Link Entrevistas](https://shorturl.at/vQBoO) |
+| Inicio de la entrevista          | 13:32 min |
+| Duración de la entrevista        | 03:32 min |
+| Resumen                          | Joven de perfil analítico, protector y orientado a la eficiencia (rasgos influenciados por su ocupación como Ingeniero de Software en el sector bancario). Su principal frustración es la incertidumbre y la falta de inmediatez en la comunicación tradicional (llamadas) con la casa de reposo de su abuelo.<br><br>**Comportamiento y Necesidades:** Desea tener control y visibilidad sobre el estado de salud, medicaciones y reportes médicos semanales. Valora la rapidez y exige que la información médica tenga un respaldo profesional constante para sentir confianza.<br><br>**Tecnología, Marcas y Canales:** Es un usuario altamente digital. Su ecosistema de hardware principal se basa en PC de escritorio y smartphone. A nivel de software e influencias de marca, prefiere navegadores orientados a la privacidad y rendimiento (Brave, Chrome) y exige que los canales de interacción para urgencias sean directos y de uso diario, eligiendo WhatsApp o notificaciones push de una App nativa por encima de medios tradicionales como el SMS o el correo electrónico. |
 ### 2.2.3. Análisis de entrevistas. 
 ## 2.3. Needfinding. 
 ### 2.3.1. User Personas. 
