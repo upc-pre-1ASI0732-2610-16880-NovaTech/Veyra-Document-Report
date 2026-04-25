@@ -246,6 +246,8 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | Inicio de la entrevista          |  |
 | Duración de la entrevista        | |
 | Resumen                          | |
+
+
 **Segmento 2: Familiares de adultos mayores**
 | Campo                             | Información |
 |----------------------------------|-------------|
