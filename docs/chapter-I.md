@@ -46,9 +46,11 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
 
   <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+      <img src="../assets/img/chapter-I/AdrianValProfile.jpg/" alt="" width="120" />
     </td>
     <td valign="top">
+      <strong>Adrian Emanuel Valerio Garcia - (U202210334)</strong> - Ingeniería de Software<br><br>
+      Me interesa el aprendizaje continuo y suelo enfocarme en resolver problemas de manera rápida y eficiente. Disfruto los videojuegos y aprender nuevas tecnologías, además de trabajar en equipo para lograr objetivos en conjunto. Tengo conocimientos en lenguajes de programación y procuro mejorar constantemente mis métodos de estudio para ampliar mis habilidades.
     </td>
   </tr>
     <tr>
