@@ -261,6 +261,22 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | Inicio de la entrevista          | 13:32 min |
 | Duración de la entrevista        | 03:32 min |
 | Resumen                          | Joven de perfil analítico, protector y orientado a la eficiencia (rasgos influenciados por su ocupación como Ingeniero de Software en el sector bancario). Su principal frustración es la incertidumbre y la falta de inmediatez en la comunicación tradicional (llamadas) con la casa de reposo de su abuelo.<br><br>**Comportamiento y Necesidades:** Desea tener control y visibilidad sobre el estado de salud, medicaciones y reportes médicos semanales. Valora la rapidez y exige que la información médica tenga un respaldo profesional constante para sentir confianza.<br><br>**Tecnología, Marcas y Canales:** Es un usuario altamente digital. Su ecosistema de hardware principal se basa en PC de escritorio y smartphone. A nivel de software e influencias de marca, prefiere navegadores orientados a la privacidad y rendimiento (Brave, Chrome) y exige que los canales de interacción para urgencias sean directos y de uso diario, eligiendo WhatsApp o notificaciones push de una App nativa por encima de medios tradicionales como el SMS o el correo electrónico. |
+
+## Entrevista #2
+
+| Campo                             | Detalle |
+|----------------------------------|---------|
+| **Nombre**                       | Leo Gerardo |
+| **Apellidos**                    | Gómez Ferrua |
+| **Edad**                         | 30 años |
+| **Distrito**                     | Chorrillos |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista2-segmento2.png) |
+| **Link**                         | https://shorturl.at/uoNBn |
+| **Inicio de la entrevista**      | 14:47 min |
+| **Duración**                     | 05:41 min |
+| **Resumen**                      | Leo Gómez, de 30 años, es el responsable del cuidado de su abuela. Durante la entrevista, se describió como una persona analítica, racional y metódica, con alta afinidad por la tecnología. Expresó que la comunicación con el centro geriátrico resulta ineficiente, ya que debe realizar varias llamadas para obtener información que suele llegar incompleta o dispersa. <br><br> Indicó que utiliza de manera regular un smartphone, una laptop y una tablet, tanto para su trabajo como para el seguimiento del estado de su familiar. Señaló que sus navegadores principales son Google Chrome y Safari, y que está familiarizado con herramientas digitales como Google Drive, Zoom y Gmail, las cuales usa a diario. <br><br> Manifestó que su principal frustración es la falta de reportes médicos completos y oportunos. Expresó que desea acceder a información detallada sobre medicación, chequeos médicos, alimentación y actividades recreativas, dentro de una plataforma segura. También afirmó que le gustaría recibir notificaciones inmediatas en caso de cambios en el estado de salud o situaciones de emergencia. <br><br> Finalmente, indicó que confiaría plenamente en un sistema siempre que garantice seguridad, acceso restringido y comunicación directa con el personal. Representa al segmento de familiares jóvenes y con alta alfabetización digital, que demandan transparencia y actualización constante de la información. |
+
+
 ### 2.2.3. Análisis de entrevistas. 
 ## 2.3. Needfinding. 
 ### 2.3.1. User Personas. 
