@@ -1,6 +1,6 @@
 
 ## 2.1. Competidores. 
-La mejor forma de diseñar un producto útil es escuchando a quienes lo usarán día a día. En esta etapa de la investigación, dejamos de lado las suposiciones y buscamos evidencia real a través de entrevistas. Esto nos permite conectar con los "puntos de dolor" (pain points) de los administradores y cuidadores, asegurando que la tecnología IoT que implementemos responda a una necesidad humana real.
+La mejor forma de diseñar un producto útil es escuchando a quienes lo usarán día a día. En esta etapa de la investigación, dejamos de lado las suposiciones y buscamos evidencia real a través de entrevistas. Esto nos permite conectar con los "puntos de dolor" (pain points) de los administradores y cuidadores.
 
 ### 2.1.1. Análisis competitivo. 
 Para lograr una recolección de información valiosa y estructurada, hemos diseñado guías de entrevista específicas para nuestros segmentos objetivo. El cuestionario busca explorar no solo datos demográficos, sino también la experiencia tecnológica del usuario y sus frustraciones actuales. A continuación, se presenta el diseño de preguntas para nuestros segmentos clave: administradores de casas de reposo y familiares de residentes.
@@ -54,7 +54,7 @@ Para lograr una recolección de información valiosa y estructurada, hemos dise�
 </tr>
 <tr>
 <td>Ventaja competitiva</td>
-<td>Especialización regional (normativas LATAM), modelo escalable, acceso bidireccional para familias y preparación para IoT.</td>
+<td>Especialización regional: Diseñada para normativas peruanas y latinas. Modelo de suscripción escalable. Acceso granular y bidireccional para familias. Preparación para IoT.</td>
 <td>Portal familiar muy desarrollado, integración de historias de vida y fotos, cuidado centrado en la persona.</td>
 <td>Gestión integral potente para operaciones internas (historial clínico, facturación, inventario, camas).</td>
 <td>Suite completa de funcionalidades clínicas y administrativas con integración nativa de sistemas de pago.</td>
