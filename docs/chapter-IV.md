@@ -446,6 +446,12 @@ El familiar puede visualizar fotos, descripciones y fechas.</p>
 <img src="../images/Historial-de-Pedido-NovaPeru-Tech-Wireframe.jpg" alt="Historial de Pedido" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ### 4.6.2. Web Applications Wireflow Diagrams. 
+
+<p>Los Wireflows se emplean principalmente en el diseño de la experiencia de usuario (UX) y son especialmente útiles para aplicaciones que incluyen flujos de trabajo e interacciones complejas.</p>
+
+<img src="../images/Web-Applications-Wireflow-Diagrams.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<div style="page-break-after: always;"></div>
 ### 4.6.3. Web Applications Mock-ups. 
 ### 4.6.4. Web Applications User Flow Diagrams.
 ## 4.7. Web Applications Prototyping. 
