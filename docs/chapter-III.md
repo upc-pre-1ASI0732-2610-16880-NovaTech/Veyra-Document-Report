@@ -978,5 +978,163 @@
             </td>
         </tr>
         <tr>
+                <td>TS-EM002</td>
+            <td>Eliminar empleado</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para que el administrador de la casa de reposo revoque persmisos.</td>
+            <td>
+                <strong>Escenario 1: Eliminación lógica exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe DELETE a <code>/api/v1/employee-management/{nursingHomeId}/employees/{employeeId}</code><br>
+                - <strong>Cuando</strong> la API válida que el empleado pertenece a este nursing home y cambia status a INACTIVE<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con mensaje de confirmación.<br><br>
+                <strong>Escenario 2: Empleado de otro nursing home</strong><br>
+                - <strong>Dado</strong> que el empleado pertenece a otro nursing home<br>
+                - <strong>Cuando</strong> la API válida propiedad<br>
+                - <strong>Entonces</strong> la API responde con <code>404 employee not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-EM003</td>
+            <td>Actualizar información del empleado</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar datos de empleado.</td>
+            <td>
+                <strong>Escenario 1: Actualización exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe PUT/PATCH a <code>/api/v1/employee-management/{nursingHomeId}/employees/{employeeId}</code> con datos válidos<br>
+                - <strong>Cuando</strong> la API valida que el empleado pertenece a este nursing home y actualiza<br>
+                - <strong>Entonces</strong> la API responde con <code>200 employee was updated</code> con empleado actualizado.<br><br>
+                <strong>Escenario 2: Empleado de otro nursing home</strong><br>
+                - <strong>Dado</strong> que el empleado no existe en el nursing home especificado<br>
+                - <strong>Entonces</strong> la API responde con <code>404 not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-EM004</td>
+            <td>Ver información de un empleado</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de un empleado para que el administrador pueda observar la información detallada del empleado.</td>
+            <td>
+                <strong>Escenario 1: Obtener empleado específico</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/employee-management/{nursingHomeId}/employees/{employeeId}</code><br>
+                - <strong>Cuando</strong> la API encuentra el empleado y válida que pertenece a este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con información completa del empleado.<br><br>
+                <strong>Escenario 2: Empleado no existe</strong><br>
+                - <strong>Dado</strong> que el empleado no existe<br>
+                - <strong>Entonces</strong> la API responde con <code>404 employee not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-EM005</td>
+            <td>Ver información de todo los empleados</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de los empleados para que el administrador pueda observar cuantos empleados tiene.</td>
+            <td>
+                <strong>Escenario 1: Listar empleados del nursing home</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/employee-managment/{nursingHomeId}/employees</code><br>
+                - <strong>Cuando</strong> la API busca empleados<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna solo empleados de este nursing home.<br><br>
+                <strong>Escenario 2: Sin empleados</strong><br>
+                - <strong>Dado</strong> que no hay empleados en este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>400 employees not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>EP09</td>
+            <td>Gestión de información de la casa de reposo</td>
+            <td>Como administrador quiero gestionar la información general de la casa de reposo para mantener datos actualizados sobre la institución.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-NH001</td>
+            <td>Crear Nursing Home (Después del Registro)</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que cuando el administrador se registre pueda crear su casa de reposo.</td>
+            <td>
+                <strong>Escenario 1: Creación exitosa por administrador nuevo</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud POST a <code>POST /api/v1/administrators/{administratorId}/nursing-home</code> con: name, ruc, phoneNumber, descriptions<br>
+                - <strong>Cuando</strong> la API válida que el usuario autenticado es un ADMIN sin nursing home asignado y crea la casa de reposo<br>
+                - <strong>Entonces</strong> la API responde con <code>201 Nursing home created successfully</code>, retorna la casa de reposo creada con: id (Long), administratorId, name, ruc, phoneNumber, description.<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud con datos inválidos (ej.: ruc inválido, description vacío)<br>
+                - <strong>Cuando</strong> la API detecta errores de validación<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Invalid input data</code> y retorna un payload de error describiendo los errores.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-NH002</td>
+            <td>Obtener casa de reposo para el administrador</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para que un administrador obtenga información de su casa de reposo asignada.</td>
+            <td>
+                <strong>Escenario 1: Obtener nursing home propio</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>GET /api/v1/administrators/{administratorId}/nursing-home</code><br>
+                - <strong>Cuando</strong> la API busca el nursing home del usuario autenticado<br>
+                - <strong>Entonces</strong> la API responde con <code>200 nursing home found</code> y retorna la información completa de su nursing home.<br><br>
+                <strong>Escenario 2: Usuario sin nursing home asignado</strong><br>
+                - <strong>Dado</strong> que el usuario autenticado no tiene ningún nursing home asignado (recién registrado)<br>
+                - <strong>Cuando</strong> la API busca<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Nursing home not found</code> con mensaje indicando que debe crear su nursing home primero.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-NH003</td>
+            <td>Obtener Nursing Home por ID</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener información de una casa de reposo específica.</td>
+            <td>
+                <strong>Escenario 1: Encontrado</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/nursing-homes-management/{nursingHomeId}</code><br>
+                - <strong>Cuando</strong> la API encuentra la casa de reposo y el usuario tiene permisos<br>
+                - <strong>Entonces</strong> la API responde con <code>200 nursing home found</code> y retorna la información completa de la casa de reposo.<br><br>
+                <strong>Escenario 2: No encontrado</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud para un <code>{nursingHomeId}</code> inexistente<br>
+                - <strong>Cuando</strong> la API no encuentra la casa de reposo<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-NH004</td>
+            <td>Listar Nursing Homes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las casas de reposo a las que el usuario tiene acceso.</td>
+            <td>
+                <strong>Escenario 1: Usuario con múltiples casas de reposo</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/nursing-homes-management</code><br>
+                - <strong>Cuando</strong> el usuario tiene acceso a una o más casas de reposo<br>
+                - <strong>Entonces</strong> la API responde con <code>200 nursing homes found</code> y retorna una lista filtrada según los permisos del usuario.<br><br>
+                <strong>Escenario 2: Usuario sin acceso</strong><br>
+                - <strong>Dado</strong> que el usuario no tiene acceso a ninguna casa de reposo<br>
+                - <strong>Cuando</strong> la API válida permisos<br>
+                - <strong>Entonces</strong> la API responde con <code>404 nursing homes not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-NH005</td>
+            <td>Actualizar Nursing Home</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint PUT/PATCH para actualizar información de una casa de reposo.</td>
+            <td>
+                <strong>Escenario 1: Actualización exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud PUT a <code>/api/v1/nursing-homes-management/{nursingHomeId}</code> con datos actualizados<br>
+                - <strong>Cuando</strong> la API válida permisos de ADMIN para esta casa de reposo y actualiza<br>
+                - <strong>Entonces</strong> la API responde con <code>200 The nursing home was updated successfully</code> y retorna la casa de reposo actualizada.<br><br>
+                <strong>Escenario 2: Sin permisos de administrador</strong><br>
+                - <strong>Dado</strong> que el usuario no tiene rol ADMIN para esta casa de reposo<br>
+                - <strong>Cuando</strong> la API válida permisos<br>
+                - <strong>Entonces</strong> la API responde con <code>400 the nursing home was not found</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>EP12</td>
+            <td>Gestión de Actividades</td>
+            <td>Como administrador de la casa de reposo, quiero planificar, publicar y gestionar actividades (recreativas, médicas, sociales) para residentes, con inscripción y control de aforo, para mejorar adherencia y bienestar.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-A001</td>
+            <td>Crear Actividad</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para crear actividades para los residentes de una casa de reposo específica.</td>
+            <td>
+                <strong>Escenario 1: Creación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe POST a <code>/api/v1/activity-management/{nursingHomeId}/employees{employeeId}</code> con todo los datos validos y requeridos<br>
+                - <strong>Cuando</strong> la API válida permisos y crea la actividad<br>
+                - <strong>Entonces</strong> la API responde con <code>201 Created</code> y retorna la actividad con todos los datos.<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe datos inválidos (ej: scheduledDate en el pasado, startTime después de endTime)<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code>.
+            </td>
+        </tr>
+        <tr>
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
