@@ -137,6 +137,17 @@ Las directrices de estilo web de Veyra se centran en la simplicidad, la accesibi
 La arquitectura de la información de la página de inicio de Veyra está diseñada para una navegación intuitiva, permitiendo que los usuarios encuentren rápidamente la información que necesitan y comprendan el valor de nuestra plataforma.
 
 ### 4.2.1. Organization Systems. 
+
+* **Jerarquía de Contenidos:** La información está estructurada de lo general a lo específico. Comenzamos con un mensaje de impacto en la sección Hero, seguido de un resumen de nuestros servicios, y luego profundizamos en las características y beneficios en las secciones subsiguientes.
+  
+* **Secciones Principales:** La página de inicio está organizada en secciones clave:
+    * **Hero:** La promesa de Veyra.
+
+    * **What We Offer:** Una visión general de los servicios.
+
+    * **Features:** Los beneficios clave del producto.
+
+    * **Benefits:** Cómo Veyra ayuda a los usuarios.
 ### 4.2.2. Labeling Systems. 
 ### 4.2.3. SEO Tags and Meta Tags 
 ### 4.2.4. Searching Systems. 
