@@ -133,6 +133,9 @@ Las directrices de estilo web de Veyra se centran en la simplicidad, la accesibi
 #### 4.1.3.1. iOS Mobile Style Guidelines. 
 #### 4.1.3.2. Android Mobile Style Guidelines. 
 ### 4.2. Android Mobile Style Guidelines. Information Architecture. 
+
+La arquitectura de la información de la página de inicio de Veyra está diseñada para una navegación intuitiva, permitiendo que los usuarios encuentren rápidamente la información que necesitan y comprendan el valor de nuestra plataforma.
+
 ### 4.2.1. Organization Systems. 
 ### 4.2.2. Labeling Systems. 
 ### 4.2.3. SEO Tags and Meta Tags 
