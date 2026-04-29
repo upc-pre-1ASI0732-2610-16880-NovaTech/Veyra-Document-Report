@@ -369,7 +369,61 @@ Se argumenta cómo las decisiones visuales e interactivas responden a:
 
 - Las expectativas de seguridad, claridad y rapidez en la comunicación familiar.
 <br>
+
 ### 4.6.1. Web Applications Wireframes. 
+
+<p>
+En esta sección se presentan los <strong>wireframes diseñados para la aplicación web de NovaPeru Tech (Veyra)</strong>. 
+Cada pantalla responde a las funcionalidades principales del sistema y a los distintos roles de usuario 
+(Administrador, Familiar, Personal de cuidado).
+</p>
+
+<h5>Login – NovaPeru Tech</h5>
+<p>Pantalla de inicio donde los usuarios acceden a la aplicación según su rol 
+(Administrador, Familiar, Personal de cuidado). Incluye campos de correo y contraseña, además de validaciones de acceso.</p>
+
+<img src="../images/Login-NovaPeru-Tech-Wireframe.jpg" alt="Login" style="width: auto; height: auto; border: 2px solid #00bfff;">
+
+<h5>Inicio de Sesión – NovaPeru Tech</h5>
+<p>Formulario de acceso con credenciales de usuario. Presenta opciones de recuperación de contraseña y mantiene consistencia visual con la identidad de NovaPeru Tech.</p>
+
+<img src="../images/IniciodeSesión-NovaPeru-Tech.jpg" alt="Inicio de Sesión" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Registrar Familiar – NovaPeru Tech</h5>
+<p>Formulario para que los familiares creen una cuenta, ingresando datos personales básicos, correo electrónico y contraseña. Incluye validaciones de formato y confirmación de correo.</p>
+
+<img src="../images/RegistrarFamiliar-NovaPeru-Tech.jpg" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Registrar Administrador – NovaPeru Tech</h5>
+<p>Pantalla destinada a registrar un nuevo administrador en la plataforma. Permite ingresar información personal, datos de contacto y credenciales de acceso.</p>
+
+<img src="../images/RegistrarAdministrador-NovaPeru-Tech.jpg" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Inventario – NovaPeru Tech</h5>
+<p>Módulo donde el administrador puede visualizar el inventario de medicamentos y recursos clínicos. Permite filtrar, ordenar y consultar detalles de cada ítem.</p>
+
+<img src="../images/Inventario-NovaPeru-Tech-Wireframe.jpg" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Inventario – Modificar – NovaPeru Tech</h5>
+<p>Sección para editar la información de medicamentos en el inventario: nombre, cantidad, fecha de vencimiento, laboratorio y observaciones.</p>
+
+<img src="../images/Inventario-Modificar-NovaPeru-Tech-Wireframe.jpg" alt="Inventario Modificar" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Paciente – NovaPeru Tech</h5>
+<p>Pantalla que muestra la información general de un residente (datos personales, estado clínico, actividades recientes).</p>
+
+<img src="../images/Paciente-NovaPeru-Tech-Wireframe.jpg" alt="Paciente" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Paciente – Agregar – NovaPeru Tech</h5>
+<p>Formulario para registrar un nuevo residente en la institución. Incluye datos personales, médicos, contactos de emergencia y observaciones.</p>
+
+<img src="../images/Paciente-Agregar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Agregar" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Paciente – Eliminar – NovaPeru Tech</h5>
+<p>Módulo que permite al administrador eliminar registros de pacientes, con mensaje de confirmación para evitar acciones accidentales.</p>
+
+<img src="../images/Paciente-Eliminar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Eliminar" style="width:auto; height:auto; border:2px solid #00bfff;">
+
 ### 4.6.2. Web Applications Wireflow Diagrams. 
 ### 4.6.3. Web Applications Mock-ups. 
 ### 4.6.4. Web Applications User Flow Diagrams.
