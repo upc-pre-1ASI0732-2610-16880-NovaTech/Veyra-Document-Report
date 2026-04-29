@@ -866,6 +866,35 @@ Esta vista permite apreciar cómo se distribuyen las responsabilidades entre la 
 ---
 
 ### 4.8.3. Software Architecture Components Diagrams. 
+
+En el nivel de componentes se detalla la descomposición interna de los contenedores, mostrando los bloques estructurales que conforman cada uno y las relaciones entre ellos. Dado que la **Single Page Application** y la **Database** ya fueron descritas en otros apartados mediante diagramas de clases frontend y de base de datos, en esta sección se pone especial énfasis en el contenedor **API Application**, donde reside la mayor parte de la lógica de negocio.
+
+El component diagram de la **API Application** agrupa la arquitectura interna siguiendo los bounded contexts definidos en el dominio de Veyra. Cada módulo backend representa un componente principal dentro del contenedor:
+
+- **Nursing Backend**: implementa la lógica relacionada con hogares de cuidado, habitaciones, residentes, asignaciones y medicación. Gestiona las operaciones CRUD y reglas de negocio para el contexto de nursing.
+- **HCM Backend**: agrupa la funcionalidad de recursos humanos, incluyendo registro de personal, contratos, turnos y organización interna del hogar de cuidado.
+- **IAM Backend**: se encarga de la autenticación, gestión de usuarios, roles, permisos y validaciones de acceso a la aplicación.
+- **Analytics Backend**: ofrece capacidades de agregación y consulta de métricas, estadísticas y datos analíticos de los hogares, apoyando el monitoreo y la toma de decisiones.
+- **Health Backend**: administra historiales clínicos, evaluaciones médicas y registros de signos vitales, proporcionando una vista estructurada del estado de salud de los residentes.
+- **Profiles Backend**: gestiona la información de perfiles de personas y empresas (contacto, direcciones, datos de identificación), compartida por varios procesos del sistema.
+- **Tracking Backend**: maneja la captura y procesamiento de datos provenientes de bandas médicas y sensores, permitiendo la trazabilidad del estado de los residentes.
+- **Payments Backend**: encapsula el manejo de suscripciones, facturación, pagos y conciliaciones, y se integra con el **Payment System (Stripe)** para la ejecución de cobros.
+- **Activities Backend**: gestiona la programación de actividades, horarios y participación de residentes, coordinando la agenda de eventos del hogar de cuidado.
+- **Shared Backend**: provee componentes compartidos, utilidades, clases base, eventos y mecanismos de infraestructura transversales utilizados por los demás módulos backend.
+
+En el diagrama se refleja cómo:
+
+- La **SPA** consume los servicios expuestos por cada módulo backend a través de la **API Application**, utilizando endpoints REST específicos por contexto.
+- Cada módulo backend accede a la **Database** para leer y escribir la información correspondiente a su contexto (por ejemplo, Nursing Backend a tablas de hogares y residentes, HCM Backend a tablas de personal y contratos, etc.).
+- Algunos módulos se integran con sistemas externos: **Payments Backend** con el sistema de pagos, **Nursing Backend** y **Profiles Backend** con la API de mapas, y **IAM Backend** con el servicio de notificaciones por correo.
+- Todos los módulos backend reutilizan capacidades comunes provistas por el **Shared Backend**, lo que favorece la consistencia, la reutilización y la reducción de duplicación de código.
+
+De esta forma, los component diagrams complementan los diagramas de clases del frontend, backend y base de datos, mostrando cómo los contenedores se descomponen en componentes coherentes con los bounded contexts del dominio y cómo estos colaboran entre sí para implementar la funcionalidad completa de Veyra.
+
+![ContainerDiagram Diagram](../images/c4-components.svg)
+
+<div style="page-break-after: always;"></div>
+
 ## 4.9. Software Object-Oriented Design. 
 ### 4.9.1. Class Diagrams. 
 ### 4.9.2. Class Dictionary. 
