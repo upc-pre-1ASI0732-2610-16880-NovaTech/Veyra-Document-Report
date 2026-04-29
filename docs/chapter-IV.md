@@ -290,6 +290,14 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 <div style="page-break-after: always;"></div>
 
 ## 4.4. Mobile Applications UX/UI Design. 
+### 4.4.1. Mobile Applications Wireframes. 
+### 4.4.2. Mobile Applications Wireflow Diagrams. 
+### 4.4.3. Mobile Applications Mock-ups. 
+### 4.4.4. Mobile Applications User Flow Diagrams. 
+## 4.5. Mobile Applications Prototyping. 
+### 4.5.1. Android Mobile Applications Prototyping. 
+### 4.5.2. iOS Mobile Applications Prototyping. 
+## 4.6. Web Applications UX/UI Design. 
 
 La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de Veyra, el ecosistema orientado a la gestión integral de residencias geriátricas y a la conexión transparente entre administradores, personal asistencial y familiares.
 
@@ -335,14 +343,32 @@ Incluye la definición de los principales componentes UI y su comportamiento:
 
 <br>
 
-### 4.4.1. Mobile Applications Wireframes. 
-### 4.4.2. Mobile Applications Wireflow Diagrams. 
-### 4.4.3. Mobile Applications Mock-ups. 
-### 4.4.4. Mobile Applications User Flow Diagrams. 
-## 4.5. Mobile Applications Prototyping. 
-### 4.5.1. Android Mobile Applications Prototyping. 
-### 4.5.2. iOS Mobile Applications Prototyping. 
-## 4.6. Web Applications UX/UI Design. 
+4. Flujo de usuario
+
+Se documentan los recorridos que realizan cada uno de los segmentos clave:
+
+- Registro y acceso de familiares.
+
+- Consulta de medicación, historial clínico y citas.
+
+- Gestión administrativa de residentes.
+
+- Supervisión operativa del personal asistencial.
+
+Estos flujos fueron construidos tomando en cuenta los pain points observados en las entrevistas, priorizando accesos rápidos, reducción de pasos innecesarios y claridad en la información.
+
+<br>
+
+5. Justificación del diseño
+
+Se argumenta cómo las decisiones visuales e interactivas responden a:
+
+- Las necesidades reales de los usuarios.
+
+- Las limitaciones tecnológicas identificadas en centros geriátricos.
+
+- Las expectativas de seguridad, claridad y rapidez en la comunicación familiar.
+<br>
 ### 4.6.1. Web Applications Wireframes. 
 ### 4.6.2. Web Applications Wireflow Diagrams. 
 ### 4.6.3. Web Applications Mock-ups. 
