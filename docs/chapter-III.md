@@ -1136,5 +1136,127 @@
             </td>
         </tr>
         <tr>
+                <td>TS-A002</td>
+            <td>Listar Actividades</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las actividades de una casa de reposo.</td>
+            <td>
+                <strong>Escenario 1: Listar actividades exitosamente</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/activity-management/{nursingHomeId}</code><br>
+                - <strong>Cuando</strong> la API busca actividades<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna las actividades de esta casa de reposo
+            </td>
+        </tr>
+        <tr>
+            <td>TS-A003</td>
+            <td>Ver información de una Actividad</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para mostrar la información de una sola actividad de una casa de reposo.</td>
+            <td>
+                <strong>Escenario 1: mostrar actividad exitosamente</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br>
+                - <strong>Cuando</strong> la API busca la actividad<br>
+                - <strong>Entonces</strong> la API response con <code>200 activity found</code> y retorna la información de la actividad de esta casa de repooso<br><br>
+                <strong>Escenario 2: actividad no existe</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br>
+                - <strong>Cuando</strong> la API busca la actividad<br>
+                - <strong>Entonces</strong> la API responsé con <code>404 activity not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-A004</td>
+            <td>Eliminar una Actividad</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para eliminar una actividad en una casa de reposo determinada.</td>
+            <td>
+                <strong>Escenario 1: Eliminación lógica exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe DELETE a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br>
+                - <strong>Cuando</strong> la API válida que la actividad pertenece a este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con mensaje de confirmación.<br><br>
+                <strong>Escenario 2: Actividad no existe</strong><br>
+                - <strong>Dado</strong> que la actividad no existe en este nursing home<br>
+                - <strong>Cuando</strong> la API válida propiedad<br>
+                - <strong>Entonces</strong> la API responde con <code>404 activity not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-A005</td>
+            <td>Inscribir Residente a Actividad</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para inscribir residentes en actividades.</td>
+            <td>
+                <strong>Escenario 1: Inscripción exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe POST a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}/residents/{residentId}</code><br>
+                - <strong>Cuando</strong> la API válida que tanto la actividad como el residente pertenecen a este nursing home y hay capacidad disponible<br>
+                - <strong>Entonces</strong> la API responde con <code>201 Created</code> y retorna: enrollmentId, activityId, residentId, enrolledAt, status.<br><br>
+                <strong>Escenario 2: Datos ínvalidos</strong><br>
+                - <strong>Dato</strong> que los datos son ínvalidos (ej nursingHomeId,ActivityId,etc)<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>EP13</td>
+            <td>Analítica y Estadísticas Operativas</td>
+            <td>Como administrador de la casa de reposo, quiero un panel con métricas clave (residentes, personal, inventario, ocupación, actividades) para tomar decisiones informadas y priorizar acciones.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-ST001</td>
+            <td>Obtener Estadísticas Generales</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas generales de una casa de reposo.</td>
+            <td>
+                <strong>Escenario 1: Obtener dashboard de estadísticas</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}</code><br>
+                - <strong>Cuando</strong> la API calcula las estadísticas para este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalResidents, activeResidents, totalEmployees, activeEmployees, totalMedications, lowStockMedications, upcomingActivities, occupancyRate, averageAge.<br><br>
+                <strong>Escenario 2: Sin permisos</strong><br>
+                - <strong>Dado</strong> que el usuario no tiene acceso a este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>403 Forbidden</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-ST002</td>
+            <td>Obtener Estadísticas de Inventario</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas del inventario de medicamentos.</td>
+            <td>
+                <strong>Escenario 1: Estadísticas de inventario</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}</code><br>
+                - <strong>Cuando</strong> la API calcula estadísticas<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalMedications, totalValue, expiringThisMonth, expiringNextMonth, lowStockItems, outOfStockItems, topMedicationsByUsage.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-ST003</td>
+            <td>Obtener Estadísticas de Residentes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas de residentes.</td>
+            <td>
+                <strong>Escenario 1: Estadísticas de residentes</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}/statistics/residents</code><br>
+                - <strong>Cuando</strong> la API calcula estadísticas<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalResidents, byGender, byAgeRange, averageAge, newAdmissionsThisMonth, averageLengthOfStay, byMedicalCondition.
+            </td>
+        </tr>
+        <tr>
+            <td>EP14</td>
+            <td>Integraciones Externas</td>
+            <td>Como administrador de la casa de reposo, quiero que el sistema integre servicios externos (Google Maps, Stripe y SMS/TOTP) para validar direcciones, procesar pagos seguros y proteger el acceso con MFA, de modo que la operación sea confiable y trazable con auditoría y métricas unificadas.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS16</td>
+            <td>Consumir API de Google Maps</td>
+            <td>Como desarrollador backend en NovaPeru Tech quiero implementar un servicio de integración con Google Maps que proporcione verificación de direcciones y datos de localización para garantizar la precisión en la información geográfica de los residentes y sedes.</td>
+            <td>
+                <strong>Escenario 1: Validación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe un <code>POST</code> a <code>/api/v1/location/validate</code> con datos de dirección<br>
+                - <strong>Cuando</strong> la API llama a <strong>Google Maps Geocoding API</strong> y obtiene una coincidencia<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> incluyendo la dirección formateada, coordenadas (<code>lat</code>, <code>lng</code>) y nivel de confianza.<br><br>
+                <strong>Escenario 2: Dirección no encontrada</strong><br>
+                - <strong>Dado</strong> que se recibe una dirección inválida o inexistente<br>
+                - <strong>Cuando</strong> la API no obtiene resultados desde Google Maps<br>
+                - <strong>Entonces</strong> la API responde con <code>422 Unprocessable Entity</code> indicando que la dirección no pudo ser validada.<br><br>
+                <strong>Escenario 3: Error de servicio externo</strong><br>
+                - <strong>Dado</strong> que la API de Google Maps no responde o excede la cuota<br>
+                - <strong>Cuando</strong> el backend intenta realizar la validación<br>
+                - <strong>Entonces</strong> la API responde con <code>502 Bad Gateway</code> o error equivalente, informando del fallo del servicio externo.
+            </td>
+        </tr>
+        <tr>
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
