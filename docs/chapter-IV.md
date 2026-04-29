@@ -14,7 +14,7 @@ El logo principal de nuestra plataforma es *Veyra*, un nombre que evoca cercaní
 <br>
 
 <p align="center">
-  <img src="../images/Veyra-logo.jpeg" alt="Veyra-Logo" width="350px" height="auto"/>
+  <img src="../assets/img/chapter-IV/Veyra-logo.jpeg" alt="Veyra-Logo" width="350px" height="auto"/>
 </p>
 
 **Typography**
@@ -34,7 +34,7 @@ La jerarquía tipográfica se establece de la siguiente manera para garantizar c
 - **Botones y etiquetas (span):** 1.4rem (aprox. 14px) a 1.8rem (aprox. 18px).
 
 <p align="center">
-  <img src="../images/typografy-Veyra.jpg" alt="Primary Color Palette" width="500px" height="auto"/>
+  <img src="../assets/img/chapter-IV/typografy-Veyra.jpg" alt="Primary Color Palette" width="500px" height="auto"/>
 </p>
 
 Esta distribución garantiza un contraste óptimo entre el texto y el fondo, superando un ratio mínimo de 4.5:1 según las WCAG 2.1 AA para una accesibilidad superior.
@@ -62,7 +62,7 @@ Nuestra paleta de colores ha sido cuidadosamente seleccionada para evocar sensac
 
 
 <p align="center">
-  <img src="../images/Color Pallete.png" alt="Primary Color Palette" width="800px" height="auto"/>
+  <img src="../assets/img/chapter-IV/Color Pallete.png" alt="Primary Color Palette" width="800px" height="auto"/>
 </p>
 
 Esta combinación cromática refleja los valores de nuestra marca y busca transmitir al público una imagen de profesionalismo, seguridad y calidez en el cuidado de adultos mayores.
@@ -125,7 +125,7 @@ Las directrices de estilo web de Veyra se centran en la simplicidad, la accesibi
 
 **5) Repositorio Central**
 
-* **Organización:** El proyecto sigue una estructura de archivos lógica. Los estilos están en la carpeta assets/style.css, y los archivos JavaScript en assets/scripts. Todos los activos visuales (imágenes, logos) se encuentran centralizados en assets/images y assets/logos, respectivamente.
+* **Organización:** El proyecto sigue una estructura de archivos lógica. Los estilos están en la carpeta assets/style.css, y los archivos JavaScript en assets/scripts. Todos los activos visuales (imágenes, logos) se encuentran centralizados en assets../assets/img/chapter-IV y assets/logos, respectivamente.
 
 * **Versionado:** Usamos un sistema de control de versiones como Git para gestionar los cambios en los archivos de estilo y contenido. Esto asegura que todos los colaboradores trabajen en la versión más reciente del proyecto.
 
@@ -200,38 +200,38 @@ El wireframe de nuestra página de inicio sirve como un mapa visual que define l
 
 Esta sección de entrada incluye el logotipo de Veyra, acompañado de un eslogan que resume nuestra promesa: "The Best Care is Always Connected" (El Mejor Cuidado Siempre Está Conectado). La barra de navegación permite un acceso rápido a secciones clave como Features, Benefits, y About Us, mientras que el área principal ofrece una visión concisa del producto, acompañada de un claro llamado a la acción: "Start now →" (Empieza ahora →). Un visual atractivo refuerza el mensaje de calidez y conexión familiar.
 
-<img src="../images/hero-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/hero-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 
 **Services (What We Offer):**
 
 Aquí se detallan los servicios principales de Veyra: Home Health Care, Pediatric Care, Companion Care y Conditions Treated. Cada servicio se presenta con un ícono representativo y una breve descripción, haciendo que nuestra oferta sea fácil de entender y visualmente accesible.
 
-<img src="../images/whatweoffer-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/whatweoffer-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 
 **Acerca de la aplicación (About the Platform):**
 
 Esta sección presenta lo que hace única a Veyra: una plataforma diseñada para centros de cuidado de adultos mayores que optimiza la gestión clínica y la comunicación. Explicamos cómo Veyra centraliza la información para mejorar la eficiencia, reducir errores y, lo más importante, dar tranquilidad a las familias. Enfatizamos nuestros valores de transparencia, seguridad y conexión, mostrando una lista de beneficios clave como la comunicación fluida, el acceso a información en tiempo real y la seguridad de los datos.
 
-<img src="../images/benefits-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/benefits-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Sobre el Equipo (Our Team):**
 
 En esta sección, se humaniza la marca al presentar al equipo detrás de Veyra. Con fotos y descripciones de los miembros, mostramos a las personas dedicadas a este proyecto, construyendo confianza y una conexión personal con los visitantes.
 
-<img src="../images/ourteam-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/ourteam-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Precios (Plans):**
 
 La sección de Precios ofrece una visión clara de los planes disponibles. Presentamos el Family Plan y el Nursing Home Plan, con un comparativo de características para ayudar a los usuarios a elegir la opción que mejor se adapte a sus necesidades, ya sea para el cuidado en casa o para una institución. Un conmutador entre tarifas mensuales y anuales, junto con la indicación de un ahorro, hace la elección más informada.
 
-<img src="../images/plans-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/plans-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Footer:**
 El pie de página es un elemento crucial para la usabilidad. Contiene enlaces a información vital como "Terms of Service" y "Privacy Policy", además de detalles de contacto (correo electrónico, teléfono y ubicación). Esto proporciona un acceso rápido a la información sin saturar la interfaz, ofreciendo un cierre limpio y funcional a la página.
 
-<img src="../images/footer-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/footer-section-landing-wireframe.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 Este wireframe sienta las bases para un diseño visual que no solo se ve bien, sino que también guía al usuario de manera intuitiva a través de nuestra propuesta de valor, reforzando la confianza y la conexión que Veyra promete.
 
@@ -243,49 +243,49 @@ Este wireframe sienta las bases para un diseño visual que no solo se ve bien, s
 
 El hero de nuestra plataforma Veyra presenta una imagen principal que evoca cuidado y conexión, con un título claro: "The Best Care is Always Connected". Una breve descripción capta nuestra esencia, y un botón de llamado a la acción "Start for free →" invita a los usuarios a dar el primer paso. Una barra de navegación en la parte superior permite acceder de forma fluida a todas las secciones de la página, proporcionando una experiencia de usuario intuitiva.
 
-<img src="../images/hero-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/hero-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **What We Offer** 
 
 En la sección "What We Offer", presentamos nuestras principales áreas de servicio a través de tarjetas con iconos representativos. Cada tarjeta tiene un título y una breve descripción, como "Home Health Care" o "Pediatric Care", lo que permite a los usuarios entender rápidamente el alcance de nuestra plataforma y los tipos de cuidado que apoyamos.
 
-<img src="../images/whatweoffer-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/whatweoffer-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Features** 
 
 La sección de "Features" muestra las funcionalidades clave de Veyra. El diseño tipo acordeón permite a los usuarios expandir cada característica para leer su descripción completa, mientras que un video de demostración de YouTube al lado les ofrece una vista visual de la plataforma en acción. Esto combina información detallada con un formato interactivo y dinámico.
 
-<img src="../images/features-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/features-section-landing.png" alt="Landing Page Mockup" style="max-width: 100%; height: auto; border: 2px solid #00bfff;">
 
 **Benefits** 
 
 En "Benefits", destacamos las ventajas de utilizar Veyra. A través de un diseño de tarjetas con imágenes, títulos y descripciones, comunicamos cómo nuestra plataforma mejora la comunicación, agiliza la gestión clínica y aumenta la tranquilidad tanto para las familias como para las instituciones de cuidado.
 
-<img src="../images/benefits-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/benefits-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **About Us** 
 
 La sección "About Us" presenta a NovaPeru Tech, la empresa detrás de Veyra. Aquí, compartimos nuestra misión y los valores de innovación y confianza que nos impulsan. Un video o imagen animada acompaña el texto, reforzando nuestro mensaje de una manera visualmente atractiva y moderna.
 
-<img src="../images/aboutus-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/aboutus-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Our Team** 
 
 La sección "Our Team" presenta a los ingenieros de software detrás de Veyra. Las tarjetas de perfil muestran una foto, el nombre, el cargo y una breve biografía de cada miembro. El diseño de 3 tarjetas arriba y 2 abajo, centradas, brinda un aspecto organizado y profesional, permitiendo a los usuarios conocer al equipo de desarrollo.
 
-<img src="../images/ourteam-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/ourteam-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Plans** 
 
 En la sección de "Plans", ofrecemos los detalles de nuestros planes de precios. Las tarjetas de "Family Plan" y "Nursing Home Plan" incluyen descripciones, precios con opciones mensuales y anuales, y listas de características. El diseño permite un fácil cambio entre planes mensuales y anuales, facilitando la elección del plan adecuado.
 
-<img src="../images/plans-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/plans-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Footer** 
 
 El "Footer" de nuestra landing page contiene enlaces útiles y recursos adicionales. Un formulario de suscripción invita a los usuarios a unirse a nuestra comunidad. El logo de Veyra, enlaces de contacto, información legal y de derechos de autor se encuentran aquí, asegurando que toda la información relevante esté fácilmente accesible para los usuarios.
 
-<img src="../images/footer-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/footer-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 <div style="page-break-after: always;"></div>
 
@@ -382,74 +382,74 @@ Cada pantalla responde a las funcionalidades principales del sistema y a los dis
 <p>Pantalla de inicio donde los usuarios acceden a la aplicación según su rol 
 (Administrador, Familiar, Personal de cuidado). Incluye campos de correo y contraseña, además de validaciones de acceso.</p>
 
-<img src="../images/Login-NovaPeru-Tech-Wireframe.jpg" alt="Login" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Login-NovaPeru-Tech-Wireframe.jpg" alt="Login" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 <h5>Inicio de Sesión – NovaPeru Tech</h5>
 <p>Formulario de acceso con credenciales de usuario. Presenta opciones de recuperación de contraseña y mantiene consistencia visual con la identidad de NovaPeru Tech.</p>
 
-<img src="../images/IniciodeSesión-NovaPeru-Tech.jpg" alt="Inicio de Sesión" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/IniciodeSesión-NovaPeru-Tech.jpg" alt="Inicio de Sesión" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Registrar Familiar – NovaPeru Tech</h5>
 <p>Formulario para que los familiares creen una cuenta, ingresando datos personales básicos, correo electrónico y contraseña. Incluye validaciones de formato y confirmación de correo.</p>
 
-<img src="../images/RegistrarFamiliar-NovaPeru-Tech.jpg" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/RegistrarFamiliar-NovaPeru-Tech.jpg" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Registrar Administrador – NovaPeru Tech</h5>
 <p>Pantalla destinada a registrar un nuevo administrador en la plataforma. Permite ingresar información personal, datos de contacto y credenciales de acceso.</p>
 
-<img src="../images/RegistrarAdministrador-NovaPeru-Tech.jpg" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/RegistrarAdministrador-NovaPeru-Tech.jpg" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Inventario – NovaPeru Tech</h5>
 <p>Módulo donde el administrador puede visualizar el inventario de medicamentos y recursos clínicos. Permite filtrar, ordenar y consultar detalles de cada ítem.</p>
 
-<img src="../images/Inventario-NovaPeru-Tech-Wireframe.jpg" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Inventario-NovaPeru-Tech-Wireframe.jpg" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Inventario – Modificar – NovaPeru Tech</h5>
 <p>Sección para editar la información de medicamentos en el inventario: nombre, cantidad, fecha de vencimiento, laboratorio y observaciones.</p>
 
-<img src="../images/Inventario-Modificar-NovaPeru-Tech-Wireframe.jpg" alt="Inventario Modificar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Inventario-Modificar-NovaPeru-Tech-Wireframe.jpg" alt="Inventario Modificar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – NovaPeru Tech</h5>
 <p>Pantalla que muestra la información general de un residente (datos personales, estado clínico, actividades recientes).</p>
 
-<img src="../images/Paciente-NovaPeru-Tech-Wireframe.jpg" alt="Paciente" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-NovaPeru-Tech-Wireframe.jpg" alt="Paciente" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – Agregar – NovaPeru Tech</h5>
 <p>Formulario para registrar un nuevo residente en la institución. Incluye datos personales, médicos, contactos de emergencia y observaciones.</p>
 
-<img src="../images/Paciente-Agregar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Agregar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-Agregar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Agregar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – Eliminar – NovaPeru Tech</h5>
 <p>Módulo que permite al administrador eliminar registros de pacientes, con mensaje de confirmación para evitar acciones accidentales.</p>
 
-<img src="../images/Paciente-Eliminar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Eliminar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-Eliminar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Eliminar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Empleado – NovaPeru Tech</h5>
 <p>Pantalla donde se listan los empleados de la institución, mostrando nombre, rol, contacto y estado laboral.</p>
 
-<img src="../images/Empleado-NovaPeru-Tech-Wireframe.jpg" alt="Empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Empleado-NovaPeru-Tech-Wireframe.jpg" alt="Empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Empleado – Card Detalles – NovaPeru Tech</h5>
 <p>Vista detallada de un empleado en formato de card, mostrando información personal, turno asignado, horas extra y contacto de emergencia.</p>
 
-<img src="../images/Empleado-Card-Detalles-NovaPeru-Tech-Wireframe.jpg" alt="Empleado Card Detalles" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Empleado-Card-Detalles-NovaPeru-Tech-Wireframe.jpg" alt="Empleado Card Detalles" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Actividad – Familiar – NovaPeru Tech</h5>
 <p>Pantalla que muestra las actividades recientes del residente (ejercicios, visitas, terapias). 
 El familiar puede visualizar fotos, descripciones y fechas.</p>
 
-<img src="../images/Actividad-Familiar-NovaPeru-Tech-Wireframe.jpg" alt="Actividad Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Actividad-Familiar-NovaPeru-Tech-Wireframe.jpg" alt="Actividad Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Historial de Pedido – NovaPeru Tech</h5>
 <p>Pantalla que permite consultar pedidos realizados, con detalles de estado, fecha y productos solicitados.</p>
 
-<img src="../images/Historial-de-Pedido-NovaPeru-Tech-Wireframe.jpg" alt="Historial de Pedido" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Historial-de-Pedido-NovaPeru-Tech-Wireframe.jpg" alt="Historial de Pedido" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ### 4.6.2. Web Applications Wireflow Diagrams. 
 
 <p>Los Wireflows se emplean principalmente en el diseño de la experiencia de usuario (UX) y son especialmente útiles para aplicaciones que incluyen flujos de trabajo e interacciones complejas.</p>
 
-<img src="../images/Web-Applications-Wireflow-Diagrams.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Web-Applications-Wireflow-Diagrams.jpg" alt="Web-Applications-Wireflow-Diagrams" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <div style="page-break-after: always;"></div>
 
@@ -465,68 +465,68 @@ Cada pantalla responde a las funcionalidades principales del sistema y a los dis
 <p>Pantalla de inicio donde los usuarios acceden a la aplicación según su rol 
 (Administrador, Familiar, Personal de cuidado). Incluye campos de correo y contraseña, además de validaciones de acceso.</p>
 
-<img src="../images/Login-NovaPeru-Tech.jpg" alt="Login Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Login-NovaPeru-Tech.jpg" alt="Login Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Inicio de Sesión – NovaPeru Tech</h5>
 <p>Formulario de acceso con credenciales de usuario. Presenta opciones de recuperación de contraseña y mantiene consistencia visual con la identidad de NovaPeru Tech.</p>
 
-<img src="../images/Inicio-de-sesión-NovaPeru-Tech.jpg" alt="Inicio de Sesión Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Inicio-de-sesión-NovaPeru-Tech.jpg" alt="Inicio de Sesión Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Registrar Familiar – NovaPeru Tech</h5>
 <p>Formulario para que los familiares creen una cuenta, ingresando datos personales básicos, correo electrónico y contraseña. Incluye validaciones de formato y confirmación de correo.</p>
 
-<img src="../images/Registrar-Familiar-NovaPeru-Tech.jpg" alt="Registrar Familiar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Registrar-Familiar-NovaPeru-Tech.jpg" alt="Registrar Familiar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Registrar Administrador – NovaPeru Tech</h5>
 <p>Pantalla destinada a registrar un nuevo administrador en la plataforma. Permite ingresar información personal, datos de contacto y credenciales de acceso.</p>
 
-<img src="../images/Registrar-Administrador-NovaPeru-Tech.jpg" alt="Registrar Administrador Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Registrar-Administrador-NovaPeru-Tech.jpg" alt="Registrar Administrador Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Inventario – NovaPeru Tech</h5>
 <p>Módulo donde el administrador puede visualizar el inventario de medicamentos y recursos clínicos. Permite filtrar, ordenar y consultar detalles de cada ítem.</p>
 
-<img src="../images/Inventario-NovaPeru-Tech.jpg" alt="Inventario Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Inventario-NovaPeru-Tech.jpg" alt="Inventario Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Inventario – Modificar – NovaPeru Tech</h5>
 <p>Sección para editar la información de medicamentos en el inventario: nombre, cantidad, fecha de vencimiento, laboratorio y observaciones.</p>
 
-<img src="../images/Inventario-Modificar-NovaPeru-Tech.jpg" alt="Inventario Modificar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Inventario-Modificar-NovaPeru-Tech.jpg" alt="Inventario Modificar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – NovaPeru Tech</h5>
 <p>Pantalla que muestra la información general de un residente (datos personales, estado clínico, actividades recientes).</p>
 
-<img src="../images/Paciente-NovaPeru-Tech.jpg" alt="Paciente Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-NovaPeru-Tech.jpg" alt="Paciente Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – Agregar – NovaPeru Tech</h5>
 <p>Formulario para registrar un nuevo residente en la institución. Incluye datos personales, médicos, contactos de emergencia y observaciones.</p>
 
-<img src="../images/Paciente-Agregar-NovaPeru-Tech.jpg" alt="Paciente Agregar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-Agregar-NovaPeru-Tech.jpg" alt="Paciente Agregar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Paciente – Eliminar – NovaPeru Tech</h5>
 <p>Módulo que permite al administrador eliminar registros de pacientes, con mensaje de confirmación para evitar acciones accidentales.</p>
 
-<img src="../images/Paciente-Eliminar-NovaPeru-Tech.jpg" alt="Paciente Eliminar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Paciente-Eliminar-NovaPeru-Tech.jpg" alt="Paciente Eliminar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Empleado – NovaPeru Tech</h5>
 <p>Pantalla donde se listan los empleados de la institución, mostrando nombre, rol, contacto y estado laboral.</p>
 
-<img src="../images/Empleado-Card-Detalles-NovaPeru-Tech.jpg" alt="Empleado Card Detalles Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Empleado-Card-Detalles-NovaPeru-Tech.jpg" alt="Empleado Card Detalles Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Empleado – Card Detalles – NovaPeru Tech</h5>
 <p>Vista detallada de un empleado en formato de card, mostrando información personal, turno asignado, horas extra y contacto de emergencia.</p>
 
-<img src="../images/Empleado-Card-Detalles-NovaPeru-Tech.jpg" alt="Empleado Card Detalles" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Empleado-Card-Detalles-NovaPeru-Tech.jpg" alt="Empleado Card Detalles" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Actividad – Familiar – NovaPeru Tech</h5>
 <p>Pantalla que muestra las actividades recientes del residente (ejercicios, visitas, terapias). 
 El familiar puede visualizar fotos, descripciones y fechas.</p>
 
-<img src="../images/Actividad-Familiar-NovaPeru-Tech.jpg" alt="Actividad Familiar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Actividad-Familiar-NovaPeru-Tech.jpg" alt="Actividad Familiar Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <h5>Historial de Pedido – NovaPeru Tech</h5>
 <p>Pantalla que permite consultar pedidos realizados, con detalles de estado, fecha y productos solicitados.</p>
 
-<img src="../images/Historial-de-Pedido-NovaPeru-Tech.jpg" alt="Historial de Pedido Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Historial-de-Pedido-NovaPeru-Tech.jpg" alt="Historial de Pedido Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <div style="page-break-after: always;"></div>
 
@@ -535,42 +535,42 @@ El familiar puede visualizar fotos, descripciones y fechas.</p>
 
 El diseño se elaboró siguiendo principios de usabilidad, accesibilidad, consistencia visual y orientación a tareas, asegurando que cada interfaz responda a las necesidades reales identificadas durante el proceso de entrevistas y validaciones con usuarios. La propuesta UI/UX se centra en crear una experiencia clara, confiable y sencilla para usuarios con distintos niveles de alfabetización digital.</p>
 
-<img src="../images/Mobil1.png" alt="Login Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil2.png" alt="Inicio de Sesion" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil3.png" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil4.png" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil5.png" alt="Inicio" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil6-corregido.png" alt="Historial Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil7.png" alt="Historial Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil8.png" alt="Datos del Negocio" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil9.png" alt="Datos del Negocio 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil10.png" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil11.png" alt="Inventario 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil12.png" alt="Inventario 3" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil13.png" alt="Inventario 4" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil14-corregido.png" alt="Información inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil15.png" alt="Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil16.png" alt="Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil17.png" alt="Actividdes 3" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil18.png" alt="Agregar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil19-corregido.png" alt="Agregar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil20.png" alt="Editar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil21.png" alt="Editar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil22.png" alt="Editar Actividad 3" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil23.png" alt="Residentes" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil24-corregido.png" alt="Residentes 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil25.png" alt="Agregar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil26-corregido.png" alt="Agregar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil27.png" alt="Modificar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil28-corregido.png" alt="Modificar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil29.png" alt="Agregar Historia " style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil30.png" alt="Empleados" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil31-corregido.png" alt="Empleados 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil32.png" alt="Modificar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil33-corregido.png" alt="Modificar Datos del empleado 2" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil34.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil35-corregido.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
-<img src="../images/Mobil36.png" alt="Detalles del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil1.png" alt="Login Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil2.png" alt="Inicio de Sesion" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil3.png" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil4.png" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil5.png" alt="Inicio" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil6-corregido.png" alt="Historial Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil7.png" alt="Historial Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil8.png" alt="Datos del Negocio" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil9.png" alt="Datos del Negocio 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil10.png" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil11.png" alt="Inventario 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil12.png" alt="Inventario 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil13.png" alt="Inventario 4" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil14-corregido.png" alt="Información inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil15.png" alt="Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil16.png" alt="Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil17.png" alt="Actividdes 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil18.png" alt="Agregar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil19-corregido.png" alt="Agregar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil20.png" alt="Editar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil21.png" alt="Editar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil22.png" alt="Editar Actividad 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil23.png" alt="Residentes" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil24-corregido.png" alt="Residentes 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil25.png" alt="Agregar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil26-corregido.png" alt="Agregar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil27.png" alt="Modificar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil28-corregido.png" alt="Modificar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil29.png" alt="Agregar Historia " style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil30.png" alt="Empleados" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil31-corregido.png" alt="Empleados 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil32.png" alt="Modificar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil33-corregido.png" alt="Modificar Datos del empleado 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil34.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil35-corregido.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/Mobil36.png" alt="Detalles del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <div style="page-break-after: always;"></div>
 
@@ -586,13 +586,13 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 
   En esta ruta ideal, el administrador inicia sesión y accede al panel de control. Desde allí, navega a la sección de "Pacientes" y selecciona la opción para agregar un nuevo residente. Completa todos los campos del formulario con la información correcta del residente (datos personales, médicos, etc.) y guarda el registro. El sistema confirma que el residente ha sido agregado exitosamente y lo muestra en la lista de pacientes.
 
-  <img src="../images/UserFlowObjetivo1.png" alt="Happy Path-Objetivo1" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo1.png" alt="Happy Path-Objetivo1" style="width:auto; height:auto; border:2px solid #00bfff;">
 
   **Unhappy Paths**
 
   En este escenario alternativo, el administrador intenta guardar el formulario con campos obligatorios vacíos o con datos en un formato incorrecto (por ejemplo, un número de teléfono con letras). El sistema muestra mensajes de error específicos junto a los campos problemáticos, impidiendo que el registro se complete hasta que la información sea corregida.
 
-  <img src="../images/UserFlowObjetivo1-parte2.png" alt="UnHappy Path-Objetivo1" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo1-parte2.png" alt="UnHappy Path-Objetivo1" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ---
 
@@ -602,13 +602,13 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 
   El familiar accede a la página de inicio y selecciona la opción "Registrarse". Completa el formulario con sus datos personales, correo electrónico y una contraseña segura. Al enviar el formulario, el sistema valida la información, crea la cuenta y le envía un correo de confirmación. El familiar es redirigido a la pantalla de inicio de sesión o directamente a su panel, listo para vincularse con un residente.
 
-  <img src="../images/UserFllowObjetivo2-parte1.png" alt="Happy Path-Objetivo2" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFllowObjetivo2-parte1.png" alt="Happy Path-Objetivo2" style="width:auto; height:auto; border:2px solid #00bfff;">
 
   **Unhappy Paths**
 
   La ruta infeliz ocurre si el familiar intenta registrarse con un correo electrónico que ya existe en el sistema o si las contraseñas no coinciden. La plataforma mostrará un mensaje de error claro, indicando el problema específico para que el usuario pueda corregirlo y completar su registro.
 
-  <img src="../images/UserFlowObjetivo2-parte2.png" alt="UnHappy Path-Objetivo2" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo2-parte2.png" alt="UnHappy Path-Objetivo2" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ---
 
@@ -618,13 +618,13 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 
   El administrador, después de iniciar sesión, navega a la sección de "Inventario". Hace clic en el botón para agregar un nuevo ítem, completa los detalles del medicamento (nombre, cantidad, fecha de vencimiento, etc.) y guarda la información. El sistema confirma la adición y el nuevo medicamento aparece inmediatamente en la lista del inventario.
 
-  <img src="../images/UserFlowObjetivo3-parte1.png" alt="Happy Path-Objetivo3" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo3-parte1.png" alt="Happy Path-Objetivo3" style="width:auto; height:auto; border:2px solid #00bfff;">
 
   **Unhappy Paths**
 
   En este caso, el administrador intenta registrar un medicamento sin completar campos clave como el nombre o la cantidad. El sistema previene el registro y resalta los campos obligatorios que faltan, mostrando un mensaje que guía al usuario para que complete la información necesaria antes de poder guardar.
 
-  <img src="../images/UserFlowObjetivo3-parte2.png" alt="UnHappy Path-Objetivo3" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo3-parte2.png" alt="UnHappy Path-Objetivo3" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ---
 
@@ -634,7 +634,7 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 
   El familiar inicia sesión en su cuenta y es dirigido a su panel principal. Desde allí, accede a la sección "Actividades del Residente". La aplicación muestra una lista cronológica de las últimas actividades (terapias, comidas, visitas), incluyendo fotos y descripciones publicadas por el personal de cuidado, brindando tranquilidad y conexión.
 
-  <img src="../images/UserFlowObjetivo4.png" alt="Happy Path-Objetivo4" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo4.png" alt="Happy Path-Objetivo4" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 ---
 
@@ -644,13 +644,13 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 
   En la pantalla de inicio de sesión, el usuario hace clic en "¿Olvidaste tu contraseña?". Ingresa su dirección de correo electrónico registrada y recibe un enlace o código de recuperación. Al seguir las instrucciones, puede establecer una nueva contraseña y acceder nuevamente a su cuenta sin problemas.
 
-  <img src="../images/UserFlowObjetivo5-parte1.png" alt="Happy Path-Objetivo5" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo5-parte1.png" alt="Happy Path-Objetivo5" style="width:auto; height:auto; border:2px solid #00bfff;">
 
   **Unhappy Paths**
 
   Si el usuario ingresa un correo electrónico que no está registrado en la base de datos de Veyra, el sistema le informará que el correo no fue encontrado, protegiendo la seguridad de los datos y pidiéndole que verifique la dirección ingresada.
 
-  <img src="../images/UserFlowObjetivo5-parte2.png" alt="UnHappy Path-Objetivo5" style="width:auto; height:auto; border:2px solid #00bfff;">
+  <img src="../assets/img/chapter-IV/UserFlowObjetivo5-parte2.png" alt="UnHappy Path-Objetivo5" style="width:auto; height:auto; border:2px solid #00bfff;">
 
 <div style="page-break-after: always;"></div>
 
@@ -812,7 +812,7 @@ Las tareas principales (ver reportes, recibir alertas, revisar medicación) se c
 La navegación sea intuitiva para usuarios con distintos niveles tecnológicos.
 
 
-![ContextDiagram Diagram](../images/prototypy.png)
+![ContextDiagram Diagram](../assets/img/chapter-IV/prototypy.png)
 
 http://bit.ly/4q6AhWP
 
@@ -837,7 +837,7 @@ El context diagram muestra al **Veyra Software System** como un recuadro en el c
 
 En el diagrama se representan las relaciones entre estos elementos, destacando que tanto el administrador como el familiar interactúan únicamente con Veyra, mientras que el sistema se encarga de orquestar las integraciones con los servicios externos (pagos, mapas y notificaciones). Esta vista permite entender el alcance del sistema, los límites de responsabilidad y el ecosistema en el que se inserta Veyra antes de entrar a detalles de implementación.
 
-![ContextDiagram Diagram](../images/c4-context.svg)
+![ContextDiagram Diagram](../assets/img/chapter-IV/c4-context.svg)
 
 ---
 
@@ -861,7 +861,7 @@ En el diagrama se observa que:
 
 Esta vista permite apreciar cómo se distribuyen las responsabilidades entre la capa de presentación (Landing y SPA), la capa de lógica de negocio (API Application) y la capa de persistencia (Database), así como las principales decisiones tecnológicas que se han tomado para cada contenedor.
 
-![ContainerDiagram Diagram](../images/c4-container.svg)
+![ContainerDiagram Diagram](../assets/img/chapter-IV/c4-container.svg)
 
 ---
 
@@ -891,7 +891,7 @@ En el diagrama se refleja cómo:
 
 De esta forma, los component diagrams complementan los diagramas de clases del frontend, backend y base de datos, mostrando cómo los contenedores se descomponen en componentes coherentes con los bounded contexts del dominio y cómo estos colaboran entre sí para implementar la funcionalidad completa de Veyra.
 
-![ContainerDiagram Diagram](../images/c4-components.svg)
+![ContainerDiagram Diagram](../assets/img/chapter-IV/c4-components.svg)
 
 <div style="page-break-after: always;"></div>
 
