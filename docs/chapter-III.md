@@ -109,5 +109,93 @@
                 </td>
             </tr>
            <tr>
+                   <td>EP02</td>
+                <td>Soporte y contacto</td>
+                <td>Como visitante de la Landing Page, quiero poder contactar a Veyra fácilmente, para resolver dudas o interactuar.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>US05</td>
+                <td>Redes sociales</td>
+                <td>Como visitante de la landing page quiero poder acceder fácilmente a sus redes sociales de Veyra para conocer más sobre la empresa y tener canales adicionales de contacto.</td>
+                <td>
+                    <strong>Escenario 1: Acceso a redes sociales</strong><br>
+                    <strong>Dado que</strong> el visitante busca los enlaces de redes sociales<br>
+                    <strong>Cuando</strong> los enlaces están disponibles<br>
+                    <strong>Entonces</strong> el usuario puede acceder a las páginas oficiales de las redes sociales.<br><br>
+                    <strong>Escenario 2: Enlaces no funcionales</strong><br>
+                    <strong>Dado que</strong> el visitante intenta acceder a una red social<br>
+                    <strong>Cuando</strong> el enlace no está funcionando<br>
+                    <strong>Entonces</strong> el usuario recibe un mensaje informativo sobre el problema.
+                </td>
+            </tr>
+            <tr>
+                <td>US06</td>
+                <td>Formulario de contacto</td>
+                <td>Como visitante de la landing page quiero completar un formulario de contacto para enviar consultas específicas y recibir una respuesta personalizada de Veyra.</td>
+                <td>
+                    <strong>Escenario 1: Envío exitoso de consulta</strong><br>
+                    <strong>Dado que</strong> el visitante completa el formulario de contacto<br>
+                    <strong>Cuando</strong> todos los campos requeridos están completos y válidos<br>
+                    <strong>Entonces</strong> la consulta se envía exitosamente y el usuario recibe confirmación.<br><br>
+                    <strong>Escenario 2: Datos de contacto inválidos</strong><br>
+                    <strong>Dado que</strong> el visitante completa el formulario de contacto<br>
+                    <strong>Cuando</strong> existen campos inválidos o incompletos<br>
+                    <strong>Entonces</strong> el sistema muestra mensajes de validación específicos para los campos problemáticos.
+                </td>
+            </tr>
+        </tbody>
+          <tr>
+                <td>EP03</td>
+                <td>Acceso a Información</td>
+                <td>Como familiar del adulto mayor quiero poder tener acceso a toda la información de mi familiar para estar informado de su estado.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>US08</td>
+                <td>Historial médico</td>
+                <td>Como familiar de un adulto mayor quiero acceder al historial médico completo de mi familiar para conocer su evolución de salud y diagnósticos actuales.</td>
+                <td>
+                    <strong>Escenario 1: Acceso al historial médico</strong><br>
+                    <strong>Dado que</strong> el familiar está autenticado y tiene permisos<br>
+                    <strong>Cuando</strong> solicita ver el historial médico<br>
+                    <strong>Entonces</strong> el sistema muestra el historial médico completo organizado cronológicamente.<br><br>
+                    <strong>Escenario 2: Sin permisos para acceder al historial</strong><br>
+                    <strong>Dado que</strong> el usuario intenta acceder al historial médico<br>
+                    <strong>Cuando</strong> no tiene los permisos necesarios<br>
+                    <strong>Entonces</strong> el sistema muestra un mensaje de restricción de acceso.
+                </td>
+            </tr>
+            <tr>
+                <td>US09</td>
+                <td>Agenda de citas Medicas</td>
+                <td>Como familiar de un adulto mayor quiero consultar la agenda de citas médicas de mi familiar para estar informado sobre sus próximos tratamientos.</td>
+                <td>
+                    <strong>Escenario 1: Visualización de citas programadas</strong><br>
+                    <strong>Dado que</strong> el familiar está autenticado<br>
+                    <strong>Cuando</strong> accede a la agenda de citas<br>
+                    <strong>Entonces</strong> el sistema muestra la lista de citas médicas programadas con sus detalles.<br><br>
+                    <strong>Escenario 2: No hay citas programadas</strong><br>
+                    <strong>Dado que</strong> el familiar consulta la agenda de citas<br>
+                    <strong>Cuando</strong> no existen citas programadas<br>
+                    <strong>Entonces</strong> el sistema muestra un mensaje informativo sobre la ausencia de citas.
+                </td>
+            </tr>
+            <tr>
+                <td>US10</td>
+                <td>Consulta de información personal</td>
+                <td>Como familiar de un adulto mayor quiero ver la información de mi familiar para estar seguro de que esté correcto o actualizado.</td>
+                <td>
+                    <strong>Escenario 1: Visualización de información personal</strong><br>
+                    <strong>Dado que</strong> el familiar está autenticado<br>
+                    <strong>Cuando</strong> accede al perfil de información personal<br>
+                    <strong>Entonces</strong> el sistema muestra la información personal actualizada del adulto mayor.<br><br>
+                    <strong>Escenario 2: Solicitud de actualización de información</strong><br>
+                    <strong>Dado que</strong> el familiar identifica información desactualizada<br>
+                    <strong>Cuando</strong> solicita una actualización<br>
+                    <strong>Entonces</strong> el sistema registra la solicitud de cambio con la justificación proporcionada.
+                </td>
+            </tr>
+            <tr>
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
