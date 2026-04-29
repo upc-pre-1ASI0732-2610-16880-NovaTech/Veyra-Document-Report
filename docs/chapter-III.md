@@ -873,5 +873,110 @@
             </td>
         </tr>
         <tr>
+                <td>EP07</td>
+            <td>Gestión de medicamentos</td>
+            <td>Como administrador quiero gestionar los medicamentos de la casa de reposo para garantizar que cumplan con todos los controles necesarios.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-I001</td>
+            <td>Eliminar medicamentos</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Delete para medicamentos para asegurar que el administrador de la casa de reposo pueda remover registros del inventario.</td>
+            <td>
+                <strong>Escenario 1: Eliminación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud DELETE a <code>/api/v1/inventories/{nursingHomeId}/medications/{medicationId}</code><br>
+                - <strong>Cuando</strong> la API valida que el medicamento pertenece al nursing home especificado y el usuario tiene permisos<br>
+                - <strong>Entonces</strong> la API responde con <code>204 The medication was deleted successfully.</code> sin cuerpo de respuesta.<br><br>
+                <strong>Escenario 2: Medicamento no encontrado</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud DELETE para un <code>{medicationId}</code> inexistente<br>
+                - <strong>Cuando</strong> la API no encuentra el medicamento<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-I002</td>
+            <td>Agregar medicamentos</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Post medicamentos para permitir que el administrador de la casa de reposo pueda agregar más medicamentos.</td>
+            <td>
+                <strong>Escenario 1: Creación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud POST a <code>/api/v1/inventories/{nursingHomeId}/medications</code> con un cuerpo de solicitud conteniendo: name, description, dosage, unit, quantity, expirationDate, manufacturer<br>
+                - <strong>Cuando</strong> la API valida que el usuario tiene permisos para este nursing home y persiste el medicamento<br>
+                - <strong>Entonces</strong> la API responde con <code>201 medication created successfully</code> y retorna el medicamento creado con los atributos: id (Long), nursingHomeId (Long), name (String), description (String), dosage (String), unit (String), quantity (Integer), expirationDate (Date), manufacturer (String), createdAt (DateTime).<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud con atributos inválidos<br>
+                - <strong>Cuando</strong> la API valida la solicitud<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code> y retorna un payload de error describiendo los errores de validación.<br><br>
+                <strong>Escenario 3: Medicamento duplicado en este nursing home</strong><br>
+                - <strong>Dado</strong> que ya existe un medicamento con la misma combinación de nombre y fabricante en este nursing home<br>
+                - <strong>Cuando</strong> la API detecta el duplicado<br>
+                - <strong>Entonces</strong> la API responde con <code>409 Conflict</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-I003</td>
+            <td>Ver información de un medicamento</td>
+            <td>Como desarrollador backend en NovaPeru Tech quiero crear una función para ver la información del medicamento a través de una Api.</td>
+            <td>
+                <strong>Escenario 1: Obtener medicamento específico</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/inventories/{nursingHomeId}/medications/{medicationId}</code><br>
+                - <strong>Cuando</strong> la API encuentra el medicamento y valida que pertenece al nursing home especificado<br>
+                - <strong>Entonces</strong> la API responde con <code>200 medication found</code> y retorna el medicamento con los atributos completos.<br><br>
+                <strong>Escenario 2: Medicamento no encontrado</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud para un <code>{medicationId}</code> inexistente<br>
+                - <strong>Cuando</strong> la API no encuentra el medicamento<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-I004</td>
+            <td>Ver todo los medicamentos</td>
+            <td>Como desarrollador backend en NovaPeru Tech quiero crear un endpoint para listar todos los medicamentos de un nursing home.</td>
+            <td>
+                <strong>Escenario 1: Listar todos los medicamentos del nursing home</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/inventories/{nursingHomeId}/medications</code><br>
+                - <strong>Cuando</strong> la API encuentra medicamentos para este nursing home<br>
+                - <strong>Entonces</strong> la API responde con <code>200 medication found</code> y retorna solo los medicamentos que pertenecen a este nursing home.<br><br>
+                <strong>Escenario 2: Sin medicamentos en este nursing home</strong><br>
+                - <strong>Dado</strong> que no hay medicamentos para el nursing home especificado<br>
+                - <strong>Cuando</strong> la API busca medicamentos<br>
+                - <strong>Entonces</strong> la API responde con <code>404 medication not found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-I005</td>
+            <td>Actualizar información de medicamentos</td>
+            <td>Como desarrollador de backend en NovaPeru Tech quiero crear una función para actualizar la información para asegurar que el administrador de la casa de reposos pueda mantener actualizada la información de cada medicamento.</td>
+            <td>
+                <strong>Escenario 1: Actualización completa exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud PUT o PATCH a <code>/api/v1/inventories/{nursingHomeId}/medications/{medicationId}</code> con datos actualizados<br>
+                - <strong>Cuando</strong> la API valida que el medicamento pertenece a este nursing home y el usuario tiene permisos<br>
+                - <strong>Entonces</strong> la API responde con <code>200 the medication was updated</code> y retorna el medicamento actualizado.<br><br>
+                <strong>Escenario 2: Medicamento de no encontrado</strong><br>
+                - <strong>Dado</strong> que se intenta actualizar un medicamento que no existe en el <code>{nursingHomeId}</code> especificado<br>
+                - <strong>Cuando</strong> la API valida su existencia<br>
+                - <strong>Entonces</strong> la API responde con <code>404 medication not found</code> y retorna un payload de error.
+            </td>
+        </tr>
+        <tr>
+            <td>EP08</td>
+            <td>Gestión de personal</td>
+            <td>Como administrador de la casa de reposo, quiero gestionar la información del personal para organizar los turnos de trabajo de los cuidadores y garantizar que siempre haya atención adecuada disponible para los residentes.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-EM001</td>
+            <td>Agregar empleado</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que registre nuevos empleados.</td>
+            <td>
+                <strong>Escenario 1: Creación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe POST a <code>/api/v1/employee-management/{nursingHomeId}/employees</code> con todo los datos validos y requeridos<br>
+                - <strong>Cuando</strong> la API valida permisos y crea el empleado<br>
+                - <strong>Entonces</strong> la API responde con <code>201 employee created successfully</code> y retorna el empleado con toda su información.<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe datos inválidos<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code>.
+            </td>
+        </tr>
+        <tr>
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
