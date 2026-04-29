@@ -1,7 +1,7 @@
 ## 3.1. User Stories. 
 <p>Para la especificación de requisitos de los usuarios, se desarrollaron las historias de usuario que describen cada requisito y funcionalidad que debe estar implementado en el desarrollo del producto final para satisfacer las necesidades del público objetivo. A continuación se presentan las historias de usuario relacionadas con la plataforma "Veyra". Esta sección reúne historias de usuario centradas en la experiencia de los distintos roles: el visitante, el familiar del adulto mayor y el administrador de la casa de reposo. Aquí se definen las necesidades clave para cada uno, desde la navegación inicial y contacto, hasta la gestión detallada de residentes, personal y medicamentos.</p>
 
-<table>
+  <table>
         <thead>
             <tr>
                 <th>Story ID</th>
@@ -34,7 +34,7 @@
                 </td>
             </tr>
             <tr>
-              <td>US02</td>
+                <td>US02</td>
                 <td>Visualización de Planes</td>
                 <td>Como visitante de la Landing Page, quiero ver los planes de suscripción junto a su precio y características, para poder elegir el que mejor se adapte a mis necesidades.</td>
                 <td>
@@ -109,7 +109,7 @@
                 </td>
             </tr>
            <tr>
-                   <td>EP02</td>
+                <td>EP02</td>
                 <td>Soporte y contacto</td>
                 <td>Como visitante de la Landing Page, quiero poder contactar a Veyra fácilmente, para resolver dudas o interactuar.</td>
                 <td></td>
@@ -197,7 +197,7 @@
                 </td>
             </tr>
             <tr>
-                 <td>US11</td>
+                <td>US11</td>
                 <td>Galería de fotos y actividades</td>
                 <td>Como familiar de un adulto mayor quiero ver fotos de las actividades diarias de mi familiar para sentirme conectado con su día a día y verificar su participación social.</td>
                 <td>
@@ -613,7 +613,9 @@
                     <strong>Cuando</strong> necesitan verificar credenciales y responsabilidades<br>
                     <strong>Entonces</strong> pueden acceder a la información completa y actualizada.
                 </td>
-                    <td>US36</td>
+            </tr>
+            <tr>
+                <td>US36</td>
                 <td>Historia institucional</td>
                 <td>Como administrador quiero gestionar la información histórica y reconocimientos de la casa de reposo para generar confianza y credibilidad.</td>
                 <td>
@@ -731,8 +733,8 @@
                     <strong>Entonces</strong> puede predecir cómo funcionarán nuevas secciones.
                 </td>
             </tr>
-            <tr> 
-                    <td>US44</td>
+            <tr>
+                <td>US44</td>
                 <td>Manejo de errores comprensible</td>
                 <td>Como usuario quiero que los errores se presenten de forma clara y con soluciones sugeridas para resolver problemas sin frustración.</td>
                 <td>
@@ -873,7 +875,7 @@
             </td>
         </tr>
         <tr>
-                <td>EP07</td>
+            <td>EP07</td>
             <td>Gestión de medicamentos</td>
             <td>Como administrador quiero gestionar los medicamentos de la casa de reposo para garantizar que cumplan con todos los controles necesarios.</td>
             <td></td>
@@ -978,7 +980,7 @@
             </td>
         </tr>
         <tr>
-                <td>TS-EM002</td>
+            <td>TS-EM002</td>
             <td>Eliminar empleado</td>
             <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para que el administrador de la casa de reposo revoque persmisos.</td>
             <td>
@@ -1136,7 +1138,7 @@
             </td>
         </tr>
         <tr>
-                <td>TS-A002</td>
+            <td>TS-A002</td>
             <td>Listar Actividades</td>
             <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las actividades de una casa de reposo.</td>
             <td>
@@ -1258,7 +1260,7 @@
             </td>
         </tr>
         <tr>
-                 <td>TS17</td>
+            <td>TS17</td>
             <td>Integración con Stripe (pagos)</td>
             <td>Como desarrollador backend en NovaPeru Tech quiero integrar Stripe para procesar pagos seguros (PaymentIntents, 3DS/SCA) y manejar webhooks para confirmar el estado de los cobros.</td>
             <td>
@@ -1363,7 +1365,7 @@
             </td>
         </tr>
     </table>
-    
+
 <div style="page-break-after: always;"></div>
 
 ## 3.2. Product Backlog. 
