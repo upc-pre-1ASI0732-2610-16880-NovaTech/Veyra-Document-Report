@@ -290,6 +290,51 @@ El "Footer" de nuestra landing page contiene enlaces útiles y recursos adiciona
 <div style="page-break-after: always;"></div>
 
 ## 4.4. Mobile Applications UX/UI Design. 
+
+La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de Veyra, el ecosistema orientado a la gestión integral de residencias geriátricas y a la conexión transparente entre administradores, personal asistencial y familiares.
+
+El diseño se elaboró siguiendo principios de usabilidad, accesibilidad, consistencia visual y orientación a tareas, asegurando que cada interfaz responda a las necesidades reales identificadas durante el proceso de entrevistas y validaciones con usuarios. La propuesta UI/UX se centra en crear una experiencia clara, confiable y sencilla para usuarios con distintos niveles de alfabetización digital.
+
+Dentro de esta sección se detallan los siguientes componentes:
+
+1. Estructura general de la interfaz
+
+Se describen las decisiones de diseño relacionadas con la arquitectura visual, la organización de pantallas, los patrones de navegación (menús, barras superiores, breadcrumbs) y la jerarquía de información para cada tipo de usuario:
+
+- Administradores de residencias.
+
+- Familiares o apoderados de adultos mayores.
+
+  <br>
+
+2. Lineamientos de diseño visual
+
+Se especifican los elementos que conforman la identidad gráfica de Veyra:
+
+- Paleta de colores asociada a salud, confianza y bienestar.
+
+- Tipografías legibles y consistentes.
+
+- Uso de espaciados, tamaños y contrastes orientados a mejorar la accesibilidad.
+
+<br>
+
+3. Componentes de interacción
+
+Incluye la definición de los principales componentes UI y su comportamiento:
+
+- Formularios optimizados y validados.
+
+- Tarjetas informativas para residentes.
+
+- Módulos de reportes y gráficos.
+
+- Alertas, notificaciones y estados del sistema.
+
+- Controles interactivos como botones, selectores y tablas dinámicas.
+
+<br>
+
 ### 4.4.1. Mobile Applications Wireframes. 
 ### 4.4.2. Mobile Applications Wireflow Diagrams. 
 ### 4.4.3. Mobile Applications Mock-ups. 
