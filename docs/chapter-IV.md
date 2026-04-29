@@ -148,6 +148,17 @@ La arquitectura de la información de la página de inicio de Veyra está diseñ
     * **Features:** Los beneficios clave del producto.
 
     * **Benefits:** Cómo Veyra ayuda a los usuarios.
+
+    * **About Us:** Quiénes somos.
+
+    * **Our Team:** Las personas detrás del proyecto.
+
+    * **Plans:** Opciones de precios.
+
+    * **Testimonials & CTA:** Reseñas y llamado a la acción final.
+
+* **Agrupación de Contenidos:** El contenido se agrupa lógicamente para facilitar la comprensión. Por ejemplo, los beneficios se agrupan en tarjetas con títulos claros y párrafos descriptivos, mientras que los testimonios se presentan en un formato de cuadrícula fácil de escanear.
+
 ### 4.2.2. Labeling Systems. 
 ### 4.2.3. SEO Tags and Meta Tags 
 ### 4.2.4. Searching Systems. 
