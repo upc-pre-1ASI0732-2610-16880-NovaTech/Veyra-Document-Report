@@ -823,7 +823,24 @@ La arquitectura de software de VEYRA se construye a partir de los resultados obt
 En las siguientes secciones se presenta cada nivel del modelo, explicando la estructura, responsabilidades y comunicación entre los elementos que conforman la arquitectura de VEYRA.
 
 
-### 4.8.1. Software Architecture Context Diagram.  
+### 4.8.1. Software Architecture Context Diagram. 
+
+En este nivel se presenta una vista de alto nivel de la arquitectura, donde el foco está en el sistema de software Veyra como una “caja negra” y en las interacciones que mantiene con sus usuarios y con otros sistemas externos.
+
+El context diagram muestra al **Veyra Software System** como un recuadro en el centro, rodeado por los principales actores y sistemas con los que se comunica:
+
+- **Nursing Home Administrator**: usuario interno responsable de gestionar hogares, residentes, personal, actividades y servicios. Interactúa con Veyra para registrar y mantener información operativa del hogar de cuidado.
+- **Family Member**: usuario externo que consulta la plataforma para monitorear el estado de salud, medicación y actividades de sus familiares adultos mayores, así como para revisar información relevante de su cuidado.
+- **Payment System (Stripe)**: sistema externo encargado de procesar suscripciones, pagos y facturación asociados al uso de la plataforma.
+- **Google Maps API**: servicio de mapas utilizado para obtener geolocalización y direcciones de los hogares de cuidado, facilitando la búsqueda y navegación de ubicaciones.
+- **Email Notification Service**: servicio de correo utilizado para enviar notificaciones transaccionales (activación de cuenta, recordatorios, alertas, etc.) a los usuarios de Veyra.
+
+En el diagrama se representan las relaciones entre estos elementos, destacando que tanto el administrador como el familiar interactúan únicamente con Veyra, mientras que el sistema se encarga de orquestar las integraciones con los servicios externos (pagos, mapas y notificaciones). Esta vista permite entender el alcance del sistema, los límites de responsabilidad y el ecosistema en el que se inserta Veyra antes de entrar a detalles de implementación.
+
+![ContextDiagram Diagram](../images/c4-context.svg)
+
+---
+
 ### 4.8.2. Software Architecture Container Diagrams. 
 ### 4.8.3. Software Architecture Components Diagrams. 
 ## 4.9. Software Object-Oriented Design. 
