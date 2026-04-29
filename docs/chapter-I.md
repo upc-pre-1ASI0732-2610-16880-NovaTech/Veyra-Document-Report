@@ -55,9 +55,11 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
   </tr>
     <tr>
     <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+      <img src="../assets/img/chapter-I/MiguelRoman.png" alt="Miguel Photo" width="120" />
     </td>
     <td valign="top">
+      <strong>Miguel Ángel Román López - (U202212897)</strong> - Ingeniería de Software<br><br>
+      Poseo conocimientos en C++, programación orientada a objetos y diseño web. Mi aporte será investigación, ideas e imaginación para realizar un buen proyecto y cumplir con las entregas.
     </td>
   </tr>
 
