@@ -530,6 +530,50 @@ El familiar puede visualizar fotos, descripciones y fechas.</p>
 
 <div style="page-break-after: always;"></div>
 
+### Mock-ups Version Mobile
+<p>La sección de Web Applications UX/UI Design presenta la propuesta visual, estructural y de interacción desarrollada para las distintas aplicaciones que conforman la experiencia digital de Veyra, el ecosistema orientado a la gestión integral de residencias geriátricas y a la conexión transparente entre administradores, personal asistencial y familiares.
+
+El diseño se elaboró siguiendo principios de usabilidad, accesibilidad, consistencia visual y orientación a tareas, asegurando que cada interfaz responda a las necesidades reales identificadas durante el proceso de entrevistas y validaciones con usuarios. La propuesta UI/UX se centra en crear una experiencia clara, confiable y sencilla para usuarios con distintos niveles de alfabetización digital.</p>
+
+<img src="../images/Mobil1.png" alt="Login Mockup" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil2.png" alt="Inicio de Sesion" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil3.png" alt="Registrar Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil4.png" alt="Registrar Administrador" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil5.png" alt="Inicio" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil6-corregido.png" alt="Historial Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil7.png" alt="Historial Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil8.png" alt="Datos del Negocio" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil9.png" alt="Datos del Negocio 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil10.png" alt="Inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil11.png" alt="Inventario 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil12.png" alt="Inventario 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil13.png" alt="Inventario 4" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil14-corregido.png" alt="Información inventario" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil15.png" alt="Actividades" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil16.png" alt="Actividades 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil17.png" alt="Actividdes 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil18.png" alt="Agregar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil19-corregido.png" alt="Agregar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil20.png" alt="Editar Actividad" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil21.png" alt="Editar Actividad 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil22.png" alt="Editar Actividad 3" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil23.png" alt="Residentes" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil24-corregido.png" alt="Residentes 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil25.png" alt="Agregar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil26-corregido.png" alt="Agregar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil27.png" alt="Modificar Datos del residente" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil28-corregido.png" alt="Modificar Datos del residente 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil29.png" alt="Agregar Historia " style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil30.png" alt="Empleados" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil31-corregido.png" alt="Empleados 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil32.png" alt="Modificar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil33-corregido.png" alt="Modificar Datos del empleado 2" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil34.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil35-corregido.png" alt="Agregar Datos del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+<img src="../images/Mobil36.png" alt="Detalles del empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<div style="page-break-after: always;"></div>
+
 ### 4.6.4. Web Applications User Flow Diagrams.
 ## 4.7. Web Applications Prototyping. 
 ## 4.8. Domain-Driven Software Architecture. 
