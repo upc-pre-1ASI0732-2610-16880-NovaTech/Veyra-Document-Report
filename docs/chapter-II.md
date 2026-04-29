@@ -237,15 +237,15 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | Campo                             | Información |
 |----------------------------------|-------------|
 | Entrevista                       | #1 |
-| Nombre                           |   |
-| Apellidos                        |  |
-| Edad                             |   |
-| Distrito                         |  |
+| Nombre                           | Jorge  |
+| Apellidos                        | Santos |
+| Edad                             | 21 años  |
+| Distrito                         | Santiago de Surco |
 | Evidencia                        | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista1-segmento2.png) |
-| Link                             | [Link Entrevistas](https://shorturl.at/vQBoO) |
-| Inicio de la entrevista          |  |
-| Duración de la entrevista        | |
-| Resumen                          | |
+| Link                             | [Link Entrevistas](https://youtu.be/LLKccTrdLM0) |
+| Inicio de la entrevista          | 00:00 min |
+| Duración de la entrevista        | 03:48 min |
+| Resumen                          | **Perfil y Frustración:**<br>Joven de perfil administrativo, optimizador y orientado a la eficiencia (rasgos influenciados por su ocupación como Coordinador de Gestión y Procesos Administrativos en una casa de reposo). Su principal frustración es la fragmentación de la información (dependencia del papel y archivos separados) y la lentitud que esto genera para encontrar historiales médicos completos o listas de medicamentos ante una emergencia.<br><br>**Comportamiento y Necesidades:**<br>Desea tener un tablero de control centralizado y contar con alertas automáticas en tiempo real para la toma de medicamentos. Valora la reducción del margen de error mediante la digitalización y exige que las historias clínicas sean accesibles de forma segura desde cualquier dispositivo, buscando reducir el trabajo manual para dedicar más tiempo de calidad a los residentes.<br><br>**Tecnología, Marcas y Canales:**<br>Es un usuario digital versátil. Su ecosistema de hardware principal se basa en una laptop para tareas pesadas de oficina y un smartphone marca OPPO para movilidad y consultas rápidas. A nivel de software e influencias de marca, prefiere Google Chrome por su excelente sincronización con sus herramientas de trabajo. Actualmente utiliza llamadas telefónicas y grupos de WhatsApp, pero requiere un módulo de comunicación directa integrado que elimine la informalidad y permita mantener un historial de comunicación claro con los familiares. | |
 
 
 **Segmento 2: Familiares de adultos mayores**
