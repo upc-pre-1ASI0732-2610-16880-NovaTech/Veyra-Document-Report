@@ -732,5 +732,146 @@
                 </td>
             </tr>
             <tr> 
+                    <td>US44</td>
+                <td>Manejo de errores comprensible</td>
+                <td>Como usuario quiero que los errores se presenten de forma clara y con soluciones sugeridas para resolver problemas sin frustración.</td>
+                <td>
+                    <strong>Escenario 1: Error del sistema con guía de resolución</strong><br>
+                    <strong>Dado que</strong> ocurre un error técnico<br>
+                    <strong>Cuando</strong> el usuario lo experimenta<br>
+                    <strong>Entonces</strong> recibe un mensaje claro explicando qué ocurrió y pasos para resolverlo.<br><br>
+                    <strong>Escenario 2: Error de usuario con orientación</strong><br>
+                    <strong>Dado que</strong> el usuario comete un error<br>
+                    <strong>Cuando</strong> realiza una acción no permitida<br>
+                    <strong>Entonces</strong> recibe una explicación clara y orientación sobre la forma correcta.
+                </td>
+            </tr>
+            <tr>
+            <td>EP15</td>
+            <td>Monitoreo IoT y Wearables</td>
+            <td>Como personal médico, quiero que el sistema procese la información de las bandas médicas y la compare con los registros de salud para detectar inestabilidades automáticamente.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>US45</td>
+            <td>Vinculación de banda de monitoreo</td>
+            <td>Como enfermero, quiero vincular una banda médica (wearable) al perfil de un residente para asegurar que los datos de signos vitales capturados por el dispositivo se almacenen en el sistema Tracking asociados al paciente correcto.</td>
+            <td>
+                <strong>Escenario 1: Vinculación de dispositivo disponible</strong><br>
+                <strong>Dado que</strong> la banda médica está activa y sin una asignación previa en el sistema<br>
+                <strong>Cuando</strong> el enfermero selecciona al residente y registra el identificador único de la banda (device_id)<br>
+                <strong>Entonces</strong> el sistema confirma la vinculación, guarda la relación residente–dispositivo y habilita la recepción de mediciones futuras desde esa banda.<br><br>
+                <strong>Escenario 2: Banda ya asignada</strong><br>
+                <strong>Dado que</strong> se intenta vincular una banda que ya está asociada a otro residente<br>
+                <strong>Cuando</strong> el sistema Tracking valida el device_id<br>
+                <strong>Entonces</strong> se rechaza la operación, se informa que la banda ya está vinculada y no se modifica la asociación existente..
+            </td>
+        </tr>
+        <tr>
+            <td>US46</td>
+            <td>Validación de estabilidad de signos vitales</td>
+            <td>Como médico, quiero que las mediciones biométricas almacenadas por Tracking sean evaluadas automáticamente contra los parámetros de salud registrados en los Health Records, para identificar si el residente se encuentra estable o presenta riesgo.</td>
+            <td>
+                <strong>Escenario 1: Signos vitales estables</strong><br>
+                <strong>Dado que</strong> el sistema Tracking ha recibido y almacenado una medición con datos como presión arterial, frecuencia cardiaca, saturación de oxígeno y temperatura<br>
+                <strong>Cuando</strong> el servicio de evaluación compara los valores con los rangos permitidos definidos en el Health Record del residente<br>
+                <strong>Entonces</strong> clasifica la medición como “estable”, registra el resultado de la evaluación y no genera incidencias.<br><br>
+                <strong>Escenario 2: Detección de inestabilidad</strong><br>
+                <strong>Dado que</strong> se registra una nueva medición en Tracking<br>
+                <strong>Cuando</strong> uno o más valores (por ejemplo, heart_rate, systolic, oxygen_saturation) se encuentran fuera de los rangos configurados en el Health Record<br>
+                <strong>Entonces</strong> la medición se marca como “inestable” y se genera un evento para iniciar el protocolo de notificación hacia el personal de cuidado.
+            </td>
+        </tr>
+        <tr>
+            <td>US47</td>
+            <td>Alertas de inestabilidad de salud</td>
+            <td>Como enfermero, quiero recibir una alerta inmediata cuando el análisis de las mediciones de Tracking detecte inestabilidad en el estado fisiológico de un residente, para poder acudir rápidamente y brindar atención.</td>
+            <td>
+                <strong>Escenario 1: Notificación de inestabilidad confirmada</strong><br>
+                <strong>Dado que</strong> una medición almacenada en Tracking fue clasificada como “inestable” por el servicio de evaluación de Health<br>
+                <strong>Cuando</strong> se confirma la desviación significativa respecto a los parámetros de salud del residente<br>
+                <strong>Entonces</strong> se envía una alerta prioritaria al personal asignado (por ejemplo vía panel, correo o notificación push) indicando el residente, los valores críticos y la hora de la medición.<br><br>
+                <strong>Escenario 2: Ausencia de datos críticos</strong><br>
+                <strong>Dado que</strong> las mediciones registradas para un residente son clasificadas como “estables”<br>
+                <strong>Cuando</strong> el sistema completa el análisis periódico<br>
+                <strong>Entonces</strong> no se emite ninguna alerta y el tablero de monitoreo mantiene el estado normal de operación..
+            </td>
+        </tr>
+         <tr>
+            <td>EP04</td>
+            <td>Gestión de adultos mayores</td>
+            <td>Como administrador de casa de reposo quiero gestionar perfiles de los adultos mayores para tener un mayor control.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-RM001</td>
+            <td>Agregar pacientes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para permitir que el administrador registre nuevos residentes con validaciones obligatorias y que se genere un ID único por residente.</td>
+            <td>
+                <strong>Escenario 1: Creación exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud POST a <code>/api/v1/residents-management/{nursingHomeId}/residents</code> con los datos validos<br>
+                - <strong>Cuando</strong> la API válida permisos y persiste el residente<br>
+                - <strong>Entonces</strong> la API responde con <code>201 Created</code> y retorna el residente con: id (Long), nursingHomeId (Long), residentCode (String), firstName, lastName, dateOfBirth, age, gender, bloodType, emergencyContact, emergencyPhone, medicalConditions, allergies, admissionDate, status, createdAt.<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud con datos inválidos<br>
+                - <strong>Cuando</strong> la API detecta errores<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code> con detalles de errores.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-RM002</td>
+            <td>Ver información detallada de los pacientes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET que devuelva la información completa del residente para que el personal autorizado pueda consultar fácilmente el expediente.</td>
+            <td>
+                <strong>Escenario 1: Obtener residente específico</strong><br>
+                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/resident-managment/{nursingHomeId}/residents/{residentId}</code><br>
+                - <strong>Cuando</strong> la API encuentra el residente y valida que pertenece al nursing home especificado<br>
+                - <strong>Entonces</strong> la API responde con <code>200 resident found</code> y retorna la información completa del residente.<br><br>
+                <strong>Escenario 2: Residente no encontrado</strong><br>
+                - <strong>Dado</strong> que el <code>{residentId}</code> no existe<br>
+                - <strong>Cuando</strong> la API busca el residente<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-RM003</td>
+            <td>Ver  información detallada de todo  los pacientes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET para listar todos los residentes de un nursing home.</td>
+            <td>
+                <strong>Escenario 1: Listar todos los residentes del nursing home</strong><br>
+                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/resident-managment/{nursingHomeId}/residents</code><br>
+                - <strong>Cuando</strong> la API busca residentes<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna solo residentes de este nursing home.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-RM004</td>
+            <td>Eliminar paciente</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE que realice una eliminación controlada del residente.</td>
+            <td>
+                <strong>Escenario 2: Eliminación lógica exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe DELETE a <code>/api/v1/resident-management/{nursingHomeId}/residents/{residentId}</code><br>
+                - <strong>Cuando</strong> la API válida que el residente pertenece a este nursing home y realiza soft delete<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con mensaje de confirmación.<br><br>
+                <strong>Escenario: Residente no encontrado</strong><br>
+                - <strong>Dado</strong> que el <code>{residentId}</code> no existe<br>
+                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-RM-005</td>
+            <td>Actualizar información de los pacientes</td>
+            <td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar campos del perfil del residente para que las modificaciones queden registradas y sean reversibles si es necesario.</td>
+            <td>
+                <strong>Escenario 1: Actualización exitosa</strong><br>
+                - <strong>Dado</strong> que se recibe PUT/PATCH a <code>/api/v1/resident-managment/{nursingHomeId}/residents/{residentId}</code> con datos válidos<br>
+                - <strong>Cuando</strong> la API valida que el residente pertenece a este nursing home y actualiza<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con el residente actualizado.<br><br>
+                <strong>Escenario 2: Error de validación</strong><br>
+                - <strong>Dado</strong> que se recibe datos inválidos<br>
+                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code>.
+            </td>
+        </tr>
+        <tr>
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
