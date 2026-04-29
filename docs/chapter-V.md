@@ -268,7 +268,176 @@ chore(config): update environment variables for production
 5. Commit: `Ctrl + K`  
 6. Push: `Ctrl + Shift + K`  
 
-### 5.1.3. Source Code Style Guide & Conventions. 
+### 5.1.3. Source Code Style Guide & Conventions
+
+En esta sección se establecen las convenciones de estilo y nomenclatura adoptadas para los lenguajes utilizados en el proyecto Veyra: HTML, CSS, JavaScript, TypeScript, Java y Gherkin. Se aplica nomenclatura en inglés para todos los elementos del código, siguiendo el *Ubiquitous Language* del dominio.
+
+---
+
+#### Referencias de guías de estilo adoptadas
+
+| Lenguaje / Tecnología | Guía de estilo |
+|----------------------|---------------|
+| HTML / CSS | https://google.github.io/styleguide/htmlcssguide.html |
+| JavaScript | https://google.github.io/styleguide/jsguide.html |
+| TypeScript | https://google.github.io/styleguide/tsguide.html |
+| Angular | https://angular.io/guide/styleguide |
+| Java | https://google.github.io/styleguide/javaguide.html |
+| Spring Boot | https://docs.spring.io/spring-boot/docs/current/reference/html/features.html |
+| Gherkin | https://cucumber.io/docs/gherkin/reference/ |
+
+---
+
+#### Nomenclatura general
+
+Se utiliza nomenclatura en inglés para todos los elementos del código, alineada al dominio del negocio.
+
+| Elemento | Convención | Ejemplo |
+|----------|-----------|---------|
+| Clases (Java/TypeScript) | PascalCase | `ResidentService`, `MedicationController` |
+| Interfaces (TypeScript) | PascalCase | `IResidentRepository`, `Resident` |
+| Métodos / Funciones | camelCase | `getResidentById()`, `createMedication()` |
+| Variables | camelCase | `residentName`, `medicationList` |
+| Constantes | SCREAMING_SNAKE_CASE | `MAX_RESIDENTS`, `API_BASE_URL` |
+| Componentes Angular (archivos) | kebab-case | `resident-list.component.ts` |
+| Clases CSS | kebab-case | `.resident-card`, `.medication-form` |
+| Endpoints REST | kebab-case (plural) | `/api/v1/residents`, `/api/v1/medications` |
+
+---
+
+#### Sangría
+
+Se utiliza indentación de **2 espacios** en HTML, CSS, JavaScript y TypeScript.
+
+<p><strong>Ejemplo HTML:</strong></p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;VEYRA - Nursing Home Management&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Welcome to VEYRA&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;p&gt;Comprehensive care management platform.&lt;/p&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h4>Convenciones por Lenguaje</h4>
+
+<h5>HTML</h5>
+
+<ul>
+  <li>Declarar <code>&lt;!DOCTYPE html&gt;</code> en la primera línea.</li>
+  <li>Utilizar minúsculas para nombres de elementos y atributos.</li>
+  <li>Utilizar comillas dobles para valores de atributos: <code>&lt;div class="container"&gt;</code></li>
+  <li>Incluir atributos <code>alt</code> en todas las imágenes para accesibilidad.</li>
+  <li>No omitir elementos <code>&lt;title&gt;</code> y meta tags.</li>
+  <li>Usar líneas en blanco para separar bloques de código extensos.</li>
+</ul>
+
+<h5>CSS</h5>
+
+<ul>
+  <li>Utilizar shorthand properties cuando sea posible: <code>margin: 10px 20px;</code></li>
+  <li>Terminar todas las declaraciones con punto y coma.</li>
+  <li>Un espacio después de los dos puntos en propiedades: <code>color: #333;</code></li>
+  <li>Usar comillas simples para valores de font-family: <code>font-family: 'Open Sans', sans-serif;</code></li>
+  <li>Organizar propiedades alfabéticamente dentro de cada selector.</li>
+</ul>
+
+<h5>JavaScript / TypeScript</h5>
+
+<ul>
+  <li>Usar <code>const</code> y <code>let</code> en lugar de <code>var</code>.</li>
+  <li>Espacios alrededor de operadores: <code>const result = a + b;</code></li>
+  <li>Punto y coma al final de instrucciones.</li>
+  <li>Llaves de apertura en la misma línea de la declaración.</li>
+  <li>Usar arrow functions para callbacks: <code>items.map(item => item.name)</code></li>
+</ul>
+
+<p><strong>Ejemplo TypeScript:</strong></p>
+
+<pre><code>export class ResidentService {
+  private residents: Resident[] = [];
+
+  getResidentById(id: number): Resident | undefined {
+    return this.residents.find(resident => resident.id === id);
+  }
+
+  createResident(resident: Resident): void {
+    this.residents.push(resident);
+  }
+}
+</code></pre>
+
+<h5>Java</h5>
+
+<ul>
+  <li>Seguir convenciones de nomenclatura de Spring Boot.</li>
+  <li>Documentar clases y métodos públicos con Javadoc.</li>
+  <li>Organizar imports alfabéticamente, separando imports de java.*, javax.*, org.*, com.*</li>
+  <li>Máximo 120 caracteres por línea.</li>
+  <li>Usar anotaciones de Spring en líneas separadas.</li>
+</ul>
+
+<p><strong>Ejemplo Java:</strong></p>
+
+<pre><code>@RestController
+@RequestMapping("/api/v1/residents")
+public class ResidentController {
+
+    private final ResidentService residentService;
+
+    public ResidentController(ResidentService residentService) {
+        this.residentService = residentService;
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity&lt;Resident&gt; getResidentById(@PathVariable Long id) {
+        return residentService.findById(id)
+            .map(ResponseEntity::ok)
+            .orElse(ResponseEntity.notFound().build());
+    }
+}
+</code></pre>
+
+<h5>Gherkin</h5>
+
+<ul>
+  <li>Escribir escenarios en inglés.</li>
+  <li>Un escenario por comportamiento específico.</li>
+  <li>Mantener pasos atómicos y reutilizables.</li>
+  <li>Usar indentación de dos espacios para los pasos.</li>
+</ul>
+
+<p><strong>Ejemplo Gherkin:</strong></p>
+
+<pre><code>Feature: Resident Management
+
+  Scenario: Successfully register a new resident
+    Given the administrator is authenticated
+    And the administrator is on the resident registration form
+    When the administrator enters valid resident information
+    And clicks the "Register" button
+    Then the system should display a success message
+    And the new resident should appear in the residents list
+
+  Scenario: Attempt to register resident with missing required fields
+    Given the administrator is authenticated
+    And the administrator is on the resident registration form
+    When the administrator submits the form with empty required fields
+    Then the system should display validation error messages
+    And the resident should not be registered
+</code></pre>
+
+<div style="page-break-after: always;"></div>
+
+
 ### 5.1.4. Software Deployment Configuration. 
 ## 5.2. Product Implementation & Deployment. 
 ### 5.2.1. Sprint Backlogs. 
