@@ -896,6 +896,15 @@ De esta forma, los component diagrams complementan los diagramas de clases del f
 <div style="page-break-after: always;"></div>
 
 ## 4.9. Software Object-Oriented Design. 
+
+En esta sección se presenta el diseño orientado a objetos del sistema Veyra, el cual desarrolla con mayor detalle la implementación interna de los componentes identificados en los diagramas C4 del apartado 4.6. A partir de los contenedores y componentes definidos en Structurizr (Frontend, API Application y Database), se derivan diagramas de clases específicos para cada bounded context del dominio, con el objetivo de mostrar:
+
+- Cómo se modelan las entidades, agregados, servicios y recursos en el backend para cada contexto.
+- Cómo se estructuran los componentes de presentación, estado e infraestructura en el frontend.
+- Cómo se reflejan estos modelos en el diseño de la base de datos relacional.
+
+De esta forma, el diseño orientado a objetos enlaza el nivel arquitectónico (C4 Model) con el nivel de implementación, permitiendo verificar coherencia entre bounded contexts, responsabilidades de cada módulo y decisiones de diseño técnico (p. ej., uso de patrones, clases base y modelos de vista).
+
 ### 4.9.1. Class Diagrams. 
 ### 4.9.2. Class Dictionary. 
 ## 4.10. Database Design.
