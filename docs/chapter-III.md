@@ -1258,5 +1258,111 @@
             </td>
         </tr>
         <tr>
+                 <td>TS17</td>
+            <td>Integración con Stripe (pagos)</td>
+            <td>Como desarrollador backend en NovaPeru Tech quiero integrar Stripe para procesar pagos seguros (PaymentIntents, 3DS/SCA) y manejar webhooks para confirmar el estado de los cobros.</td>
+            <td>
+                <strong>Escenario 1: Creación y confirmación de pago (cliente con tarjeta)</strong><br>
+                - <strong>Dado</strong> que se recibe <code>POST /api/v1/payments/create</code> con: <code>amount</code>, <code>currency</code>, <code>customerId</code> (opcional), <code>paymentMethodId</code> (o <code>paymentMethodType</code>)<br>
+                - <strong>Cuando</strong> el backend crea un <strong>PaymentIntent</strong> en Stripe y retorna el <code>clientSecret</code><br>
+                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>{ paymentIntentId, clientSecret }</code> para que el frontend complete la confirmación y el pago pase por los pasos SCA si aplica.<br><br>
+                <strong>Escenario 2: Pago completado vía webhook</strong><br>
+                - <strong>Dado</strong> que Stripe envía un webhook <code>payment_intent.succeeded</code><br>
+                - <strong>Cuando</strong> el backend válida la firma del webhook y procesa el evento<br>
+                - <strong>Entonces</strong> la API marca el pago como <code>SUCCEEDED</code> en la base de datos, ejecuta post-procesos (facturación, notificación) y responde <code>200 OK</code> al webhook.<br><br>
+                <strong>Escenario 3: Pago rechazado / falla</strong><br>
+                - <strong>Dado</strong> que él <code>PaymentIntent</code> termina en <code>requires_payment_method</code> o <code>payment_failed</code><br>
+                - <strong>Cuando</strong> Stripe informa del fallo (o el intento es rechazado)<br>
+                - <strong>Entonces</strong> la API actualiza el estado a <code>FAILED</code> y devuelve <code>400</code> o registra el fallo para seguimiento; además notifica al cliente con el motivo.<br><br>
+                <strong>Escenario 4: Reembolso</strong><br>
+                - <strong>Dado</strong> que se recibe <code>POST /api/v1/payments/{paymentIntentId}/refund</code> con <code>amount</code> (opcional)<br>
+                - <strong>Cuando</strong> el backend llama a la API de Stripe para crear un <code>Refund</code><br>
+                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>refundId</code> y el estado <code>PENDING</code>/<code>SUCCEEDED</code>, y guarda auditoría del reembolso.<br><br>
+                <strong>Escenario 5: Idempotencia</strong><br>
+                - <strong>Dado</strong> que el cliente reintenta la creación de un pago y envía <code>Idempotency-Key</code><br>
+                - <strong>Cuando</strong> la API llama a Stripe con la misma <code>Idempotency-Key</code><br>
+                - <strong>Entonces</strong> Stripe evita duplicidad y la API responde con el mismo <code>paymentIntentId</code> o error consistente.
+            </td>
+        </tr>
+        <tr>
+            <td>TS18</td>
+            <td>Autenticación y 2FA (MFA)</td>
+            <td>Como desarrollador backend en NovaPeru Tech quiero implementar un sistema de autenticación que soporte MFA (TOTP y SMS) para proteger accesos y cumplir con buenas prácticas de seguridad.</td>
+            <td>
+                <strong>Escenario 1: Registro y habilitación de 2FA (TOTP)</strong><br>
+                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/register</code> con <code>email</code>, <code>password</code>, <code>fullname</code><br>
+                - <strong>Cuando</strong> el usuario completa el registro<br>
+                - <strong>Entonces</strong> la API responde <code>201 Created</code> con <code>userId</code> y estado <code>PENDING_VERIFICATION</code> (si aplica).<br>
+                - Y cuando el usuario solicita habilitar 2FA (TOTP) mediante <code>POST /api/v1/auth/2fa/enable</code> (autenticado)<br>
+                - <strong>Entonces</strong> la API genera un <code>secret</code> TOTP, devuelve un <code>otpauth://</code> URL o QR (para el cliente mostrarlo) y guarda el <code>secret</code> cifrado en DB hasta la verificación.<br><br>
+                <strong>Escenario 2: Verificar código TOTP</strong><br>
+                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/2fa/verify</code> con código TOTP<br>
+                - <strong>Cuando</strong> la API valida el TOTP contra el secret del usuario<br>
+                - <strong>Entonces</strong> la API activa MFA para la cuenta y devuelve <code>200 OK</code>.<br><br>
+                <strong>Escenario 3: Login con 2FA</strong><br>
+                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/login</code> con <code>email</code>, <code>password</code><br>
+                - <strong>Cuando</strong> las credenciales son correctas y el usuario tiene MFA habilitado<br>
+                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>sessionId</code> temporal <code>AWAITING_2FA</code> y solicita el código MFA (TOTP o SMS).<br>
+                - Y cuando se recibe <code>POST /api/v1/auth/2fa/challenge</code> con el código válido<br>
+                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y emite <code>accessToken</code> y <code>refreshToken</code>.<br><br>
+                <strong>Escenario 4: Login sin 2FA</strong><br>
+                - <strong>Dado</strong> que el usuario no tiene MFA habilitado<br>
+                - <strong>Cuando</strong> las credenciales son correctas<br>
+                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>accessToken</code> y <code>refreshToken</code>.<br><br>
+                <strong>Escenario 5: Código inválido / bloqueo</strong><br>
+                - <strong>Dado</strong> que se reciben múltiples códigos inválidos en <code>auth/2fa/challenge</code><br>
+                - <strong>Cuando</strong> se excede el límite de intentos (p. ej. 5)<br>
+                - <strong>Entonces</strong> la API bloquea temporalmente el acceso y responde <code>429 Too Many Requests</code> o <code>423 Locked</code>, y registra el evento de seguridad.<br><br>
+                <strong>Escenario 6: 2FA por SMS (fallback)</strong><br>
+                - <strong>Dado</strong> que se solicita <code>POST /api/v1/auth/2fa/sms/send</code> (autenticado o en flujo de login)<br>
+                - <strong>Cuando</strong> el backend genera OTP temporal y lo envía vía proveedor SMS (Twilio)<br>
+                - <strong>Entonces</strong> la API responde <code>200 OK</code> y almacena hash del OTP con expiración corta.<br>
+                - Y cuando se verifica el OTP en <code>POST /api/v1/auth/2fa/sms/verify</code><br>
+                - <strong>Entonces</strong> la API auténtica al usuario y emite tokens si el código es correcto.<br><br>
+                <strong>Escenario 7: Recuperación / códigos de respaldo</strong><br>
+                - <strong>Dado</strong> que el usuario solicita <code>POST /api/v1/auth/2fa/backup-codes/generate</code><br>
+                - <strong>Cuando</strong> la API genera un conjunto de códigos de un solo uso y los muestra una vez al usuario<br>
+                - <strong>Entonces</strong> la API almacena hashes de los códigos y responde <code>200 OK</code> con instrucciones para guardarlos.
+            </td>
+        </tr>
+        <tr>
+            <td>EP15</td>
+            <td>Monitoreo IoT y Wearables</td>
+            <td>Como personal médico, quiero que el sistema procese la información de las bandas médicas y la compare con los registros de salud para detectar inestabilidades automáticamente.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TS-IOT01</td>
+            <td>Ingesta de Datos de Bandas Médicas</td>
+            <td>Como desarrollador backend, quiero implementar un endpoint en el bounded context Tracking para recibir la telemetría enviada por las bandas médicas (por ejemplo, presión arterial, frecuencia cardiaca, saturación de oxígeno y temperatura) y persistirla como registros de Measurement, de modo que pueda ser utilizada posteriormente por Health y Analytics.</td>
+            <td>
+                <strong>Escenario 1: Recepción de paquete de datos válido</strong><br>
+                - <strong>Dado</strong> que existe una banda (device_id) vinculada a un residente en el sistema<br>
+                - <strong>Cuando</strong> la banda envía una solicitud POST /api/v1/measurements con un cuerpo parecido a:
+{"deviceId": "BAND-001", "residentId": 5, "systolic": 120, "diastolic": 80, "heartRate": 75, "oxygenSaturation": 97, "respiratoryRate": 16, "temperature": 36.8, "timestamp": "2025-11-10T09:30:00Z"}<br>
+                - <strong>Entonces</strong> la API valida los datos, responde con 202 Accepted y crea un registro Measurement con los campos correspondientes (device_id, resident_id, heart_rate, temperature, timestamp, etc.).<br><br>
+                <strong>Escenario 2: Banda no reconocida o no vinculada</strong><br>
+                - <strong>Dado</strong> que se recibe un POST /api/v1/measurements con un deviceId que no está registrado o no está vinculado a ningún residente activo<br>
+                - <strong>Cuando</strong> la API intenta procesar la solicitud<br>
+                - <strong>Entonces</strong> responde con 404 Not Found o 403 Forbidden, no persiste la medición y registra el incidente en los logs para auditoría.</code>.
+            </td>
+        </tr>
+        <tr>
+            <td>TS-IOT02</td>
+            <td>Servicio de Comparación de Salud (Health Check)</td>
+            <td>Como desarrollador backend, quiero implementar un servicio que tome las mediciones almacenadas en el bounded context Tracking y las compare con los parámetros definidos en los Health Records del residente, para clasificar su estado (estable / inestable) y publicar eventos cuando se detecten patrones de riesgo.</td>
+            <td>
+                <strong>Escenario 1: Comparación detecta inestabilidad</strong><br>
+                - <strong>Dado</strong> que se ha registrado un nuevo Measurement con datos fuera de rango para un residente<br>
+                - <strong>Cuando</strong> el servicio de Health Check obtiene los límites configurados en el Health Record y detecta que, por ejemplo, la heart_rate o la oxygen_saturation exceden los umbrales permitidos<br>
+                - <strong>Entonces</strong> clasifica la medición como “inestable”, genera un evento de dominio (por ejemplo VitalSignsUnstableEvent) y lo publica para que el módulo de notificaciones envíe las alertas correspondientes.<br><br>
+                <strong>Escenario 2: Datos dentro de rango (Estable)</strong><br>
+                - <strong>Dado</strong> que una medición registrada contiene valores dentro de los rangos definidos en el Health Record<br>
+                - <strong>Cuando</strong> el servicio realiza la comparación de cada parámetro (systolic, diastolic, heart_rate, oxygen_saturation, temperature, etc.)<br>
+                - <strong>Entonces</strong> clasifica la medición como “estable”, registra el resultado y no se dispara ningún evento de alerta, aunque la medición queda disponible para análisis histórico en Analytics.
+            </td>
+        </tr>
+    </table>
+
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
