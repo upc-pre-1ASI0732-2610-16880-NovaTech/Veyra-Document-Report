@@ -1000,6 +1000,70 @@ A nivel de **backend**, los diagramas de clases reflejan la implementación deta
 
 <div style="page-break-after: always;"></div>
 
+### Diagrama de clases del backend
+
+### Diagrama del backend completo:
+![Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/veyra/veyra-backend-diagram.puml&v=1&fmt=svg)
+
+<h3><strong>Diagrama del backend dividido por contextos:</strong></h3>
+
+<h4>nursing backend:</h4>
+<p><strong>Responsabilidad:</strong> Lógica de hogares, habitaciones, asignaciones y servicios de cuidado.</p>
+
+![Nursing Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/nursing/nursing-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>hcm backend:</h4>
+<p><strong>Responsabilidad:</strong> Gestión de personal, contratos, turnos y organización interna.</p>
+
+![HCM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/hcm/hcm-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>iam backend:</h4>
+<p><strong>Responsabilidad:</strong> Usuarios, autenticación, roles y permisos.</p>
+
+![IAM Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/iam/iam-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>analytics backend:</h4>
+<p><strong>Responsabilidad:</strong> Manejo de métricas, auditoría y análisis de eventos.</p>
+
+![Analytics Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/analytics/analytics-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>health backend:</h4>
+<p><strong>Responsabilidad:</strong> Evaluaciones médicas, historiales clínicos y servicios de salud.</p>
+
+![Health Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/health/health-backend-diagram.puml&fmt=svg)
+<!--
+<h4>communication backend:</h4>
+<p><strong>Responsabilidad:</strong> Notificaciones, mensajes y comunicación interna del sistema.</p>
+
+![Communication Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/communication/communication-backend-diagram.puml&v=2&fmt=svg)
+-->
+<h4>profiles backend:</h4>
+<p><strong>Responsabilidad:</strong> Perfiles personales, empresariales y datos asociados.</p>
+
+![Profiles Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/profiles/profiles-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>tracking backend:</h4>
+<p><strong>Responsabilidad:</strong> Bandas médicas, sensores y trazabilidad de residentes.</p>
+
+![Tracking Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/tracking/tracking-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>payments backend:</h4>
+<p><strong>Responsabilidad:</strong> Pagos, facturación, transacciones y conciliaciones.</p>
+
+![Payments Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/payments/payments-backend-diagram.puml&fmt=svg)
+
+<h4>activities backend:</h4>
+<p><strong>Responsabilidad:</strong> Actividades, programación, horarios y participación de residentes.</p>
+
+![Activities Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/activities/activities-backend-diagram.puml&v=2&fmt=svg)
+
+<h4>shared backend:</h4>
+<p><strong>Responsabilidad:</strong> Componentes comunes, utilidades, base classes, eventos, comunicación entre módulos, patrones compartidos.</p>
+
+![Shared Backend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-BackEnd/refs/heads/develop/docs/diagrams/shared/shared-backend-diagram.puml&v=1&fmt=svg)
+
+<div style="page-break-after: always;"></div>
+
 ### 4.9.2. Class Dictionary. 
 ## 4.10. Database Design.
 ### 4.10.1. Relational/Non-Relational Database Diagram. 
