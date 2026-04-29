@@ -613,6 +613,125 @@
                     <strong>Cuando</strong> necesitan verificar credenciales y responsabilidades<br>
                     <strong>Entonces</strong> pueden acceder a la información completa y actualizada.
                 </td>
+                    <td>US36</td>
+                <td>Historia institucional</td>
+                <td>Como administrador quiero gestionar la información histórica y reconocimientos de la casa de reposo para generar confianza y credibilidad.</td>
+                <td>
+                    <strong>Escenario 1: Presentación de historia institucional</strong><br>
+                    <strong>Dado que</strong> el administrador gestiona información histórica<br>
+                    <strong>Cuando</strong> actualiza historia, certificaciones y logros<br>
+                    <strong>Entonces</strong> el sistema presenta la información de manera creíble.<br><br>
+                    <strong>Escenario 2: Verificación de certificaciones</strong><br>
+                    <strong>Dado que</strong> autoridades verifican certificaciones<br>
+                    <strong>Cuando</strong> requieren confirmar validez de licencias<br>
+                    <strong>Entonces</strong> pueden acceder a información verificable y contactos de entidades.
+                </td>
+            </tr>
+        </tbody>
+                <tr>
+                <td>EP10</td>
+                <td>Seguridad y privacidad</td>
+                <td>Como administrador, quiero garantizar la seguridad y privacidad de los datos personales y médicos para proteger la información sensible de los residentes y familiares, cumpliendo con las normativas correspondientes.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>US37</td>
+                <td>Gestión de usuarios y permisos</td>
+                <td>Como administrador quiero saber quién tiene acceso al sistema y qué información puede ver cada usuario para proteger la privacidad de los datos.</td>
+                <td>
+                    <strong>Escenario 1: Configuración de permisos de usuario</strong><br>
+                    <strong>Dado que</strong> el administrador gestiona accesos<br>
+                    <strong>Cuando</strong> asigna roles y permisos específicos a usuarios<br>
+                    <strong>Entonces</strong> cada usuario accede únicamente a la información autorizada para su rol.<br><br>
+                    <strong>Escenario 2: Intento de acceso no autorizado</strong><br>
+                    <strong>Dado que</strong> un usuario intenta acceder a información<br>
+                    <strong>Cuando</strong> intenta ver datos que no le corresponden según su rol<br>
+                    <strong>Entonces</strong> el sistema bloquea el acceso y registra el intento.
+                </td>
+            </tr>
+            <tr>
+                <td>US38</td>
+                <td>Protección de datos mediante cifrado</td>
+                <td>Como administrador quiero que toda la información sensible esté cifrada para proteger los datos personales y médicos de accesos no autorizados.</td>
+                <td>
+                    <strong>Escenario 1: Cifrado de datos sensibles</strong><br>
+                    <strong>Dado que</strong> el sistema almacena información personal y médica<br>
+                    <strong>Cuando</strong> se guardan datos sensibles o se comunican<br>
+                    <strong>Entonces</strong> toda la información se cifra automáticamente antes del almacenamiento y transmisión.<br><br>
+                    <strong>Escenario 2: Intento de acceso a datos cifrados sin autorización</strong><br>
+                    <strong>Dado que</strong> hay un intento de acceso directo a datos cifrados<br>
+                    <strong>Cuando</strong> alguien intenta acceder sin autorización apropiada<br>
+                    <strong>Entonces</strong> los datos permanecen inaccesibles y se activan alertas de seguridad.
+                </td>
+            </tr>
+        </tbody>
+                <tr>
+                <td>EP11</td>
+                <td>Diseño de interfaz</td>
+                <td>Como usuario, quiero una interfaz bien diseñada para navegar y usar el sistema sin dificultades.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>US40</td>
+                <td>Menú de navegación consistente</td>
+                <td>Como usuario quiero un menú de navegación claro y consistente en todas las páginas para encontrar fácilmente las funciones que necesito.</td>
+                <td>
+                    <strong>Escenario 1: Navegación consistente</strong><br>
+                    <strong>Dado que</strong> el usuario se encuentra en cualquier página<br>
+                    <strong>Cuando</strong> utiliza el menú de navegación<br>
+                    <strong>Entonces</strong> encuentra las mismas opciones organizadas idénticamente.<br><br>
+                    <strong>Escenario 2: Menú adaptado a permisos</strong><br>
+                    <strong>Dado que</strong> usuarios con diferentes roles acceden al sistema<br>
+                    <strong>Cuando</strong> navegan por la plataforma<br>
+                    <strong>Entonces</strong> ven solo las opciones de menú apropiadas para su rol.
+                </td>
+            </tr>
+            <tr>
+                <td>US41</td>
+                <td>Paleta de colores y tipografía</td>
+                <td>Como usuario quiero una interfaz con colores y tipografía consistentes para tener una experiencia visual agradable y fácil de leer.</td>
+                <td>
+                    <strong>Escenario 1: Aplicación consistente de diseño visual</strong><br>
+                    <strong>Dado que</strong> se muestra cualquier página de la plataforma<br>
+                    <strong>Cuando</strong> el usuario navega por diferentes secciones<br>
+                    <strong>Entonces</strong> encuentra colores y tipografía consistentes y legibles.<br><br>
+                    <strong>Escenario 2: Adaptación para necesidades especiales</strong><br>
+                    <strong>Dado que</strong> usuarios con dificultades visuales acceden<br>
+                    <strong>Cuando</strong> acceden a la plataforma<br>
+                    <strong>Entonces</strong> pueden utilizar funciones de alto contraste o aumento de texto.
+                </td>
+            </tr>
+            <tr>
+                <td>US42</td>
+                <td>Diseño de formularios usables</td>
+                <td>Como usuario quiero formularios claros y fáciles de completar para ingresar información sin confusión ni errores.</td>
+                <td>
+                    <strong>Escenario 1: Completar formularios</strong><br>
+                    <strong>Dado que</strong> el usuario completa un formulario<br>
+                    <strong>Cuando</strong> ingresa información requerida<br>
+                    <strong>Entonces</strong> recibe validación en tiempo real y confirmación al enviar.<br><br>
+                    <strong>Escenario 2: Formulario con errores de validación</strong><br>
+                    <strong>Dado que</strong> el usuario envía un formulario con información incorrecta<br>
+                    <strong>Cuando</strong> existen errores en los datos ingresados<br>
+                    <strong>Entonces</strong> recibe mensajes de error específicos para cada campo.
+                </td>
+            </tr>
+            <tr>
+                <td>US43</td>
+                <td>Patrones de diseño coherentes</td>
+                <td>Como usuario quiero que todas las pantallas sigan patrones de diseño similares para predecir dónde encontrar funciones y cómo interactuar.</td>
+                <td>
+                    <strong>Escenario 1: Interacción predecible</strong><br>
+                    <strong>Dado que</strong> el usuario está familiarizado con una sección<br>
+                    <strong>Cuando</strong> navega a nuevas secciones<br>
+                    <strong>Entonces</strong> encuentra patrones de interacción similares y predecibles.<br><br>
+                    <strong>Escenario 2: Nuevos usuarios aprendiendo la interfaz</strong><br>
+                    <strong>Dado que</strong> un nuevo usuario accede por primera vez<br>
+                    <strong>Cuando</strong> explora diferentes funcionalidades<br>
+                    <strong>Entonces</strong> puede predecir cómo funcionarán nuevas secciones.
+                </td>
+            </tr>
+            <tr>
             </tr>
             <tr>   
 ## 3.2. Product Backlog. 
