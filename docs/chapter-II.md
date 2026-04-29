@@ -241,7 +241,7 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | Apellidos                        | Santos |
 | Edad                             | 21 años  |
 | Distrito                         | Santiago de Surco |
-| Evidencia                        | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista1-segmento2.png) |
+| Evidencia                        | ![Entrevista](../assets/img/chapter-II/entrevista1.png) |
 | Link                             | [Link Entrevistas](https://youtu.be/LLKccTrdLM0) |
 | Inicio de la entrevista          | 00:00 min |
 | Duración de la entrevista        | 03:48 min |
