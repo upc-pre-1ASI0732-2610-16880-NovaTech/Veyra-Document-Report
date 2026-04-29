@@ -842,6 +842,29 @@ En el diagrama se representan las relaciones entre estos elementos, destacando q
 ---
 
 ### 4.8.2. Software Architecture Container Diagrams. 
+
+En el nivel de contenedores, la atención se desplaza desde “quién usa el sistema” hacia “cómo se organiza internamente el sistema en aplicaciones y fuentes de datos”. El container diagram muestra los elementos de alto nivel de la arquitectura de Veyra, sus responsabilidades principales y la forma en que se comunican entre sí y con los sistemas externos.
+
+La arquitectura lógica de Veyra se estructura en los siguientes contenedores:
+
+- **Landing Page**: aplicación web estática que presenta la propuesta de valor de Veyra, guía a nuevos usuarios y redirige a la aplicación principal. Está desarrollada con tecnologías web estándar (HTML, CSS y JavaScript) y se despliega en un entorno orientado a contenido estático.
+- **Single Page Application (SPA)**: aplicación web principal, implementada en **Angular**, donde interactúan el Nursing Home Administrator y el Family Member. Este contenedor concentra la experiencia de usuario, las vistas y la lógica de presentación para los diferentes contextos del dominio (nursing, hcm, iam, analytics, health, profiles, tracking, payments y activities).
+- **API Application**: backend implementado con **Spring Boot**, que expone una API REST y encapsula la lógica de negocio, reglas de validación y orquestación de procesos. Este contenedor agrupa los módulos backend por contexto (Nursing Backend, HCM Backend, IAM Backend, Analytics Backend, Health Backend, Profiles Backend, Tracking Backend, Payments Backend, Activities Backend y Shared Backend).
+- **Database**: base de datos relacional **MySQL**, donde se persiste la información estructurada del sistema: hogares, residentes, personal, perfiles, métricas, historiales clínicos, datos de seguimiento, pagos y actividades.
+
+En el diagrama se observa que:
+
+- Los usuarios acceden primero a la **Landing Page**, la cual redirige a la **SPA** tras la autenticación.
+- La **SPA** se comunica exclusivamente con la **API Application** mediante peticiones **HTTP/HTTPS** con mensajes **JSON**, siguiendo un estilo REST.
+- La **API Application** persiste y consulta datos en la **Database** mediante **JDBC** y mapeo objeto–relacional.
+- Tanto la **SPA** como la **API Application** interactúan con los sistemas externos: el **Payment System** para pagos y suscripciones, la **Google Maps API** para geolocalización y el **Email Notification Service** para el envío de notificaciones.
+
+Esta vista permite apreciar cómo se distribuyen las responsabilidades entre la capa de presentación (Landing y SPA), la capa de lógica de negocio (API Application) y la capa de persistencia (Database), así como las principales decisiones tecnológicas que se han tomado para cada contenedor.
+
+![ContainerDiagram Diagram](../images/c4-container.svg)
+
+---
+
 ### 4.8.3. Software Architecture Components Diagrams. 
 ## 4.9. Software Object-Oriented Design. 
 ### 4.9.1. Class Diagrams. 
