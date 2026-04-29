@@ -731,8 +731,6 @@
                     <strong>Entonces</strong> puede predecir cómo funcionarán nuevas secciones.
                 </td>
             </tr>
-            <tr>
-            </tr>
-            <tr>   
+            <tr> 
 ## 3.2. Product Backlog. 
 ## 3.3. Impact Mapping. 
