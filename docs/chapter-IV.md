@@ -655,6 +655,110 @@ El *user flow* es la representación visual del camino que un usuario sigue dent
 <div style="page-break-after: always;"></div>
 
 ## 4.7. Web Applications Prototyping. 
+
+La sección de Web Applications Prototyping presenta los prototipos interactivos diseñados para la versión Desktop y Mobile Web de Veyra. Estos prototipos permiten simular la navegación real dentro de la plataforma y visualizar cómo los usuarios recorren los principales paths definidos en los User Flow Diagrams.
+
+Las decisiones de interacción tomadas en esta etapa responden a tres criterios fundamentales:
+
+- Claridad y simplicidad de uso, especialmente considerando que parte de nuestros usuarios tienen competencia digital intermedia.
+
+- Rapidez de acceso a la información crítica, alineada con la necesidad de monitoreo médico en tiempo real.
+
+- Consistencia visual y funcional, asegurando que las interacciones sean predecibles y estén alineadas con el Design System de VEYRA.
+<br>
+
+**Criterios que guiaron las decisiones de interacción**
+
+1. Arquitectura de Información basada en prioridades del usuario
+
+La estructura del contenido se organizó priorizando los elementos más consultados por los familiares y cuidadores:
+
+- Reportes diarios
+
+- Estado de salud
+
+- Medicación
+
+- Citas médicas
+
+- Actividades
+
+- Alertas
+
+Estos componentes se ubicaron en zonas de acceso rápido tanto en desktop como en mobile, asegurando rutas de navegación cortas y directas.
+
+<br>
+
+
+2. Navegación clara y consistente
+
+Se optó por un sistema de navegación híbrido:
+
+En desktop, un menú superior horizontal que mantiene visibles las secciones principales.
+
+En mobile, un menú inferior tipo tab-bar para accesos frecuentes y un menú hamburguesa para secciones secundarias.
+
+Esta decisión refleja la arquitectura de información previamente definida y garantiza que las rutas de navegación coincidan con los User Flow Diagrams propuestos.
+
+<br>
+
+3. Interacciones basadas en patrones familiares
+
+Para reducir la curva de aprendizaje se utilizaron patrones estándar, como:
+
+Acordeones para secciones extensas (features, historial).
+
+Tarjetas para resumir información médica y actividades.
+
+Íconos universales (alertas, calendario, medicación).
+
+Transiciones suaves que evitan saturar la experiencia.
+
+<br>
+
+
+4. Principios de diseño inclusivo
+
+Los prototipos consideran: Tipografías legibles, Contrastes adecuados para adultos mayores, Botones amplios para facilitar el toque en mobile, Lenguaje visual claro y directo, Prototipos UI – Versión Desktop
+
+Los prototipos desktop muestran una interfaz amplia, optimizada para profesionales y usuarios que consultan información desde una laptop o PC. Entre los elementos destacados:
+
+• Dashboard principal
+
+Vista general del estado del residente.
+
+Resumen de alertas y citas.
+
+Gráficos simples para evolución de signos vitales.
+
+<br>
+
+• Navegación superior
+
+Acceso rápido a Home, Reports, Medication, Calendar, Activities y Settings.
+
+Persistencia visual para orientar al usuario.
+
+<br>
+
+• Secciones modulares
+
+El contenido se divide en bloques visuales que permiten una lectura rápida:
+
+Tarjetas de información médica.
+
+Tablas de medicación.
+
+Calendarios interactivos.
+
+Panel lateral con alertas recientes.
+
+Prototipos UI – Versión Mobile Web Browser
+
+La versión móvil prioriza la usabilidad y accesibilidad, manteniendo la esencia visual del desktop pero adaptada a pantallas reducidas.
+
+<br>
+
 ## 4.8. Domain-Driven Software Architecture. 
 ### 4.8.1. Software Architecture Context Diagram.  
 ### 4.8.2. Software Architecture Container Diagrams. 
