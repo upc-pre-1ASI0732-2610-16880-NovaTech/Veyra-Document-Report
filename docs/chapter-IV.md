@@ -817,6 +817,12 @@ La navegación sea intuitiva para usuarios con distintos niveles tecnológicos.
 http://bit.ly/4q6AhWP
 
 ## 4.8. Domain-Driven Software Architecture. 
+
+La arquitectura de software de VEYRA se construye a partir de los resultados obtenidos en el Big Picture Event Storming, que permitió comprender en profundidad los flujos clave del dominio de atención residencial y las interacciones entre familiares, cuidadores y personal administrativo. A partir de este análisis inicial, se desarrolló una visión más estructurada del dominio utilizando los principios de Domain-Driven Design (DDD).
+
+En las siguientes secciones se presenta cada nivel del modelo, explicando la estructura, responsabilidades y comunicación entre los elementos que conforman la arquitectura de VEYRA.
+
+
 ### 4.8.1. Software Architecture Context Diagram.  
 ### 4.8.2. Software Architecture Container Diagrams. 
 ### 4.8.3. Software Architecture Components Diagrams. 
