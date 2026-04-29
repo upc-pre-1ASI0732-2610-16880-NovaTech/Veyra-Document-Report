@@ -759,6 +759,63 @@ La versión móvil prioriza la usabilidad y accesibilidad, manteniendo la esenci
 
 <br>
 
+• Home simplificado
+
+Resumen al instante del estado del residente.
+
+Acceso directo a alertas, medicación y reportes.
+
+<br>
+
+• Tab-Bar inferior
+
+Incluye 4 accesos principales:
+
+Home
+
+Reports
+
+Medication
+
+Profile
+
+Esto reduce la carga cognitiva y facilita el uso con una sola mano.
+
+<br>
+
+• Menú hamburguesa
+
+Incluye secciones secundarias como Settings, About, Permissions, o historial extendido. Se evita sobrecargar la pantalla principal.
+
+<br>
+
+• Interacción táctil optimizada
+
+Botones grandes y espaciados.
+
+Acordeones y sliders fáciles de usar.
+
+Scroll vertical continuo para favorecer fluidez.
+
+<br>
+
+**Relación con los User Flow Diagrams**
+
+Cada prototipo fue diseñado respetando los recorridos definidos en los User Flows, garantizando que:
+
+Las pantallas aparezcan en el orden lógico previsto.
+
+No existan rutas muertas o pasos innecesarios.
+
+Las tareas principales (ver reportes, recibir alertas, revisar medicación) se completen con la menor cantidad de clics posible.
+
+La navegación sea intuitiva para usuarios con distintos niveles tecnológicos.
+
+
+![ContextDiagram Diagram](../images/prototypy.png)
+
+http://bit.ly/4q6AhWP
+
 ## 4.8. Domain-Driven Software Architecture. 
 ### 4.8.1. Software Architecture Context Diagram.  
 ### 4.8.2. Software Architecture Container Diagrams. 
