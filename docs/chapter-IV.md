@@ -424,6 +424,27 @@ Cada pantalla responde a las funcionalidades principales del sistema y a los dis
 
 <img src="../images/Paciente-Eliminar-NovaPeru-Tech-Wireframe.jpg" alt="Paciente Eliminar" style="width:auto; height:auto; border:2px solid #00bfff;">
 
+<h5>Empleado – NovaPeru Tech</h5>
+<p>Pantalla donde se listan los empleados de la institución, mostrando nombre, rol, contacto y estado laboral.</p>
+
+<img src="../images/Empleado-NovaPeru-Tech-Wireframe.jpg" alt="Empleado" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Empleado – Card Detalles – NovaPeru Tech</h5>
+<p>Vista detallada de un empleado en formato de card, mostrando información personal, turno asignado, horas extra y contacto de emergencia.</p>
+
+<img src="../images/Empleado-Card-Detalles-NovaPeru-Tech-Wireframe.jpg" alt="Empleado Card Detalles" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Actividad – Familiar – NovaPeru Tech</h5>
+<p>Pantalla que muestra las actividades recientes del residente (ejercicios, visitas, terapias). 
+El familiar puede visualizar fotos, descripciones y fechas.</p>
+
+<img src="../images/Actividad-Familiar-NovaPeru-Tech-Wireframe.jpg" alt="Actividad Familiar" style="width:auto; height:auto; border:2px solid #00bfff;">
+
+<h5>Historial de Pedido – NovaPeru Tech</h5>
+<p>Pantalla que permite consultar pedidos realizados, con detalles de estado, fecha y productos solicitados.</p>
+
+<img src="../images/Historial-de-Pedido-NovaPeru-Tech-Wireframe.jpg" alt="Historial de Pedido" style="width:auto; height:auto; border:2px solid #00bfff;">
+
 ### 4.6.2. Web Applications Wireflow Diagrams. 
 ### 4.6.3. Web Applications Mock-ups. 
 ### 4.6.4. Web Applications User Flow Diagrams.
