@@ -179,6 +179,15 @@ La arquitectura de la información de la página de inicio de Veyra está diseñ
 * **Resultados Relevantes:** Los resultados de búsqueda se priorizarán según la relevancia para la cuenta y las funciones del usuario.
 
 ### 4.2.5. Navigation Systems. 
+
+ **Navegación Global:** La barra de navegación en el encabezado proporciona acceso principal a las secciones de la página de inicio. El menú de hamburguesa en dispositivos móviles asegura que esta navegación sea siempre accesible.
+
+* **Navegación Contextual:** Enlaces internos, como los botones en la sección What We Offer y los botones de llamado a la acción, guían al usuario de manera contextual a la siguiente etapa de su recorrido.
+
+* **Navegación Secundaria:** Enlaces internos, como los botones en la sección What We Offer y los botones de llamado a la acción, guían al usuario de manera contextual a la siguiente etapa de su recorrido.
+
+<div style="page-break-after: always;"></div>
+
 ## 4.3. Landing Page UI Design. 
 ### 4.3.1. Landing Page Wireframe. 
 ### 4.3.2. Landing Page Mock-up. 
