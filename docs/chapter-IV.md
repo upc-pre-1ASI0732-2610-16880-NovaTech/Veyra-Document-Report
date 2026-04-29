@@ -906,6 +906,100 @@ En esta sección se presenta el diseño orientado a objetos del sistema Veyra, e
 De esta forma, el diseño orientado a objetos enlaza el nivel arquitectónico (C4 Model) con el nivel de implementación, permitiendo verificar coherencia entre bounded contexts, responsabilidades de cada módulo y decisiones de diseño técnico (p. ej., uso de patrones, clases base y modelos de vista).
 
 ### 4.9.1. Class Diagrams. 
+
+En esta subsección se presentan los diagramas de clases que detallan la estructura interna de los principales componentes para cada bounded context. Estos diagramas complementan al Component Diagram de la **API Application** y a los contenedores definidos en Structurizr, proporcionando una vista centrada en clases, atributos, métodos y relaciones.
+
+A nivel de **frontend**, se modelan las clases en función de los módulos y vistas que consumen los servicios expuestos por la API:
+
+- **Frontend completo (Frontend)**: muestra la organización general de la capa de presentación, incluyendo componentes de rutas, componentes de página y stores de estado que interactúan con los contenedores backend definidos en el container diagram.
+- **Nursing Frontend**: detalla las clases que gestionan las vistas y lógica de presentación para hogares, habitaciones, residentes, asignaciones y medicación, en correspondencia con el componente *Nursing Backend*.
+- **HCM Frontend**: modela los componentes responsables de la gestión de personal, contratos y turnos, alineados con el componente *HCM Backend*.
+- **IAM Frontend**: incluye los formularios y componentes relacionados con autenticación, registro, manejo de sesión y autorización, que consumen los endpoints del *IAM Backend*.
+- **Analytics Frontend**: presenta los componentes de interfaz que construyen dashboards, gráficos y vistas de métricas, apoyándose en el *Analytics Backend*.
+- **Profiles Frontend**: muestra las clases dedicadas a la administración de perfiles personales y empresariales, conectadas al *Profiles Backend*.
+- **Shared Frontend**: agrupa componentes reutilizables (layouts, formularios base, servicios compartidos) que sirven como infraestructura de presentación común para el resto de módulos frontend.
+
+A nivel de **backend**, los diagramas de clases reflejan la implementación detallada de los módulos definidos como componentes en la **API Application**:
+
+- **Backend completo (Backend)**: ilustra la estructura general de la capa de dominio y aplicación (aggregates, entities, value objects, services, repositories, event handlers), mostrando cómo se distribuyen estas clases entre los distintos bounded contexts que fueron modelados como componentes (*Nursing Backend, HCM Backend, IAM Backend, Analytics Backend, Health Backend, Profiles Backend, Tracking Backend, Payments Backend, Activities Backend y Shared Backend*).
+- **Nursing Backend**: incluye agregados como NursingHome, Resident, Room y Medication, junto con sus servicios de dominio y repositorios, encargados de la lógica de hogares, habitaciones, cuidados y medicación.
+- **HCM Backend**: detalla las clases Staff, Contract y otras entidades de recursos humanos, así como servicios y repositorios asociados a la gestión de personal y contratos.
+- **IAM Backend**: muestra clases como User, Role y UserRoleAssignment, junto con servicios de autenticación/autorización y repositorios para credenciales y roles.
+- **Analytics Backend**: modela la entidad Metric y otros elementos de dominio que soportan el cálculo y consulta de métricas y eventos.
+- **Health Backend**: representa entidades relacionadas con historiales clínicos, evaluaciones y registros médicos (por ejemplo, VitalSign y sus objetos de valor asociados).
+- **Profiles Backend**: agrupa PersonProfile, BusinessProfile y clases relacionadas con datos de identificación y contacto.
+- **Tracking Backend**: define entidades para measurements, dispositivos y señales de bandas médicas que permiten la trazabilidad del estado de los residentes.
+- **Payments Backend**: contiene las clases Subscription, Payment y objetos de valor de dinero, período y estado, responsables del manejo de pagos y conciliaciones.
+- **Activities Backend**: modela las actividades, horarios y participación de residentes en eventos del hogar de cuidado.
+- **Shared Backend**: concentra clases base auditables, utilidades y configuraciones compartidas por los demás módulos, soportando la consistencia del diseño y la reutilización de código.
+
+### Diagrama de clases del frontend
+
+### Diagrama del frontend completo:
+![Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/veyra/veyra-frontend-diagram.puml&fmt=svg)
+
+<h3><strong>Diagrama del frontend dividido por contextos:</strong></h3>
+
+<h4>nursing frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de hogares, habitaciones, asignaciones y servicios de cuidado. </p>
+
+![Nursing Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/nursing/nursing-frontend-diagram.puml&fmt=svg)
+
+<h4>hcm frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de la gestión de personal, contratos, turnos y organización interna.</p>
+
+![HCM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/hcm/hcm-frontend-diagram.puml&fmt=svg)
+
+<h4>iam frontend:</h4>
+<p><strong>Responsabilidad:</strong>Maneja las vistas de Usuarios, autenticación, roles y permisos.</p>
+
+![IAM Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/iam/iam-frontend-diagram.puml&fmt=svg)
+
+<h4>analytics frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de métricas, auditoría y análisis de eventos.</p>
+
+![Analytics Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/analytics/analytics-frontend-diagram.puml&fmt=svg)
+<!--
+<h4>health frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de evaluaciones médicas, historiales clínicos y servicios de salud.</p>
+
+![Health Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/health/health-frontend-diagram.puml&fmt=svg)
+-->
+<!--
+<h4>communication frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de notificaciones, mensajes y comunicación interna del sistema.</p>
+
+![Communication Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/communication/communication-frontend-diagram.puml&fmt=svg)
+-->
+<h4>profiles frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de perfiles personales, empresariales y datos asociados.</p>
+
+![Profiles Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/profiles/profiles-frontend-diagram.puml&fmt=svg)
+<!--
+<h4>tracking frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de bandas médicas, sensores y trazabilidad de residentes.</p>
+
+![Tracking Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/tracking/tracking-frontend-diagram.puml&fmt=svg)
+-->
+<!--
+<h4>payments frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de pagos, facturación, transacciones y conciliaciones.</p>
+
+![Payments Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/payments/payments-frontend-diagram.puml&fmt=svg)
+-->
+<!--
+<h4>activities frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja las vistas de actividades, programación, horarios y participación de residentes.</p>
+
+![Activities Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/activities/activities-frontend-diagram.puml&fmt=svg)
+-->
+<h4>shared frontend:</h4>
+<p><strong>Responsabilidad:</strong> Maneja los componentes comunes, utilidades, base classes, eventos, comunicación entre módulos, patrones compartidos.</p>
+
+![Shared Frontend](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/NovaPeru-Tech/NovaPeruTech-Frontend/refs/heads/develop/docs/diagrams/shared/shared-frontend-diagram.puml&fmt=svg)
+
+<div style="page-break-after: always;"></div>
+
 ### 4.9.2. Class Dictionary. 
 ## 4.10. Database Design.
 ### 4.10.1. Relational/Non-Relational Database Diagram. 
