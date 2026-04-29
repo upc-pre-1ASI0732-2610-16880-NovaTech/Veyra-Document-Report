@@ -157,6 +157,117 @@ Lenguaje de marcado ligero para documentación en GitHub.
 **Ruta:** https://www.markdownguide.org/  
 
 ### 5.1.2. Source Code Management. 
+
+En esta sección se establecen los medios y esquemas de organización aplicados para el seguimiento de modificaciones del código fuente. Se utiliza GitHub como plataforma y sistema de control de versiones distribuido.
+
+---
+
+#### Repositorios del Proyecto
+
+| Producto                    | URL del Repositorio |
+|----------------------------|---------------------|
+| Organización NovaPeru-Tech | https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech |
+| Landing Page               | https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Landing-Page |
+| Frontend Web Application   | https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Frontend-Application |
+| Backend Web Services       | https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Backend-Application |
+| Project Report             | https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report |
+
+---
+
+#### GitFlow Workflow
+
+Se implementa GitFlow como modelo de flujo de trabajo para el control de versiones, permitiendo desarrollo paralelo y gestión estructurada de releases.
+
+**Ramas principales:**
+
+- **main** → versiones estables en producción  
+- **develop** → integración de funcionalidades  
+
+**Ramas de soporte:**
+
+- **feature/<feature-name>** → nuevas funcionalidades  
+- **release/<version>** → preparación de versiones  
+- **hotfix/<issue>** → correcciones urgentes  
+
+---
+
+#### Convenciones de nomenclatura para ramas
+
+| Tipo   | Formato                                      | Ejemplo                                  |
+|--------|----------------------------------------------|------------------------------------------|
+| Feature| `feature/<bounded-context>-<feature-description>` | `feature/residents-add-medical-history` |
+| Release| `release/<major.minor.patch>`               | `release/1.0.0`                          |
+| Hotfix | `hotfix/<issue-description>`                | `hotfix/fix-login-validation`            |
+
+---
+
+#### Conventional Commits
+
+<p>
+  Se aplica la especificación Conventional Commits para los mensajes de commit, siguiendo la estructura:
+</p>
+
+<pre><code>&lt;type&gt;[optional scope]: &lt;description&gt;
+
+[optional body]
+
+[optional footer(s)]
+</code></pre>
+
+**Tipos:**
+
+| Tipo   | Descripción                         |
+|--------|-------------------------------------|
+| feat   | Nueva funcionalidad                |
+| fix    | Corrección de bug                  |
+| docs   | Cambios en documentación           |
+| style  | Formato sin afectar lógica         |
+| refactor | Refactorización                  |
+| perf   | Mejora de rendimiento              |
+| test   | Pruebas                            |
+| build  | Build o dependencias               |
+| chore  | Mantenimiento                      |
+
+**Ejemplos:**
+
+<p><strong>Ejemplos de Commits:</strong></p>
+
+<pre><code>feat(residents): add medical history registration form
+fix(auth): resolve token expiration validation issue
+docs(readme): update deployment instructions
+build(deps): upgrade Angular to version 17
+chore(config): update environment variables for production
+</code></pre>
+
+
+---
+
+#### Semantic Versioning
+
+**Formato:** `MAJOR.MINOR.PATCH`
+
+- **MAJOR** → cambios incompatibles  
+- **MINOR** → nuevas funcionalidades  
+- **PATCH** → correcciones  
+
+**Ejemplos:**
+
+- `1.0.0`  
+- `1.1.0`  
+- `1.1.1`  
+- `2.0.0`  
+
+---
+
+#### Configuración de GitHub en WebStorm
+
+1. Ir a **VCS > Enable Version Control Integration** y seleccionar Git  
+2. Ir a **File > Settings > Version Control > GitHub** y agregar la cuenta  
+3. Configurar usuario en **File > Settings > Version Control > Git**  
+4. Conectar repositorio en **Git > Manage Remotes**  
+5. Commit: `Ctrl + K`  
+6. Push: `Ctrl + Shift + K`  
+
 ### 5.1.3. Source Code Style Guide & Conventions. 
 ### 5.1.4. Software Deployment Configuration. 
 ## 5.2. Product Implementation & Deployment. 
