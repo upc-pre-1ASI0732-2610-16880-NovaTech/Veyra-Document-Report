@@ -189,6 +189,9 @@ La arquitectura de la información de la página de inicio de Veyra está diseñ
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Landing Page UI Design. 
+
+El diseño de la interfaz de usuario (UI) de la página de inicio de Veyra es fundamental para captar la atención de los visitantes y guiarlos hacia una acción clara: conectar con el cuidado de sus seres queridos. Nos hemos centrado en la creación de una experiencia intuitiva y fluida, garantizando que cada elemento de la página sea interactivo y fácil de usar, reflejando el compromiso de Veyra con la simplicidad y la transparencia.
+
 ### 4.3.1. Landing Page Wireframe. 
 ### 4.3.2. Landing Page Mock-up. 
 ## 4.4. Mobile Applications UX/UI Design. 
