@@ -169,6 +169,15 @@ La arquitectura de la información de la página de inicio de Veyra está diseñ
 
 ### 4.2.3. SEO Tags and Meta Tags 
 ### 4.2.4. Searching Systems. 
+
+* **Barra de Búsqueda:** Aunque la página de inicio no requiere una barra de búsqueda, una vez que el usuario inicia sesión en la aplicación principal, esta funcionalidad será clave. Estará ubicada en un lugar prominente y permitirá buscar rápidamente información de residentes, historial médico y otros datos relevantes.
+
+* **Filtros y Facetas:** Dentro de la aplicación, los usuarios podrán filtrar la información por residente, tipo de medicamento, fecha, etc., para encontrar lo que necesitan de manera eficiente.
+
+* **Historial de Búsqueda:** Se implementará un historial para que el personal de enfermería y los administradores puedan acceder rápidamente a las búsquedas frecuentes.
+
+* **Resultados Relevantes:** Los resultados de búsqueda se priorizarán según la relevancia para la cuenta y las funciones del usuario.
+
 ### 4.2.5. Navigation Systems. 
 ## 4.3. Landing Page UI Design. 
 ### 4.3.1. Landing Page Wireframe. 
