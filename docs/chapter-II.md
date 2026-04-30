@@ -250,7 +250,7 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Apellidos**                    | Quispe Huamam  |
 | **Edad**                         | 29 años |
 | **Distrito**                     | Chorrillos |
-| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/) |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/Entrevista2-segmento1.jpeg) |
 | **Link**                         | |
 | **Inicio de la entrevista**      | 03:49 min |
 | **Duración**                     | 05:04 min |
