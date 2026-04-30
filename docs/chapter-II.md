@@ -241,7 +241,21 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | Inicio de la entrevista          | 00:00 min |
 | Duración de la entrevista        | 03:48 min |
 | Resumen                          | **Perfil y Frustración:**<br>Joven de perfil administrativo, optimizador y orientado a la eficiencia (rasgos influenciados por su ocupación como Coordinador de Gestión y Procesos Administrativos en una casa de reposo). Su principal frustración es la fragmentación de la información (dependencia del papel y archivos separados) y la lentitud que esto genera para encontrar historiales médicos completos o listas de medicamentos ante una emergencia.<br><br>**Comportamiento y Necesidades:**<br>Desea tener un tablero de control centralizado y contar con alertas automáticas en tiempo real para la toma de medicamentos. Valora la reducción del margen de error mediante la digitalización y exige que las historias clínicas sean accesibles de forma segura desde cualquier dispositivo, buscando reducir el trabajo manual para dedicar más tiempo de calidad a los residentes.<br><br>**Tecnología, Marcas y Canales:**<br>Es un usuario digital versátil. Su ecosistema de hardware principal se basa en una laptop para tareas pesadas de oficina y un smartphone marca OPPO para movilidad y consultas rápidas. A nivel de software e influencias de marca, prefiere Google Chrome por su excelente sincronización con sus herramientas de trabajo. Actualmente utiliza llamadas telefónicas y grupos de WhatsApp, pero requiere un módulo de comunicación directa integrado que elimine la informalidad y permita mantener un historial de comunicación claro con los familiares. | |
+
 **Entrevista 2**
+
+| Campo                             | Detalle |
+|----------------------------------|---------|
+| **Nombre**                       | Jose Luis |
+| **Apellidos**                    | Quispe Huamam  |
+| **Edad**                         | 29 años |
+| **Distrito**                     | Chorrillos |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/) |
+| **Link**                         | |
+| **Inicio de la entrevista**      | 03:49 min |
+| **Duración**                     | 05:04 min |
+| **Resumen**                      | **Perfil y Frustración**:<br>Administrador de casa de reposo con enfoque organizativo, operativo y orientado a mejorar la eficiencia en la atención de los residentes. Su principal frustración es que la información se encuentra dispersa entre fichas físicas, archivos Excel, cuadernos y mensajes de WhatsApp, lo que genera demoras, confusión y riesgo de errores al momento de consultar datos importantes como historiales médicos, medicamentos, citas o incidencias.<br><br>**Comportamiento y Necesidades**:<br>Busca contar con una plataforma digital que centralice la información de los residentes y permita acceder rápidamente a datos actualizados. Necesita funciones como registro de residentes, historial médico, control de medicamentos, alertas de citas médicas, registro de incidencias y reportes diarios. Valora especialmente la automatización de procesos críticos para reducir el trabajo manual y mejorar la coordinación entre administrador, cuidadores, enfermeros y familiares.<br><br>**Tecnología, Marcas y Canales**:<br>Utiliza principalmente una laptop para actividades administrativas y un celular Samsung para comunicación rápida y coordinación diaria. Su navegador más usado es Google Chrome. Actualmente se comunica con los familiares mediante WhatsApp y llamadas telefónicas, pero considera necesario contar con un canal más formal e integrado que permita enviar reportes, alertas e incidencias de manera ordenada y segura. |
+
 
 **Segmento 2: Familiares de adultos mayores**
 
