@@ -349,6 +349,24 @@ Para los familiares se elaboró el User Persona **Carmen Morales Quispe**. Se co
 ![User Persona 2](../assets/img/chapter-II/needfinding/user-person/segment-two/carmen-morales%20quispe-uxpressia.png)
 
 ### 2.3.2. User Task Matrix. 
+
+El User Task Matrix presenta las tareas que realizan los User Persona para cumplir sus objetivos en su día a día, independientemente de si usan nuestro software o no. Se evalúa la frecuencia y la importancia de cada tarea para identificar dónde aportar valor.
+
+| Tarea (Task)                                   | Administrador (Mauricio) |                 | Familiar (Carmen) |                 |
+|------------------------------------------------|--------------------------|-----------------|-------------------|-----------------|
+|                                                | **Frecuencia**           | **Importancia** | **Frecuencia**    | **Importancia** |
+| Mantener actualizado el registro de residentes | Often                    | High            | Rarely            | Low             |
+| Planificar citas médicas y terapias            | Often                    | High            | Occasionally      | Medium          |
+| Comunicar incidencias o urgencias a la familia | Occasionally             | High            | Rarely            | High            |
+| Supervisar el cumplimiento de la medicación    | Often                    | High            | Often             | High            |
+| Consultar el estado de salud y evolución       | Often                    | Medium          | Often             | High            |
+| Coordinar turnos del personal de cuidado       | Often                    | Medium          | Rarely            | Low             |
+| Realizar pagos o cobros de mensualidad         | Monthly                  | High            | Monthly           | High            |
+
+**Análisis del Task Matrix:**
+
+Se observa que la tarea **"Supervisar cumplimiento de medicación"** y **"Consultar estado de salud"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos (el administrador para controlar, el familiar para saber). Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas. Además, la tarea crítica de **"Comunicar incidencias"** es de alta importancia para ambos, validando la necesidad de un sistema de alertas.
+
 ### 2.3.3. User Journey Mapping. 
 ### 2.3.4. Empathy Mapping. 
 ### 2.3.5. As-is Scenario Mapping. 
