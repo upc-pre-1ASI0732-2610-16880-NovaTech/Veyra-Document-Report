@@ -368,6 +368,33 @@ El User Task Matrix presenta las tareas que realizan los User Persona para cumpl
 Se observa que la tarea **"Supervisar cumplimiento de medicación"** y **"Consultar estado de salud"** tienen una Importancia **High** y Frecuencia **Often** para ambos segmentos (el administrador para controlar, el familiar para saber). Esto confirma que estas tareas son el "Core" del negocio y deben ser priorizadas. Además, la tarea crítica de **"Comunicar incidencias"** es de alta importancia para ambos, validando la necesidad de un sistema de alertas.
 
 ### 2.3.3. User Journey Mapping. 
+
+**Segmento 1 – Administrador de casa de reposo (Mauricio Sánchez Valencia)**
+
+El User Journey Mapping de Mauricio representa el recorrido actual que experimenta como administrador de una casa de reposo, en la gestión diaria de información médica, coordinación con el personal y comunicación con familiares de los residentes.
+El mapa ilustra el proceso end-to-end, desde la recolección de datos de los pacientes hasta la generación de reportes y la respuesta a consultas externas.
+
+En la situación **As-Is**, Mauricio enfrenta un flujo de trabajo manual y fragmentado: revisa documentos físicos, consolida información en hojas de cálculo y mantiene la comunicación por canales informales como llamadas o mensajes.
+Esto genera demoras, sobrecarga de tareas y posibles errores en la actualización de datos.
+
+El Journey busca evidenciar los puntos críticos de su experiencia actual, identificando las emociones, tareas, fricciones y oportunidades de mejora a lo largo de cada etapa (Awareness, Data Collection, Daily Management, Communication, Reporting y Decision-Making).
+Este análisis servirá como base para diseñar una solución tecnológica que automatice procesos, mejore la eficiencia y facilite la interacción entre administración, personal y familiares.
+
+![Journey Map Segmento 1](../assets/img/chapter-II/needfinding/user-journey-mapping/segment-one/Journey%20Map%20Segmento_1.png)
+
+**Segmento 2 – Familiar de adulto mayor (Carmen Morales Quispe)**
+
+El User Journey Mapping de Carmen describe la experiencia completa que vive como familiar de un adulto mayor residente en la casa de reposo, desde el momento en que busca información sobre su ser querido hasta que recibe actualizaciones sobre su estado de salud.
+El mapa detalla las etapas de su recorrido end-to-end, reflejando las acciones, pensamientos, emociones y frustraciones que enfrenta actualmente sin contar con una plataforma digital centralizada.
+
+En la situación **As-Is**, Carmen depende de medios tradicionales como llamadas telefónicas, correos o mensajes de WhatsApp para comunicarse con el personal del centro.
+Esto provoca demoras, pérdida de información y una sensación constante de incertidumbre sobre el bienestar de su familiar.
+
+El Journey permite comprender su perspectiva emocional y sus puntos de dolor, mostrando los momentos clave en los que necesita información rápida, confiable y accesible.
+Este análisis busca sentar las bases para una futura solución tecnológica que le brinde tranquilidad, transparencia y confianza, fortaleciendo su vínculo con el centro y con el cuidado de su familiar.
+
+![Journey Map Segmento 2](../assets/img/chapter-II/needfinding/user-journey-mapping/segment-two/Journey%20Map%20Segmento_2.png)
+
 ### 2.3.4. Empathy Mapping. 
 ### 2.3.5. As-is Scenario Mapping. 
 ## 2.4. Ubiquitous Language. 
