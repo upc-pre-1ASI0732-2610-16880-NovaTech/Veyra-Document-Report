@@ -65,9 +65,9 @@
 
 ## Project Report Collaboration Insights
 
-**Link de los repositorios de la organización**: https://github.com/NovaPeru-Tech
+**Link de los repositorios de la organización**: https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech
 
-**Link del repositorio-Informe**: https://github.com/NovaPeru-Tech/NovaPeru-Tech-Project-Report
+**Link del repositorio-Informe**: https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report
 
 **Reporte de colaboración de la entrega del TB1**:
 
