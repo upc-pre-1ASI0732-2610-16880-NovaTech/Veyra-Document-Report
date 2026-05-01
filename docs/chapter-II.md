@@ -282,7 +282,7 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Apellidos**                    | Gómez Ferrua |
 | **Edad**                         | 30 años |
 | **Distrito**                     | Chorrillos |
-| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/Entrevista3-segmento2.png) |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/miguelentrevista.jpeg) |
 | **Link**                         | https://shorturl.at/uoNBn |
 | **Inicio de la entrevista**      | 14:47 min |
 | **Duración**                     | 05:41 min |
