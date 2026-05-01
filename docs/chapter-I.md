@@ -64,9 +64,11 @@ Ser una startup referente en Latinoamérica en el desarrollo de soluciones SaaS 
   </tr>
 
   <td width="140" valign="top" align="center">
-      <img src="../assets/img/chapter-I/team-member-profiles/" alt="" width="120" />
+      <img src="../assets/img/chapter-I/Yasser.jpg" alt="" width="120" />
     </td>
     <td valign="top">
+     <strong>Yasser Rentería Palacios - (U202214130)</strong> - Ingeniería de Software<br><br>
+       Soy estudiante de Ingeniería de Software en la UPC, con enfoque en el desarrollo de aplicaciones web y la construcción de soluciones tecnológicas eficientes. Me interesa el aprendizaje continuo de lenguajes de programación, frameworks modernos y buenas prácticas de desarrollo. Asumo el rol de **Software Developer**, enfocado en transformar diseños y arquitecturas en soluciones funcionales, mediante la implementación de APIs, lógica de negocio y aplicaciones web o multiplataforma. Busco desarrollar software limpio, escalable y mantenible, siguiendo estándares de codificación que garanticen un trabajo colaborativo eficiente. Cuento con conocimientos en lenguajes como Python, Java y C#, así como en desarrollo frontend con Angular y Vue.js, y fundamentos de backend para la creación de APIs y lógica de negocio. También tengo experiencia trabajando con bases de datos como MongoDB, aplicando conceptos de modelado de datos y validación.
     </td>
   </tr>  
 </table>
