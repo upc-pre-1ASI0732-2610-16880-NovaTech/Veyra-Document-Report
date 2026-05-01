@@ -412,4 +412,14 @@ En este mapa se analizó a Mauricio Sánchez Valencia, un administrador joven co
 En este mapa se analizó a Carmen Morales Quispe, una comerciante que busca mantenerse informada sobre el estado de salud de su familiar mientras desarrolla sus actividades diarias. Ella piensa en la tranquilidad que le daría tener acceso rápido y claro a la evolución médica, medicación y tratamientos de su ser querido. Escucha a otros familiares compartir la frustración por la falta de información y observa que depender de llamadas o visitas no siempre es suficiente. Carmen suele expresar la necesidad de contar con una aplicación confiable y fácil de usar, y actúa buscando cualquier canal de comunicación disponible para mantenerse al tanto. Su dolor principal es la incertidumbre y la demora en recibir notificaciones sobre emergencias, mientras que su ganancia esperada es tener confianza, tranquilidad y control al poder consultar la información médica en tiempo real desde cualquier lugar.
 
 ### 2.3.5. As-is Scenario Mapping. 
+
+![As-Is](../assets/img/chapter-II/As_Is_Familiar.jpg)
+
+Actualmente, los familiares obtienen información sobre sus seres queridos a través de llamadas, mensajes o visitas, lo que genera una comunicación fragmentada y no inmediata. La ausencia de una plataforma centralizada impide el acceso en tiempo real a datos relevantes como estado de salud, actividades o tratamientos. Esta dependencia del personal provoca retrasos, información incompleta y altos niveles de ansiedad, evidenciando la necesidad de un sistema más transparente y accesible.
+
+
+![As-Is](../assets/img/chapter-II/As-Is_Administrador.jpg)
+
+En la actualidad, los administradores gestionan la información mediante registros manuales, hojas de cálculo y sistemas no integrados, lo que dificulta la organización y actualización de datos críticos. Además, la comunicación con familiares se realiza de forma individual y manual, generando una alta carga operativa y riesgo de errores. Esta situación limita la eficiencia del personal y resalta la necesidad de una solución tecnológica que centralice procesos y optimice la gestión.
+
 ## 2.4. Ubiquitous Language. 
