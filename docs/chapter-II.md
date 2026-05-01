@@ -311,6 +311,25 @@ Subjetivamente, el dolor principal es la incertidumbre: el **67%** siente **preo
 
 ![Gráfico Estadístico Familiares](../assets/img/chapter-II/interviews/analysis/segment-two/Familiares.png)
 
+#### Análisis Comparativo
+
+**Contrastación de Segmentos:**
+
+Al comparar ambos grupos, encontramos coincidencias vitales para el producto: ambos tienen un **100% de necesidad de centralización** de información. Sin embargo, existe una brecha notable en la percepción de "preocupación": mientras los administradores priorizan la operatividad (0% de preocupación personal por demoras), para el **67%** de los familiares es una fuente de ansiedad crítica. Esto define nuestra propuesta de valor: eficiencia para el administrador y tranquilidad para el familiar.
+
+![Gráfico Comparativo Segmentos](../assets/img/chapter-II/interviews/analysis/Comparativo-SegmentosObjetivos.png)
+
+### Conclusiones y Definición de Arquetipos
+
+Basado en el análisis estadístico, se definen los siguientes perfiles para los User Personas:
+
+1.  **User Persona Administrador ("El Gestor Operativo"):**
+    * **Rasgo clave:** Busca eficiencia, pero teme a la tecnología compleja.
+    * **Sustento:** El 67% exige "soluciones sencillas" y el 100% ya usa WhatsApp. La solución debe tener una curva de aprendizaje mínima.
+2.  **User Persona Familiar ("El Monitor Preocupado"):**
+    * **Rasgo clave:** Necesita control y transparencia para reducir ansiedad.
+    * **Sustento:** El 100% pide información de medicación y el 67% sufre por la demora en noticias. La solución debe centrarse en notificaciones en tiempo real.
+
 ## 2.3. Needfinding. 
 ### 2.3.1. User Personas. 
 ### 2.3.2. User Task Matrix. 
