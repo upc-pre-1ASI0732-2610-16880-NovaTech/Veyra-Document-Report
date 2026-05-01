@@ -24,7 +24,7 @@
 | Código     | Apellidos y Nombres          |
 |------------|------------------------------|
 | u202312399 | Llerena Delgado Renzo Miguel |
-|            |                              |
+| u202214130 | Rentería Palacios Yasser     |
 |            |                              |
 |            |                              |
 |            |                              |
