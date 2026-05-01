@@ -25,7 +25,7 @@
 |------------|------------------------------|
 | u202312399 | Llerena Delgado Renzo Miguel |
 | u202214130 | Rentería Palacios Yasser     |
-|            |                              |
+| u202214572 | Espinoza Vivas Camilla Leonor|
 |            |                              |
 |            |                              |
 |            |                              |
@@ -38,7 +38,7 @@
 
 | Versión | Fecha | Autor | Descripción |
 |---------|-------|-------|-------------|
-|         |       |       |             |
+|   TB1  | 1/05/2026   | Todos los miembros del equipo  | Capitulo 1 Capitulo 2 Capitulo 3 Capitulo 4 Capitulo 5 |
 |         |       |       |             |
 |         |       |       |             |
 |         |       |       |             |
@@ -106,5 +106,5 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico                                                        | Acciones realizadas | Conclusiones |
 |----------------------------------------------------------------------------|---------------------|--------------|
-| ****   |                     |              |
-| **** |                     |              |
+| 4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software  | Camilla Espinoza <br> **TB1** <br> Aporté activamente en el trabajo en equipo durante el desarrollo de los capítulos 1 y 2, contribuyendo en la organización, elaboración de contenidos y cumplimiento de responsabilidades asignadas. |              |
+| 4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | Camilla Espinoza <br> **TB1** <br> Participé en la organización y desarrollo de los capítulos 1 y 2, apoyando en la toma de decisiones y en la construcción de una solución alineada al contexto del proyecto.             |              |
