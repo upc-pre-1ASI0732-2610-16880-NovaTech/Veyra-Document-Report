@@ -290,6 +290,27 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 
 
 ### 2.2.3. Análisis de entrevistas. 
+
+En esta sección se presenta el análisis detallado de la información recolectada. Para cada segmento, se explican primero los hallazgos estadísticos objetivos y subjetivos, seguidos de la evidencia gráfica correspondiente.
+
+#### Segmento 1: Administradores de Casas de Reposo
+
+**Análisis de Características Objetivas y Subjetivas:**
+
+El análisis revela una digitalización precaria. Como se detalla en el gráfico a continuación, el **100%** de los administradores utiliza **WhatsApp** como canal principal y el **100%** gestiona la información clínica en **sistemas físicos** (papel). Si bien un **67%** se apoya en **Excel**, la falta de integración es crítica.
+A nivel subjetivo, el **100%** valora la **comunicación rápida** y la **digitalización**. Sin embargo, existe una restricción clara: el **67%** demanda **soluciones sencillas**, rechazando herramientas complejas, y un **33%** aún prioriza la gestión personal directa.
+
+![Gráfico Estadístico Administradores](../assets/img/chapter-II/interviews/analysis/segment-one/Administradores.png)
+
+#### Segmento 2: Familiares de Adultos Mayores
+
+**Análisis de Características Objetivas y Subjetivas:**
+
+Los datos confirman una experiencia actual deficiente. El **100%** reporta **dificultad para acceder a información** y el **100%** indica que se enteran de las **urgencias mediante llamadas**, lo cual consideran tardío e ineficiente. Un **100%** manifiesta la necesidad de ver la **info de medicación**.
+Subjetivamente, el dolor principal es la incertidumbre: el **67%** siente **preocupación por demoras**, por lo que el **100%** solicita la **centralización** de datos. Afortunadamente, el **67%** se siente **cómodo usando apps**, validando la viabilidad de una solución móvil.
+
+![Gráfico Estadístico Familiares](../assets/img/chapter-II/interviews/analysis/segment-two/Familiares.png)
+
 ## 2.3. Needfinding. 
 ### 2.3.1. User Personas. 
 ### 2.3.2. User Task Matrix. 
