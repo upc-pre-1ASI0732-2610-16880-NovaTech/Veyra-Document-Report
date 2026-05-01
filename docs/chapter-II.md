@@ -396,5 +396,20 @@ Este análisis busca sentar las bases para una futura solución tecnológica que
 ![Journey Map Segmento 2](../assets/img/chapter-II/needfinding/user-journey-mapping/segment-two/Journey%20Map%20Segmento_2.png)
 
 ### 2.3.4. Empathy Mapping. 
+
+Para la elaboración de los *Empathy Maps*, el equipo partió del conocimiento y observaciones recolectadas durante el análisis de los User Persona. Se colocó al centro de cada mapa al usuario correspondiente (Mauricio Sánchez Valencia y Carmen Morales Quispe) y se respondieron las preguntas claves sobre su entorno, emociones, comportamientos y necesidades.
+
+**Segmento 1: Administradores de casas de reposo**
+
+![Empathy Mapping 1](../assets/img/chapter-II/needfinding/empathy-mapping/segment-one/Empathy%20map%20Segmento_1.png)
+
+En este mapa se analizó a Mauricio Sánchez Valencia, un administrador joven con la responsabilidad de garantizar la calidad del servicio en una casa de reposo. Se identificó que piensa constantemente en la necesidad de organizar y centralizar la información médica y operativa de los residentes, ya que le preocupa que los procesos manuales generen errores y retrasos. Escucha las quejas de familiares por falta de comunicación oportuna y observa cómo sus colegas deben invertir tiempo en tareas repetitivas en lugar de enfocarse en el bienestar de los residentes. Mauricio expresa la necesidad de contar con una solución moderna que mejore la gestión y actúa implementando estrategias de control básicas con las herramientas disponibles, aunque estas son limitadas. Su dolor principal es la sobrecarga administrativa y la falta de un sistema ágil, mientras que su ganancia esperada es lograr eficiencia en la gestión, confianza de los familiares y un mejor control de la información.
+
+**Segmento 2: Familiares de adultos mayores**
+
+![Empathy Mapping 2](../assets/img/chapter-II/needfinding/empathy-mapping/segment-two/Empathy%20map%20Segmento_2.png)
+
+En este mapa se analizó a Carmen Morales Quispe, una comerciante que busca mantenerse informada sobre el estado de salud de su familiar mientras desarrolla sus actividades diarias. Ella piensa en la tranquilidad que le daría tener acceso rápido y claro a la evolución médica, medicación y tratamientos de su ser querido. Escucha a otros familiares compartir la frustración por la falta de información y observa que depender de llamadas o visitas no siempre es suficiente. Carmen suele expresar la necesidad de contar con una aplicación confiable y fácil de usar, y actúa buscando cualquier canal de comunicación disponible para mantenerse al tanto. Su dolor principal es la incertidumbre y la demora en recibir notificaciones sobre emergencias, mientras que su ganancia esperada es tener confianza, tranquilidad y control al poder consultar la información médica en tiempo real desde cualquier lugar.
+
 ### 2.3.5. As-is Scenario Mapping. 
 ## 2.4. Ubiquitous Language. 
