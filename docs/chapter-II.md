@@ -282,7 +282,7 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Apellidos**                    | Gómez Ferrua |
 | **Edad**                         | 30 años |
 | **Distrito**                     | Chorrillos |
-| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/interviews/register/segment-two/Entrevista2-segmento2.png) |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/Entrevista3-segmento2.png) |
 | **Link**                         | https://shorturl.at/uoNBn |
 | **Inicio de la entrevista**      | 14:47 min |
 | **Duración**                     | 05:41 min |
@@ -300,7 +300,7 @@ En esta sección se presenta el análisis detallado de la información recolecta
 El análisis revela una digitalización precaria. Como se detalla en el gráfico a continuación, el **100%** de los administradores utiliza **WhatsApp** como canal principal y el **100%** gestiona la información clínica en **sistemas físicos** (papel). Si bien un **67%** se apoya en **Excel**, la falta de integración es crítica.
 A nivel subjetivo, el **100%** valora la **comunicación rápida** y la **digitalización**. Sin embargo, existe una restricción clara: el **67%** demanda **soluciones sencillas**, rechazando herramientas complejas, y un **33%** aún prioriza la gestión personal directa.
 
-![Gráfico Estadístico Administradores](../assets/img/chapter-II/interviews/analysis/segment-one/Administradores.png)
+![Gráfico Estadístico Administradores](../assets/img/chapter-II/Administradores.png)
 
 #### Segmento 2: Familiares de Adultos Mayores
 
@@ -309,7 +309,7 @@ A nivel subjetivo, el **100%** valora la **comunicación rápida** y la **digita
 Los datos confirman una experiencia actual deficiente. El **100%** reporta **dificultad para acceder a información** y el **100%** indica que se enteran de las **urgencias mediante llamadas**, lo cual consideran tardío e ineficiente. Un **100%** manifiesta la necesidad de ver la **info de medicación**.
 Subjetivamente, el dolor principal es la incertidumbre: el **67%** siente **preocupación por demoras**, por lo que el **100%** solicita la **centralización** de datos. Afortunadamente, el **67%** se siente **cómodo usando apps**, validando la viabilidad de una solución móvil.
 
-![Gráfico Estadístico Familiares](../assets/img/chapter-II/interviews/analysis/segment-two/Familiares.png)
+![Gráfico Estadístico Familiares](../assets/img/chapter-II/Familiares.png)
 
 #### Análisis Comparativo
 
@@ -317,7 +317,7 @@ Subjetivamente, el dolor principal es la incertidumbre: el **67%** siente **preo
 
 Al comparar ambos grupos, encontramos coincidencias vitales para el producto: ambos tienen un **100% de necesidad de centralización** de información. Sin embargo, existe una brecha notable en la percepción de "preocupación": mientras los administradores priorizan la operatividad (0% de preocupación personal por demoras), para el **67%** de los familiares es una fuente de ansiedad crítica. Esto define nuestra propuesta de valor: eficiencia para el administrador y tranquilidad para el familiar.
 
-![Gráfico Comparativo Segmentos](../assets/img/chapter-II/interviews/analysis/Comparativo-SegmentosObjetivos.png)
+![Gráfico Comparativo Segmentos](../assets/img/chapter-II/Comparativo-SegmentosObjetivos.png)
 
 ### Conclusiones y Definición de Arquetipos
 
@@ -340,13 +340,13 @@ A partir del análisis de entrevistas y la recolección de información sobre la
 
 Para los administradores se elaboró el User Persona **Mauricio Sánchez Valencia**. Se consideraron factores como su edad, rol en la gestión de una casa de reposo, experiencia en la administración del cuidado de adultos mayores y su necesidad de optimizar procesos de comunicación y gestión de la información. Sus principales frustraciones giran en torno a la falta de un sistema centralizado para el control de historias clínicas, medicamentos y citas médicas, lo que genera demoras en la comunicación con familiares y dificultades en el seguimiento de residentes. Asimismo, se tomó en cuenta su familiaridad con herramientas digitales básicas y la necesidad de contar con una plataforma moderna, intuitiva y segura que le permita centralizar toda la información de manera ágil y confiable.
 
-![User Persona 1](../assets/img/chapter-II/needfinding/user-person/segment-one/mauricio-sánchez-valencia-uxpressia.png)
+![User Persona 1](../assets/img/chapter-II/mauricio-sánchez-valencia-uxpressia.png)
 
 **2) Segmento 2: Familiares de adultos mayores**
 
 Para los familiares se elaboró el User Persona **Carmen Morales Quispe**. Se consideraron aspectos como su edad, ocupación y su rol como familiar de un adulto mayor residente en una casa de reposo. Sus principales motivaciones están orientadas a mantenerse informada en tiempo real sobre el estado de salud, el tratamiento y la administración de medicamentos de su familiar, incluso mientras desarrolla sus actividades laborales. Entre sus frustraciones se encuentra la falta de información clara, la demora en las notificaciones sobre urgencias y la necesidad de depender de llamadas o visitas presenciales. Su perfil refleja una predisposición positiva hacia el uso de soluciones digitales, siempre que estas sean rápidas, confiables y fáciles de utilizar.
 
-![User Persona 2](../assets/img/chapter-II/needfinding/user-person/segment-two/carmen-morales%20quispe-uxpressia.png)
+![User Persona 2](../assets/img/chapter-II/carmen-morales%20quispe-uxpressia.png)
 
 ### 2.3.2. User Task Matrix. 
 
@@ -380,7 +380,7 @@ Esto genera demoras, sobrecarga de tareas y posibles errores en la actualizació
 El Journey busca evidenciar los puntos críticos de su experiencia actual, identificando las emociones, tareas, fricciones y oportunidades de mejora a lo largo de cada etapa (Awareness, Data Collection, Daily Management, Communication, Reporting y Decision-Making).
 Este análisis servirá como base para diseñar una solución tecnológica que automatice procesos, mejore la eficiencia y facilite la interacción entre administración, personal y familiares.
 
-![Journey Map Segmento 1](../assets/img/chapter-II/needfinding/user-journey-mapping/segment-one/Journey%20Map%20Segmento_1.png)
+![Journey Map Segmento 1](../assets/img/chapter-II/Journey%20Map%20Segmento_1.png)
 
 **Segmento 2 – Familiar de adulto mayor (Carmen Morales Quispe)**
 
@@ -393,7 +393,7 @@ Esto provoca demoras, pérdida de información y una sensación constante de inc
 El Journey permite comprender su perspectiva emocional y sus puntos de dolor, mostrando los momentos clave en los que necesita información rápida, confiable y accesible.
 Este análisis busca sentar las bases para una futura solución tecnológica que le brinde tranquilidad, transparencia y confianza, fortaleciendo su vínculo con el centro y con el cuidado de su familiar.
 
-![Journey Map Segmento 2](../assets/img/chapter-II/needfinding/user-journey-mapping/segment-two/Journey%20Map%20Segmento_2.png)
+![Journey Map Segmento 2](../assets/img/chapter-II/Journey%20Map%20Segmento_2.png)
 
 ### 2.3.4. Empathy Mapping. 
 
@@ -401,13 +401,13 @@ Para la elaboración de los *Empathy Maps*, el equipo partió del conocimiento y
 
 **Segmento 1: Administradores de casas de reposo**
 
-![Empathy Mapping 1](../assets/img/chapter-II/needfinding/empathy-mapping/segment-one/Empathy%20map%20Segmento_1.png)
+![Empathy Mapping 1](../assets/img/chapter-II/Empathy%20map%20Segmento_1.png)
 
 En este mapa se analizó a Mauricio Sánchez Valencia, un administrador joven con la responsabilidad de garantizar la calidad del servicio en una casa de reposo. Se identificó que piensa constantemente en la necesidad de organizar y centralizar la información médica y operativa de los residentes, ya que le preocupa que los procesos manuales generen errores y retrasos. Escucha las quejas de familiares por falta de comunicación oportuna y observa cómo sus colegas deben invertir tiempo en tareas repetitivas en lugar de enfocarse en el bienestar de los residentes. Mauricio expresa la necesidad de contar con una solución moderna que mejore la gestión y actúa implementando estrategias de control básicas con las herramientas disponibles, aunque estas son limitadas. Su dolor principal es la sobrecarga administrativa y la falta de un sistema ágil, mientras que su ganancia esperada es lograr eficiencia en la gestión, confianza de los familiares y un mejor control de la información.
 
 **Segmento 2: Familiares de adultos mayores**
 
-![Empathy Mapping 2](../assets/img/chapter-II/needfinding/empathy-mapping/segment-two/Empathy%20map%20Segmento_2.png)
+![Empathy Mapping 2](../assets/img/chapter-II/Empathy%20map%20Segmento_2.png)
 
 En este mapa se analizó a Carmen Morales Quispe, una comerciante que busca mantenerse informada sobre el estado de salud de su familiar mientras desarrolla sus actividades diarias. Ella piensa en la tranquilidad que le daría tener acceso rápido y claro a la evolución médica, medicación y tratamientos de su ser querido. Escucha a otros familiares compartir la frustración por la falta de información y observa que depender de llamadas o visitas no siempre es suficiente. Carmen suele expresar la necesidad de contar con una aplicación confiable y fácil de usar, y actúa buscando cualquier canal de comunicación disponible para mantenerse al tanto. Su dolor principal es la incertidumbre y la demora en recibir notificaciones sobre emergencias, mientras que su ganancia esperada es tener confianza, tranquilidad y control al poder consultar la información médica en tiempo real desde cualquier lugar.
 
