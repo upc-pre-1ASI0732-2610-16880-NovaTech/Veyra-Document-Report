@@ -161,43 +161,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US03</td>
-    <td>visitante de la landing page,</td>
-    <td>Alta</td>
-    <td>EP01 - Navegación en la Landing Page</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Selección de Plan en Landing Page</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como visitante de la landing page, quiero seleccionar un plan y finalizar la confirmación en la misma pantalla, para agilizar y simplificar el registro.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Selección exitosa de plan</strong><br/>
-<strong>Dado que</strong> el visitante ha seleccionado un plan disponible<br/>
-<strong>Cuando</strong> confirma la selección<br/>
-<strong>Entonces</strong> el sistema muestra el formulario de registro con el plan pre-seleccionado.<br/><br/>
-<strong>Escenario 2: Datos de registro incompletos</strong><br/>
-<strong>Dado que</strong> el visitante está completando el formulario de registro<br/>
-<strong>Cuando</strong> faltan datos obligatorios<br/>
-<strong>Entonces</strong> el sistema muestra mensajes de validación específicos para los campos requeridos.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -207,7 +170,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US04</td>
+    <td>US03</td>
     <td>visitante de la Landing Page,</td>
     <td>Media</td>
     <td>EP01 - Navegación en la Landing Page</td>
@@ -245,7 +208,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US07</td>
+    <td>US05</td>
     <td>visitante de la Landing Page</td>
     <td>Media</td>
     <td>EP01 - Navegación en la Landing Page</td>
@@ -283,7 +246,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US39</td>
+    <td>US06</td>
     <td>visitante de la landing page</td>
     <td>Baja</td>
     <td>EP01 - Navegación en la Landing Page</td>
@@ -321,7 +284,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US05</td>
+    <td>US04</td>
     <td>visitante de la landing page</td>
     <td>Media</td>
     <td>EP02 - Soporte y contacto</td>
@@ -351,43 +314,10 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US06</td>
-    <td>visitante de la landing page</td>
-    <td>Alta</td>
-    <td>EP02 - Soporte y contacto</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Formulario de contacto</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como visitante de la landing page quiero completar un formulario de contacto para enviar consultas específicas y recibir una respuesta personalizada de Veyra.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Envío exitoso de consulta</strong><br/>
-<strong>Dado que</strong> el visitante completa el formulario de contacto<br/>
-<strong>Cuando</strong> todos los campos requeridos están completos y válidos<br/>
-<strong>Entonces</strong> la consulta se envía exitosamente y el usuario recibe confirmación.<br/><br/>
-<strong>Escenario 2: Datos de contacto inválidos</strong><br/>
-<strong>Dado que</strong> el visitante completa el formulario de contacto<br/>
-<strong>Cuando</strong> existen campos inválidos o incompletos<br/>
-<strong>Entonces</strong> el sistema muestra mensajes de validación específicos para los campos problemáticos.</td>
-  </tr>
-</table>
+
+
+
+
 
 <table class="story-card">
   <tr class="head">
@@ -397,159 +327,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US08</td>
-    <td>familiar de un adulto mayor</td>
-    <td>Alta</td>
-    <td>EP03 - Acceso a Información</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Historial médico</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar de un adulto mayor quiero acceder al historial médico completo de mi familiar para conocer su evolución de salud y diagnósticos actuales.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Acceso al historial médico</strong><br/>
-<strong>Dado que</strong> el familiar está autenticado y tiene permisos<br/>
-<strong>Cuando</strong> solicita ver el historial médico<br/>
-<strong>Entonces</strong> el sistema muestra el historial médico completo organizado cronológicamente.<br/><br/>
-<strong>Escenario 2: Sin permisos para acceder al historial</strong><br/>
-<strong>Dado que</strong> el usuario intenta acceder al historial médico<br/>
-<strong>Cuando</strong> no tiene los permisos necesarios<br/>
-<strong>Entonces</strong> el sistema muestra un mensaje de restricción de acceso.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US09</td>
-    <td>familiar de un adulto mayor</td>
-    <td>Media</td>
-    <td>EP03 - Acceso a Información</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Agenda de citas Medicas</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar de un adulto mayor quiero consultar la agenda de citas médicas de mi familiar para estar informado sobre sus próximos tratamientos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Visualización de citas programadas</strong><br/>
-<strong>Dado que</strong> el familiar está autenticado<br/>
-<strong>Cuando</strong> accede a la agenda de citas<br/>
-<strong>Entonces</strong> el sistema muestra la lista de citas médicas programadas con sus detalles.<br/><br/>
-<strong>Escenario 2: No hay citas programadas</strong><br/>
-<strong>Dado que</strong> el familiar consulta la agenda de citas<br/>
-<strong>Cuando</strong> no existen citas programadas<br/>
-<strong>Entonces</strong> el sistema muestra un mensaje informativo sobre la ausencia de citas.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US10</td>
-    <td>familiar de un adulto mayor</td>
-    <td>Media</td>
-    <td>EP03 - Acceso a Información</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Consulta de información personal</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar de un adulto mayor quiero ver la información de mi familiar para estar seguro de que esté correcto o actualizado.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Visualización de información personal</strong><br/>
-<strong>Dado que</strong> el familiar está autenticado<br/>
-<strong>Cuando</strong> accede al perfil de información personal<br/>
-<strong>Entonces</strong> el sistema muestra la información personal actualizada del adulto mayor.<br/><br/>
-<strong>Escenario 2: Solicitud de actualización de información</strong><br/>
-<strong>Dado que</strong> el familiar identifica información desactualizada<br/>
-<strong>Cuando</strong> solicita una actualización<br/>
-<strong>Entonces</strong> el sistema registra la solicitud de cambio con la justificación proporcionada.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US11</td>
-    <td>familiar de un adulto mayor</td>
-    <td>Media</td>
-    <td>EP03 - Acceso a Información</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Galería de fotos y actividades</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar de un adulto mayor quiero ver fotos de las actividades diarias de mi familiar para sentirme conectado con su día a día y verificar su participación social.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Acceso a galería de actividades</strong><br/>
-<strong>Dado que</strong> el familiar está autenticado<br/>
-<strong>Cuando</strong> accede a la galería de fotos<br/>
-<strong>Entonces</strong> el sistema muestra las fotos organizadas por fecha y actividad.<br/><br/>
-<strong>Escenario 2: Sin actividades recientes</strong><br/>
-<strong>Dado que</strong> el familiar consulta la galería<br/>
-<strong>Cuando</strong> no hay fotos recientes disponibles<br/>
-<strong>Entonces</strong> el sistema muestra un mensaje informativo sobre la frecuencia de actualización.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US12</td>
+    <td>US07</td>
     <td>administrador de casa de reposo</td>
     <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
@@ -587,7 +365,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US13</td>
+    <td>US08</td>
     <td>administrador</td>
     <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
@@ -625,7 +403,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US14</td>
+    <td>US09</td>
     <td>administrador</td>
     <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
@@ -655,43 +433,19 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US15</td>
-    <td>administrador</td>
-    <td>Media</td>
-    <td>EP04 - Gestión de adultos mayores</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Gestión de visitas familiares</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero controlar y programar las visitas familiares a los residentes para mantener seguridad, orden y cumplir con los horarios establecidos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Programación exitosa de visita</strong><br/>
-<strong>Dado que</strong> el administrador programa una nueva visita<br/>
-<strong>Cuando</strong> el horario solicitado está disponible<br/>
-<strong>Entonces</strong> el sistema registra la visita y genera confirmación.<br/><br/>
-<strong>Escenario 2: Conflicto de horarios</strong><br/>
-<strong>Dado que</strong> el administrador programa una visita<br/>
-<strong>Cuando</strong> el horario solicitado ya está ocupado<br/>
-<strong>Entonces</strong> el sistema muestra horarios alternativos disponibles.</td>
-  </tr>
-</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <table class="story-card">
   <tr class="head">
@@ -701,501 +455,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US16</td>
-    <td>familiar</td>
-    <td>Alta</td>
-    <td>EP05 - Notificaciones automáticas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Recordatorios de citas y consultas</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero recibir recordatorios automáticos sobre citas médicas y consultas programadas de mi familiar para estar preparado y decidir si deseo acompañarlo.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Envío de recordatorios automáticos</strong><br/>
-<strong>Dado que</strong> existe una cita médica programada<br/>
-<strong>Cuando</strong> se acerca la fecha de la cita<br/>
-<strong>Entonces</strong> el sistema envía recordatorios automáticos a los familiares autorizados.<br/><br/>
-<strong>Escenario 2: Falla en envío de recordatorios</strong><br/>
-<strong>Dado que</strong> el sistema intenta enviar recordatorios<br/>
-<strong>Cuando</strong> falla el servicio de notificaciones<br/>
-<strong>Entonces</strong> el sistema registra el error y notifica al administrador.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US17</td>
-    <td>familiar</td>
-    <td>Alta</td>
-    <td>EP05 - Notificaciones automáticas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Notificaciones de cambios en medicación</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero ser notificado inmediatamente sobre cualquier cambio en la medicación de mi familiar para estar informado sobre su tratamiento médico.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Notificación de cambio en medicación</strong><br/>
-<strong>Dado que</strong> ocurre un cambio en la medicación del residente<br/>
-<strong>Cuando</strong> el médico actualiza el tratamiento<br/>
-<strong>Entonces</strong> el sistema envía notificación inmediata a familiares autorizados.<br/><br/>
-<strong>Escenario 2: Familiar no autorizado</strong><br/>
-<strong>Dado que</strong> ocurre un cambio en la medicación<br/>
-<strong>Cuando</strong> un familiar no está autorizado para recibir esa información<br/>
-<strong>Entonces</strong> el sistema no envía la notificación, respetando las preferencias de privacidad.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US18</td>
-    <td>familiar</td>
-    <td>Media</td>
-    <td>EP05 - Notificaciones automáticas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Recordatorios de visitas familiares</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero recibir recordatorios automáticos sobre mis visitas programadas al adulto mayor para no olvidar las citas y mantener regularidad en el contacto.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Recordatorio de visita programada</strong><br/>
-<strong>Dado que</strong> existe una visita familiar programada<br/>
-<strong>Cuando</strong> se acerca la hora de la visita<br/>
-<strong>Entonces</strong> el sistema envía recordatorio automático al familiar.<br/><br/>
-<strong>Escenario 2: Cancelación de visita</strong><br/>
-<strong>Dado que</strong> existe una visita programada<br/>
-<strong>Cuando</strong> ocurre una emergencia que requiere cancelación<br/>
-<strong>Entonces</strong> el sistema envía notificación inmediata de cancelación.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US19</td>
-    <td>familiar</td>
-    <td>Media</td>
-    <td>EP05 - Notificaciones automáticas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Alertas de actualización de datos personales</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero recibir notificaciones automáticas cuando se actualice la información personal o de mi familiar para mantenerme informado de cualquier cambio en su perfil.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Notificación de actualización de datos</strong><br/>
-<strong>Dado que</strong> se actualiza información personal del residente<br/>
-<strong>Cuando</strong> se modifican datos relevantes<br/>
-<strong>Entonces</strong> el sistema envía notificación a familiares autorizados especificando los cambios.<br/><br/>
-<strong>Escenario 2: Actualización sin autorización para notificar</strong><br/>
-<strong>Dado que</strong> se actualiza información personal<br/>
-<strong>Cuando</strong> el familiar no tiene autorización para recibir esa información<br/>
-<strong>Entonces</strong> el sistema no envía notificación sobre datos restringidos.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US20</td>
-    <td>familiar</td>
-    <td>Media</td>
-    <td>EP06 - Comunicación con cuidadores</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Preguntas sobre rutina de cuidados</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero hacer preguntas específicas sobre la rutina diaria y cuidados de mi familiar para entender mejor su día a día y resolver dudas puntuales.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Envío de pregunta sobre cuidados</strong><br/>
-<strong>Dado que</strong> el familiar está autenticado<br/>
-<strong>Cuando</strong> envía una pregunta sobre cuidados<br/>
-<strong>Entonces</strong> la consulta se envía al personal asignado y recibe confirmación.<br/><br/>
-<strong>Escenario 2: Canal de comunicación no disponible</strong><br/>
-<strong>Dado que</strong> el familiar intenta enviar una pregunta<br/>
-<strong>Cuando</strong> el sistema de comunicación no está disponible<br/>
-<strong>Entonces</strong> el usuario recibe un mensaje temporal con opciones alternativas.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US21</td>
-    <td>familiar</td>
-    <td>Media</td>
-    <td>EP06 - Comunicación con cuidadores</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Peticiones de modificación de cuidados</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero solicitar ajustes específicos en el cuidado de mi familiar basados en sus preferencias o necesidades particulares.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Solicitud de modificación de cuidados</strong><br/>
-<strong>Dado que</strong> el familiar tiene permisos para solicitar cambios<br/>
-<strong>Cuando</strong> envía una petición detallada<br/>
-<strong>Entonces</strong> el sistema registra la solicitud con número de seguimiento.<br/><br/>
-<strong>Escenario 2: Solicitud que requiere aprobación médica</strong><br/>
-<strong>Dado que</strong> el familiar solicita una modificación<br/>
-<strong>Cuando</strong> la petición involucra aspectos médicos<br/>
-<strong>Entonces</strong> el sistema deriva automáticamente la solicitud al equipo médico.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US22</td>
-    <td>familiar</td>
-    <td>Media</td>
-    <td>EP06 - Comunicación con cuidadores</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Seguimiento del bienestar emocional</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero comunicarme con el personal sobre el estado emocional y psicológico de mi familiar para asegurar su bienestar integral.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Comunicación sobre estado emocional</strong><br/>
-<strong>Dado que</strong> el familiar está preocupado por el bienestar emocional<br/>
-<strong>Cuando</strong> envía consulta sobre estado anímico<br/>
-<strong>Entonces</strong> el sistema comunica la consulta al área de psicología/trabajo social.<br/><br/>
-<strong>Escenario 2: Situación que requiere atención inmediata</strong><br/>
-<strong>Dado que</strong> el familiar reporta cambios emocionales significativos<br/>
-<strong>Cuando</strong> la situación índica posible crisis emocional<br/>
-<strong>Entonces</strong> el sistema escala la situación a atención psicológica prioritaria.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US23</td>
-    <td>familiar</td>
-    <td>Baja</td>
-    <td>EP06 - Comunicación con cuidadores</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Planificación de eventos familiares</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como familiar quiero coordinar con el personal la organización de eventos especiales o celebraciones para mi familiar dentro de las instalaciones.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Coordinación de evento familiar</strong><br/>
-<strong>Dado que</strong> el familiar planifica un evento especial<br/>
-<strong>Cuando</strong> solicita coordinación especificando requerimientos<br/>
-<strong>Entonces</strong> el personal evalúa viabilidad y coordina los recursos necesarios.<br/><br/>
-<strong>Escenario 2: Evento no permitido por protocolos</strong><br/>
-<strong>Dado que</strong> el familiar solicita un evento<br/>
-<strong>Cuando</strong> la solicitud no cumple con políticas institucionales<br/>
-<strong>Entonces</strong> el sistema explica las limitaciones y ofrece alternativas.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US24</td>
-    <td>administrador</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Registro de medicamentos en inventario</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero registrar todos los medicamentos que ingresan al inventario con sus datos completos para mantener un catálogo actualizado.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Registro exitoso de medicamento</strong><br/>
-<strong>Dado que</strong> el administrador registra un nuevo medicamento<br/>
-<strong>Cuando</strong> proporciona todos los datos requeridos<br/>
-<strong>Entonces</strong> el sistema añade el medicamento al inventario y actualiza el stock.<br/><br/>
-<strong>Escenario 2: Medicamento duplicado</strong><br/>
-<strong>Dado que</strong> el administrador registra un medicamento<br/>
-<strong>Cuando</strong> intenta ingresar un medicamento con lote duplicado<br/>
-<strong>Entonces</strong> el sistema detecta la duplicación y muestra alerta.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US25</td>
-    <td>administrador</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Alertas de vencimiento</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero recibir alertas automáticas sobre medicamentos próximos a vencer para evitar pérdidas y riesgos de seguridad.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Alerta por medicamentos próximos a vencer</strong><br/>
-<strong>Dado que</strong> existen medicamentos próximos a vencer<br/>
-<strong>Cuando</strong> faltan 30 días para la fecha de vencimiento<br/>
-<strong>Entonces</strong> el sistema genera alerta automática al administrador.<br/><br/>
-<strong>Escenario 2: Medicamentos vencidos en inventario</strong><br/>
-<strong>Dado que</strong> existen medicamentos vencidos<br/>
-<strong>Cuando</strong> el sistema detecta medicamentos vencidos<br/>
-<strong>Entonces</strong> el sistema bloquea automáticamente su uso y genera alerta crítica.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US26</td>
-    <td>administrador</td>
-    <td>Baja</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Eliminación de medicamentos</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero eliminar medicamentos del inventario de manera controlada para mantener la precisión del stock y cumplir con protocolos de disposición.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Eliminación controlada de medicamento</strong><br/>
-<strong>Dado que</strong> el administrador necesita eliminar un medicamento<br/>
-<strong>Cuando</strong> especifica la razón y justificación<br/>
-<strong>Entonces</strong> el sistema registra la eliminación y actualiza el stock.<br/><br/>
-<strong>Escenario 2: Intento de eliminación sin autorización</strong><br/>
-<strong>Dado que</strong> un usuario intenta eliminar un medicamento<br/>
-<strong>Cuando</strong> no posee los permisos necesarios<br/>
-<strong>Entonces</strong> el sistema niega el acceso y registra el intento.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US27</td>
-    <td>administrador</td>
-    <td>Media</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Búsqueda y filtrado de inventario</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero filtrar y buscar medicamentos en el inventario para encontrar rápidamente información específica y generar reportes personalizados.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Búsqueda de medicamentos</strong><br/>
-<strong>Dado que</strong> el administrador busca medicamentos<br/>
-<strong>Cuando</strong> utiliza filtros de búsqueda<br/>
-<strong>Entonces</strong> el sistema retorna resultados precisos según los criterios.<br/><br/>
-<strong>Escenario 2: Búsqueda sin resultados</strong><br/>
-<strong>Dado que</strong> el administrador busca medicamentos<br/>
-<strong>Cuando</strong> los criterios no coinciden con ningún medicamento<br/>
-<strong>Entonces</strong> el sistema muestra mensaje de "sin resultados".</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US28</td>
-    <td>administrador</td>
-    <td>Media</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Información de medicamentos para personal</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero proporcionar información detallada sobre medicamentos al personal para asegurar administración segura y correcta.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Acceso a información de medicamentos</strong><br/>
-<strong>Dado que</strong> personal autorizado consulta información<br/>
-<strong>Cuando</strong> accede a detalles de un medicamento<br/>
-<strong>Entonces</strong> el sistema muestra información completa y protocolos de administración.<br/><br/>
-<strong>Escenario 2: Medicamento con alertas especiales</strong><br/>
-<strong>Dado que</strong> personal consulta un medicamento<br/>
-<strong>Cuando</strong> el medicamento tiene alertas de seguridad<br/>
-<strong>Entonces</strong> el sistema muestra las alertas prominentemente.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US29</td>
+    <td>US10</td>
     <td>administrador</td>
     <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
@@ -1225,43 +485,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US30</td>
-    <td>administrador</td>
-    <td>Media</td>
-    <td>EP08 - Gestión de personal</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Baja de personal</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero dar de baja empleados del sistema para mantener registros actualizados y gestionar finalizaciones de contratos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Proceso de baja de empleado</strong><br/>
-<strong>Dado que</strong> el administrador procesa la baja de un empleado<br/>
-<strong>Cuando</strong> especifica fecha de terminación y motivo<br/>
-<strong>Entonces</strong> el sistema desactiva accesos y genera reporte de finalización.<br/><br/>
-<strong>Escenario 2: Empleado con responsabilidades activas</strong><br/>
-<strong>Dado que</strong> el administrador intenta dar de baja a un empleado<br/>
-<strong>Cuando</strong> el empleado tiene responsabilidades activas<br/>
-<strong>Entonces</strong> el sistema alerta sobre responsabilidades y requiere reasignación.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -1271,7 +494,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US31</td>
+    <td>US11</td>
     <td>administrador</td>
     <td>Media</td>
     <td>EP08 - Gestión de personal</td>
@@ -1301,43 +524,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US32</td>
-    <td>administrador</td>
-    <td>Media</td>
-    <td>EP08 - Gestión de personal</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Gestión de horas extra</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero controlar las horas extra trabajadas por el personal para gestionar costos laborales y cumplir con regulaciones de trabajo.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Registro de horas extra</strong><br/>
-<strong>Dado que</strong> el administrador registra horas extra<br/>
-<strong>Cuando</strong> especifica empleado, fecha, horas y justificación<br/>
-<strong>Entonces</strong> el sistema registra las horas y calcula montos según tarifas.<br/><br/>
-<strong>Escenario 2: Horas que exceden límites permitidos</strong><br/>
-<strong>Dado que</strong> el administrador registra horas extra<br/>
-<strong>Cuando</strong> las horas superan los máximos permitidos<br/>
-<strong>Entonces</strong> el sistema muestra alerta y requiere autorización especial.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -1347,7 +533,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US33</td>
+    <td>US12</td>
     <td>administrador</td>
     <td>Media</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
@@ -1385,7 +571,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US34</td>
+    <td>US13</td>
     <td>administrador</td>
     <td>Media</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
@@ -1415,43 +601,7 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US35</td>
-    <td>administrador</td>
-    <td>Baja</td>
-    <td>EP09 - Gestión de información de la casa de reposo</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Información del personal directivo</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero gestionar la información del personal directivo para transparencia hacia familias y autoridades.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Gestión de información directiva</strong><br/>
-<strong>Dado que</strong> el administrador actualiza información de personal directivo<br/>
-<strong>Cuando</strong> modifica información de directores o coordinadores<br/>
-<strong>Entonces</strong> el sistema actualiza la información para familias y autoridades.<br/><br/>
-<strong>Escenario 2: Acceso a información por autoridades</strong><br/>
-<strong>Dado que</strong> autoridades requieren información directiva<br/>
-<strong>Cuando</strong> necesitan verificar credenciales y responsabilidades<br/>
-<strong>Entonces</strong> pueden acceder a la información completa y actualizada.</td>
-  </tr>
-</table>
+
 
 <table class="story-card">
   <tr class="head">
@@ -1461,45 +611,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US36</td>
-    <td>administrador</td>
-    <td>Baja</td>
-    <td>EP09 - Gestión de información de la casa de reposo</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Historia institucional</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como administrador quiero gestionar la información histórica y reconocimientos de la casa de reposo para generar confianza y credibilidad.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Presentación de historia institucional</strong><br/>
-<strong>Dado que</strong> el administrador gestiona información histórica<br/>
-<strong>Cuando</strong> actualiza historia, certificaciones y logros<br/>
-<strong>Entonces</strong> el sistema presenta la información de manera creíble.<br/><br/>
-<strong>Escenario 2: Verificación de certificaciones</strong><br/>
-<strong>Dado que</strong> autoridades verifican certificaciones<br/>
-<strong>Cuando</strong> requieren confirmar validez de licencias<br/>
-<strong>Entonces</strong> pueden acceder a información verificable y contactos de entidades.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US37</td>
+    <td>US14</td>
     <td>administrador</td>
     <td>Alta</td>
     <td>EP10 - Seguridad y privacidad</td>
@@ -1537,7 +649,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US38</td>
+    <td>US15</td>
     <td>administrador</td>
     <td>Alta</td>
     <td>EP10 - Seguridad y privacidad</td>
@@ -1575,7 +687,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US40</td>
+    <td>US16</td>
     <td>usuario</td>
     <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
@@ -1613,7 +725,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US41</td>
+    <td>US17</td>
     <td>usuario</td>
     <td>Baja</td>
     <td>EP11 - Diseño de interfaz</td>
@@ -1651,7 +763,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US42</td>
+    <td>US18</td>
     <td>usuario</td>
     <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
@@ -1689,7 +801,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US43</td>
+    <td>US19</td>
     <td>usuario</td>
     <td>Baja</td>
     <td>EP11 - Diseño de interfaz</td>
@@ -1727,7 +839,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US44</td>
+    <td>US20</td>
     <td>usuario</td>
     <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
@@ -1765,7 +877,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US45</td>
+    <td>US21</td>
     <td>enfermero,</td>
     <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
@@ -1803,7 +915,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>US46</td>
+    <td>US22</td>
     <td>médico,</td>
     <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
@@ -1833,43 +945,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>US47</td>
-    <td>enfermero,</td>
-    <td>Alta</td>
-    <td>EP15 - Monitoreo IoT y Wearables</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Alertas de inestabilidad de salud</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como enfermero, quiero recibir una alerta inmediata cuando el análisis de las mediciones de Tracking detecte inestabilidad en el estado fisiológico de un residente, para poder acudir rápidamente y brindar atención.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Notificación de inestabilidad confirmada</strong><br/>
-<strong>Dado que</strong> una medición almacenada en Tracking fue clasificada como “inestable” por el servicio de evaluación de Health<br/>
-<strong>Cuando</strong> se confirma la desviación significativa respecto a los parámetros de salud del residente<br/>
-<strong>Entonces</strong> se envía una alerta prioritaria al personal asignado (por ejemplo vía panel, correo o notificación push) indicando el residente, los valores críticos y la hora de la medición.<br/><br/>
-<strong>Escenario 2: Ausencia de datos críticos</strong><br/>
-<strong>Dado que</strong> las mediciones registradas para un residente son clasificadas como “estables”<br/>
-<strong>Cuando</strong> el sistema completa el análisis periódico<br/>
-<strong>Entonces</strong> no se emite ninguna alerta y el tablero de monitoreo mantiene el estado normal de operación..</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -2026,7 +1101,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS-RM-005</td>
+    <td>TS-RM005</td>
     <td>desarrollador backend en NovaPeru tech</td>
     <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
@@ -2055,6 +1130,8 @@
   </tr>
 </table>
 
+
+
 <table class="story-card">
   <tr class="head">
     <th>Story ID</th>
@@ -2064,86 +1141,6 @@
   </tr>
   <tr>
     <td>TS-I001</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Eliminar medicamentos</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Delete para medicamentos para asegurar que el administrador de la casa de reposo pueda remover registros del inventario.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Eliminación exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud DELETE a <code>/api/v1/inventories/{nursingHomeId}/medications/{medicationId}</code><br/>
-                - <strong>Cuando</strong> la API valida que el medicamento pertenece al nursing home especificado y el usuario tiene permisos<br/>
-                - <strong>Entonces</strong> la API responde con <code>204 The medication was deleted successfully.</code> sin cuerpo de respuesta.<br/><br/>
-<strong>Escenario 2: Medicamento no encontrado</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud DELETE para un <code>{medicationId}</code> inexistente<br/>
-                - <strong>Cuando</strong> la API no encuentra el medicamento<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 Not Found</code> y retorna un payload de error.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-I002</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Agregar medicamentos</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Post medicamentos para permitir que el administrador de la casa de reposo pueda agregar más medicamentos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Creación exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud POST a <code>/api/v1/inventories/{nursingHomeId}/medications</code> con un cuerpo de solicitud conteniendo: name, description, dosage, unit, quantity, expirationDate, manufacturer<br/>
-                - <strong>Cuando</strong> la API valida que el usuario tiene permisos para este nursing home y persiste el medicamento<br/>
-                - <strong>Entonces</strong> la API responde con <code>201 medication created successfully</code> y retorna el medicamento creado con los atributos: id (Long), nursingHomeId (Long), name (String), description (String), dosage (String), unit (String), quantity (Integer), expirationDate (Date), manufacturer (String), createdAt (DateTime).<br/><br/>
-<strong>Escenario 2: Error de validación</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud con atributos inválidos<br/>
-                - <strong>Cuando</strong> la API valida la solicitud<br/>
-                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code> y retorna un payload de error describiendo los errores de validación.<br/><br/>
-<strong>Escenario 3: Medicamento duplicado en este nursing home</strong><br/>
-                - <strong>Dado</strong> que ya existe un medicamento con la misma combinación de nombre y fabricante en este nursing home<br/>
-                - <strong>Cuando</strong> la API detecta el duplicado<br/>
-                - <strong>Entonces</strong> la API responde con <code>409 Conflict</code> y retorna un payload de error.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-I003</td>
     <td>desarrollador backend en NovaPeru Tech</td>
     <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
@@ -2173,81 +1170,7 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-I004</td>
-    <td>desarrollador backend en NovaPeru Tech</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Ver todo los medicamentos</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru Tech quiero crear un endpoint para listar todos los medicamentos de un nursing home.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Listar todos los medicamentos del nursing home</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud GET a <code>/api/v1/inventories/{nursingHomeId}/medications</code><br/>
-                - <strong>Cuando</strong> la API encuentra medicamentos para este nursing home<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 medication found</code> y retorna solo los medicamentos que pertenecen a este nursing home.<br/><br/>
-<strong>Escenario 2: Sin medicamentos en este nursing home</strong><br/>
-                - <strong>Dado</strong> que no hay medicamentos para el nursing home especificado<br/>
-                - <strong>Cuando</strong> la API busca medicamentos<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 medication not found</code>.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-I005</td>
-    <td>desarrollador de backend en NovaPeru Tech</td>
-    <td>Alta</td>
-    <td>EP07 - Gestión de medicamentos</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Actualizar información de medicamentos</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador de backend en NovaPeru Tech quiero crear una función para actualizar la información para asegurar que el administrador de la casa de reposos pueda mantener actualizada la información de cada medicamento.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Actualización completa exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud PUT o PATCH a <code>/api/v1/inventories/{nursingHomeId}/medications/{medicationId}</code> con datos actualizados<br/>
-                - <strong>Cuando</strong> la API valida que el medicamento pertenece a este nursing home y el usuario tiene permisos<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 the medication was updated</code> y retorna el medicamento actualizado.<br/><br/>
-<strong>Escenario 2: Medicamento de no encontrado</strong><br/>
-                - <strong>Dado</strong> que se intenta actualizar un medicamento que no existe en el <code>{nursingHomeId}</code> especificado<br/>
-                - <strong>Cuando</strong> la API valida su existencia<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 medication not found</code> y retorna un payload de error.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -2286,43 +1209,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-EM002</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Alta</td>
-    <td>EP08 - Gestión de personal</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Eliminar empleado</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para que el administrador de la casa de reposo revoque persmisos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Eliminación lógica exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe DELETE a <code>/api/v1/employee-management/{nursingHomeId}/employees/{employeeId}</code><br/>
-                - <strong>Cuando</strong> la API válida que el empleado pertenece a este nursing home y cambia status a INACTIVE<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con mensaje de confirmación.<br/><br/>
-<strong>Escenario 2: Empleado de otro nursing home</strong><br/>
-                - <strong>Dado</strong> que el empleado pertenece a otro nursing home<br/>
-                - <strong>Cuando</strong> la API válida propiedad<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 employee not found</code>.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -2332,7 +1218,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS-EM003</td>
+    <td>TS-EM002</td>
     <td>desarrollador backend en NovaPeru tech</td>
     <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
@@ -2361,42 +1247,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-EM004</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Alta</td>
-    <td>EP08 - Gestión de personal</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Ver información de un empleado</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de un empleado para que el administrador pueda observar la información detallada del empleado.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Obtener empleado específico</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/employee-management/{nursingHomeId}/employees/{employeeId}</code><br/>
-                - <strong>Cuando</strong> la API encuentra el empleado y válida que pertenece a este nursing home<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con información completa del empleado.<br/><br/>
-<strong>Escenario 2: Empleado no existe</strong><br/>
-                - <strong>Dado</strong> que el empleado no existe<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 employee not found</code>.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -2406,7 +1256,7 @@
     <th>Epic</th>
   </tr>
   <tr>
-    <td>TS-EM005</td>
+    <td>TS-EM003</td>
     <td>desarrollador backend en NovaPeru tech</td>
     <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
@@ -2587,43 +1437,6 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-NH005</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Alta</td>
-    <td>EP09 - Gestión de información de la casa de reposo</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Actualizar Nursing Home</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint PUT/PATCH para actualizar información de una casa de reposo.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Actualización exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe una solicitud PUT a <code>/api/v1/nursing-homes-management/{nursingHomeId}</code> con datos actualizados<br/>
-                - <strong>Cuando</strong> la API válida permisos de ADMIN para esta casa de reposo y actualiza<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 The nursing home was updated successfully</code> y retorna la casa de reposo actualizada.<br/><br/>
-<strong>Escenario 2: Sin permisos de administrador</strong><br/>
-                - <strong>Dado</strong> que el usuario no tiene rol ADMIN para esta casa de reposo<br/>
-                - <strong>Cuando</strong> la API válida permisos<br/>
-                - <strong>Entonces</strong> la API responde con <code>400 the nursing home was not found</code> y retorna un payload de error.</td>
-  </tr>
-</table>
 
 <table class="story-card">
   <tr class="head">
@@ -2696,223 +1509,12 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-A003</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP12 - Gestión de Actividades</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Ver información de una Actividad</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para mostrar la información de una sola actividad de una casa de reposo.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: mostrar actividad exitosamente</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br/>
-                - <strong>Cuando</strong> la API busca la actividad<br/>
-                - <strong>Entonces</strong> la API response con <code>200 activity found</code> y retorna la información de la actividad de esta casa de repooso<br/><br/>
-<strong>Escenario 2: actividad no existe</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br/>
-                - <strong>Cuando</strong> la API busca la actividad<br/>
-                - <strong>Entonces</strong> la API responsé con <code>404 activity not found</code>.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-A004</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP12 - Gestión de Actividades</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Eliminar una Actividad</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para eliminar una actividad en una casa de reposo determinada.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Eliminación lógica exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe DELETE a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}</code><br/>
-                - <strong>Cuando</strong> la API válida que la actividad pertenece a este nursing home<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> con mensaje de confirmación.<br/><br/>
-<strong>Escenario 2: Actividad no existe</strong><br/>
-                - <strong>Dado</strong> que la actividad no existe en este nursing home<br/>
-                - <strong>Cuando</strong> la API válida propiedad<br/>
-                - <strong>Entonces</strong> la API responde con <code>404 activity not found</code>.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-A005</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP12 - Gestión de Actividades</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Inscribir Residente a Actividad</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para inscribir residentes en actividades.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Inscripción exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe POST a <code>/api/v1/activity-management/{nursingHomeId}/activities/{activityId}/residents/{residentId}</code><br/>
-                - <strong>Cuando</strong> la API válida que tanto la actividad como el residente pertenecen a este nursing home y hay capacidad disponible<br/>
-                - <strong>Entonces</strong> la API responde con <code>201 Created</code> y retorna: enrollmentId, activityId, residentId, enrolledAt, status.<br/><br/>
-<strong>Escenario 2: Datos ínvalidos</strong><br/>
-                - <strong>Dato</strong> que los datos son ínvalidos (ej nursingHomeId,ActivityId,etc)<br/>
-                - <strong>Entonces</strong> la API responde con <code>400 Bad Request</code>.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-ST001</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP13 - Analítica y Estadísticas Operativas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Obtener Estadísticas Generales</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas generales de una casa de reposo.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Obtener dashboard de estadísticas</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}</code><br/>
-                - <strong>Cuando</strong> la API calcula las estadísticas para este nursing home<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalResidents, activeResidents, totalEmployees, activeEmployees, totalMedications, lowStockMedications, upcomingActivities, occupancyRate, averageAge.<br/><br/>
-<strong>Escenario 2: Sin permisos</strong><br/>
-                - <strong>Dado</strong> que el usuario no tiene acceso a este nursing home<br/>
-                - <strong>Entonces</strong> la API responde con <code>403 Forbidden</code>.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-ST002</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP13 - Analítica y Estadísticas Operativas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Obtener Estadísticas de Inventario</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas del inventario de medicamentos.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Estadísticas de inventario</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}</code><br/>
-                - <strong>Cuando</strong> la API calcula estadísticas<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalMedications, totalValue, expiringThisMonth, expiringNextMonth, lowStockItems, outOfStockItems, topMedicationsByUsage.</td>
-  </tr>
-</table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-ST003</td>
-    <td>desarrollador backend en NovaPeru tech</td>
-    <td>Media</td>
-    <td>EP13 - Analítica y Estadísticas Operativas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Obtener Estadísticas de Residentes</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas de residentes.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Estadísticas de residentes</strong><br/>
-                - <strong>Dado</strong> que se recibe GET a <code>/api/v1/analytics/{nursingHomeId}/statistics/residents</code><br/>
-                - <strong>Cuando</strong> la API calcula estadísticas<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y retorna: totalResidents, byGender, byAgeRange, averageAge, newAdmissionsThisMonth, averageLengthOfStay, byMedicalCondition.</td>
-  </tr>
-</table>
+
 
 <table class="story-card">
   <tr class="head">
@@ -2923,48 +1525,6 @@
   </tr>
   <tr>
     <td>TS16</td>
-    <td>desarrollador backend en NovaPeru Tech</td>
-    <td>Alta</td>
-    <td>EP14 - Integraciones Externas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Consumir API de Google Maps</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru Tech quiero implementar un servicio de integración con Google Maps que proporcione verificación de direcciones y datos de localización para garantizar la precisión en la información geográfica de los residentes y sedes.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Validación exitosa</strong><br/>
-                - <strong>Dado</strong> que se recibe un <code>POST</code> a <code>/api/v1/location/validate</code> con datos de dirección<br/>
-                - <strong>Cuando</strong> la API llama a <strong>Google Maps Geocoding API</strong> y obtiene una coincidencia<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> incluyendo la dirección formateada, coordenadas (<code>lat</code>, <code>lng</code>) y nivel de confianza.<br/><br/>
-<strong>Escenario 2: Dirección no encontrada</strong><br/>
-                - <strong>Dado</strong> que se recibe una dirección inválida o inexistente<br/>
-                - <strong>Cuando</strong> la API no obtiene resultados desde Google Maps<br/>
-                - <strong>Entonces</strong> la API responde con <code>422 Unprocessable Entity</code> indicando que la dirección no pudo ser validada.<br/><br/>
-<strong>Escenario 3: Error de servicio externo</strong><br/>
-                - <strong>Dado</strong> que la API de Google Maps no responde o excede la cuota<br/>
-                - <strong>Cuando</strong> el backend intenta realizar la validación<br/>
-                - <strong>Entonces</strong> la API responde con <code>502 Bad Gateway</code> o error equivalente, informando del fallo del servicio externo.</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS17</td>
     <td>desarrollador backend en NovaPeru Tech</td>
     <td>Alta</td>
     <td>EP14 - Integraciones Externas</td>
@@ -3006,69 +1566,7 @@
   </tr>
 </table>
 
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS18</td>
-    <td>desarrollador backend en NovaPeru Tech</td>
-    <td>Alta</td>
-    <td>EP14 - Integraciones Externas</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Autenticación y 2FA (MFA)</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend en NovaPeru Tech quiero implementar un sistema de autenticación que soporte MFA (TOTP y SMS) para proteger accesos y cumplir con buenas prácticas de seguridad.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Registro y habilitación de 2FA (TOTP)</strong><br/>
-                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/register</code> con <code>email</code>, <code>password</code>, <code>fullname</code><br/>
-                - <strong>Cuando</strong> el usuario completa el registro<br/>
-                - <strong>Entonces</strong> la API responde <code>201 Created</code> con <code>userId</code> y estado <code>PENDING_VERIFICATION</code> (si aplica).<br/>
-                - Y cuando el usuario solicita habilitar 2FA (TOTP) mediante <code>POST /api/v1/auth/2fa/enable</code> (autenticado)<br/>
-                - <strong>Entonces</strong> la API genera un <code>secret</code> TOTP, devuelve un <code>otpauth://</code> URL o QR (para el cliente mostrarlo) y guarda el <code>secret</code> cifrado en DB hasta la verificación.<br/><br/>
-<strong>Escenario 2: Verificar código TOTP</strong><br/>
-                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/2fa/verify</code> con código TOTP<br/>
-                - <strong>Cuando</strong> la API valida el TOTP contra el secret del usuario<br/>
-                - <strong>Entonces</strong> la API activa MFA para la cuenta y devuelve <code>200 OK</code>.<br/><br/>
-<strong>Escenario 3: Login con 2FA</strong><br/>
-                - <strong>Dado</strong> que se recibe <code>POST /api/v1/auth/login</code> con <code>email</code>, <code>password</code><br/>
-                - <strong>Cuando</strong> las credenciales son correctas y el usuario tiene MFA habilitado<br/>
-                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>sessionId</code> temporal <code>AWAITING_2FA</code> y solicita el código MFA (TOTP o SMS).<br/>
-                - Y cuando se recibe <code>POST /api/v1/auth/2fa/challenge</code> con el código válido<br/>
-                - <strong>Entonces</strong> la API responde con <code>200 OK</code> y emite <code>accessToken</code> y <code>refreshToken</code>.<br/><br/>
-<strong>Escenario 4: Login sin 2FA</strong><br/>
-                - <strong>Dado</strong> que el usuario no tiene MFA habilitado<br/>
-                - <strong>Cuando</strong> las credenciales son correctas<br/>
-                - <strong>Entonces</strong> la API responde <code>200 OK</code> con <code>accessToken</code> y <code>refreshToken</code>.<br/><br/>
-<strong>Escenario 5: Código inválido / bloqueo</strong><br/>
-                - <strong>Dado</strong> que se reciben múltiples códigos inválidos en <code>auth/2fa/challenge</code><br/>
-                - <strong>Cuando</strong> se excede el límite de intentos (p. ej. 5)<br/>
-                - <strong>Entonces</strong> la API bloquea temporalmente el acceso y responde <code>429 Too Many Requests</code> o <code>423 Locked</code>, y registra el evento de seguridad.<br/><br/>
-<strong>Escenario 6: 2FA por SMS (fallback)</strong><br/>
-                - <strong>Dado</strong> que se solicita <code>POST /api/v1/auth/2fa/sms/send</code> (autenticado o en flujo de login)<br/>
-                - <strong>Cuando</strong> el backend genera OTP temporal y lo envía vía proveedor SMS (Twilio)<br/>
-                - <strong>Entonces</strong> la API responde <code>200 OK</code> y almacena hash del OTP con expiración corta.<br/>
-                - Y cuando se verifica el OTP en <code>POST /api/v1/auth/2fa/sms/verify</code><br/>
-                - <strong>Entonces</strong> la API auténtica al usuario y emite tokens si el código es correcto.<br/><br/>
-<strong>Escenario 7: Recuperación / códigos de respaldo</strong><br/>
-                - <strong>Dado</strong> que el usuario solicita <code>POST /api/v1/auth/2fa/backup-codes/generate</code><br/>
-                - <strong>Cuando</strong> la API genera un conjunto de códigos de un solo uso y los muestra una vez al usuario<br/>
-                - <strong>Entonces</strong> la API almacena hashes de los códigos y responde <code>200 OK</code> con instrucciones para guardarlos.</td>
-  </tr>
-</table>
+
 
 <table class="story-card">
   <tr class="head">
@@ -3079,45 +1577,6 @@
   </tr>
   <tr>
     <td>TS-IOT01</td>
-    <td>desarrollador backend,</td>
-    <td>Alta</td>
-    <td>EP15 - Monitoreo IoT y Wearables</td>
-  </tr>
-  <tr>
-    <th class="label">Title</th>
-    <td colspan="3" class="title-cell">Ingesta de Datos de Bandas Médicas</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Description</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="desc-cell">Como desarrollador backend, quiero implementar un endpoint en el bounded context Tracking para recibir la telemetría enviada por las bandas médicas (por ejemplo, presión arterial, frecuencia cardiaca, saturación de oxígeno y temperatura) y persistirla como registros de Measurement, de modo que pueda ser utilizada posteriormente por Health y Analytics.</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="label">Acceptance Criteria</th>
-  </tr>
-  <tr>
-    <td colspan="4" class="criteria-cell"><strong>Escenario 1: Recepción de paquete de datos válido</strong><br/>
-                - <strong>Dado</strong> que existe una banda (device_id) vinculada a un residente en el sistema<br/>
-                - <strong>Cuando</strong> la banda envía una solicitud POST /api/v1/measurements con un cuerpo parecido a:
-{"deviceId": "BAND-001", "residentId": 5, "systolic": 120, "diastolic": 80, "heartRate": 75, "oxygenSaturation": 97, "respiratoryRate": 16, "temperature": 36.8, "timestamp": "2025-11-10T09:30:00Z"}<br/>
-                - <strong>Entonces</strong> la API valida los datos, responde con 202 Accepted y crea un registro Measurement con los campos correspondientes (device_id, resident_id, heart_rate, temperature, timestamp, etc.).<br/><br/>
-<strong>Escenario 2: Banda no reconocida o no vinculada</strong><br/>
-                - <strong>Dado</strong> que se recibe un POST /api/v1/measurements con un deviceId que no está registrado o no está vinculado a ningún residente activo<br/>
-                - <strong>Cuando</strong> la API intenta procesar la solicitud<br/>
-                - <strong>Entonces</strong> responde con 404 Not Found o 403 Forbidden, no persiste la medición y registra el incidente en los logs para auditoría..</td>
-  </tr>
-</table>
-
-<table class="story-card">
-  <tr class="head">
-    <th>Story ID</th>
-    <th>User</th>
-    <th>Priority</th>
-    <th>Epic</th>
-  </tr>
-  <tr>
-    <td>TS-IOT02</td>
     <td>desarrollador backend,</td>
     <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
@@ -3152,89 +1611,51 @@
 En esta sección se presenta el Product Backlog priorizado, el cual contiene las Historias de Usuario y Technical Stories estimadas en Story Points. El orden de los elementos ha sido determinado por el valor que aportan al negocio, priorizando en las primeras iteraciones los elementos de la Landing Page y las funcionalidades core del sistema.
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td><strong>Orden</strong></td><td><strong>User Story Id</strong></td><td><strong>Título</strong></td><td><strong>Descripción</strong></td><td><strong>Story Points (1/2/3)</strong></td>
-  </tr>
-  <tr><td>1</td><td>US01</td><td>Menú de navegación</td><td>Como visitante de la landing page, quiero acceder a un menú superior con enlaces a “Login”, “Sign up”, “Planes” y “Contacto”, para navegar rápidamente a secciones clave.</td><td>1</td></tr>
-  <tr><td>2</td><td>US02</td><td>Visualización de Planes</td><td>Como visitante, quiero ver planes con precio, características y duración, para comparar y elegir el que mejor se adapte a mis necesidades.</td><td>2</td></tr>
-  <tr><td>3</td><td>US03</td><td>Selección de Plan en Landing Page</td><td>Como visitante, quiero seleccionar un plan y confirmarlo en la misma pantalla, para agilizar y simplificar mi registro.</td><td>3</td></tr>
-  <tr><td>4</td><td>US04</td><td>Visualización de creadores</td><td>Como visitante, quiero ver al equipo creador (nombre, foto, rol y descripción), para generar confianza en el servicio.</td><td>2</td></tr>
-  <tr><td>5</td><td>US05</td><td>Redes sociales</td><td>Como visitante, quiero acceder a las redes sociales desde el header o footer, para conocer más de la empresa y tener canales adicionales de contacto.</td><td>1</td></tr>
-  <tr><td>6</td><td>US06</td><td>Formulario de contacto</td><td>Como visitante, quiero enviar consultas mediante un formulario con validación, para recibir una respuesta personalizada.</td><td>3</td></tr>
-  <tr><td>7</td><td>US07</td><td>Cambio de idioma</td><td>Como visitante, quiero cambiar entre español e inglés desde el menú, para entender mejor el contenido.</td><td>3</td></tr>
-  <tr><td>8</td><td>US39</td><td>Términos y condiciones</td><td>Como visitante, quiero acceder a los términos y condiciones, para conocer las políticas legales antes de contratar.</td><td>2</td></tr>
-  <tr><td>9</td><td>US08</td><td>Historial médico</td><td>Como familiar de un adulto mayor, quiero acceder al historial médico completo, para conocer su evolución y diagnósticos actuales.</td><td>3</td></tr>
-  <tr><td>10</td><td>US09</td><td>Agenda de citas médicas</td><td>Como familiar, quiero consultar la agenda de citas médicas, para estar informada y planificar con anticipación.</td><td>3</td></tr>
-  <tr><td>11</td><td>US10</td><td>Consulta de información personal</td><td>Como familiar, quiero ver la información personal del residente, para verificar que esté correcta o solicitar cambios.</td><td>3</td></tr>
-  <tr><td>12</td><td>US11</td><td>Galería de fotos y actividades</td><td>Como familiar, quiero ver fotos de actividades organizadas por fecha y tipo, para sentirme conectada y verificar su participación social.</td><td>3</td></tr>
-  <tr><td>13</td><td>US12</td><td>Registro de residentes</td><td>Como administradora de la casa de reposo, quiero crear perfiles completos de los residentes, para centralizar su información personal y médica.</td><td>3</td></tr>
-  <tr><td>14</td><td>US13</td><td>Historial médico institucional</td><td>Como administradora con permisos médicos, quiero gestionar el historial médico de cada residente, para asegurar continuidad de cuidado y cumplir regulaciones.</td><td>3</td></tr>
-  <tr><td>15</td><td>US14</td><td>Administración de medicamentos</td><td>Como administradora, quiero controlar la administración de medicamentos, para garantizar cumplimiento de tratamientos y evitar errores.</td><td>3</td></tr>
-  <tr><td>16</td><td>US15</td><td>Gestión de visitas familiares</td><td>Como administradora, quiero programar y controlar visitas familiares, para mantener seguridad, orden y horarios establecidos.</td><td>3</td></tr>
-  <tr><td>17</td><td>US16</td><td>Recordatorios de citas y consultas</td><td>Como familiar, quiero recibir recordatorios automáticos de citas médicas, para estar preparada y decidir si acompañaré.</td><td>3</td></tr>
-  <tr><td>18</td><td>US17</td><td>Notificaciones de cambios en medicación</td><td>Como familiar, quiero ser notificada ante cambios en la medicación, para estar informada del tratamiento.</td><td>3</td></tr>
-  <tr><td>19</td><td>US18</td><td>Recordatorios de visitas familiares</td><td>Como familiar, quiero recibir recordatorios de mis visitas programadas, para no olvidar y mantener regularidad en el contacto.</td><td>3</td></tr>
-  <tr><td>20</td><td>US19</td><td>Alertas de actualización de datos personales</td><td>Como familiar, quiero recibir notificaciones cuando se actualicen datos personales del residente, para mantenerme informada de cualquier cambio.</td><td>3</td></tr>
-  <tr><td>21</td><td>US20</td><td>Preguntas sobre rutina de cuidados</td><td>Como familiar, quiero enviar preguntas a cuidadores sobre la rutina diaria, para resolver dudas puntuales.</td><td>3</td></tr>
-  <tr><td>22</td><td>US21</td><td>Peticiones de modificación de cuidados</td><td>Como familiar, quiero solicitar ajustes específicos en el cuidado, para adecuarlo a preferencias o necesidades particulares.</td><td>3</td></tr>
-  <tr><td>23</td><td>US22</td><td>Seguimiento del bienestar emocional</td><td>Como familiar, quiero comunicarme sobre el estado emocional y psicológico del residente, para asegurar su bienestar integral.</td><td>3</td></tr>
-  <tr><td>24</td><td>US23</td><td>Planificación de eventos familiares</td><td>Como familiar, quiero coordinar eventos o celebraciones dentro de la institución, para organizar ocasiones especiales del residente.</td><td>3</td></tr>
-  <tr><td>25</td><td>US24</td><td>Registro de medicamentos en inventario</td><td>Como administradora, quiero registrar medicamentos con datos completos, para mantener un inventario actualizado.</td><td>3</td></tr>
-  <tr><td>26</td><td>US25</td><td>Alertas de vencimiento</td><td>Como administradora, quiero recibir alertas sobre medicamentos próximos a vencer, para evitar pérdidas y riesgos de seguridad.</td><td>3</td></tr>
-  <tr><td>27</td><td>US26</td><td>Eliminación de medicamentos</td><td>Como administradora, quiero eliminar medicamentos del inventario de forma controlada, para mantener la precisión del stock y cumplir protocolos.</td><td>3</td></tr>
-  <tr><td>28</td><td>US27</td><td>Búsqueda y filtrado de inventario</td><td>Como administradora, quiero filtrar y buscar medicamentos por criterios, para encontrar información específica y generar reportes.</td><td>3</td></tr>
-  <tr><td>29</td><td>US28</td><td>Información de medicamentos para personal</td><td>Como administradora, quiero brindar información detallada de medicamentos al personal, para asegurar una administración segura y correcta.</td><td>3</td></tr>
-  <tr><td>30</td><td>US29</td><td>Gestión de perfiles de empleados</td><td>Como administradora, quiero registrar y mantener perfiles completos del personal, para tener información actualizada y asignar roles.</td><td>3</td></tr>
-  <tr><td>31</td><td>US30</td><td>Baja de personal</td><td>Como administradora, quiero dar de baja empleados y revocar accesos, para mantener registros al día y cerrar contratos.</td><td>3</td></tr>
-  <tr><td>32</td><td>US31</td><td>Búsqueda y filtrado de empleados</td><td>Como administradora, quiero filtrar y buscar empleados por criterios, para encontrar rápidamente personal específico.</td><td>3</td></tr>
-  <tr><td>33</td><td>US32</td><td>Gestión de horas extra</td><td>Como administradora, quiero controlar horas extra trabajadas, para gestionar costos laborales y cumplir regulaciones.</td><td>3</td></tr>
-  <tr><td>34</td><td>US33</td><td>Gestión de horarios de atención</td><td>Como administradora, quiero configurar horarios de atención y servicios, para informar disponibilidad y sincronizar citas.</td><td>3</td></tr>
-  <tr><td>35</td><td>US34</td><td>Datos de contacto institucional</td><td>Como administradora, quiero actualizar los datos de contacto institucional, para que familias y autoridades accedan a información vigente.</td><td>2</td></tr>
-  <tr><td>36</td><td>US35</td><td>Información del personal directivo</td><td>Como administradora, quiero gestionar la información del personal directivo, para dar transparencia a familias y autoridades.</td><td>2</td></tr>
-  <tr><td>37</td><td>US36</td><td>Historia institucional</td><td>Como administradora, quiero gestionar historia y reconocimientos de la institución, para generar confianza y credibilidad.</td><td>2</td></tr>
-  <tr><td>38</td><td>US37</td><td>Gestión de usuarios y permisos</td><td>Como administradora, quiero configurar roles y permisos de acceso, para proteger la privacidad de los datos.</td><td>3</td></tr>
-  <tr><td>39</td><td>US38</td><td>Protección de datos mediante cifrado</td><td>Como administradora, quiero que los datos sensibles estén cifrados en almacenamiento y tránsito, para evitar accesos no autorizados.</td><td>3</td></tr>
-  <tr><td>40</td><td>US40</td><td>Menú de navegación consistente</td><td>Como usuaria, quiero un menú claro y consistente en todas las páginas, para encontrar fácilmente las funciones que necesito.</td><td>2</td></tr>
-  <tr><td>41</td><td>US41</td><td>Paleta de colores y tipografía</td><td>Como usuaria, quiero colores y tipografía consistentes y accesibles, para una experiencia visual agradable y legible.</td><td>2</td></tr>
-  <tr><td>42</td><td>US42</td><td>Diseño de formularios usables</td><td>Como usuaria, quiero formularios claros con validación, para completar información sin confusión ni errores.</td><td>3</td></tr>
-  <tr><td>43</td><td>US43</td><td>Patrones de diseño coherentes</td><td>Como usuaria, quiero patrones de diseño similares en todas las pantallas, para predecir dónde encontrar funciones y cómo interactuar.</td><td>2</td></tr>
-  <tr><td>44</td><td>US44</td><td>Manejo de errores comprensible</td><td>Como usuaria, quiero mensajes de error claros con pasos de solución, para resolver problemas sin frustración.</td><td>3</td></tr>
-<tr><td>45</td><td>US45</td><td>Vinculación de banda de monitoreo</td><td>Como enfermero quiero vincular una banda médica al perfil de un residente para asegurar la recolección de datos correcta.</td><td>2</td></tr>
- <tr><td>46</td><td>US46</td><td>Validación de estabilidad de signos vitales</td><td>Como médico quiero que el sistema compare continuamente los datos de las bandas contra los parámetros de salud registrados.</td><td>3</td></tr>
- <tr><td>47</td><td>US47</td><td>Alertas de inestabilidad de salud</td><td>Como enfermero quiero recibir una alerta inmediata cuando la comparación de datos indique inestabilidad.</td><td>3</td></tr>
-  <tr><td>48</td><td>TS-RM001</td><td>Agregar pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para permitir que el administrador registre nuevos residentes con validaciones obligatorias y que se genere un ID único por residente.</td><td>3</td></tr> 
-  <tr><td>49</td><td>TS-RM002</td><td>Ver información detallada de los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET que devuelva la información completa del residente para que el personal autorizado pueda consultar fácilmente el expediente.</td><td>3</td></tr> 
-  <tr><td>50</td><td>TS-RM003</td><td>Ver información detallada de todo los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET para listar todos los residentes de un nursing home.</td><td>3</td></tr> 
-  <tr><td>51</td><td>TS-RM004</td><td>Eliminar paciente</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE que realice una eliminación controlada del residente.</td><td>3</td></tr> 
-  <tr><td>52</td><td>TS-RM-005</td><td>Actualizar información de los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar campos del perfil del residente para que las modificaciones queden registradas y sean reversibles si es necesario.</td><td>3</td></tr><tr><td>53</td><td>TS-I001</td><td>Eliminar medicamentos</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Delete para medicamentos para asegurar que el administrador de la casa de reposo pueda remover registros del inventario.</td><td>3</td></tr> 
-  <tr><td>54</td><td>TS-I002</td><td>Agregar medicamentos</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un EndPoint Post medicamentos para permitir que el administrador de la casa de reposo pueda agregar más medicamentos.</td><td>3</td></tr> 
-  <tr><td>55</td><td>TS-I003</td><td>Ver información de un medicamento</td><td>Como desarrollador backend en NovaPeru Tech quiero crear una función para ver la información del medicamento a través de una Api.</td><td>3</td></tr> 
-  <tr><td>56</td><td>TS-I004</td><td>Ver todo los medicamentos</td><td>Como desarrollador backend en NovaPeru Tech quiero crear un endpoint para listar todos los medicamentos de un nursing home.</td><td>3</td></tr> 
-  <tr><td>57</td><td>TS-I005</td><td>Actualizar información de medicamentos</td><td>Como desarrollador de backend en NovaPeru Tech quiero crear una función para actualizar la información para asegurar que el administrador de la casa de reposos pueda mantener actualizada la información de cada medicamento.</td><td>3</td></tr> 
-  <tr><td>58</td><td>TS-EM001</td><td>Agregar empleado</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que registre nuevos empleados.</td><td>3</td></tr> 
-  <tr><td>59</td><td>TS-EM002</td><td>Eliminar empleado</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para que el administrador de la casa de reposo revoque persmisos.</td><td>3</td></tr> 
-  <tr><td>60</td><td>TS-EM003</td><td>Actualizar información del empleado</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar datos de empleado.</td><td>3</td></tr> 
-  <tr><td>61</td><td>TS-EM004</td><td>Ver información de un empleado</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de un empleado para que el administrador pueda observar la información detallada del empleado.</td><td>3</td></tr> 
-  <tr><td>62</td><td>TS-EM005</td><td>Ver información de todo los empleados</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de los empleados para que el administrador pueda observar cuantos empleados tiene.</td><td>3</td></tr> 
-  <tr><td>63</td><td>TS-NH001</td><td>Crear Nursing Home (Después del Registro)</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que cuando el administrador se registre pueda crear su casa de reposo.</td><td>3</td></tr> 
-  <tr><td>64</td><td>TS-NH002</td><td>Obtener casa de reposo para el administrador</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para que un administrador obtenga información de su casa de reposo asignada.</td><td>3</td></tr> 
-  <tr><td>65</td><td>TS-NH003</td><td>Obtener Nursing Home por ID</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener información de una casa de reposo específica.</td><td>3</td></tr> 
-  <tr><td>66</td><td>TS-NH004</td><td>Listar Nursing Homes</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las casas de reposo a las que el usuario tiene acceso.</td><td>3</td></tr> 
-  <tr><td>67</td><td>TS-NH005</td><td>Actualizar Nursing Home</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint PUT/PATCH para actualizar información de una casa de reposo.</td><td>3</td></tr> 
-  <tr><td>68</td><td>TS-A001</td><td>Crear Actividad</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para crear actividades para los residentes de una casa de reposo específica.</td><td>3</td></tr> 
-  <tr><td>69</td><td>TS-A002</td><td>Listar Actividades</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las actividades de una casa de reposo.</td><td>3</td></tr> 
-  <tr><td>70</td><td>TS-A003</td><td>Ver información de una Actividad</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para mostrar la información de una sola actividad de una casa de reposo.</td><td>3</td></tr> 
-  <tr><td>71</td><td>TS-A004</td><td>Eliminar una Actividad</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE para eliminar una actividad en una casa de reposo determinada.</td><td>3</td></tr> 
-  <tr><td>72</td><td>TS-A005</td><td>Inscribir Residente a Actividad</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para inscribir residentes en actividades.</td><td>3</td></tr> 
-  <tr><td>73</td><td>TS-ST001</td><td>Obtener Estadísticas Generales</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas generales de una casa de reposo.</td><td>3</td></tr> 
-  <tr><td>74</td><td>TS-ST002</td><td>Obtener Estadísticas de Inventario</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas del inventario de medicamentos.</td><td>3</td></tr> 
-  <tr><td>75</td><td>TS-ST003</td><td>Obtener Estadísticas de Residentes</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener estadísticas de residentes.</td><td>3</td></tr> 
-  <tr><td>76</td><td>TS16</td><td>Consumir API de Google Maps</td><td>Como desarrollador backend en NovaPeru Tech quiero implementar un servicio de integración con Google Maps que proporcione verificación de direcciones y datos de localización para garantizar la precisión en la información geográfica de los residentes y sedes.</td><td>3</td></tr> 
-  <tr><td>77</td><td>TS17</td><td>Integración con Stripe (pagos)</td><td>Como desarrollador backend en NovaPeru Tech quiero integrar Stripe para procesar pagos seguros (PaymentIntents, 3DS/SCA) y manejar webhooks para confirmar el estado de los cobros.</td><td>3</td></tr> 
-  <tr><td>78</td><td>TS18</td><td>Autenticación y 2FA (MFA)</td><td>Como desarrollador backend en NovaPeru Tech quiero implementar un sistema de autenticación que soporte MFA (TOTP y SMS) para proteger accesos y cumplir con buenas prácticas de seguridad.</td><td>3</td></tr>
- <tr><td>79</td><td>TS-IOT01</td><td>Ingesta de Datos de Bandas Médicas</td><td>Como desarrollador backend quiero implementar un endpoint para recibir la telemetría de las bandas.</td><td>3</td></tr>
- <tr><td>80</td><td>TS-IOT02</td><td>Servicio de Comparación de Salud (Health Check)</td><td>Como desarrollador backend quiero implementar un servicio que compare los datos entrantes contra los registros de salud.</td><td>3</td></tr>
+  <tr>
+    <td><strong>Orden</strong></td><td><strong>User Story Id</strong></td><td><strong>Título</strong></td><td><strong>Descripción</strong></td><td><strong>Story Points (1/2/3)</strong></td>
+  </tr>
+  <tr><td>1</td><td>US01</td><td>Menú de navegación</td><td>Como visitante de la landing page, quiero acceder a un menú superior con enlaces a “Login”, “Sign up”, “Planes” y “Contacto”, para navegar rápidamente a secciones clave.</td><td>1</td></tr>
+  <tr><td>2</td><td>US02</td><td>Visualización de Planes</td><td>Como visitante, quiero ver planes con precio, características y duración, para comparar y elegir el que mejor se adapte a mis necesidades.</td><td>2</td></tr>
+  <tr><td>3</td><td>US03</td><td>Visualización de creadores</td><td>Como visitante, quiero ver al equipo creador (nombre, foto, rol y descripción), para generar confianza en el servicio.</td><td>2</td></tr>
+  <tr><td>4</td><td>US04</td><td>Redes sociales</td><td>Como visitante, quiero acceder a las redes sociales desde el header o footer, para conocer más de la empresa y tener canales adicionales de contacto.</td><td>1</td></tr>
+  <tr><td>5</td><td>US05</td><td>Cambio de idioma</td><td>Como visitante, quiero cambiar entre español e inglés desde el menú, para entender mejor el contenido.</td><td>3</td></tr>
+  <tr><td>6</td><td>US06</td><td>Términos y condiciones</td><td>Como visitante, quiero acceder a los términos y condiciones, para conocer las políticas legales antes de contratar.</td><td>2</td></tr>
+  <tr><td>7</td><td>US07</td><td>Registro de residentes</td><td>Como administradora de la casa de reposo, quiero crear perfiles completos de los residentes, para centralizar su información personal y médica.</td><td>3</td></tr>
+  <tr><td>8</td><td>US08</td><td>Historial médico institucional</td><td>Como administradora con permisos médicos, quiero gestionar el historial médico de cada residente, para asegurar continuidad de cuidado y cumplir regulaciones.</td><td>3</td></tr>
+  <tr><td>9</td><td>US09</td><td>Administración de medicamentos</td><td>Como administradora, quiero controlar la administración de medicamentos, para garantizar cumplimiento de tratamientos y evitar errores.</td><td>3</td></tr>
+  <tr><td>10</td><td>US10</td><td>Gestión de perfiles de empleados</td><td>Como administradora, quiero registrar y mantener perfiles completos del personal, para tener información actualizada y asignar roles.</td><td>3</td></tr>
+  <tr><td>11</td><td>US11</td><td>Búsqueda y filtrado de empleados</td><td>Como administradora, quiero filtrar y buscar empleados por criterios, para encontrar rápidamente personal específico.</td><td>3</td></tr>
+  <tr><td>12</td><td>US12</td><td>Gestión de horarios de atención</td><td>Como administradora, quiero configurar horarios de atención y servicios, para informar disponibilidad y sincronizar citas.</td><td>3</td></tr>
+  <tr><td>13</td><td>US13</td><td>Datos de contacto institucional</td><td>Como administradora, quiero actualizar los datos de contacto institucional, para que familias y autoridades accedan a información vigente.</td><td>2</td></tr>
+  <tr><td>14</td><td>US14</td><td>Gestión de usuarios y permisos</td><td>Como administradora, quiero configurar roles y permisos de acceso, para proteger la privacidad de los datos.</td><td>3</td></tr>
+  <tr><td>15</td><td>US15</td><td>Protección de datos mediante cifrado</td><td>Como administradora, quiero que los datos sensibles estén cifrados en almacenamiento y tránsito, para evitar accesos no autorizados.</td><td>3</td></tr>
+  <tr><td>16</td><td>US16</td><td>Menú de navegación consistente</td><td>Como usuaria, quiero un menú claro y consistente en todas las páginas, para encontrar fácilmente las funciones que necesito.</td><td>2</td></tr>
+  <tr><td>17</td><td>US17</td><td>Paleta de colores y tipografía</td><td>Como usuaria, quiero colores y tipografía consistentes y accesibles, para una experiencia visual agradable y legible.</td><td>2</td></tr>
+  <tr><td>18</td><td>US18</td><td>Diseño de formularios usables</td><td>Como usuaria, quiero formularios claros con validación, para completar información sin confusión ni errores.</td><td>3</td></tr>
+  <tr><td>19</td><td>US19</td><td>Patrones de diseño coherentes</td><td>Como usuaria, quiero patrones de diseño similares en todas las pantallas, para predecir dónde encontrar funciones y cómo interactuar.</td><td>2</td></tr>
+  <tr><td>20</td><td>US20</td><td>Manejo de errores comprensible</td><td>Como usuaria, quiero mensajes de error claros con pasos de solución, para resolver problemas sin frustración.</td><td>3</td></tr>
+  <tr><td>21</td><td>US21</td><td>Vinculación de banda de monitoreo</td><td>Como enfermero quiero vincular una banda médica al perfil de un residente para asegurar la recolección de datos correcta.</td><td>2</td></tr>
+  <tr><td>22</td><td>US22</td><td>Validación de estabilidad de signos vitales</td><td>Como médico quiero que el sistema compare continuamente los datos de las bandas contra los parámetros de salud registrados.</td><td>3</td></tr>
+  <tr><td>23</td><td>TS-RM001</td><td>Agregar pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para permitir que el administrador registre nuevos residentes con validaciones obligatorias y que se genere un ID único por residente.</td><td>3</td></tr>
+  <tr><td>24</td><td>TS-RM002</td><td>Ver información detallada de los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET que devuelva la información completa del residente para que el personal autorizado pueda consultar fácilmente el expediente.</td><td>3</td></tr>
+  <tr><td>25</td><td>TS-RM003</td><td>Ver información detallada de todo los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint GET para listar todos los residentes de un nursing home.</td><td>3</td></tr>
+  <tr><td>26</td><td>TS-RM004</td><td>Eliminar paciente</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint DELETE que realice una eliminación controlada del residente.</td><td>3</td></tr>
+  <tr><td>27</td><td>TS-RM005</td><td>Actualizar información de los pacientes</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar campos del perfil del residente para que las modificaciones queden registradas y sean reversibles si es necesario.</td><td>3</td></tr>
+  <tr><td>28</td><td>TS-I001</td><td>Ver información de un medicamento</td><td>Como desarrollador backend en NovaPeru Tech quiero crear una función para ver la información del medicamento a través de una Api.</td><td>3</td></tr>
+  <tr><td>29</td><td>TS-EM001</td><td>Agregar empleado</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que registre nuevos empleados.</td><td>3</td></tr>
+  <tr><td>30</td><td>TS-EM002</td><td>Actualizar información del empleado</td><td>Como desarrollador backend en NovaPeru tech quiero crear un endpoint PATCH para actualizar datos de empleado.</td><td>3</td></tr>
+  <tr><td>31</td><td>TS-EM003</td><td>Ver información de todo los empleados</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET que muestre el perfil de los empleados para que el administrador pueda observar cuantos empleados tiene.</td><td>3</td></tr>
+  <tr><td>32</td><td>TS-NH001</td><td>Crear Nursing Home (Después del Registro)</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para que cuando el administrador se registre pueda crear su casa de reposo.</td><td>3</td></tr>
+  <tr><td>33</td><td>TS-NH002</td><td>Obtener casa de reposo para el administrador</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para que un administrador obtenga información de su casa de reposo asignada.</td><td>3</td></tr>
+  <tr><td>34</td><td>TS-NH003</td><td>Obtener Nursing Home por ID</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para obtener información de una casa de reposo específica.</td><td>3</td></tr>
+  <tr><td>35</td><td>TS-NH004</td><td>Listar Nursing Homes</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las casas de reposo a las que el usuario tiene acceso.</td><td>3</td></tr>
+  <tr><td>36</td><td>TS-A001</td><td>Crear Actividad</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint POST para crear actividades para los residentes de una casa de reposo específica.</td><td>3</td></tr>
+  <tr><td>37</td><td>TS-A002</td><td>Listar Actividades</td><td>Como desarrollador backend en NovaPeru tech quiero implementar un endpoint GET para listar todas las actividades de una casa de reposo.</td><td>3</td></tr>
+  <tr><td>38</td><td>TS16</td><td>Integración con Stripe (pagos)</td><td>Como desarrollador backend en NovaPeru Tech quiero integrar Stripe para procesar pagos seguros (PaymentIntents, 3DS/SCA) y manejar webhooks para confirmar el estado de los cobros.</td><td>3</td></tr>
+  <tr><td>39</td><td>TS-IOT01</td><td>Servicio de Comparación de Salud (Health Check)</td><td>Como desarrollador backend quiero implementar un servicio que compare los datos entrantes contra los registros de salud.</td><td>3</td></tr>
 </table>
+
+
 
 **Evidencia de Product Backlog en Jira:**
 
