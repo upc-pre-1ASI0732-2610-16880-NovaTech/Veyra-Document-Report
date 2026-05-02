@@ -256,6 +256,20 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Duración**                     | 05:04 min |
 | **Resumen**                      | **Perfil y Frustración**:<br>Administrador de casa de reposo con enfoque organizativo, operativo y orientado a mejorar la eficiencia en la atención de los residentes. Su principal frustración es que la información se encuentra dispersa entre fichas físicas, archivos Excel, cuadernos y mensajes de WhatsApp, lo que genera demoras, confusión y riesgo de errores al momento de consultar datos importantes como historiales médicos, medicamentos, citas o incidencias.<br><br>**Comportamiento y Necesidades**:<br>Busca contar con una plataforma digital que centralice la información de los residentes y permita acceder rápidamente a datos actualizados. Necesita funciones como registro de residentes, historial médico, control de medicamentos, alertas de citas médicas, registro de incidencias y reportes diarios. Valora especialmente la automatización de procesos críticos para reducir el trabajo manual y mejorar la coordinación entre administrador, cuidadores, enfermeros y familiares.<br><br>**Tecnología, Marcas y Canales**:<br>Utiliza principalmente una laptop para actividades administrativas y un celular Samsung para comunicación rápida y coordinación diaria. Su navegador más usado es Google Chrome. Actualmente se comunica con los familiares mediante WhatsApp y llamadas telefónicas, pero considera necesario contar con un canal más formal e integrado que permita enviar reportes, alertas e incidencias de manera ordenada y segura. |
 
+**Entrevista 1**
+
+| Campo                             | Información |
+|----------------------------------|-------------|
+| Entrevista                       | #2 |
+| Nombre                           | Renato  |
+| Apellidos                        | Pérez |
+| Edad                             | 30 años  |
+| Distrito                         | San Juan de Miraflores |
+| Evidencia                        | ![Entrevista](../assets/img/chapter-II/Entrevista3_Segmento1.PNG‎) |
+| Link                             | [Link Entrevistas](https://1drv.ms/v/c/2c6332e5e5a79287/IQCiPBeohaQKQo_81SEM6I3RAX3bQVSMoJ21AK-UOjN7eCM?e=Xa0FhD) |
+| Inicio de la entrevista          | 00:00 min |
+| Duración de la entrevista        | 05:05 min |
+| Resumen                          | **Perfil y Frustración:**<br>El administrador de la casa de reposo, con 45 años y más de una década de experiencia, se encarga de la gestión general, supervisando al personal y coordinando la atención de los residentes. En su trabajo diario utiliza principalmente una computadora para tareas administrativas y un celular para comunicarse rápidamente con familiares y el equipo, apoyándose en herramientas como Excel, registros físicos y el navegador Google Chrome. Actualmente, la comunicación con los familiares se realiza mediante llamadas, WhatsApp y, en algunos casos, correos electrónicos. Sin embargo, enfrenta varios desafíos importantes, como la organización de la información, la prevención de errores en la administración de medicamentos y la necesidad de mantener una comunicación constante y clara. El sistema de gestión actual resulta limitado y propenso a errores, por lo que considera fundamental implementar una plataforma digital que incluya historial clínico, alertas de medicamentos, gestión de citas y canales de comunicación integrados. En este sentido, los procesos más urgentes de digitalizar son el registro de pacientes, el control de medicamentos y la generación de reportes diarios, con el objetivo de mejorar la eficiencia y reducir riesgos.. | |
 
 **Segmento 2: Familiares de adultos mayores**
 
