@@ -460,7 +460,7 @@ public class ResidentController {
   <li>Verificar el despliegue accediendo a la URL generada.</li>
 </ol>
 
-<p><strong>URL de despliegue:</strong> <a href="https://novaperu-tech.github.io/NovaPeru-Tech-LandingPage/">https://novaperu-tech.github.io/NovaPeru-Tech-LandingPage/</a></p>
+<p><strong>URL de despliegue:</strong> <a href="">https://novaperu-tech.github.io/NovaPeru-Tech-LandingPage/</a></p>
 
 <h4>Frontend Web Application - Vercel</h4>
 
@@ -489,7 +489,7 @@ public class ResidentController {
   <li>Hacer clic en <strong>Deploy</strong> y esperar la compilación.</li>
 </ol>
 
-<p><strong>URL de despliegue:</strong> <a href="https://nova-peru-tech-frontend-v1-2w9r.vercel.app/home">https://nova-peru-tech-frontend-v1-2w9r.vercel.app/home</a></p>
+<p><strong>URL de despliegue:</strong> <a href="">https://nova-peru-tech-frontend-v1-2w9r.vercel.app/home</a></p>
 
 <h4>Backend Web Services - Azure App Service</h4>
 
