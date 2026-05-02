@@ -311,9 +311,9 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Edad**                         | 20 años |
 | **Distrito**                     | Barranco |
 | **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/juanpesentrevista.jpeg) |
-| **Link**                         |  |
-| **Inicio de la entrevista**      | 14:47 min |
-| **Duración**                     | 05:41 min |
+| **Link**                         | [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210334_upc_edu_pe/IQArQB5Qo22gTL_CSsRcLoU7AaicA1HH1qOKfxMbqWm1wj4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=cX8wAc) |
+| **Inicio de la entrevista**      | 17:30 min |
+| **Duración**                     | 06:18 min |
 | **Resumen**                      | Juan Pescarán, de 21 años, residente de Barranco, hace seguimiento del estado de su abuela en un centro de reposo. Se describe como una persona analítica y orientada a la tecnología. Señala que la comunicación con el centro es ineficiente, ya que la información suele ser incompleta y requiere múltiples llamadas.
 
 Utiliza regularmente smartphone y su computadora de escritoria, y está familiarizado con herramientas como Google Drive, Zoom y Gmail. Su principal molestia es la falta de reportes médicos claros y oportunos. Busca una plataforma segura que centralice información sobre salud, alimentación y actividades, y que envíe notificaciones en tiempo real ante cualquier cambio.
