@@ -256,16 +256,16 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Duración**                     | 05:04 min |
 | **Resumen**                      | **Perfil y Frustración**:<br>Administrador de casa de reposo con enfoque organizativo, operativo y orientado a mejorar la eficiencia en la atención de los residentes. Su principal frustración es que la información se encuentra dispersa entre fichas físicas, archivos Excel, cuadernos y mensajes de WhatsApp, lo que genera demoras, confusión y riesgo de errores al momento de consultar datos importantes como historiales médicos, medicamentos, citas o incidencias.<br><br>**Comportamiento y Necesidades**:<br>Busca contar con una plataforma digital que centralice la información de los residentes y permita acceder rápidamente a datos actualizados. Necesita funciones como registro de residentes, historial médico, control de medicamentos, alertas de citas médicas, registro de incidencias y reportes diarios. Valora especialmente la automatización de procesos críticos para reducir el trabajo manual y mejorar la coordinación entre administrador, cuidadores, enfermeros y familiares.<br><br>**Tecnología, Marcas y Canales**:<br>Utiliza principalmente una laptop para actividades administrativas y un celular Samsung para comunicación rápida y coordinación diaria. Su navegador más usado es Google Chrome. Actualmente se comunica con los familiares mediante WhatsApp y llamadas telefónicas, pero considera necesario contar con un canal más formal e integrado que permita enviar reportes, alertas e incidencias de manera ordenada y segura. |
 
-**Entrevista 1**
+**Entrevista 3**
 
 | Campo                             | Información |
 |----------------------------------|-------------|
-| Entrevista                       | #2 |
+| Entrevista                       | #3 |
 | Nombre                           | Renato  |
 | Apellidos                        | Pérez |
 | Edad                             | 30 años  |
 | Distrito                         | San Juan de Miraflores |
-| Evidencia                        | ![Entrevista](../assets/img/chapter-II/Entrevista3_Segmento1.PNG‎) |
+| Evidencia                        | ![Entrevista](../assets/img/chapter-II/Entrevista3_Segmento1.PNG) |
 | Link                             | [Link Entrevistas](https://1drv.ms/v/c/2c6332e5e5a79287/IQCiPBeohaQKQo_81SEM6I3RAX3bQVSMoJ21AK-UOjN7eCM?e=Xa0FhD) |
 | Inicio de la entrevista          | 00:00 min |
 | Duración de la entrevista        | 05:05 min |
