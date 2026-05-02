@@ -302,6 +302,24 @@ Cuando ocurre una urgencia médica, ¿cómo suele enterarse y cuánto tiempo dem
 | **Duración**                     | 05:41 min |
 | **Resumen**                      | Leo Gómez, de 30 años, es el responsable del cuidado de su abuela. Durante la entrevista, se describió como una persona analítica, racional y metódica, con alta afinidad por la tecnología. Expresó que la comunicación con el centro geriátrico resulta ineficiente, ya que debe realizar varias llamadas para obtener información que suele llegar incompleta o dispersa. <br><br> Indicó que utiliza de manera regular un smartphone, una laptop y una tablet, tanto para su trabajo como para el seguimiento del estado de su familiar. Señaló que sus navegadores principales son Google Chrome y Safari, y que está familiarizado con herramientas digitales como Google Drive, Zoom y Gmail, las cuales usa a diario. <br><br> Manifestó que su principal frustración es la falta de reportes médicos completos y oportunos. Expresó que desea acceder a información detallada sobre medicación, chequeos médicos, alimentación y actividades recreativas, dentro de una plataforma segura. También afirmó que le gustaría recibir notificaciones inmediatas en caso de cambios en el estado de salud o situaciones de emergencia. <br><br> Finalmente, indicó que confiaría plenamente en un sistema siempre que garantice seguridad, acceso restringido y comunicación directa con el personal. Representa al segmento de familiares jóvenes y con alta alfabetización digital, que demandan transparencia y actualización constante de la información. |
 
+**Entrevista 3**
+
+| Campo                             | Detalle |
+|----------------------------------|---------|
+| **Nombre**                       | Juan |
+| **Apellidos**                    | Pescoran Angulo |
+| **Edad**                         | 20 años |
+| **Distrito**                     | Barranco |
+| **Evidencia**                    | ![Entrevista](../assets/img/chapter-II/juanpesentrevista.jpeg) |
+| **Link**                         |  |
+| **Inicio de la entrevista**      | 14:47 min |
+| **Duración**                     | 05:41 min |
+| **Resumen**                      | Juan Pescarán, de 21 años, residente de Barranco, hace seguimiento del estado de su abuela en un centro de reposo. Se describe como una persona analítica y orientada a la tecnología. Señala que la comunicación con el centro es ineficiente, ya que la información suele ser incompleta y requiere múltiples llamadas.
+
+Utiliza regularmente smartphone y su computadora de escritoria, y está familiarizado con herramientas como Google Drive, Zoom y Gmail. Su principal molestia es la falta de reportes médicos claros y oportunos. Busca una plataforma segura que centralice información sobre salud, alimentación y actividades, y que envíe notificaciones en tiempo real ante cualquier cambio.
+
+Representa a familiares jóvenes con alta alfabetización digital, que demandan acceso inmediato, transparencia y comunicación directa.|
+
 
 ### 2.2.3. Análisis de entrevistas. 
 
