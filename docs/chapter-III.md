@@ -62,31 +62,6 @@
 <td>Como usuario, quiero una interfaz bien diseñada para navegar y usar el sistema sin dificultades.</td>
 </tr>
 <tr>
-<td>EP15</td>
-<td>Monitoreo IoT y Wearables</td>
-<td>Como personal médico, quiero que el sistema procese la información de las bandas médicas y la compare con los registros de salud para detectar inestabilidades automáticamente.</td>
-</tr>
-<tr>
-<td>EP04</td>
-<td>Gestión de adultos mayores</td>
-<td>Como administrador de casa de reposo quiero gestionar perfiles de los adultos mayores para tener un mayor control.</td>
-</tr>
-<tr>
-<td>EP07</td>
-<td>Gestión de medicamentos</td>
-<td>Como administrador quiero gestionar los medicamentos de la casa de reposo para garantizar que cumplan con todos los controles necesarios.</td>
-</tr>
-<tr>
-<td>EP08</td>
-<td>Gestión de personal</td>
-<td>Como administrador de la casa de reposo, quiero gestionar la información del personal para organizar los turnos de trabajo de los cuidadores y garantizar que siempre haya atención adecuada disponible para los residentes.</td>
-</tr>
-<tr>
-<td>EP09</td>
-<td>Gestión de información de la casa de reposo</td>
-<td>Como administrador quiero gestionar la información general de la casa de reposo para mantener datos actualizados sobre la institución.</td>
-</tr>
-<tr>
 <td>EP12</td>
 <td>Gestión de Actividades</td>
 <td>Como administrador de la casa de reposo, quiero planificar, publicar y gestionar actividades (recreativas, médicas, sociales) para residentes, con inscripción y control de aforo, para mejorar adherencia y bienestar.</td>
