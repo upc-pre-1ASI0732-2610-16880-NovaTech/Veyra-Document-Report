@@ -120,7 +120,7 @@
   <tr>
     <td>US01</td>
     <td>visitante de la Landing Page,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@
   <tr>
     <td>US02</td>
     <td>visitante de la Landing Page,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@
   <tr>
     <td>US03</td>
     <td>visitante de la landing page,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@
   <tr>
     <td>US04</td>
     <td>visitante de la Landing Page,</td>
-    <td></td>
+    <td>Media</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -272,7 +272,7 @@
   <tr>
     <td>US07</td>
     <td>visitante de la Landing Page</td>
-    <td></td>
+    <td>Media</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -310,7 +310,7 @@
   <tr>
     <td>US39</td>
     <td>visitante de la landing page</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP01 - Navegación en la Landing Page</td>
   </tr>
   <tr>
@@ -348,7 +348,7 @@
   <tr>
     <td>US05</td>
     <td>visitante de la landing page</td>
-    <td></td>
+    <td>Media</td>
     <td>EP02 - Soporte y contacto</td>
   </tr>
   <tr>
@@ -386,7 +386,7 @@
   <tr>
     <td>US06</td>
     <td>visitante de la landing page</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP02 - Soporte y contacto</td>
   </tr>
   <tr>
@@ -424,7 +424,7 @@
   <tr>
     <td>US08</td>
     <td>familiar de un adulto mayor</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP03 - Acceso a Información</td>
   </tr>
   <tr>
@@ -462,7 +462,7 @@
   <tr>
     <td>US09</td>
     <td>familiar de un adulto mayor</td>
-    <td></td>
+    <td>Media</td>
     <td>EP03 - Acceso a Información</td>
   </tr>
   <tr>
@@ -500,7 +500,7 @@
   <tr>
     <td>US10</td>
     <td>familiar de un adulto mayor</td>
-    <td></td>
+    <td>Media</td>
     <td>EP03 - Acceso a Información</td>
   </tr>
   <tr>
@@ -538,7 +538,7 @@
   <tr>
     <td>US11</td>
     <td>familiar de un adulto mayor</td>
-    <td></td>
+    <td>Media</td>
     <td>EP03 - Acceso a Información</td>
   </tr>
   <tr>
@@ -576,7 +576,7 @@
   <tr>
     <td>US12</td>
     <td>administrador de casa de reposo</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -614,7 +614,7 @@
   <tr>
     <td>US13</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -652,7 +652,7 @@
   <tr>
     <td>US14</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -690,7 +690,7 @@
   <tr>
     <td>US15</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -728,7 +728,7 @@
   <tr>
     <td>US16</td>
     <td>familiar</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP05 - Notificaciones automáticas</td>
   </tr>
   <tr>
@@ -766,7 +766,7 @@
   <tr>
     <td>US17</td>
     <td>familiar</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP05 - Notificaciones automáticas</td>
   </tr>
   <tr>
@@ -804,7 +804,7 @@
   <tr>
     <td>US18</td>
     <td>familiar</td>
-    <td></td>
+    <td>Media</td>
     <td>EP05 - Notificaciones automáticas</td>
   </tr>
   <tr>
@@ -842,7 +842,7 @@
   <tr>
     <td>US19</td>
     <td>familiar</td>
-    <td></td>
+    <td>Media</td>
     <td>EP05 - Notificaciones automáticas</td>
   </tr>
   <tr>
@@ -880,7 +880,7 @@
   <tr>
     <td>US20</td>
     <td>familiar</td>
-    <td></td>
+    <td>Media</td>
     <td>EP06 - Comunicación con cuidadores</td>
   </tr>
   <tr>
@@ -918,7 +918,7 @@
   <tr>
     <td>US21</td>
     <td>familiar</td>
-    <td></td>
+    <td>Media</td>
     <td>EP06 - Comunicación con cuidadores</td>
   </tr>
   <tr>
@@ -956,7 +956,7 @@
   <tr>
     <td>US22</td>
     <td>familiar</td>
-    <td></td>
+    <td>Media</td>
     <td>EP06 - Comunicación con cuidadores</td>
   </tr>
   <tr>
@@ -994,7 +994,7 @@
   <tr>
     <td>US23</td>
     <td>familiar</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP06 - Comunicación con cuidadores</td>
   </tr>
   <tr>
@@ -1032,7 +1032,7 @@
   <tr>
     <td>US24</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -1070,7 +1070,7 @@
   <tr>
     <td>US25</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -1108,7 +1108,7 @@
   <tr>
     <td>US26</td>
     <td>administrador</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -1146,7 +1146,7 @@
   <tr>
     <td>US27</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -1184,7 +1184,7 @@
   <tr>
     <td>US28</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -1222,7 +1222,7 @@
   <tr>
     <td>US29</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -1260,7 +1260,7 @@
   <tr>
     <td>US30</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -1298,7 +1298,7 @@
   <tr>
     <td>US31</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -1336,7 +1336,7 @@
   <tr>
     <td>US32</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -1374,7 +1374,7 @@
   <tr>
     <td>US33</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -1412,7 +1412,7 @@
   <tr>
     <td>US34</td>
     <td>administrador</td>
-    <td></td>
+    <td>Media</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -1450,7 +1450,7 @@
   <tr>
     <td>US35</td>
     <td>administrador</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -1488,7 +1488,7 @@
   <tr>
     <td>US36</td>
     <td>administrador</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -1526,7 +1526,7 @@
   <tr>
     <td>US37</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP10 - Seguridad y privacidad</td>
   </tr>
   <tr>
@@ -1564,7 +1564,7 @@
   <tr>
     <td>US38</td>
     <td>administrador</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP10 - Seguridad y privacidad</td>
   </tr>
   <tr>
@@ -1602,7 +1602,7 @@
   <tr>
     <td>US40</td>
     <td>usuario</td>
-    <td></td>
+    <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
   </tr>
   <tr>
@@ -1640,7 +1640,7 @@
   <tr>
     <td>US41</td>
     <td>usuario</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP11 - Diseño de interfaz</td>
   </tr>
   <tr>
@@ -1678,7 +1678,7 @@
   <tr>
     <td>US42</td>
     <td>usuario</td>
-    <td></td>
+    <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
   </tr>
   <tr>
@@ -1716,7 +1716,7 @@
   <tr>
     <td>US43</td>
     <td>usuario</td>
-    <td></td>
+    <td>Baja</td>
     <td>EP11 - Diseño de interfaz</td>
   </tr>
   <tr>
@@ -1754,7 +1754,7 @@
   <tr>
     <td>US44</td>
     <td>usuario</td>
-    <td></td>
+    <td>Media</td>
     <td>EP11 - Diseño de interfaz</td>
   </tr>
   <tr>
@@ -1792,7 +1792,7 @@
   <tr>
     <td>US45</td>
     <td>enfermero,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
   </tr>
   <tr>
@@ -1830,7 +1830,7 @@
   <tr>
     <td>US46</td>
     <td>médico,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
   </tr>
   <tr>
@@ -1868,7 +1868,7 @@
   <tr>
     <td>US47</td>
     <td>enfermero,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
   </tr>
   <tr>
@@ -1906,7 +1906,7 @@
   <tr>
     <td>TS-RM001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -1944,7 +1944,7 @@
   <tr>
     <td>TS-RM002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -1982,7 +1982,7 @@
   <tr>
     <td>TS-RM003</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -2016,7 +2016,7 @@
   <tr>
     <td>TS-RM004</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -2053,7 +2053,7 @@
   <tr>
     <td>TS-RM-005</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP04 - Gestión de adultos mayores</td>
   </tr>
   <tr>
@@ -2090,7 +2090,7 @@
   <tr>
     <td>TS-I001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -2128,7 +2128,7 @@
   <tr>
     <td>TS-I002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -2170,7 +2170,7 @@
   <tr>
     <td>TS-I003</td>
     <td>desarrollador backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -2208,7 +2208,7 @@
   <tr>
     <td>TS-I004</td>
     <td>desarrollador backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -2246,7 +2246,7 @@
   <tr>
     <td>TS-I005</td>
     <td>desarrollador de backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP07 - Gestión de medicamentos</td>
   </tr>
   <tr>
@@ -2284,7 +2284,7 @@
   <tr>
     <td>TS-EM001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -2321,7 +2321,7 @@
   <tr>
     <td>TS-EM002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -2359,7 +2359,7 @@
   <tr>
     <td>TS-EM003</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -2396,7 +2396,7 @@
   <tr>
     <td>TS-EM004</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -2433,7 +2433,7 @@
   <tr>
     <td>TS-EM005</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP08 - Gestión de personal</td>
   </tr>
   <tr>
@@ -2470,7 +2470,7 @@
   <tr>
     <td>TS-NH001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -2508,7 +2508,7 @@
   <tr>
     <td>TS-NH002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -2546,7 +2546,7 @@
   <tr>
     <td>TS-NH003</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -2584,7 +2584,7 @@
   <tr>
     <td>TS-NH004</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -2622,7 +2622,7 @@
   <tr>
     <td>TS-NH005</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP09 - Gestión de información de la casa de reposo</td>
   </tr>
   <tr>
@@ -2660,7 +2660,7 @@
   <tr>
     <td>TS-A001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP12 - Gestión de Actividades</td>
   </tr>
   <tr>
@@ -2697,7 +2697,7 @@
   <tr>
     <td>TS-A002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP12 - Gestión de Actividades</td>
   </tr>
   <tr>
@@ -2731,7 +2731,7 @@
   <tr>
     <td>TS-A003</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP12 - Gestión de Actividades</td>
   </tr>
   <tr>
@@ -2769,7 +2769,7 @@
   <tr>
     <td>TS-A004</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP12 - Gestión de Actividades</td>
   </tr>
   <tr>
@@ -2807,7 +2807,7 @@
   <tr>
     <td>TS-A005</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP12 - Gestión de Actividades</td>
   </tr>
   <tr>
@@ -2844,7 +2844,7 @@
   <tr>
     <td>TS-ST001</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP13 - Analítica y Estadísticas Operativas</td>
   </tr>
   <tr>
@@ -2881,7 +2881,7 @@
   <tr>
     <td>TS-ST002</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP13 - Analítica y Estadísticas Operativas</td>
   </tr>
   <tr>
@@ -2915,7 +2915,7 @@
   <tr>
     <td>TS-ST003</td>
     <td>desarrollador backend en NovaPeru tech</td>
-    <td></td>
+    <td>Media</td>
     <td>EP13 - Analítica y Estadísticas Operativas</td>
   </tr>
   <tr>
@@ -2949,7 +2949,7 @@
   <tr>
     <td>TS16</td>
     <td>desarrollador backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP14 - Integraciones Externas</td>
   </tr>
   <tr>
@@ -2991,7 +2991,7 @@
   <tr>
     <td>TS17</td>
     <td>desarrollador backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP14 - Integraciones Externas</td>
   </tr>
   <tr>
@@ -3041,7 +3041,7 @@
   <tr>
     <td>TS18</td>
     <td>desarrollador backend en NovaPeru Tech</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP14 - Integraciones Externas</td>
   </tr>
   <tr>
@@ -3105,7 +3105,7 @@
   <tr>
     <td>TS-IOT01</td>
     <td>desarrollador backend,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
   </tr>
   <tr>
@@ -3144,7 +3144,7 @@
   <tr>
     <td>TS-IOT02</td>
     <td>desarrollador backend,</td>
-    <td></td>
+    <td>Alta</td>
     <td>EP15 - Monitoreo IoT y Wearables</td>
   </tr>
   <tr>
