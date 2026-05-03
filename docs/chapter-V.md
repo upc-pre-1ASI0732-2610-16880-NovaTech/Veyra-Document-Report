@@ -606,6 +606,33 @@ A continuación, la estructura de la tabla de control de estado para el Sprint:
 El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Software** mediante el tablero Scrum del proyecto, donde se registran los estados de cada tarea (To-do, In-Process, To-Review, Done). Durante las reuniones diarias (**Daily Scrum**), el equipo revisa el avance, actualiza el estado de las tareas y gestiona posibles bloqueos.
 
 ### 5.2.2. Implemented Landing Page Evidence 
+<p><strong>Encabezado y menú de navegación:</strong></p>
+<img src="/assets/img/chapter-V/header-landing-page.png" alt="header landing page">
+
+<p><strong>Sección Hero:</strong></p>
+<img src="../assets/img/chapter-V/hero-landing-page.png" alt="hero landing page">
+
+<p><strong>Sección Services:</strong></p>
+<img src="../assets/img/chapter-V/services-landing-page.png" alt="services landing page">
+
+<p><strong>Sección Pricing:</strong></p>
+<img src="../assets/img/chapter-V/plans-landing-page.png" alt="plans landing page">
+
+<p><strong>Sección About the App:</strong></p>
+<img src="/assets/img/chapter-V/about-the-app-landing-page.png" alt="about the app landing page">
+
+<p><strong>Sección Testimonials:</strong></p>
+<img src="/assets/img/chapter-V/testimonials-landing-page.png" alt="testimonials landing page">
+
+<p><strong>Sección About the Team:</strong></p>
+<img src="/assets/img/chapter-V/about-the-team-landing-page.png" alt="about the team landing page">
+
+<p><strong>Sección Contact:</strong></p>
+<img src="/assets/img/chapter-V/contact-landing-page.png" alt="contact landing page">
+
+<p><strong>Footer:</strong></p>
+<img src="/assets/img/chapter-V/footer-landing-page.png" alt="footer landing page">
+
 ### 5.2.3. Implemented Frontend-Web Application Evidence 
 ### 5.2.4. Implemented Native-Mobile Application Evidence 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence 
