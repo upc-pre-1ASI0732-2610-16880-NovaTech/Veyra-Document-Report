@@ -572,7 +572,7 @@ El Sprint Backlog 1 reúne las historias de usuario y tareas necesarias para imp
 
 Todas las tareas son monitoreadas y actualizadas mediante **Jira Software**.
 
-<div align="center"> <img src="../images/sprint1-board.jpeg" alt="Sprint 1 Board Screenshot" width="100%"> <p><em>Figura: Tablero del Sprint 1 en Jira Software (Proyecto VEYRA)</em>
+<div align="center"> <img src="/assets/img/sprint1-board.jpeg" alt="Sprint 1 Board Screenshot" width="100%"> <p><em>Figura: Tablero del Sprint 1 en Jira Software (Proyecto VEYRA)</em>
 </p> </div>
 
 A continuación, la estructura de la tabla de control de estado para el Sprint:
