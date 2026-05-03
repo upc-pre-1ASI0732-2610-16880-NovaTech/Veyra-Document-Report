@@ -460,7 +460,7 @@ public class ResidentController {
   <li>Verificar el despliegue accediendo a la URL generada.</li>
 </ol>
 
-<p><strong>URL de despliegue:</strong> <a href="">https://novaperu-tech.github.io/NovaPeru-Tech-LandingPage/</a></p>
+<p><strong>URL de despliegue:</strong> <a href="">https://upc-pre-1asi0732-2610-16880-novatech.github.io/Veyra-Landing-Page/</a></p>
 
 <h4>Frontend Web Application - Vercel</h4>
 
