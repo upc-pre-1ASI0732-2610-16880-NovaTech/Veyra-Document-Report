@@ -273,7 +273,7 @@ La sección "About Us" presenta a NovaPeru Tech, la empresa detrás de Veyra. Aq
 
 La sección "Our Team" presenta a los ingenieros de software detrás de Veyra. Las tarjetas de perfil muestran una foto, el nombre, el cargo y una breve biografía de cada miembro. El diseño de 3 tarjetas arriba y 2 abajo, centradas, brinda un aspecto organizado y profesional, permitiendo a los usuarios conocer al equipo de desarrollo.
 
-<img src="../assets/img/chapter-IV/ourteam-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
+<img src="../assets/img/chapter-IV/our-team-section-landing.png" alt="Landing Page Mockup" style="width: auto; height: auto; border: 2px solid #00bfff;">
 
 **Plans** 
 
