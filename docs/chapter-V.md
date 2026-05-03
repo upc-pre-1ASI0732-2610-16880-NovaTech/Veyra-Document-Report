@@ -629,8 +629,8 @@ El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Soft
 <img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
 <img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
 
-### 5.2.6. RESTful API documentation 
+
 ### 5.2.7. Team Collaboration Insights 
 <p><strong>Sección About the Team:</strong></p>
 <img src="/assets/img/chapter-V/collaboration-insights.jpg" alt="Collaboration Insights ">
-## 5.3. Video About-the-Product. 
+
