@@ -622,8 +622,12 @@ El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Soft
 <img src="/assets/img/chapter-V/about-the-team-landing-page.jpg" alt="about the team landing page">
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence 
-### 5.2.4. Implemented Native-Mobile Application Evidence 
+<img src="../assets/img/chapter-V/deploy/frontend-deploy.png" alt="frontend">
+<img src="../assets/img/chapter-V/deploy/frontend-deploy-2.png" alt="frontend">
+
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence 
+<img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
+<img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
 
 ### 5.2.6. RESTful API documentation 
 ### 5.2.7. Team Collaboration Insights 
