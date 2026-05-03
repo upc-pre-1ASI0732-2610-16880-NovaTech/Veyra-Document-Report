@@ -28,7 +28,7 @@
 | u202214572 | Espinoza Vivas Camilla Leonor   |
 | u20221a371 | Santos Torres Juan Manuel       |
 | u202212897 | Román López Miguel Ángel Junior |
-|            |                                 |
+| u202210334 | Valerio Garcia Adrian Emanuel   |
 |            |                                 | 
 ### Abril, 2026
 
