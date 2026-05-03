@@ -20,11 +20,11 @@ Comparar posicionamiento de Veyra en valor, marketing, producto y estrategia; id
 </tr>
 
 <tr>
-<td colspan="2"><b>Competidores</b></td>
-<td><b>Veyra</b></td>
-<td><b>StoriiCare</b></td>
-<td><b>SeniorSoft</b></td>
-<td><b>CareCloud</b></td>
+  <td colspan="2"><b>Competidores</b></td>
+  <td><b><img src="../assets/img/chapter-II/veyra.jpeg" width="60"> Veyra</b></td>
+  <td><b><img src="../assets/img/chapter-II/storiicare.png" width="60"> StoriiCare</b></td>
+  <td><b><img src="../assets/img/chapter-II/seniorsoft.png" width="60"> SeniorSoft</b></td>
+  <td><b><img src="../assets/img/chapter-II/carecloud.png" width="60"> CareCloud</b></td>
 </tr>
 
 <tr>
