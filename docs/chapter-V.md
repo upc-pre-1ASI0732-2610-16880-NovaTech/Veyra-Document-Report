@@ -632,5 +632,11 @@ El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Soft
 
 ### 5.2.7. Team Collaboration Insights 
 <p><strong>Sección About the Team:</strong></p>
-<img src="/assets/img/chapter-V/collaboration-insights.jpg" alt="Collaboration Insights ">
+
+**TB1**
+
+<img src="/assets/img/chapter-V/insights-tb1.png" alt="Collaboration Insights ">
+
+**TP**
+
 
