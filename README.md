@@ -39,6 +39,7 @@
 | Versión | Fecha | Autor | Descripción |
 |---------|-------|-------|-------------|
 |   TB1  | 1/05/2026   | Todos los miembros del equipo  | Capitulo 1 Capitulo 2 Capitulo 3 Capitulo 4 Capitulo 5 |
+| TP1 | 15/05/2026 | Todos los miembros del equipo | Revisión general del informe, corrección de errores y mejoras en la redacción. |
 
 
 ---
