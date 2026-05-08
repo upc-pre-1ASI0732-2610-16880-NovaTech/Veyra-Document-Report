@@ -57,15 +57,14 @@ Durante la primera fase de elaboración del informe, el equipo Veyra centró sus
 
 Finalmente, estos gráficos representan la cantidad de commits realizados por cada miembro del equipo en el repositorio del proyecto. Cada barra representa a un miembro del equipo y la altura de la barra indica el número total de commits realizados por esa persona.
 
-![Commits 1]()
+![Commits 1](assets/img/introduction/contributions.png)
 
-![Commits 2]()
 
 **Ramificación del proyecto usando GitFlow:**
 
 Este gráfico ofrece una visualización de las veces que se ha clonado nuestro repositorio, junto con las fechas correspondientes a cada evento. También muestran datos sobre el número de visitas que ha recibido el repositorio de nuestro equipo a lo largo del tiempo.
 
-![Ramificación 1]()
+![Ramificación 1](assets/img/introduction/flow.png)
 
 ---
 
