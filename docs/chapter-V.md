@@ -465,63 +465,72 @@ public class ResidentController {
 <h4>Frontend Web Application - Vercel</h4>
 
 <p>
-  El Frontend desarrollado con Angular se despliega en Vercel, plataforma que ofrece hosting optimizado para aplicaciones frontend con CDN global y despliegue automático.
+  El Frontend desarrollado con Angular se despliega utilizando Firebase Hosting, plataforma optimizada para aplicaciones web modernas que ofrece CDN global, HTTPS automático y despliegue continuo.
 </p>
 
 <p><strong>Pasos de configuración:</strong></p>
 
 <ol>
-  <li>Crear cuenta en <a href="https://vercel.com">Vercel</a> y vincular con GitHub.</li>
-  <li>Importar el repositorio <code>NovaTech-Frontend</code> desde GitHub.</li>
+  <li>Crear un proyecto en Firebase Console y vincularlo con la aplicación Angular.</li>
+  <li>Instalar Firebase CLI:
+    <pre><code>npm install -g firebase-tools</code></pre>
+  </li>
+  <li>Autenticarse en Firebase:
+    <pre><code>firebase login</code></pre>
+  </li>
+  <li>Inicializar Firebase Hosting en el proyecto:
+    <pre><code>firebase init hosting</code></pre>
+  </li>
   <li>Configurar el proyecto:
     <ul>
-      <li><strong>Framework Preset:</strong> Angular</li>
+      <li><strong>Framework:</strong> Angular</li>
       <li><strong>Build Command:</strong> <code>ng build --configuration production</code></li>
-      <li><strong>Output Directory:</strong> <code>dist/nova-tech-frontend</code></li>
+      <li><strong>Output Directory:</strong> <code>dist/veyra-frontend-application/browser</code></li>
     </ul>
   </li>
   <li>Configurar variables de entorno:
     <ul>
-      <li><code>API_BASE_URL</code>: URL del Backend API</li>
+      <li><code>API_BASE_URL</code>: URL del Backend API desplegado en Render.</li>
     </ul>
   </li>
-  <li>Habilitar despliegue automático en cada push a la rama <code>main</code>.</li>
-  <li>Hacer clic en <strong>Deploy</strong> y esperar la compilación.</li>
+  <li>Ejecutar el despliegue:
+    <pre><code>firebase deploy</code></pre>
+  </li>
 </ol>
 
-<p><strong>URL de despliegue:</strong> <a href="">https://nova-peru-tech-frontend-v1-2w9r.vercel.app/home</a></p>
+<p><strong>URL de despliegue:</strong> 
+<a href="">https://veyra-frontend-application.web.app/home</a>
+</p>
 
-<h4>Backend Web Services - Azure App Service</h4>
+<h4>Backend Web Services - Render Deploy</h4>
 
 <p>
-  El Backend desarrollado con Spring Boot se despliega en Azure App Service, servicio de plataforma como servicio (PaaS) que facilita el hosting de aplicaciones web Java.
+  El Backend desarrollado con Spring Boot se despliega utilizando Render Deploy, plataforma cloud que permite el hosting de aplicaciones backend Java con integración continua desde GitHub y despliegue automático.
 </p>
 
 <p><strong>Pasos de configuración:</strong></p>
 
-<p><strong>1. Creación del Azure App Service:</strong></p>
+<p><strong>1. Creación del Web Service en Render:</strong></p>
 <ol>
-  <li>Acceder al <a href="https://portal.azure.com">Portal de Azure</a>.</li>
-  <li>Crear un nuevo recurso: <strong>App Service</strong>.</li>
+  <li>Ingresar a Render y crear un nuevo <strong>Web Service</strong>.</li>
+  <li>Conectar el repositorio <code>Veyra-Backend-Application</code> desde GitHub.</li>
   <li>Configurar:
     <ul>
-      <li><strong>Runtime stack:</strong> Java 17</li>
-      <li><strong>Operating System:</strong> Linux</li>
-      <li><strong>Region:</strong> East US (o región más cercana)</li>
-      <li><strong>App Service Plan:</strong> Seleccionar o crear plan según necesidades</li>
+      <li><strong>Environment:</strong> Java</li>
+      <li><strong>Build Command:</strong> <code>./mvnw clean install</code></li>
+      <li><strong>Start Command:</strong> <code>java -jar target/veyra-backend-application.jar</code></li>
     </ul>
   </li>
 </ol>
 
-<p><strong>2. Configuración de Base de Datos (Azure SQL Database):</strong></p>
+<p><strong>2. Configuración de Base de Datos:</strong></p>
 <ol>
-  <li>Crear instancia de Azure SQL Database o MySQL.</li>
-  <li>Configurar reglas de firewall para permitir conexiones desde App Service.</li>
-  <li>Obtener cadena de conexión JDBC.</li>
+  <li>Configurar una instancia MySQL remota.</li>
+  <li>Obtener la cadena de conexión JDBC.</li>
+  <li>Registrar las credenciales en las variables de entorno de Render.</li>
 </ol>
 
 <p><strong>3. Configuración de Variables de Entorno:</strong></p>
-<p>En <strong>App Service &gt; Configuration &gt; Application settings</strong>, agregar:</p>
 
 <table>
   <thead>
@@ -547,22 +556,24 @@ public class ResidentController {
       <td><code>SPRING_PROFILES_ACTIVE</code></td>
       <td><code>prod</code></td>
     </tr>
+    <tr>
+      <td><code>PORT</code></td>
+      <td>Puerto asignado automáticamente por Render</td>
+    </tr>
   </tbody>
 </table>
 
-<p><strong>4. Despliegue desde IntelliJ IDEA:</strong></p>
+<p><strong>4. Despliegue Automático:</strong></p>
 <ol>
-  <li>Instalar el plugin <strong>Azure Toolkit for IntelliJ</strong>.</li>
-  <li>Autenticarse con la cuenta de Azure.</li>
-  <li>Clic derecho en el proyecto &gt; <strong>Azure &gt; Deploy to Azure Web Apps</strong>.</li>
-  <li>Seleccionar el App Service de destino.</li>
-  <li>Ejecutar el despliegue y verificar en los logs.</li>
+  <li>Habilitar Auto Deploy desde la rama <code>main</code>.</li>
+  <li>Cada push genera automáticamente una nueva compilación y despliegue.</li>
+  <li>Verificar el estado y logs desde el dashboard de Render.</li>
 </ol>
 
 <p><strong>URLs de despliegue:</strong></p>
 <ul>
-  <li><strong>API Base URL:</strong> <a href="https://veyrav01.azurewebsites.net">https://veyrav01.azurewebsites.net</a></li>
-  <li><strong>Documentación Swagger UI:</strong> <a href="https://veyrav01.azurewebsites.net/swagger-ui/index.html">https://veyrav01.azurewebsites.net/swagger-ui/index.html</a></li>
+  <li><strong>API Base URL:</strong> <a href="">https://veyra-backend-application-release.onrender.com</a></li>
+  <li><strong>Documentación Swagger UI:</strong> <a href="">https://veyra-backend-application-release.onrender.com/swagger-ui/index.html</a></li>
 </ul>
 
 ## 5.2. Product Implementation & Deployment. 
