@@ -25,7 +25,9 @@ Los resultados obtenidos evidenciaron que las entidades principales del sistema 
 
 ### 6.1.2. Core Integration Tests.
 
-Las pruebas de integración fueron desarrolladas con el objetivo de validar la correcta comunicación entre los controladores REST, los servicios de aplicación, la configuración de seguridad y las dependencias principales del backend de Veyra. A diferencia de las pruebas unitarias, estas pruebas permiten comprobar el comportamiento del sistema cuando varios componentes trabajan en conjunto dentro del contexto de Spring Boot.
+Las pruebas de integración fueron desarrolladas con el objetivo de validar la correcta comunicación entre los controladores REST, los servicios de aplicación, la configuración de seguridad, la persistencia de datos y las dependencias principales del backend de Veyra. A diferencia de las pruebas unitarias, estas pruebas permiten comprobar el comportamiento del sistema cuando varios componentes trabajan en conjunto dentro del contexto de Spring Boot.
+
+Para esta validación se implementó la clase `CoreIntegrationTests`, orientada a verificar flujos esenciales del sistema, tanto técnicos como funcionales. En particular, se evaluaron procesos de autenticación, generación de token, restricción de acceso a endpoints protegidos, registro de casas de reposo, creación de residentes y registro de medicamentos asociados a un residente.
 
 #### Evidencia de ejecución: `testSuccessfulSignUp()`
 
@@ -96,15 +98,87 @@ Este caso de prueba valida el comportamiento de seguridad del backend cuando se 
 
 La ejecución satisfactoria de este caso confirma que el backend aplica correctamente las reglas de seguridad sobre endpoints protegidos. Esto permite validar que los recursos sensibles del sistema no puedan ser consultados por usuarios no autenticados.
 
-#### Resumen de pruebas ejecutadas
+#### Evidencia de ejecución: `testSuccessfulCreateNursingHome()`
 
-| ID | Caso de prueba | Flujo validado | Resultado |
-|---|---|---|---|
-| ITC-01 | `testSuccessfulSignUp()` | Registro de usuario | Aprobado |
-| ITC-02 | `testSuccessfulSignIn()` | Inicio de sesión y generación de token | Aprobado |
-| ITC-03 | `testProtectedEndpointWithoutToken()` | Bloqueo de acceso sin autenticación | Aprobado |
+Este caso de prueba valida el flujo de **registro de una casa de reposo** dentro del backend de Veyra. Este flujo representa el proceso de onboarding institucional, mediante el cual una residencia geriátrica puede quedar registrada en la plataforma para posteriormente gestionar residentes, personal, actividades y servicios asociados.
 
-Las tres pruebas de integración fueron ejecutadas correctamente desde IntelliJ IDEA. Los resultados obtenidos permiten evidenciar que el módulo de autenticación del backend de Veyra mantiene una integración funcional entre controladores REST, servicios de aplicación, seguridad JWT y persistencia de usuarios.
+| Campo | Descripción |
+|---|---|
+| ID | ITC-04 |
+| Clase de prueba | `NursingHomeControllerIntegrationTest` |
+| Método evaluado | `testSuccessfulCreateNursingHome()` |
+| Flujo relacionado | Registro de casa de reposo |
+| Módulos involucrados | Nursing Home Controller, servicio de casas de reposo, persistencia y validaciones de dominio |
+| Tipo de prueba | Integration Test |
+| Entrada | Datos válidos de la institución geriátrica |
+| Resultado esperado | El sistema registra la casa de reposo y retorna una respuesta HTTP exitosa |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test4.png" alt="Evidencia de prueba de integración testSuccessfulCreateNursingHome" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el registro de casa de reposo.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que el backend permite registrar correctamente una institución geriátrica dentro de la plataforma. Esto valida uno de los flujos principales del modelo SaaS de Veyra, ya que cada casa de reposo representa una organización cliente dentro del sistema.
+
+#### Evidencia de ejecución: `testSuccessfulCreateResident()`
+
+Este caso de prueba valida el flujo de **registro de residente** dentro del backend de Veyra. La prueba comprueba que el sistema pueda recibir los datos principales de un adulto mayor y almacenarlos correctamente, permitiendo su posterior gestión clínica, administrativa y asistencial.
+
+| Campo | Descripción |
+|---|---|
+| ID | ITC-05 |
+| Clase de prueba | `ResidentControllerIntegrationTest` |
+| Método evaluado | `testSuccessfulCreateResident()` |
+| Flujo relacionado | Registro de residente |
+| Módulos involucrados | Resident Controller, servicio de residentes, perfil del residente, persistencia y validaciones |
+| Tipo de prueba | Integration Test |
+| Entrada | Datos válidos del residente |
+| Resultado esperado | El sistema registra al residente y retorna una respuesta HTTP exitosa |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test5.png" alt="Evidencia de prueba de integración testSuccessfulCreateResident" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el registro de residente.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que Veyra puede registrar residentes dentro del sistema, lo cual constituye una funcionalidad central para la gestión de casas de reposo. Este flujo es relevante porque permite centralizar la información del adulto mayor y sirve como base para módulos posteriores como seguimiento médico, actividades, comunicaciones familiares y reportes.
+
+#### Evidencia de ejecución: `testSuccessfulRegisterHealthMetric()`
+
+Este caso de prueba valida el flujo de **registro de métricas de salud** de un residente. La prueba comprueba que el sistema pueda recibir y almacenar información clínica relacionada con el seguimiento del adulto mayor, como presión arterial, temperatura, frecuencia cardiaca u otros indicadores relevantes.
+
+| Campo | Descripción |
+|---|---|
+| ID | ITC-06 |
+| Clase de prueba | `HealthTrackingIntegrationTest` |
+| Método evaluado | `testSuccessfulRegisterHealthMetric()` |
+| Flujo relacionado | Registro de métricas de salud |
+| Módulos involucrados | Tracking Controller, servicio de métricas de salud, repositorio de mediciones y persistencia |
+| Tipo de prueba | Integration Test |
+| Entrada | Datos válidos de una medición clínica |
+| Resultado esperado | El sistema registra la métrica de salud y retorna una respuesta HTTP exitosa |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test6.png" alt="Evidencia de prueba de integración testSuccessfulRegisterHealthMetric" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el registro de métricas de salud.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que el backend permite registrar información clínica relevante para el monitoreo del residente. Este flujo se relaciona directamente con el valor de negocio de Veyra, ya que facilita el seguimiento continuo del estado de salud del adulto mayor y contribuye a una toma de decisiones más informada por parte del personal asistencial.
+
+#### Resumen de pruebas de integración ejecutadas
+
+| ID | Caso de prueba | Flujo validado | Enfoque | Resultado |
+|---|---|---|---|---|
+| ITC-01 | `testSuccessfulSignUp()` | Registro de usuario | Seguridad y acceso | Aprobado |
+| ITC-02 | `testSuccessfulSignIn()` | Inicio de sesión y generación de token | Seguridad y acceso | Aprobado |
+| ITC-03 | `testProtectedEndpointWithoutToken()` | Bloqueo de acceso sin autenticación | Seguridad de endpoints | Aprobado |
+| ITC-04 | `testSuccessfulCreateNursingHome()` | Registro de casa de reposo | Onboarding institucional | Aprobado |
+| ITC-05 | `testSuccessfulCreateResident()` | Registro de residente | Gestión del adulto mayor | Aprobado |
+| ITC-06 | `testSuccessfulRegisterHealthMetric()` | Registro de métrica de salud | Seguimiento clínico | Aprobado |
+
+Las pruebas de integración ejecutadas permiten validar flujos técnicos y de negocio relevantes para el backend de Veyra. Los casos relacionados con autenticación comprueban el acceso seguro al sistema, mientras que los casos orientados al negocio validan procesos centrales como el registro de instituciones, la gestión de residentes y el seguimiento clínico de adultos mayores.
 
 ### 6.1.3. Core Behavior-Driven Development
 
