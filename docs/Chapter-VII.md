@@ -49,6 +49,26 @@ En esta sección se detallan las herramientas y prácticas que aseguran un despl
 * **Reversión automatizada (Rollback):** Capacidad del pipeline de volver a la última versión estable si las pruebas del sistema fallan en el entorno productivo.
 
 ### 7.3.2. Production Deployment Pipeline Components.
+
+Esta sección describe los componentes que forman parte del pipeline de despliegue a producción para los distintos artefactos del ecosistema. Todo este proceso se define en el workflow principal (ej. `.github/workflows/cd-production.yml`).
+
+**Componentes de Pipeline de la Base de Datos (Azure Cosmos DB):**
+1. **Aprovisionamiento del clúster:** Al crear el recurso en el portal de Azure, se relaciona Azure Cosmos DB for MongoDB con el tipo de clúster vCore, configurando los parámetros de nombre de cuenta, grupo de recursos y opciones de rendimiento.
+2. **Configuración de reglas de acceso (Firewall):** Habilitación del acceso exclusivo desde las direcciones IP de la aplicación backend desplegada en Azure, denegando el tráfico público no autorizado.
+3. **Conexión desde el backend:** La aplicación en ASP.NET Core se conecta mediante la cadena de conexión de Cosmos DB, la cual se configura como una variable de entorno oculta en la sección *Configuration* de Azure App Service, garantizando que no quede expuesta en GitHub.
+4. **Despliegue continuo de esquema:** Dado que MongoDB es una base de datos orientada a documentos, las modificaciones en el modelo de datos se reflejan automáticamente con la nueva versión del backend. Las nuevas colecciones se crean en tiempo de ejecución.
+
+**Componentes de Pipeline del Backend (ASP.NET Core RESTful API):**
+1. **Integración y Trigger:** Al aprobar un *Pull Request* hacia la rama `main` del repositorio de GitHub, se dispara automáticamente el flujo de *Continuous Deployment*.
+2. **Build & System Tests:** GitHub Actions restaura las dependencias, compila la solución y ejecuta los *Core System Tests* para asegurar que el código es estable y seguro para producción.
+3. **Publicación del proyecto:** El pipeline ejecuta el empaquetado del proyecto (vía `dotnet publish`) generando el artefacto final optimizado para el entorno en la nube.
+4. **Deploy a Producción:** Utilizando la acción oficial de Azure para GitHub, el artefacto se publica automáticamente sobre el recurso de Azure App Service en su *slot* de producción, reemplazando la versión anterior.
+
+**Componentes de Pipeline del Frontend (Vue App & Landing Page):**
+1. **Trigger:** Un *Merge* hacia la rama `main` en los repositorios de las aplicaciones web desencadena el *workflow* de producción en GitHub Actions.
+2. **Build & Optimize:** El pipeline instala las dependencias de Node, ejecuta validaciones de calidad estática y transpila el código de Vue construyendo los archivos estáticos minificados (`html`, `css`, `js`).
+3. **Deploy a Producción:** Los archivos resultantes de la carpeta de construcción (`dist`) se suben automáticamente al servicio de alojamiento frontend en la nube, quedando disponibles de inmediato para los usuarios finales.
+   
 ## 7.4. Continuous Monitoring
 ### 7.4.1. Tools and Practices
 ### 7.4.2. Monitoring Pipeline Components
