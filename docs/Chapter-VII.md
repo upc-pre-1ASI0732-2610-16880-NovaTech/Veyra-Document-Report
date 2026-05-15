@@ -149,4 +149,10 @@ Los componentes del pipeline de monitoreo aseguran que la información fluya des
 * **Dashboards de Salud:** Visualización en tiempo real de métricas críticas como el consumo de CPU y el rendimiento de la base de datos.
 
 ### 7.4.3. Alerting Pipeline Components
+
+El sistema de alertas está configurado para reaccionar ante eventos críticos de forma automática:
+* **Umbrales de Rendimiento:** Alertas disparadas cuando el tiempo de respuesta promedio supera los límites de tolerancia establecidos.
+* **Picos de Error:** Notificaciones automáticas si la tasa de errores del servidor aumenta drásticamente en un periodo corto.
+* **Disponibilidad:** Alerta inmediata si el servicio de base de datos o el servidor web no responden a las comprobaciones de salud.
+
 ### 7.4.4. Notification Pipeline Components.
