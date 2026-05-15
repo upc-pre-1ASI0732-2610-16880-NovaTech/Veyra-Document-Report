@@ -20,6 +20,15 @@ En esta sección se detallan las herramientas y prácticas utilizadas para mante
 * **Gestión de la configuración:** Mantener la paridad de configuración entre entornos, asegurando que las variables y credenciales de *staging* estén correctamente separadas de las de desarrollo y producción.
 
 ### 7.2.2. Stages Deployment Pipeline Components.
+
+Los componentes del pipeline para la entrega continua a entornos intermedios (*stages*) se estructuran de la siguiente manera y se encuentran orquestados a través de nuestro archivo de workflow (ej. `.github/workflows/cd-staging.yml`):
+
+* **Source Code Checkout:** El pipeline se activa automáticamente mediante un trigger `on: push` o `pull_request` hacia ramas de integración (por ejemplo, `develop` o `release`) en GitHub.
+* **Build Stage:** Etapa de compilación del código fuente. Para el backend, se restauran paquetes de NuGet y se compila el proyecto ASP.NET Core con C#. Para el frontend, se instalan dependencias y se empaqueta la aplicación en Vue.
+* **Test Stage:** Ejecución automatizada de *Core Entities Unit Tests* y *Core Integration Tests*. Si alguna prueba falla, el pipeline se interrumpe y notifica al equipo.
+* **Artifact Generation:** Creación de los artefactos desplegables (binarios listos para la nube en el backend y archivos estáticos minificados en el frontend).
+* **Deploy to Staging:** Despliegue automático del artefacto generado en el entorno de pre-producción (Azure App Service Staging Slot) para habilitar las pruebas de aceptación.
+
 ## 7.3. Continuous deployment
 ### 7.3.1. Tools and Practices.
 ### 7.3.2. Production Deployment Pipeline Components.
