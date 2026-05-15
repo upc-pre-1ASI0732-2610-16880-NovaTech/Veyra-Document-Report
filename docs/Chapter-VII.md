@@ -130,6 +130,17 @@ Esta sección describe los componentes que forman parte del pipeline de desplieg
 El Monitoreo Continuo permite a **NovaTech** supervisar la salud, el rendimiento y la disponibilidad de la solución en tiempo real, garantizando que el sistema opere según los niveles de servicio esperados.
 
 ### 7.4.1. Tools and Practices
+
+**Tools:**
+* **Azure Monitor:** Servicio integral para recopilar y analizar datos de telemetría de la infraestructura en la nube.
+* **Application Insights:** Herramienta específica para el monitoreo de aplicaciones web que rastrea tasas de error, tiempos de respuesta y dependencias.
+* **Log Analytics:** Para el almacenamiento y consulta de logs detallados de la aplicación y el servidor.
+
+**Practices:**
+* **Rastreo de Excepciones:** Identificación y diagnóstico de errores en tiempo de ejecución para reducir el tiempo medio de reparación.
+* **Uptime Monitoring:** Verificación constante de la disponibilidad de los endpoints de la API y del sitio web.
+* **Performance Profiling:** Análisis de la latencia y el consumo de recursos para optimizar la experiencia del usuario.
+
 ### 7.4.2. Monitoring Pipeline Components
 ### 7.4.3. Alerting Pipeline Components
 ### 7.4.4. Notification Pipeline Components.
