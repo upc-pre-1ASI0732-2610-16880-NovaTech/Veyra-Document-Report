@@ -30,6 +30,9 @@ Los componentes del pipeline para la entrega continua a entornos intermedios (*s
 * **Deploy to Staging:** Despliegue automático del artefacto generado en el entorno de pre-producción (Azure App Service Staging Slot) para habilitar las pruebas de aceptación.
 
 ## 7.3. Continuous deployment
+
+El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen automáticamente desde el entorno de desarrollo hasta la producción. Esto garantiza que cada nueva versión sea entregada a los usuarios finales sin intervención manual, siempre y cuando pase todas las métricas de calidad y pruebas establecidas por el equipo.
+
 ### 7.3.1. Tools and Practices.
 ### 7.3.2. Production Deployment Pipeline Components.
 ## 7.4. Continuous Monitoring
