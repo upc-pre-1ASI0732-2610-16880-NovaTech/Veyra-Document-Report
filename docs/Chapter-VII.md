@@ -34,6 +34,20 @@ Los componentes del pipeline para la entrega continua a entornos intermedios (*s
 El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen automáticamente desde el entorno de desarrollo hasta la producción. Esto garantiza que cada nueva versión sea entregada a los usuarios finales sin intervención manual, siempre y cuando pase todas las métricas de calidad y pruebas establecidas por el equipo.
 
 ### 7.3.1. Tools and Practices.
+
+En esta sección se detallan las herramientas y prácticas que aseguran un despliegue a producción automatizado, rápido y confiable.
+
+**Tools:**
+* **GitHub Actions:** Para automatizar el pipeline de despliegue final. Esta herramienta permite configurar *workflows* que integran el pase automático a producción al detectar cambios integrados en la rama `main` del repositorio de la organización NovaTech en GitHub.
+* **Azure App Service:** Como plataforma de despliegue para la aplicación backend (RESTful API) desarrollada en ASP.NET Core con C#. Permite gestionar la infraestructura de forma automática y configurar las variables de entorno de forma segura en la sección *Configuration* del servicio.
+* **Azure Cosmos DB:** Como servicio de base de datos NoSQL en la nube. Permite gestionar el clúster compatible con MongoDB, configurando reglas de firewall y proporcionando la cadena de conexión segura para el backend.
+* **Plataforma de Hosting Estático (ej. Azure Static Web Apps / Vercel):** Utilizada para alojar y servir el Landing Page (HTML/CSS/JS) y la aplicación web Frontend en Vue.
+
+**Practices:**
+* **Despliegues sin tiempo de inactividad (Zero-downtime deployment):** Redirección del tráfico de usuarios hacia la nueva versión solo cuando el despliegue se ha completado y verificado.
+* **Monitoreo Continuo:** Supervisión de la salud del sistema inmediatamente después del pase a producción para detectar anomalías.
+* **Reversión automatizada (Rollback):** Capacidad del pipeline de volver a la última versión estable si las pruebas del sistema fallan en el entorno productivo.
+
 ### 7.3.2. Production Deployment Pipeline Components.
 ## 7.4. Continuous Monitoring
 ### 7.4.1. Tools and Practices
