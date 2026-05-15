@@ -142,5 +142,11 @@ El Monitoreo Continuo permite a **NovaTech** supervisar la salud, el rendimiento
 * **Performance Profiling:** Análisis de la latencia y el consumo de recursos para optimizar la experiencia del usuario.
 
 ### 7.4.2. Monitoring Pipeline Components
+
+Los componentes del pipeline de monitoreo aseguran que la información fluya desde la aplicación hasta el equipo de desarrollo:
+* **Ingestión de Telemetría:** Recopilación automática de solicitudes HTTP, tiempos de carga y eventos personalizados desde el frontend y el backend.
+* **Agregación de Logs:** Consolidación de registros de eventos en un repositorio centralizado para facilitar auditorías y diagnósticos.
+* **Dashboards de Salud:** Visualización en tiempo real de métricas críticas como el consumo de CPU y el rendimiento de la base de datos.
+
 ### 7.4.3. Alerting Pipeline Components
 ### 7.4.4. Notification Pipeline Components.
