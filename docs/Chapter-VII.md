@@ -3,6 +3,9 @@
 ### 7.1.1. Tools and Practices.
 ### 7.1.2. Build & Test Suite Pipeline Components.
 ## 7.2. Continuous Delivery
+
+Continuous Delivery (CD) es una práctica de desarrollo que permite que los equipos entreguen software de forma continua y segura a los clientes. El objetivo principal de CD es reducir el tiempo entre la escritura del código y su disponibilidad en un entorno de pruebas o *staging*, asegurando que el software esté siempre en un estado desplegable y listo para el paso a producción.
+
 ### 7.2.1. Tools and Practices.
 ### 7.2.2. Stages Deployment Pipeline Components.
 ## 7.3. Continuous deployment
