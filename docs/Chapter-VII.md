@@ -156,3 +156,8 @@ El sistema de alertas está configurado para reaccionar ante eventos críticos d
 * **Disponibilidad:** Alerta inmediata si el servicio de base de datos o el servidor web no responden a las comprobaciones de salud.
 
 ### 7.4.4. Notification Pipeline Components.
+
+Una vez generada una alerta, los componentes de notificación aseguran que el equipo sea informado de inmediato:
+* **Webhooks:** Envío de notificaciones automáticas a canales de comunicación del equipo (ej. Slack, Teams o Discord) proporcionando detalles del incidente.
+* **Email Alerts:** Envío de correos electrónicos a los administradores del sistema con enlaces directos a los registros de errores.
+* **Notificaciones In-Portal:** Alertas y mensajes visibles directamente dentro del panel de administración de Azure para el equipo de operaciones.
