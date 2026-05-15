@@ -1,5 +1,8 @@
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
+
+La Integración Continua (CI) es una práctica fundamental que permite a los desarrolladores de **NovaTech** integrar su código en un repositorio compartido de forma frecuente. Cada integración es verificada por un proceso automático de compilación y pruebas para detectar errores lo antes posible.
+
 ### 7.1.1. Tools and Practices.
 
 Durante el desarrollo y validación del backend de VeyraPlatform se emplearon herramientas y prácticas orientadas al aseguramiento de la calidad del software, con el propósito de garantizar la estabilidad técnica de la aplicación, la correcta compilación del código fuente y la ejecución confiable de pruebas automatizadas. La estrategia adoptada no se limitó únicamente a verificar la construcción del sistema, sino que también buscó comprobar el comportamiento de los principales componentes funcionales dentro de un entorno de pruebas controlado.
