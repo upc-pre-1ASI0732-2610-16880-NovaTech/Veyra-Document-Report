@@ -24,6 +24,88 @@ Además, se emplearon mocks para evitar dependencias externas como conexiones a 
 Los resultados obtenidos evidenciaron que las entidades principales del sistema funcionan correctamente bajo los escenarios evaluados, contribuyendo a mejorar la estabilidad, mantenibilidad y confiabilidad de la aplicación.
 
 ### 6.1.2. Core Integration Tests.
+
+Las pruebas de integración fueron desarrolladas con el objetivo de validar la correcta comunicación entre los controladores REST, los servicios de aplicación, la configuración de seguridad y las dependencias principales del backend de Veyra. A diferencia de las pruebas unitarias, estas pruebas permiten comprobar el comportamiento del sistema cuando varios componentes trabajan en conjunto dentro del contexto de Spring Boot.
+
+#### Evidencia de ejecución: `testSuccessfulSignUp()`
+
+Este caso de prueba valida el flujo de **registro exitoso de usuario** dentro del backend de Veyra. La prueba envía una solicitud HTTP `POST` al endpoint de autenticación con datos válidos de usuario, verificando que el sistema pueda procesar el registro correctamente.
+
+| Campo | Descripción |
+|---|---|
+| ID | ITC-01 |
+| Clase de prueba | `AuthenticationControllerIntegrationTest` |
+| Método evaluado | `testSuccessfulSignUp()` |
+| Flujo relacionado | Registro de usuario |
+| Módulos involucrados | Authentication Controller, User Service, repositorio de usuarios y configuración de seguridad |
+| Tipo de prueba | Integration Test |
+| Entrada | Credenciales válidas de registro |
+| Resultado esperado | El sistema registra al usuario y retorna una respuesta HTTP exitosa |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test1.png" alt="Evidencia de prueba de integración testSuccessfulSignUp" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el registro de usuario.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que el backend puede recibir una solicitud de registro, procesarla mediante la lógica de autenticación y devolver una respuesta válida. Esto evidencia la correcta integración entre la capa REST, el servicio de usuarios y la persistencia asociada.
+
+#### Evidencia de ejecución: `testSuccessfulSignIn()`
+
+Este caso de prueba valida el flujo de **inicio de sesión exitoso** dentro del backend de Veyra. La prueba primero registra un usuario de prueba y luego envía una solicitud HTTP `POST` al endpoint de inicio de sesión con credenciales válidas.
+
+| Campo | Descripción |
+|---|---|
+| ID | ITC-02 |
+| Clase de prueba | `AuthenticationControllerIntegrationTest` |
+| Método evaluado | `testSuccessfulSignIn()` |
+| Flujo relacionado | Inicio de sesión |
+| Módulos involucrados | Authentication Controller, User Service, JWT, seguridad y repositorio de usuarios |
+| Tipo de prueba | Integration Test |
+| Entrada | Usuario registrado y credenciales válidas |
+| Resultado esperado | El sistema autentica al usuario y retorna un token de acceso |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test2.png" alt="Evidencia de prueba de integración testSuccessfulSignIn" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el inicio de sesión.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que el backend puede autenticar usuarios registrados y generar una respuesta válida para el acceso al sistema. Este flujo es crítico porque habilita el ingreso seguro a los módulos protegidos de Veyra.
+
+#### Evidencia de ejecución: `testProtectedEndpointWithoutToken()`
+
+Este caso de prueba valida el comportamiento de seguridad del backend cuando se intenta acceder a un endpoint protegido sin enviar un token de autenticación. La prueba realiza una solicitud HTTP `GET` a un recurso protegido sin incluir encabezado `Authorization`.
+
+| Campo | Descripción |
+|---|---|
+| ID | ITC-03 |
+| Clase de prueba | `AuthenticationControllerIntegrationTest` |
+| Método evaluado | `testProtectedEndpointWithoutToken()` |
+| Flujo relacionado | Protección de endpoints |
+| Módulos involucrados | Spring Security, filtros de autenticación, endpoint protegido y configuración JWT |
+| Tipo de prueba | Integration Test |
+| Entrada | Solicitud sin token de autenticación |
+| Resultado esperado | El sistema rechaza la solicitud y retorna una respuesta de no autorizado |
+| Estado | Aprobado |
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/test3.png" alt="Evidencia de prueba de integración testProtectedEndpointWithoutToken" width="90%">
+  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para endpoint protegido sin token.</em></p>
+</div>
+
+La ejecución satisfactoria de este caso confirma que el backend aplica correctamente las reglas de seguridad sobre endpoints protegidos. Esto permite validar que los recursos sensibles del sistema no puedan ser consultados por usuarios no autenticados.
+
+#### Resumen de pruebas ejecutadas
+
+| ID | Caso de prueba | Flujo validado | Resultado |
+|---|---|---|---|
+| ITC-01 | `testSuccessfulSignUp()` | Registro de usuario | Aprobado |
+| ITC-02 | `testSuccessfulSignIn()` | Inicio de sesión y generación de token | Aprobado |
+| ITC-03 | `testProtectedEndpointWithoutToken()` | Bloqueo de acceso sin autenticación | Aprobado |
+
+Las tres pruebas de integración fueron ejecutadas correctamente desde IntelliJ IDEA. Los resultados obtenidos permiten evidenciar que el módulo de autenticación del backend de Veyra mantiene una integración funcional entre controladores REST, servicios de aplicación, seguridad JWT y persistencia de usuarios.
+
 ### 6.1.3. Core Behavior-Driven Development
 
 En esta sección se definen los escenarios de prueba utilizando el lenguaje Gherkin (Given-When-Then) para asegurar que el comportamiento del sistema cumpla con los criterios de aceptación de las Historias de Usuario principales (Core).
