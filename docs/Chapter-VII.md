@@ -126,6 +126,9 @@ Esta sección describe los componentes que forman parte del pipeline de desplieg
 3. **Deploy a Producción:** Los archivos resultantes de la carpeta de construcción (`dist`) se suben automáticamente al servicio de alojamiento frontend en la nube, quedando disponibles de inmediato para los usuarios finales.
    
 ## 7.4. Continuous Monitoring
+
+El Monitoreo Continuo permite a **NovaTech** supervisar la salud, el rendimiento y la disponibilidad de la solución en tiempo real, garantizando que el sistema opere según los niveles de servicio esperados.
+
 ### 7.4.1. Tools and Practices
 ### 7.4.2. Monitoring Pipeline Components
 ### 7.4.3. Alerting Pipeline Components
