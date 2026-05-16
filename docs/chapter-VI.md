@@ -23,7 +23,7 @@ Además, se emplearon mocks para evitar dependencias externas como conexiones a 
 
 <div align="center">
   <img src="../assets/img/chapter-VI/core-entities-unit-tests.png" alt="Evidencia de core entities unit tests" width="90%">
-  <p><em>Figura: Ejecución satisfactoria de la prueba de integración para el inicio de sesión.</em></p>
+  <p><em>Figura: Ejecución satisfactoria de las pruebas de entidades principales.</em></p>
 </div>
 
 
