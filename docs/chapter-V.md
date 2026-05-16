@@ -676,10 +676,10 @@ El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y conf
 
 **TB1**
 
-<img src="/assets/img/chapter-V/insights-tb1.png" alt="Collaboration Insights ">
+<img src="../assets/img/chapter-V/insights-tb1.png" alt="Collaboration Insights ">
 
 **TP**
 
-<img src="/assets/img/chapter-V/insights-tp.png" alt="Collaboration Insights ">
+<img src="../assets/img/chapter-V/insights-tp.png" alt="Collaboration Insights ">
 
 
