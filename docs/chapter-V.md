@@ -98,7 +98,7 @@ IDE para desarrollo Frontend con Angular, HTML5, CSS3, JavaScript y TypeScript.
 **Licencia:** https://www.jetbrains.com/community/education/  
 
 **IntelliJ IDEA**  
-IDE para desarrollo Backend con Java y Spring Boot, con integración a Azure.  
+IDE para desarrollo Backend con Java y Spring Boot, con integración a Render.  
 **Descarga:** https://www.jetbrains.com/idea/  
 **Licencia:** https://www.jetbrains.com/community/education/  
 
@@ -123,8 +123,8 @@ Desarrollo de servicios RESTful con persistencia y documentación integrada.
 Lenguaje tipado para Angular.  
 **Ruta:** https://www.typescriptlang.org/  
 
-**Java (JDK 17)**  
-Lenguaje backend compatible con Azure.  
+**Java (JDK 25)**  
+Lenguaje backend compatible con Render.  
 **Ruta:** https://openjdk.org/  
 
 ---
@@ -150,7 +150,7 @@ La documentación facilita el mantenimiento y evolución del sistema.
 **OpenAPI / Swagger**  
 Documentación interactiva de APIs REST (endpoints, parámetros, respuestas, códigos HTTP).  
 **Ruta:** https://swagger.io/  
-**URL:** https://veyrav01.azurewebsites.net/swagger-ui/index.html  
+**URL:** https://veyra-backend-application-release.onrender.com/swagger-ui/index.html#/ 
 
 **Markdown**  
 Lenguaje de marcado ligero para documentación en GitHub.  
