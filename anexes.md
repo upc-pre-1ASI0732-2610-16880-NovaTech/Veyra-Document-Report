@@ -41,11 +41,11 @@ En este anexo se incluyen los enlaces correspondientes a las exposiciones del pr
 | Entrega | Descripción                           | Enlace                                                                                                                                        |
 | ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | TB1     | Primera exposición del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCymQroHEv4TarxpFxiz7pJAZYmiUo27PshlP3--gqib5k?e=apAGGl) |
-| TP1     | Segunda exposición del proyecto Veyra | *Pendiente de agregar enlace*                                                                                                                 |
+| TP1     | Segunda exposición del proyecto Veyra |  [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQBZGnBHWD2DRaIoqRp55x76AaPL7oVafhLj2WzRgP8veiQ?e=b1cQV6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  |
 
 ## Student Outcome
 En este anexo se incluyen los enlaces correspondientes a los videos about the team en Microsoft Stream.
 | Entrega | Descripción                           | Enlace                                                                                                                                        |
 | ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| TP1     | Segunda exposición del proyecto Veyra | *Pendiente de agregar enlace*                                                                                                                 |
+| TP1     | Segundo about the team del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCdbvBh-yrQQ7iu-7bM2LirATiy4p8WapTYH4yi1ZKBxcE?e=yoaEbq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)                                                                                                                |
 
