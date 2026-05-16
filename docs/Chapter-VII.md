@@ -97,8 +97,9 @@ En esta sección se detallan las herramientas y prácticas que aseguran un despl
 **Tools:**
 * **GitHub Actions:** Utilizado para automatizar el pipeline de despliegue final. Esta herramienta permite configurar flujos de trabajo que integran el pase automático a producción al detectar cambios validados en la rama `main` del repositorio de NovaTech.
 * **Render Web Services:** Plataforma de despliegue para la aplicación backend (RESTful API) desarrollada en Java con Spring Boot. Render gestiona la infraestructura en la nube de forma automática y expone de manera segura los endpoints del servicio.
-* **Render Static Sites:** Servicio optimizado utilizado para alojar y servir de forma eficiente el Landing Page (HTML/CSS/JS) y la aplicación web frontend estructurada en Angular.
-* **Base de Datos Gestionada (Render PostgreSQL / MongoDB Atlas):** Servicio encargado de almacenar de forma persistente los datos de producción, el cual se comunica directamente con el backend de Java mediante cadenas de conexión protegidas.
+* **Firebase Hosting:** Plataforma utilizada para el despliegue y alojamiento de la aplicación web frontend estructurada en Angular, garantizando la entrega de contenido de manera rápida, segura y escalable para los usuarios finales.
+* **GitHub Pages:** Servicio de alojamiento web empleado para servir el sitio web estático (Landing Page) utilizando HTML, CSS y JS directamente desde el repositorio en GitHub.
+* **Base de Datos Gestionada (Render PostgreSQL):** Servicio encargado de almacenar de forma persistente los datos de producción, el cual se comunica directamente con el backend de Java mediante cadenas de conexión protegidas.
 
 **Practices:**
 * **Despliegues sin tiempo de inactividad (Zero-downtime deployment):** Render asegura que la versión anterior de la aplicación permanezca activa y respondiendo solicitudes de los usuarios mientras se compila y verifica la nueva versión, realizando el intercambio de tráfico de manera invisible.
@@ -118,8 +119,8 @@ Esta sección describe los componentes que forman parte del pipeline de desplieg
 **Componentes del Pipeline del Backend (Java RESTful API):**
 1. **Trigger de producción:** El pipeline se dispara al confirmar una fusión (*merge*) o aprobación de un Pull Request directo hacia la rama `main`.
 2. **Compilación y Pruebas del Sistema:** GitHub Actions compila el código fuente en Java y ejecuta las pruebas del sistema para verificar que los componentes interactúen correctamente y no existan vulnerabilidades.
-3. **Generación del artefacto ejecutable:** Construcción del archivo JAR optimizado mediante las herramientas de automatización de compilación del proyecto.
-4. **Despliegue automatizado en Render:** A través de la integración de GitHub con Render o mediante llamadas seguras por webhooks, se notifica a Render para que descargue el artefacto verificado, configure el entorno y levante el servicio web de producción.
+3. **Construcción de la imagen Docker:** Utilización del archivo `Dockerfile` definido en el repositorio para empaquetar el artefacto compilado (JAR) junto con su entorno de ejecución en una imagen de contenedor optimizada.
+4. **Despliegue automatizado en Render:** A través de la integración directa con GitHub o mediante llamadas seguras por webhooks, se notifica a Render para que despliegue el servicio web de producción basado en el contenedor Docker, garantizando un entorno de ejecución inmutable y consistente.
 
 **Componentes del Pipeline del Frontend (Angular App & Landing Page):**
 1. **Disparador:** La integración de cambios en la rama `main` para los componentes web activa de inmediato el flujo de despliegue frontend.
