@@ -48,7 +48,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/anexes",
     "javascript.preferred.runtime.type.id": "node",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -76,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1778902829133</updated>
       <workItem from="1778902830319" duration="45000" />
-      <workItem from="1778902878023" duration="5239000" />
+      <workItem from="1778902878023" duration="5747000" />
     </task>
     <task id="LOCAL-00001" summary="docs(chapter-V): update backend deployment image to Render">
       <option name="closed" value="true" />

@@ -40,5 +40,5 @@ En este anexo se incluyen los enlaces correspondientes a las exposiciones del pr
 
 | Entrega | Descripción | Enlace |
 |----------|-------------|---------|
-| TB1 | Exposición de la primera entrega del proyecto Veyra | [Agregar enlace Microsoft Stream] |
+| TB1 | Exposición de la primera entrega del proyecto Veyra | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCymQroHEv4TarxpFxiz7pJAZYmiUo27PshlP3--gqib5k?e=apAGGl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D|
 | TP1 | Exposición de la segunda entrega del proyecto Veyra | [Agregar enlace Microsoft Stream] |
