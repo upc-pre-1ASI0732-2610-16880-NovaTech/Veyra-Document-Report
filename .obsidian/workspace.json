@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "92a046cd6481664b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c72f9d3bdb6ae33d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "060da4d91754aa36",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e92400326a6b94d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2868e19321b03e7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d85d4b32e6812361",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "a0c9a7003b0a7805",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "004171d468e977a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e306a028f979fbc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb9b6b38ecac2c92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bcf27f41d8df276",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/chapter-III.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de chapter-III"
+            }
+          },
+          {
+            "id": "729543249b44fd83",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/chapter-III.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de chapter-III"
+            }
+          },
+          {
+            "id": "ffe398bd1bc79b6f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "7125668870201f6c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/chapter-III.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de chapter-III"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Crear nueva base": false,
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "060da4d91754aa36",
+  "lastOpenFiles": [
+    "docs/chapter-IV.pdf",
+    "docs/chapter-IV_tmp.html",
+    "docs/chapter-III.md",
+    "docs/chapter-IV.md",
+    "assets/img/chapter-IV/whatweoffer-section-landing.png",
+    "assets/img/chapter-IV/whatweoffer-section-landing-wireframe.png",
+    "assets/img/chapter-IV/typografy-Veyra.jpg",
+    "assets/img/chapter-IV/prototypy.png",
+    "assets/img/chapter-IV/plans-section-landing.png",
+    "assets/img/chapter-IV/plans-section-landing-wireframe.png",
+    "assets/img/chapter-IV/ourteam-section-landing.png",
+    "assets/img/chapter-IV/ourteam-section-landing-wireframe.png",
+    "assets/img/chapter-IV/hero-section-landing.png",
+    "assets/img/chapter-IV/hero-section-landing-wireframe.png",
+    "docs/chapter-III.pdf",
+    "docs/chapter-III_tmp.html",
+    "chapter-III.pdf",
+    "docs/chapter-I.md",
+    "docs/chapter-II.md",
+    "chapter-II.pdf"
+  ]
+}
