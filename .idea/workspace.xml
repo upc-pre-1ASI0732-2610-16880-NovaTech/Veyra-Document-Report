@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dea32e62-3f55-4405-afbf-7f26bf20ce21" name="Changes" comment="docs(chapter-V): update section header for Sprint 2 Backlog" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/renzollerena/WebstormProjects/Veyra-Document-Report" value="3Dn14SZRRhDeKSTXIlTfbSCtt6U" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Renxoll"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report.git",
+    "accountId": "52f5928a-15e0-44d5-88c6-bdd304a74a38"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Dn14SZRRhDeKSTXIlTfbSCtt6U" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "develop",
+    "javascript.preferred.runtime.type.id": "node",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/introduction" />
+      <recent name="$PROJECT_DIR$/assets/img/chapter-V/deploy" />
+      <recent name="$PROJECT_DIR$/assets/img/chapter-V" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dea32e62-3f55-4405-afbf-7f26bf20ce21" name="Changes" comment="" />
+      <created>1778902829133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778902829133</updated>
+      <workItem from="1778902830319" duration="45000" />
+      <workItem from="1778902878023" duration="5239000" />
+    </task>
+    <task id="LOCAL-00001" summary="docs(chapter-V): update backend deployment image to Render">
+      <option name="closed" value="true" />
+      <created>1778902975015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778902975015</updated>
+    </task>
+    <task id="LOCAL-00002" summary="docs(introduction): enhance collaboration report and project flow visuals">
+      <option name="closed" value="true" />
+      <created>1778910020307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1778910020307</updated>
+    </task>
+    <task id="LOCAL-00003" summary="docs(introduction): update version history and collaboration report for TP1">
+      <option name="closed" value="true" />
+      <created>1778910150923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1778910150923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs(introduction): update commits flow image for tp1">
+      <option name="closed" value="true" />
+      <created>1778910212738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1778910212738</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docs(conclusions): add conclusions and recommendations">
+      <option name="closed" value="true" />
+      <created>1778910499747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1778910499747</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs(chapter-V): add Sprint 2 backlog details and update landing page evidence">
+      <option name="closed" value="true" />
+      <created>1778911629333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778911629333</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docs(chapter-V): update section header for Sprint 2 Backlog">
+      <option name="closed" value="true" />
+      <created>1778911725473</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778911725473</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docs(chapter-V): update backend deployment image to Render" />
+    <MESSAGE value="docs(introduction): enhance collaboration report and project flow visuals" />
+    <MESSAGE value="docs(introduction): update version history and collaboration report for TP1" />
+    <MESSAGE value="docs(introduction): update commits flow image for tp1" />
+    <MESSAGE value="docs(conclusions): add conclusions and recommendations" />
+    <MESSAGE value="docs(chapter-V): add Sprint 2 backlog details and update landing page evidence" />
+    <MESSAGE value="docs(chapter-V): update section header for Sprint 2 Backlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(chapter-V): update section header for Sprint 2 Backlog" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
