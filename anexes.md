@@ -43,3 +43,9 @@ En este anexo se incluyen los enlaces correspondientes a las exposiciones del pr
 | TB1     | Primera exposición del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCymQroHEv4TarxpFxiz7pJAZYmiUo27PshlP3--gqib5k?e=apAGGl) |
 | TP1     | Segunda exposición del proyecto Veyra | *Pendiente de agregar enlace*                                                                                                                 |
 
+## Student Outcome
+En este anexo se incluyen los enlaces correspondientes a los videos about the team en Microsoft Stream.
+| Entrega | Descripción                           | Enlace                                                                                                                                        |
+| ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| TP1     | Segunda exposición del proyecto Veyra | *Pendiente de agregar enlace*                                                                                                                 |
+
