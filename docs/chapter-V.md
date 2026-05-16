@@ -611,7 +611,7 @@ A continuación, la estructura de la tabla de control de estado para el Sprint:
 
 El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Software** mediante el tablero Scrum del proyecto, donde se registran los estados de cada tarea (To-do, In-Process, To-Review, Done). Durante las reuniones diarias (**Daily Scrum**), el equipo revisa el avance, actualiza el estado de las tareas y gestiona posibles bloqueos.
 
-## Sprint 2 Backlog
+## 5.2.1.2. Sprint 2 Backlog
 
 Durante el Sprint 2, el equipo Veyra enfocó sus esfuerzos en fortalecer la calidad, validación y automatización del sistema mediante la implementación de pruebas de software, integración continua y despliegue automatizado. Asimismo, se avanzó en funcionalidades relacionadas con la gestión de residentes, medicamentos y seguridad de la plataforma.
 
