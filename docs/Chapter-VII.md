@@ -99,7 +99,7 @@ En esta sección se detallan las herramientas y prácticas que aseguran un despl
 * **Render Web Services:** Plataforma de despliegue para la aplicación backend (RESTful API) desarrollada en Java con Spring Boot. Render gestiona la infraestructura en la nube de forma automática y expone de manera segura los endpoints del servicio.
 * **Firebase Hosting:** Plataforma utilizada para el despliegue y alojamiento de la aplicación web frontend estructurada en Angular, garantizando la entrega de contenido de manera rápida, segura y escalable para los usuarios finales.
 * **GitHub Pages:** Servicio de alojamiento web empleado para servir el sitio web estático (Landing Page) utilizando HTML, CSS y JS directamente desde el repositorio en GitHub.
-* **Base de Datos Gestionada (Render PostgreSQL):** Servicio encargado de almacenar de forma persistente los datos de producción, el cual se comunica directamente con el backend de Java mediante cadenas de conexión protegidas.
+* **Base de Datos Gestionada (Aiven MySQL):** Servicio encargado de almacenar de forma persistente los datos de producción, el cual se comunica directamente con el backend de Java mediante cadenas de conexión protegidas.
 
 **Practices:**
 * **Despliegues sin tiempo de inactividad (Zero-downtime deployment):** Render asegura que la versión anterior de la aplicación permanezca activa y respondiendo solicitudes de los usuarios mientras se compila y verifica la nueva versión, realizando el intercambio de tráfico de manera invisible.
