@@ -60,71 +60,72 @@ Tabla 7.2. Resumen de la suite de pruebas por bounded context
 
 ## 7.2. Continuous Delivery
 
-Continuous Delivery (CD) es una práctica de desarrollo que permite que los equipos entreguen software de forma continua y segura a los clientes. El objetivo principal de CD es reducir el tiempo entre la escritura del código y su disponibilidad en un entorno de pruebas o *staging*, asegurando que el software esté siempre en un estado desplegable y listo para el paso a producción.
+Continuous Delivery (CD) es una práctica de desarrollo que permite que los equipos entreguen software de forma continua y segura a los clientes. El objetivo principal de CD es reducir el tiempo entre la escritura del código y su disponibilidad en un entorno de pruebas o *staging*, asegurando que la aplicación esté siempre en un estado desplegable y listo para el paso a producción tras superar las validaciones automáticas.
 
 ### 7.2.1. Tools and Practices.
 
 En esta sección se detallan las herramientas y prácticas utilizadas para mantener un flujo constante de entregas hacia los entornos intermedios.
 
 **Tools:**
-* **GitHub Actions:** Plataforma principal de integración y entrega continua (CI/CD) utilizada en el proyecto. Permite automatizar flujos de trabajo directamente desde el repositorio de NovaTech en GitHub. Con GitHub Actions, se crean *workflows* personalizados para compilar, probar y desplegar el código cada vez que se integran cambios en ramas clave.
-* **Azure App Service (Staging Slots):** Servicio de alojamiento web que permite crear entornos de *staging* o pre-producción. Facilita la validación del sistema completo en un entorno idéntico al de producción antes del lanzamiento final.
+* **GitHub Actions:** Plataforma principal de integración y entrega continua (CI/CD) utilizada en el proyecto. Permite automatizar flujos de trabajo directamente desde el repositorio de la organización NovaTech en GitHub. Con esta herramienta se crean *workflows* personalizados para compilar, ejecutar pruebas y preparar el despliegue del código cada vez que se integran cambios en ramas de integración.
+* **Render (Staging Services):** Plataforma en la nube empleada para alojar los entornos de pre-producción. Permite la creación de servicios web independientes para el backend y sitios estáticos para el frontend, facilitando la validación del sistema completo en un entorno controlado antes del lanzamiento definitivo.
 
 **Practices:**
-* **Automatización de despliegues:** Permite publicar nuevas versiones del software en entornos intermedios de manera rápida y consistente mediante *pipelines* automatizados, minimizando el error humano.
-* **Pruebas automatizadas (Testing Suites):** Consiste en la ejecución estricta de pruebas unitarias y de integración de manera automática. El código no avanza al entorno de entrega si no supera estas validaciones.
-* **Gestión de la configuración:** Mantener la paridad de configuración entre entornos, asegurando que las variables y credenciales de *staging* estén correctamente separadas de las de desarrollo y producción.
+* **Automatización de despliegues:** Publicación de nuevas versiones de la aplicación de manera rápida y consistente en entornos intermedios mediante *pipelines* automatizados, lo que elimina la intervención manual y reduce fallos.
+* **Pruebas automatizadas obligatorias:** Ejecución estricta de las suites de pruebas unitarias y de integración de manera automatizada. Si el código no supera estas validaciones, el pipeline se detiene y no se efectúa la entrega.
+* **Aislamiento de la configuración:** Mantenimiento de la paridad de configuración entre entornos, asegurando que las credenciales y variables de *staging* estén completamente separadas de los entornos de desarrollo y producción mediante la gestión de variables de entorno de Render.
 
 ### 7.2.2. Stages Deployment Pipeline Components.
 
-Los componentes del pipeline para la entrega continua a entornos intermedios (*stages*) se estructuran de la siguiente manera y se encuentran orquestados a través de nuestro archivo de workflow (ej. `.github/workflows/cd-staging.yml`):
+Los componentes del pipeline para la entrega continua a entornos intermedios (*stages*) se estructuran de la siguiente manera y se encuentran orquestados a través de nuestro archivo de flujo de trabajo `.github/workflows/cd-staging.yml`:
 
-* **Source Code Checkout:** El pipeline se activa automáticamente mediante un trigger `on: push` o `pull_request` hacia ramas de integración (por ejemplo, `develop` o `release`) en GitHub.
-* **Build Stage:** Etapa de compilación del código fuente. Para el backend, se restauran paquetes de NuGet y se compila el proyecto ASP.NET Core con C#. Para el frontend, se instalan dependencias y se empaqueta la aplicación en Vue.
-* **Test Stage:** Ejecución automatizada de *Core Entities Unit Tests* y *Core Integration Tests*. Si alguna prueba falla, el pipeline se interrumpe y notifica al equipo.
-* **Artifact Generation:** Creación de los artefactos desplegables (binarios listos para la nube en el backend y archivos estáticos minificados en el frontend).
-* **Deploy to Staging:** Despliegue automático del artefacto generado en el entorno de pre-producción (Azure App Service Staging Slot) para habilitar las pruebas de aceptación.
+* **Source Code Checkout:** El pipeline se activa automáticamente mediante un disparador (*trigger*) ante eventos de `push` o `pull_request` hacia la rama de integración `develop` en GitHub.
+* **Build Stage:** Etapa de compilación del código fuente. Para el backend, se restauran las dependencias de Maven/Gradle y se compila el proyecto en Java. Para el frontend, se instalan los paquetes de Node.js y se compila la aplicación en Angular utilizando TypeScript.
+* **Test Stage:** Ejecución automatizada de las pruebas unitarias y de integración organizadas en el proyecto. Si alguna de las pruebas falla, el proceso se interrumpe inmediatamente y se envía una notificación de error al equipo.
+* **Artifact Generation:** Generación de los componentes listos para ser ejecutados. Esto incluye el archivo empaquetado (JAR/WAR) para el backend en Java y la carpeta de distribución con los archivos estáticos optimizados para el frontend en Angular.
+* **Deploy to Staging:** Transferencia automática del artefacto generado hacia los servicios correspondientes de staging en Render, quedando disponible para las pruebas de aceptación y la validación heurística de la experiencia de usuario.
 
-## 7.3. Continuous deployment
 
-El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen automáticamente desde el entorno de desarrollo hasta la producción. Esto garantiza que cada nueva versión sea entregada a los usuarios finales sin intervención manual, siempre y cuando pase todas las métricas de calidad y pruebas establecidas por el equipo.
+## 7.3. Continuous Deployment
+
+El objetivo de Continuous Deployment (CD) es que los cambios aprobados en el código pasen automáticamente desde el entorno de desarrollo hasta la producción. Esto garantiza que cada nueva versión sea entregada a los usuarios finales sin intervención manual, siempre y cuando supere todas las métricas de calidad y las pruebas automatizadas establecidas por el equipo.
 
 ### 7.3.1. Tools and Practices.
 
 En esta sección se detallan las herramientas y prácticas que aseguran un despliegue a producción automatizado, rápido y confiable.
 
 **Tools:**
-* **GitHub Actions:** Para automatizar el pipeline de despliegue final. Esta herramienta permite configurar *workflows* que integran el pase automático a producción al detectar cambios integrados en la rama `main` del repositorio de la organización NovaTech en GitHub.
-* **Azure App Service:** Como plataforma de despliegue para la aplicación backend (RESTful API) desarrollada en ASP.NET Core con C#. Permite gestionar la infraestructura de forma automática y configurar las variables de entorno de forma segura en la sección *Configuration* del servicio.
-* **Azure Cosmos DB:** Como servicio de base de datos NoSQL en la nube. Permite gestionar el clúster compatible con MongoDB, configurando reglas de firewall y proporcionando la cadena de conexión segura para el backend.
-* **Plataforma de Hosting Estático (ej. Azure Static Web Apps / Vercel):** Utilizada para alojar y servir el Landing Page (HTML/CSS/JS) y la aplicación web Frontend en Vue.
+* **GitHub Actions:** Utilizado para automatizar el pipeline de despliegue final. Esta herramienta permite configurar flujos de trabajo que integran el pase automático a producción al detectar cambios validados en la rama `main` del repositorio de NovaTech.
+* **Render Web Services:** Plataforma de despliegue para la aplicación backend (RESTful API) desarrollada en Java con Spring Boot. Render gestiona la infraestructura en la nube de forma automática y expone de manera segura los endpoints del servicio.
+* **Render Static Sites:** Servicio optimizado utilizado para alojar y servir de forma eficiente el Landing Page (HTML/CSS/JS) y la aplicación web frontend estructurada en Angular.
+* **Base de Datos Gestionada (Render PostgreSQL / MongoDB Atlas):** Servicio encargado de almacenar de forma persistente los datos de producción, el cual se comunica directamente con el backend de Java mediante cadenas de conexión protegidas.
 
 **Practices:**
-* **Despliegues sin tiempo de inactividad (Zero-downtime deployment):** Redirección del tráfico de usuarios hacia la nueva versión solo cuando el despliegue se ha completado y verificado.
-* **Monitoreo Continuo:** Supervisión de la salud del sistema inmediatamente después del pase a producción para detectar anomalías.
-* **Reversión automatizada (Rollback):** Capacidad del pipeline de volver a la última versión estable si las pruebas del sistema fallan en el entorno productivo.
+* **Despliegues sin tiempo de inactividad (Zero-downtime deployment):** Render asegura que la versión anterior de la aplicación permanezca activa y respondiendo solicitudes de los usuarios mientras se compila y verifica la nueva versión, realizando el intercambio de tráfico de manera invisible.
+* **Gestión segura de secretos:** Uso de la sección *Environment Variables* de Render para almacenar de forma confidencial credenciales de bases de datos y llaves de APIs, evitando la exposición de datos sensibles en el código fuente de GitHub.
+* **Reversión automatizada (Rollback):** Capacidad del entorno de despliegue para regresar de forma inmediata a la última versión estable construida en caso de detectarse anomalías o fallas críticas en producción.
 
 ### 7.3.2. Production Deployment Pipeline Components.
 
-Esta sección describe los componentes que forman parte del pipeline de despliegue a producción para los distintos artefactos del ecosistema. Todo este proceso se define en el workflow principal (ej. `.github/workflows/cd-production.yml`).
+Esta sección describe los componentes que forman parte del pipeline de despliegue a producción para los distintos artefactos del ecosistema. Todo este proceso se define en el archivo de flujo de trabajo principal `.github/workflows/cd-production.yml`.
 
-**Componentes de Pipeline de la Base de Datos (Azure Cosmos DB):**
-1. **Aprovisionamiento del clúster:** Al crear el recurso en el portal de Azure, se relaciona Azure Cosmos DB for MongoDB con el tipo de clúster vCore, configurando los parámetros de nombre de cuenta, grupo de recursos y opciones de rendimiento.
-2. **Configuración de reglas de acceso (Firewall):** Habilitación del acceso exclusivo desde las direcciones IP de la aplicación backend desplegada en Azure, denegando el tráfico público no autorizado.
-3. **Conexión desde el backend:** La aplicación en ASP.NET Core se conecta mediante la cadena de conexión de Cosmos DB, la cual se configura como una variable de entorno oculta en la sección *Configuration* de Azure App Service, garantizando que no quede expuesta en GitHub.
-4. **Despliegue continuo de esquema:** Dado que MongoDB es una base de datos orientada a documentos, las modificaciones en el modelo de datos se reflejan automáticamente con la nueva versión del backend. Las nuevas colecciones se crean en tiempo de ejecución.
+**Componentes del Pipeline de la Base de Datos:**
+1. **Aprovisionamiento del servicio:** Configuración y puesta en marcha de la instancia de la base de datos en la nube, estableciendo los parámetros de rendimiento y la región de alojamiento adecuada.
+2. **Configuración de reglas de acceso:** Restricción de accesos directos al entorno de datos, permitiendo conexiones únicamente desde el backend autorizado y las herramientas de administración del equipo mediante autenticación segura.
+3. **Conexión desde el backend:** El backend en Java se conecta al servicio de datos a través de la propiedad de conexión configurada como una variable de entorno en Render, impidiendo que los accesos queden registrados en el repositorio público.
+4. **Actualización continua de estructuras:** Sincronización y ejecución automatizada de scripts o mapeos de entidades en tiempo de ejecución al inicializar la aplicación Java, manteniendo la base de datos alineada con la versión más reciente del software.
 
-**Componentes de Pipeline del Backend (ASP.NET Core RESTful API):**
-1. **Integración y Trigger:** Al aprobar un *Pull Request* hacia la rama `main` del repositorio de GitHub, se dispara automáticamente el flujo de *Continuous Deployment*.
-2. **Build & System Tests:** GitHub Actions restaura las dependencias, compila la solución y ejecuta los *Core System Tests* para asegurar que el código es estable y seguro para producción.
-3. **Publicación del proyecto:** El pipeline ejecuta el empaquetado del proyecto (vía `dotnet publish`) generando el artefacto final optimizado para el entorno en la nube.
-4. **Deploy a Producción:** Utilizando la acción oficial de Azure para GitHub, el artefacto se publica automáticamente sobre el recurso de Azure App Service en su *slot* de producción, reemplazando la versión anterior.
+**Componentes del Pipeline del Backend (Java RESTful API):**
+1. **Trigger de producción:** El pipeline se dispara al confirmar una fusión (*merge*) o aprobación de un Pull Request directo hacia la rama `main`.
+2. **Compilación y Pruebas del Sistema:** GitHub Actions compila el código fuente en Java y ejecuta las pruebas del sistema para verificar que los componentes interactúen correctamente y no existan vulnerabilidades.
+3. **Generación del artefacto ejecutable:** Construcción del archivo JAR optimizado mediante las herramientas de automatización de compilación del proyecto.
+4. **Despliegue automatizado en Render:** A través de la integración de GitHub con Render o mediante llamadas seguras por webhooks, se notifica a Render para que descargue el artefacto verificado, configure el entorno y levante el servicio web de producción.
 
-**Componentes de Pipeline del Frontend (Vue App & Landing Page):**
-1. **Trigger:** Un *Merge* hacia la rama `main` en los repositorios de las aplicaciones web desencadena el *workflow* de producción en GitHub Actions.
-2. **Build & Optimize:** El pipeline instala las dependencias de Node, ejecuta validaciones de calidad estática y transpila el código de Vue construyendo los archivos estáticos minificados (`html`, `css`, `js`).
-3. **Deploy a Producción:** Los archivos resultantes de la carpeta de construcción (`dist`) se suben automáticamente al servicio de alojamiento frontend en la nube, quedando disponibles de inmediato para los usuarios finales.
-   
+**Componentes del Pipeline del Frontend (Angular App & Landing Page):**
+1. **Disparador:** La integración de cambios en la rama `main` para los componentes web activa de inmediato el flujo de despliegue frontend.
+2. **Compilación y Optimización:** El pipeline ejecuta las tareas de construcción de producción (`ng build --configuration production`), lo que compila el código TypeScript, minifica los archivos CSS/JavaScript y genera el sitio optimizado.
+3. **Publicación en la Red de Distribución:** Los archivos resultantes se transfieren de manera directa al servicio de *Static Sites* de Render, actualizando la interfaz pública del usuario final en cuestión de segundos de forma completamente automatizada.
+
 ## 7.4. Continuous Monitoring
 
 El Monitoreo Continuo permite a **NovaTech** supervisar la salud, el rendimiento y la disponibilidad de la solución en tiempo real, garantizando que el sistema opere según los niveles de servicio esperados.
