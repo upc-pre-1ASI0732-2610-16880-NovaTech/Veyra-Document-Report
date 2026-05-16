@@ -578,6 +578,7 @@ public class ResidentController {
 
 ## 5.2. Product Implementation & Deployment. 
 ### 5.2.1. Sprint Backlogs. 
+#### 5.2.1.1 Sprint Backlog 1 - Landing Page Implementation
 
 El Sprint Backlog 1 reúne las historias de usuario y tareas necesarias para implementar la primera versión de la landing page, incluyendo el menú de navegación, la visualización de planes, la sección de creadores, redes sociales, el formulario de contacto y el cambio de idioma.
 
@@ -610,9 +611,38 @@ A continuación, la estructura de la tabla de control de estado para el Sprint:
 
 El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Software** mediante el tablero Scrum del proyecto, donde se registran los estados de cada tarea (To-do, In-Process, To-Review, Done). Durante las reuniones diarias (**Daily Scrum**), el equipo revisa el avance, actualiza el estado de las tareas y gestiona posibles bloqueos.
 
+## Sprint 2 Backlog
+
+Durante el Sprint 2, el equipo Veyra enfocó sus esfuerzos en fortalecer la calidad, validación y automatización del sistema mediante la implementación de pruebas de software, integración continua y despliegue automatizado. Asimismo, se avanzó en funcionalidades relacionadas con la gestión de residentes, medicamentos y seguridad de la plataforma.
+
+| Sprint | ID | Tipo | Título | Descripción | Responsable | Estado |
+|--------|----|------|---------|-------------|-------------|--------|
+| Sprint 2 | US12 | User Story | Registro de residentes | Implementación y validación de funcionalidades para registrar perfiles completos de residentes, incluyendo información médica y personal. | Renzo Llerena | Completado |
+| Sprint 2 | TS-RM002 | Technical Story | Ver expediente detallado | Desarrollo y validación del endpoint GET para consultar información detallada de residentes autorizados. | Adrian Valerio | Completado |
+| Sprint 2 | TS-RM-005 | Technical Story | Actualizar información de pacientes | Implementación de endpoint PATCH para actualización parcial de datos del residente. | Adrian Valerio | Completado |
+| Sprint 2 | US14 | User Story | Administración de medicamentos | Desarrollo de funcionalidades para registrar tomas de medicamentos y control de stock. | Yasser Rentería | Completado |
+| Sprint 2 | TS-I002 | Technical Story | Agregar medicamentos al inventario | Implementación del endpoint POST para registrar medicamentos en el inventario de la residencia. | Renzo Llerena | Completado |
+| Sprint 2 | TS-EM001 | Technical Story | Agregar empleado | Desarrollo del endpoint POST para registrar empleados y asignar roles dentro del sistema. | Juan Manuel Santos Torres | Completado |
+| Sprint 2 | TS18 | Technical Story | Autenticación y MFA | Implementación de autenticación multifactor para reforzar la seguridad de acceso a información sensible. | Miguel Ángel Junior Román López | En proceso |
+| Sprint 2 | TS17 | Technical Story | Integración con Stripe | Integración inicial de pagos mediante Stripe para gestión de cuotas y suscripciones. | Camilla Espinoza | En proceso |
+| Sprint 2 | TS-NH001 | Technical Story | Crear Nursing Home (Onboarding) | Desarrollo del flujo de registro y validación de casas de reposo dentro de la plataforma. | Juan Manuel Santos Torres | Completado |
+| Sprint 2 | TS-ST001 | Technical Story | Dashboard de Estadísticas | Implementación inicial de dashboard con métricas de ocupación y residentes activos. | Yasser Rentería | En proceso |
+| Sprint 2 | US38 | User Story | Protección de datos mediante cifrado | Implementación de mecanismos de cifrado para almacenamiento seguro de información médica. | Miguel Ángel Junior Román López | En proceso |
+| Sprint 2 | US44 | User Story | Manejo de errores comprensible | Desarrollo de mensajes de error claros y mecanismos de reintento para mejorar experiencia de usuario. | Camilla Espinoza | Completado |
+| Sprint 2 | TS-TEST001 | Technical Story | Core Function Unit Tests | Desarrollo de pruebas unitarias para validar funciones críticas del backend y lógica de negocio. | Renzo Llerena | Completado |
+| Sprint 2 | TS-TEST002 | Technical Story | Core Integration Tests | Implementación de pruebas de integración para validar interacción entre módulos y servicios. | Adrian Valerio | Completado |
+| Sprint 2 | TS-TEST003 | Technical Story | Core Behavior-Driven Development (BDD) | Elaboración de escenarios BDD y criterios de aceptación para validar comportamiento esperado del sistema. | Juan Manuel Santos Torres | Completado |
+| Sprint 2 | TS-TEST004 | Technical Story | Core System Tests | Ejecución de pruebas funcionales completas para validar estabilidad y comportamiento integral del sistema. | Yasser Rentería | Completado |
+| Sprint 2 | TS-CI001 | Technical Story | Continuous Integration (CI) | Configuración de pipelines automáticos de compilación, validación y testing del proyecto. | Camilla Espinoza | Completado |
+| Sprint 2 | TS-CD001 | Technical Story | Continuous Delivery / Deployment (CD) | Automatización de despliegues y publicación continua en entornos de prueba y producción. | Miguel Ángel Junior Román López | Completado |
+
+### Sprint Goal
+
+El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y confiabilidad de la plataforma Veyra mediante la implementación de pruebas automatizadas, integración continua y despliegue automatizado, además de continuar el desarrollo de funcionalidades críticas relacionadas con la gestión de residentes, medicamentos y seguridad de la información.
+
 ### 5.2.2. Implemented Landing Page Evidence 
 <p><strong>Encabezado y menú de navegación:</strong></p>
-<img src="/assets/img/chapter-V/header-landing-page.png" alt="header landing page">
+<img src="../assets/img/chapter-V/header-landing-page.png" alt="header landing page">
 
 <p><strong>Sección Hero:</strong></p>
 <img src="../assets/img/chapter-V/hero-landing-page.png" alt="hero landing page">
@@ -624,13 +654,13 @@ El seguimiento y la actualización del Sprint Backlog se realizan en **Jira Soft
 <img src="../assets/img/chapter-V/plans-landing-page.png" alt="plans landing page">
 
 <p><strong>Sección About the App:</strong></p>
-<img src="/assets/img/chapter-V/about-the-app-landing-page.png" alt="about the app landing page">
+<img src="../assets/img/chapter-V/about-the-app-landing-page.png" alt="about the app landing page">
 
 <p><strong>Sección Testimonials:</strong></p>
-<img src="/assets/img/chapter-V/testimonials-landing-page.png" alt="testimonials landing page">
+<img src="../assets/img/chapter-V/testimonials-landing-page.png" alt="testimonials landing page">
 
 <p><strong>Sección About the Team:</strong></p>
-<img src="/assets/img/chapter-V/about-the-team-landing-page.jpg" alt="about the team landing page">
+<img src="../assets/img/chapter-V/about-the-team-landing-page.jpg" alt="about the team landing page">
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence 
 <img src="../assets/img/chapter-V/deploy/frontend-deploy.png" alt="frontend">
