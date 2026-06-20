@@ -1,6 +1,6 @@
-## Chapter VIII: Experiment Driven Development
-### 8.1. Experiment Planning
-#### 8.1.1. As-Is Summary
+## Capitulo VIII: Desarrollo Guiado por Experimentos
+### 8.1. Planeacion del Experimento
+#### 8.1.1. Resumen As-Is
 La plataforma Veyra actualmente ofrece funcionalidades centrales para la gestion de casas de reposo, residentes, medicamentos, seguimiento de salud y comunicacion con familiares. La solucion ya cubre el core operacional del negocio, pero todavia presenta oportunidades claras de aprendizaje sobre la experiencia real de los usuarios y el valor percibido de ciertas mejoras.
 
 Desde la perspectiva del negocio, el sistema permite registrar instituciones, administrar residentes, controlar inventario de medicamentos y almacenar metricas de salud. Sin embargo, no todas las funcionalidades han sido evaluadas aun con suficiente evidencia de uso para confirmar si realmente resuelven los puntos mas criticos del flujo diario del personal, administradores y familiares.
@@ -19,8 +19,8 @@ Objetivos de mejora:
 - Validar si una mejor organizacion de la informacion incrementa la adopcion de la plataforma.
 - Confirmar que las mejoras propuestas aportan valor medible al negocio y a la experiencia del usuario.
 
-#### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
-Assumptions:
+#### 8.1.2. Materia Prima: Suposiciones, Vacios de Conocimiento, Ideas, Afirmaciones
+Suposiciones:
 
 - Se asume que el personal de las casas de reposo necesita acceso mas rapido a informacion critica de residentes y medicamentos.
 - Se asume que los familiares valoran notificaciones claras y actualizaciones frecuentes sobre el estado de sus seres queridos.
@@ -28,11 +28,11 @@ Assumptions:
 - Se asume que la centralizacion de metricas de salud mejora la toma de decisiones del personal asistencial.
 - Se asume que una mejor navegacion dentro del sistema puede reducir la curva de aprendizaje de nuevos usuarios.
 
-Knowledge Gaps:
+Vacios de conocimiento:
 
 - No se conoce con exactitud que seccion de la plataforma consume mas tiempo durante el uso diario.
 - Falta evidencia sobre que informacion consideran mas prioritaria los administradores frente al personal de cuidado.
-- No esta claro si los familiares consultan con frecuencia el portal o si necesitan mas recordatorios y resumenes.
+- No esta claro si los familiares consultan con frecuencia el portal o si necesitan mas recordatorios y resuemenes.
 - No se dispone aun de mediciones comparativas sobre tiempos de tarea antes y despues de una mejora de interfaz.
 - Falta validar que elementos de la interfaz generan mas confianza y cuales generan confusion.
 
@@ -40,218 +40,218 @@ Ideas:
 
 - Priorizar un dashboard con accesos rapidos a residentes, medicamentos y alertas de salud.
 - Reorganizar la informacion critica para que los flujos frecuentes requieran menos clics.
-- Implementar resumenes visuales mas claros para el estado de cada residente.
+- Implementar resuenos visuales mas claros para el estado de cada residente.
 - Mejorar las notificaciones para familiares con mensajes mas utiles y faciles de entender.
 - Aplicar ajustes de usabilidad para reducir errores y acelerar tareas repetitivas.
 
-Claims:
+Afirmaciones:
 
 - Un dashboard mejor estructurado puede reducir el tiempo de acceso a datos criticos.
-- Mostrar resumentes de salud de forma mas visible puede mejorar la reaccion ante incidentes.
+- Mostrar resuenos de salud de forma mas visible puede mejorar la reaccion ante incidentes.
 - Una navegacion mas simple puede aumentar la satisfaccion del personal que usa la plataforma a diario.
 - Un sistema de notificaciones mas claro puede fortalecer la confianza de los familiares.
 - Una mejor jerarquia visual puede disminuir errores durante registros operativos.
 
-#### 8.1.3. Experiment Ready Questions
+#### 8.1.3. Preguntas Listas para Experimentar
 
-| Question | Confidence | Risk | Impact | Interest | Total Score |
+| Pregunta | Confianza | Riesgo | Impacto | Interes | Puntaje total |
 |---|---:|---:|---:|---:|---:|
-| Will a more visible dashboard reduce the time needed to access resident and health information? | 8 | 2 | 9 | 8 | 27 |
-| Will a simpler navigation flow improve task completion for staff users? | 7 | 3 | 8 | 7 | 25 |
-| Will clearer resident health summaries improve decision making during daily care routines? | 8 | 2 | 9 | 7 | 26 |
-| Will improved family notifications increase trust and portal engagement? | 7 | 3 | 8 | 8 | 26 |
-| Will better information hierarchy reduce operational mistakes when registering medication and health data? | 8 | 3 | 9 | 7 | 27 |
+| Un dashboard mas visible reducira el tiempo necesario para acceder a informacion de residentes y salud? | 8 | 2 | 9 | 8 | 27 |
+| Un flujo de navegacion mas simple mejorara la finalizacion de tareas para el personal? | 7 | 3 | 8 | 7 | 25 |
+| Resumenes de salud mas claros mejoraran la toma de decisiones durante las rutinas diarias de cuidado? | 8 | 2 | 9 | 7 | 26 |
+| Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? | 7 | 3 | 8 | 8 | 26 |
+| Una mejor jerarquia de informacion reducira errores operativos al registrar medicamentos y datos de salud? | 8 | 3 | 9 | 7 | 27 |
 
-#### 8.1.4. Question Backlog
+#### 8.1.4. Backlog de Preguntas
 
-| Priority | Question |
+| Prioridad | Pregunta |
 |---:|---|
-| 1 | Will a more visible dashboard reduce the time needed to access resident and health information? |
-| 1 | Will better information hierarchy reduce operational mistakes when registering medication and health data? |
-| 2 | Will clearer resident health summaries improve decision making during daily care routines? |
-| 3 | Will a simpler navigation flow improve task completion for staff users? |
-| 3 | Will improved family notifications increase trust and portal engagement? |
+| 1 | Un dashboard mas visible reducira el tiempo necesario para acceder a informacion de residentes y salud? |
+| 1 | Una mejor jerarquia de informacion reducira errores operativos al registrar medicamentos y datos de salud? |
+| 2 | Resumenes de salud mas claros mejoraran la toma de decisiones durante las rutinas diarias de cuidado? |
+| 3 | Un flujo de navegacion mas simple mejorara la finalizacion de tareas para el personal? |
+| 3 | Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? |
 
-#### 8.1.5. Experiment Cards
+#### 8.1.5. Tarjetas de Experimento
 
-| Question | Why | What | Hypothesis |
+| Pregunta | Por que | Que | Hipotesis |
 |---|---|---|---|
-| Will a more visible dashboard reduce the time needed to access resident and health information? | Because staff users need fast access to critical data during daily care routines, and a stronger visual hierarchy can reduce search time. | Redesign the main dashboard to highlight residents, medications, alerts, and recent health metrics as the first visible elements. | We expect task access time to decrease by at least 20 percent and users to report better clarity in the main workflow. |
-| Will a simpler navigation flow improve task completion for staff users? | Because repeated tasks such as resident lookup and medication registration should require as few steps as possible. | Simplify the navigation structure and reduce unnecessary intermediate screens for the most common actions. | We expect the average number of clicks per task to decrease and the completion rate for frequent tasks to improve. |
-| Will clearer resident health summaries improve decision making during daily care routines? | Because medical and caregiving decisions depend on quick interpretation of relevant resident status. | Create more readable resident summary views with highlighted metrics, recent events, and alert indicators. | We expect users to identify critical resident conditions faster and to make more confident routine decisions. |
-| Will improved family notifications increase trust and portal engagement? | Because families need concise and useful updates to feel informed and involved in the care process. | Redesign notification messages to include clearer context, status, and next actions for family users. | We expect notification open rates and portal engagement to increase after improving message clarity. |
-| Will better information hierarchy reduce operational mistakes when registering medication and health data? | Because unclear layouts can lead to incorrect entries in high frequency operational tasks. | Reorganize forms and screens so that the most important fields appear first and the critical actions are visually emphasized. | We expect fewer input errors and fewer corrections during medication and health record registration. |
+| Un dashboard mas visible reducira el tiempo necesario para acceder a informacion de residentes y salud? | Porque el personal necesita acceso rapido a datos criticos durante las rutinas diarias, y una jerarquia visual mas fuerte puede reducir el tiempo de busqueda. | Redisenar el dashboard principal para resaltar residentes, medicamentos, alertas y metricas recientes de salud como los primeros elementos visibles. | Se espera que el tiempo de acceso a tareas disminuya al menos 20 por ciento y que los usuarios reporten mayor claridad en el flujo principal. |
+| Un flujo de navegacion mas simple mejorara la finalizacion de tareas para el personal? | Porque tareas repetitivas como la busqueda de residentes y el registro de medicamentos deben requerir la menor cantidad posible de pasos. | Simplificar la estructura de navegacion y reducir pantallas intermedias innecesarias para las acciones mas frecuentes. | Se espera que disminuya el numero promedio de clics por tarea y que aumente la tasa de finalizacion de los flujos frecuentes. |
+| Resumenes de salud mas claros mejoraran la toma de decisiones durante las rutinas diarias de cuidado? | Porque las decisiones medicas y asistenciales dependen de una interpretacion rapida del estado relevante del residente. | Crear vistas de resumen del residente mas faciles de leer, con metricas destacadas, eventos recientes e indicadores de alerta. | Se espera que los usuarios identifiquen condiciones criticas mas rapido y tomen decisiones de rutina con mayor confianza. |
+| Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? | Porque las familias necesitan actualizaciones concisas y utiles para sentirse informadas e involucradas en el proceso de cuidado. | Redisenar los mensajes de notificacion para incluir contexto, estado y proximos pasos mas claros para los usuarios familiares. | Se espera que aumenten las aperturas de notificaciones y la interaccion con el portal despues de mejorar la claridad de los mensajes. |
+| Una mejor jerarquia de informacion reducira errores operativos al registrar medicamentos y datos de salud? | Porque los diseños poco claros pueden llevar a registros incorrectos en tareas operativas de alta frecuencia. | Reorganizar formularios y pantallas para que los campos mas importantes aparezcan primero y las acciones criticas queden visualmente resaltadas. | Se espera que disminuyan los errores de entrada y las correcciones durante el registro de medicamentos y salud. |
 
-### 8.2. Experiment Design
-#### 8.2.1. Hypotheses
-The experimentation phase of Veyra was designed to validate whether the proposed product improvements actually solve the most relevant usability and operational problems detected during the planning stage.
+### 8.2. Diseno del Experimento
+#### 8.2.1. Hipotesis
+La fase de experimentacion de Veyra fue disenada para validar si las mejoras propuestas realmente resuelven los problemas de usabilidad y operacion detectados durante la planeacion.
 
-The main hypotheses are:
+Las hipotesis principales son:
 
-- A clearer dashboard will reduce the time needed to access resident, medication, and health information.
-- A simplified navigation flow will improve task completion for staff users.
-- Better resident health summaries will improve decision making during daily care routines.
-- Improved family notifications will increase trust and portal engagement.
-- Better information hierarchy will reduce operational mistakes during data registration.
+- Un dashboard mas claro reducira el tiempo necesario para acceder a informacion de residentes, medicamentos y salud.
+- Un flujo de navegacion simplificado mejorara la finalizacion de tareas por parte del personal.
+- Resumenes de salud mas claros mejoraran la toma de decisiones durante las rutinas diarias de cuidado.
+- Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal.
+- Una mejor jerarquia de informacion reducira errores operativos durante el registro de datos.
 
-These hypotheses were selected because they are directly related to the core value of the platform and can be measured through observable user behavior and product analytics.
+Estas hipotesis se seleccionaron porque estan directamente relacionadas con el valor central de la plataforma y pueden medirse mediante comportamiento observable de los usuarios y analitica del producto.
 
-#### 8.2.2. Domain Business Metrics
-The business metrics for Veyra were defined around the most important outcomes of the care management platform. The objective is not only to increase usage, but also to improve operational efficiency, information quality, and user confidence.
+#### 8.2.2. Metricas de Negocio del Dominio
+Las metricas de negocio de Veyra se definieron en torno a los resultados mas importantes de la plataforma de gestion de cuidados. El objetivo no es solo aumentar el uso, sino tambien mejorar la eficiencia operativa, la calidad de la informacion y la confianza de los usuarios.
 
-| Metric | Description | Why it matters |
+| Metricas | Descripcion | Por que importa |
 |---|---|---|
-| Task completion time | Time required to finish common actions such as search, register, or review | Measures efficiency in daily operations |
-| Error rate in forms | Number of incorrect or incomplete submissions | Indicates quality of the interface and validation |
-| Resident data access rate | Frequency of access to resident profiles and summaries | Shows whether critical data is easy to find |
-| Medication registration success rate | Percentage of medication entries completed without correction | Reflects reliability in a critical workflow |
-| Family portal engagement | Frequency of visits and interaction with notifications | Measures perceived value for family users |
-| Health alert visibility | How quickly staff notices relevant health information | Important for timely care decisions |
+| Tiempo de finalizacion de tarea | Tiempo requerido para terminar acciones comunes como buscar, registrar o revisar | Mide la eficiencia en la operacion diaria |
+| Tasa de error en formularios | Numero de envios incorrectos o incompletos | Indica la calidad de la interfaz y la validacion |
+| Tasa de acceso a datos del residente | Frecuencia de acceso a perfiles y resumenes de residentes | Muestra si los datos criticos son faciles de encontrar |
+| Tasa de exito en registros de medicamentos | Porcentaje de registros completados sin correccion | Refleja confiabilidad en un flujo critico |
+| Interaccion en el portal familiar | Frecuencia de visitas e interaccion con notificaciones | Mide el valor percibido por los usuarios familiares |
+| Visibilidad de alertas de salud | Rapidez con la que el personal nota informacion relevante de salud | Importante para decisiones de cuidado oportunas |
 
-These metrics connect the product experience with business value because Veyra is used in a context where speed, accuracy, and trust are essential.
+Estas metricas conectan la experiencia del producto con el valor de negocio porque Veyra se usa en un contexto donde la rapidez, la exactitud y la confianza son esenciales.
 
-#### 8.2.3. Measures
-To validate the hypotheses, Veyra uses a combination of behavioral, performance, and perception measures. This allows the team to observe not only what users do, but also how they feel about the experience.
+#### 8.2.3. Medidas
+Para validar las hipotesis, Veyra usa una combinacion de medidas de comportamiento, rendimiento y percepcion. Esto permite observar no solo lo que hacen los usuarios, sino tambien como perciben la experiencia.
 
-| Measure | Type | How it is captured |
+| Medida | Tipo | Como se captura |
 |---|---|---|
-| Time on task | Quantitative | Time between opening a screen and finishing the intended action |
-| Click count | Quantitative | Number of interactions required to complete a flow |
-| Form error count | Quantitative | Number of validation errors generated by the user |
-| Completion rate | Quantitative | Percentage of tasks completed successfully |
-| Notification engagement | Quantitative | Open rate or interaction rate with alerts |
-| Satisfaction feedback | Qualitative | User comments after performing the task |
-| Perceived clarity | Qualitative | User feedback about layout and information hierarchy |
+| Tiempo en tarea | Cuantitativa | Tiempo entre abrir una pantalla y terminar la accion esperada |
+| Numero de clics | Cuantitativa | Cantidad de interacciones necesarias para completar un flujo |
+| Numero de errores en formularios | Cuantitativa | Cantidad de validaciones generadas por el usuario |
+| Tasa de finalizacion | Cuantitativa | Porcentaje de tareas completadas con exito |
+| Interaccion con notificaciones | Cuantitativa | Tasa de apertura o interaccion con alertas |
+| Retroalimentacion de satisfaccion | Cualitativa | Comentarios del usuario despues de realizar la tarea |
+| Claridad percibida | Cualitativa | Opinion del usuario sobre el orden visual y la jerarquia de informacion |
 
-The chosen measures were kept simple and practical so they can be compared before and after the proposed changes.
+Las medidas elegidas se mantuvieron simples y practicas para poder compararlas antes y despues de los cambios propuestos.
 
-#### 8.2.4. Conditions
-The experimentation conditions define when and how each improvement should be tested so the results can be interpreted with confidence.
+#### 8.2.4. Condiciones
+Las condiciones de experimentacion definen cuando y como debe evaluarse cada mejora para que los resultados puedan interpretarse con confianza.
 
-| Condition | Description |
+| Condicion | Descripcion |
 |---|---|
-| Test group | Users interact with the improved version of the dashboard, navigation, summaries, or notifications |
-| Control group | Users interact with the current version of the interface or current flow |
-| Same user profile | Comparisons are made between similar roles such as administrator, staff member, or family member |
-| Same task scope | The same task is used in both conditions to keep the comparison fair |
-| Same environment | The test is performed under similar device and network conditions |
-| Same success criteria | Both versions are evaluated using the same definition of completion and error |
+| Grupo de prueba | Los usuarios interactuan con la version mejorada del dashboard, la navegacion, los resumenes o las notificaciones |
+| Grupo de control | Los usuarios interactuan con la version actual de la interfaz o del flujo |
+| Mismo perfil de usuario | Las comparaciones se hacen entre roles similares como administrador, personal o familiar |
+| Mismo alcance de tarea | Se usa la misma tarea en ambas condiciones para que la comparacion sea justa |
+| Mismo entorno | La prueba se realiza en condiciones similares de dispositivo y red |
+| Mismos criterios de exito | Ambas versiones se evaluan con la misma definicion de completado y error |
 
-These conditions help isolate the effect of the change itself and reduce bias caused by external factors.
+Estas condiciones ayudan a aislar el efecto del cambio y reducen el sesgo causado por factores externos.
 
-#### 8.2.5. Scale Calculations and Decisions
-The experiment scale was selected based on the scope of the product and the type of improvement being tested. Since Veyra is an operational platform, the experimentation does not require a very large sample to begin generating useful insights, but it does require enough coverage to observe patterns across the main user profiles.
+#### 8.2.5. Calculos de Escala y Decisiones
+La escala del experimento se selecciono segun el alcance del producto y el tipo de mejora que se esta probando. Como Veyra es una plataforma operativa, la experimentacion no requiere una muestra muy grande para comenzar a generar informacion util, pero si requiere suficiente cobertura para observar patrones en los perfiles principales de usuario.
 
-The decision rules are:
+Las reglas de decision son:
 
-- If a change reduces time on task and error rate, it is considered positive.
-- If a change increases engagement without increasing confusion, it is considered positive.
-- If a change improves clarity but adds friction to critical workflows, it must be revised before adoption.
-- If results are mixed, the team should iterate on the design and test again.
+- Si un cambio reduce el tiempo de tarea y la tasa de error, se considera positivo.
+- Si un cambio aumenta la interaccion sin generar confusion, se considera positivo.
+- Si un cambio mejora la claridad pero agrega friccion en flujos criticos, debe revisarse antes de adoptarse.
+- Si los resultados son mixtos, el equipo debe iterar sobre el diseno y volver a probar.
 
-For practical purposes, the experiment can be executed with a small to medium user group representing the core personas of the platform. The main goal is to detect strong signals early rather than wait for a perfect large-scale dataset.
+Para fines practicos, el experimento puede ejecutarse con un grupo pequeno a mediano de usuarios que represente las personas principales de la plataforma. El objetivo es detectar senales fuertes temprano y no esperar una gran muestra perfecta.
 
-#### 8.2.6. Methods Selection
-The selected methods combine qualitative and quantitative validation so the team can understand both the observed behavior and the reasons behind it.
+#### 8.2.6. Seleccion de Metodos
+Los metodos seleccionados combinan validacion cualitativa y cuantitativa para que el equipo pueda entender tanto el comportamiento observado como las razones detras de el.
 
-| Method | Purpose | Applied to |
+| Metodo | Proposito | Aplicado a |
 |---|---|---|
-| Usability testing | Observe how users complete tasks in the interface | Dashboard, navigation, forms, summaries |
-| A/B comparison | Compare current and improved versions | Notifications, layout, task flows |
-| Analytics tracking | Measure real usage behavior | Clicks, completion rate, time on task |
-| User interviews | Collect direct perception and feedback | Staff, administrators, family members |
-| Heuristic review | Identify obvious usability problems | Screens and critical workflows |
+| Pruebas de usabilidad | Observar como los usuarios completan tareas en la interfaz | Dashboard, navegacion, formularios, resumenes |
+| Comparacion A/B | Comparar versiones actual y mejorada | Notificaciones, diseno, flujos de tarea |
+| Seguimiento analitico | Medir comportamiento real de uso | Clics, tasa de finalizacion, tiempo en tarea |
+| Entrevistas a usuarios | Recoger percepcion y retroalimentacion directa | Personal, administradores, familiares |
+| Revision heuristica | Identificar problemas evidentes de usabilidad | Pantallas y flujos criticos |
 
-The selected methods were chosen because they are lightweight, practical, and compatible with the current stage of Veyra.
+Los metodos elegidos fueron seleccionados porque son ligeros, practicos y compatibles con la etapa actual de Veyra.
 
-#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
-The analytics strategy for Veyra focuses on understanding whether the product improvements really enhance operational efficiency and user experience. The goal is to compare behavior before and after the proposed changes and to detect which improvements create measurable value.
+#### 8.2.7. Analitica de Datos: Objetivos, KPIs y Seleccion de Metricas
+La estrategia de analitica para Veyra se enfoca en entender si las mejoras del producto realmente fortalecen la eficiencia operativa y la experiencia del usuario. El objetivo es comparar el comportamiento antes y despues de los cambios propuestos y detectar cuales mejoras generan valor medible.
 
-Goals:
+Objetivos:
 
-- Reduce the time required to complete important tasks.
-- Improve the clarity of the information presented in the platform.
-- Increase the use of critical features by staff and family users.
-- Reduce operational mistakes in forms and daily records.
-- Strengthen trust in the platform through better notifications and summaries.
+- Reducir el tiempo necesario para completar tareas importantes.
+- Mejorar la claridad de la informacion presentada en la plataforma.
+- Incrementar el uso de funcionalidades criticas por parte del personal y los familiares.
+- Reducir errores operativos en formularios y registros diarios.
+- Fortalecer la confianza en la plataforma mediante mejores notificaciones y resumenes.
 
 KPIs:
 
-| KPI | Definition | Target direction |
+| KPI | Definicion | Direccion objetivo |
 |---|---|---|
-| Average task completion time | Average seconds needed to finish a common action | Lower is better |
-| Error-free form rate | Percentage of submissions without validation issues | Higher is better |
-| Resident profile access rate | How often users open resident details | Higher is better |
-| Notification engagement rate | Share of notifications that users open or review | Higher is better |
-| Task completion rate | Percentage of flows completed successfully | Higher is better |
-| User clarity score | User perception of how clear the interface is | Higher is better |
+| Tiempo promedio de finalizacion de tarea | Promedio de segundos necesarios para terminar una accion comun | Menor es mejor |
+| Tasa de formularios sin error | Porcentaje de envios sin problemas de validacion | Mayor es mejor |
+| Tasa de acceso al perfil del residente | Frecuencia con la que los usuarios abren los detalles del residente | Mayor es mejor |
+| Tasa de interaccion con notificaciones | Proporcion de notificaciones que los usuarios abren o revisan | Mayor es mejor |
+| Tasa de finalizacion de tareas | Porcentaje de flujos completados con exito | Mayor es mejor |
+| Puntaje de claridad del usuario | Percepcion del usuario sobre lo claro que es el diseno | Mayor es mejor |
 
-Metrics selection:
+Seleccion de metricas:
 
-- Time on task for resident search, medication registration, and health review.
-- Click path length to identify unnecessary navigation steps.
-- Validation errors in forms that affect operational accuracy.
-- Frequency of access to resident summaries and health alerts.
-- Notification interaction to evaluate family communication value.
-- User feedback collected after each test session.
+- Tiempo en tarea para busqueda de residentes, registro de medicamentos y revision de salud.
+- Longitud del recorrido de clics para identificar pasos de navegacion innecesarios.
+- Errores de validacion en formularios que afecten la exactitud operativa.
+- Frecuencia de acceso a resumenes del residente y alertas de salud.
+- Interaccion con notificaciones para evaluar el valor de la comunicacion familiar.
+- Retroalimentacion de usuarios recogida despues de cada sesion de prueba.
 
 <div align="center">
-  <img src="../assets/img/chapter-VIII/Rendimiento1.png" alt="Veyra performance analytics evidence 1" width="90%">
-  <p><em>Figure: Performance evidence for the experimentation phase, showing operational behavior relevant to the selected KPIs.</em></p>
+  <img src="../assets/img/chapter-VIII/Rendimiento1.png" alt="Evidencia de rendimiento de Veyra 1" width="90%">
+  <p><em>Figura: Evidencia de rendimiento para la fase de experimentacion, mostrando comportamiento operativo relevante para los KPI seleccionados.</em></p>
 </div>
 
 <div align="center">
-  <img src="../assets/img/chapter-VIII/Rendimiento2.png" alt="Veyra performance analytics evidence 2" width="90%">
-  <p><em>Figure: Additional performance evidence used to interpret time, load, or interaction behavior during analysis.</em></p>
+  <img src="../assets/img/chapter-VIII/Rendimiento2.png" alt="Evidencia de rendimiento de Veyra 2" width="90%">
+  <p><em>Figura: Evidencia de rendimiento adicional utilizada para interpretar tiempo, carga o comportamiento de interaccion durante el analisis.</em></p>
 </div>
 
-These artifacts support the evaluation of the experiment by providing evidence that can be compared against the selected goals and KPIs.
+Estos artefactos apoyan la evaluacion del experimento al proporcionar evidencia que puede compararse con los objetivos y KPI seleccionados.
 
-#### 8.2.8. Web and Mobile Tracking Plan
-The tracking plan defines what should be observed in the web and mobile experience so the team can measure user behavior consistently across the main scenarios of the platform.
+#### 8.2.8. Plan de Seguimiento Web y Movil
+El plan de seguimiento define que debe observarse en la experiencia web y movil para que el equipo pueda medir el comportamiento de los usuarios de forma consistente en los principales escenarios de la plataforma.
 
-| Event | Trigger | Data captured |
+| Evento | Disparador | Datos capturados |
 |---|---|---|
-| page_view_dashboard | User opens the main dashboard | Screen name, user role, timestamp |
-| click_resident_search | User starts a resident lookup | Search action, result count, timestamp |
-| submit_medication_form | User submits medication registration | Form type, success status, validation errors |
-| open_health_summary | User opens a resident health summary | Resident id, screen name, timestamp |
-| open_notification | User opens a family notification | Notification type, engagement status |
-| click_navigation_item | User selects a menu item | Menu item, screen transition, timestamp |
+| page_view_dashboard | El usuario abre el dashboard principal | Nombre de pantalla, rol de usuario, marca de tiempo |
+| click_resident_search | El usuario inicia una busqueda de residente | Accion de busqueda, numero de resultados, marca de tiempo |
+| submit_medication_form | El usuario envia un registro de medicamento | Tipo de formulario, estado de exito, errores de validacion |
+| open_health_summary | El usuario abre un resumen de salud del residente | Id del residente, nombre de pantalla, marca de tiempo |
+| open_notification | El usuario abre una notificacion familiar | Tipo de notificacion, estado de interaccion |
+| click_navigation_item | El usuario selecciona un elemento del menu | Elemento de menu, transicion de pantalla, marca de tiempo |
 
-Tracking principles:
+Principios de seguimiento:
 
-- Track only events that are directly related to the hypotheses.
-- Keep the event schema simple and consistent.
-- Separate staff, administrator, and family user behavior.
-- Use timestamps to support time on task analysis.
-- Avoid collecting unnecessary personal data.
+- Seguir solo eventos directamente relacionados con las hipotesis.
+- Mantener el esquema de eventos simple y consistente.
+- Separar el comportamiento de personal, administradores y familiares.
+- Usar marcas de tiempo para apoyar el analisis de tiempo en tarea.
+- Evitar recopilar datos personales innecesarios.
 
-The tracking plan gives the team a clear way to connect user behavior with the business metrics defined for the experiment.
+El plan de seguimiento da al equipo una forma clara de conectar el comportamiento del usuario con las metricas de negocio definidas para el experimento.
 
-### 8.3. Experimentation
-#### 8.3.1. To-Be User Stories
-The experimentation stage translates the validated improvement ideas into concrete To-Be user stories. These stories represent the next version of Veyra after the insights from planning and design have been considered.
+### 8.3. Experimentacion
+#### 8.3.1. Historias de Usuario To-Be
+La etapa de experimentacion traduce las ideas de mejora validadas en historias de usuario To-Be concretas. Estas historias representan la siguiente version de Veyra despues de considerar los hallazgos de la planeacion y el diseno.
 
-| ID | User Story | Expected value |
+| ID | Historia de usuario | Valor esperado |
 |---|---|---|
-| TB-US01 | As an administrator, I want a clearer dashboard so I can access critical resident and medication information faster. | Faster decision making and reduced search time |
-| TB-US02 | As a staff member, I want a simpler navigation flow so I can complete daily tasks with fewer steps. | Higher task completion efficiency |
-| TB-US03 | As a care professional, I want resident health summaries to be easier to read so I can react quickly to critical situations. | Better clinical awareness |
-| TB-US04 | As a family member, I want clearer notifications so I can understand updates about my relative more easily. | Greater trust and engagement |
-| TB-US05 | As a user who registers health or medication data, I want a better information hierarchy so I can avoid mistakes. | Fewer errors and corrections |
+| TB-US01 | Como administrador, quiero un dashboard mas claro para acceder mas rapido a la informacion critica de residentes y medicamentos. | Toma de decisiones mas rapida y menor tiempo de busqueda |
+| TB-US02 | Como miembro del personal, quiero un flujo de navegacion mas simple para completar las tareas diarias con menos pasos. | Mayor eficiencia en la finalizacion de tareas |
+| TB-US03 | Como profesional de cuidado, quiero que los resumenes de salud del residente sean mas faciles de leer para reaccionar rapido ante situaciones criticas. | Mejor conciencia clinica |
+| TB-US04 | Como familiar, quiero notificaciones mas claras para entender mejor las actualizaciones sobre mi ser querido. | Mayor confianza e interaccion |
+| TB-US05 | Como usuario que registra datos de salud o medicamentos, quiero una mejor jerarquia de informacion para evitar errores. | Menos errores y correcciones |
 
-These To-Be stories align the product direction with the hypotheses and the most relevant business outcomes.
+Estas historias To-Be alinean la direccion del producto con las hipotesis y con los resultados de negocio mas relevantes.
 
-#### 8.3.2. To-Be Product Backlog
-The To-Be Product Backlog contains the improvements that should be implemented after experimentation confirms their value. The backlog was prioritized according to business impact, operational relevance, and expected user benefit.
+#### 8.3.2. Backlog de Producto To-Be
+El backlog de producto To-Be contiene las mejoras que deberian implementarse despues de que la experimentacion confirme su valor. El backlog fue priorizado segun impacto de negocio, relevancia operativa y beneficio esperado para el usuario.
 
-| Priority | ID | To-Be Item | Description |
+| Prioridad | ID | Elemento To-Be | Descripcion |
 |---:|---|---|---|
-| 1 | TB-01 | Dashboard redesign | Highlight residents, medication, alerts, and recent health metrics on the main screen |
-| 1 | TB-02 | Information hierarchy update | Improve the visual order of forms and summaries to reduce confusion |
-| 2 | TB-03 | Navigation simplification | Reduce unnecessary steps in common staff workflows |
-| 2 | TB-04 | Health summary improvement | Make resident health indicators easier to scan and interpret |
-| 3 | TB-05 | Notification redesign | Improve the clarity and usefulness of family notifications |
+| 1 | TB-01 | Rediseno del dashboard | Resaltar residentes, medicamentos, alertas y metricas recientes de salud en la pantalla principal |
+| 1 | TB-02 | Actualizacion de la jerarquia de informacion | Mejorar el orden visual de formularios y resumenes para reducir confusion |
+| 2 | TB-03 | Simplificacion de navegacion | Reducir pasos innecesarios en los flujos habituales del personal |
+| 2 | TB-04 | Mejora del resumen de salud | Hacer mas faciles de leer e interpretar los indicadores de salud del residente |
+| 3 | TB-05 | Rediseno de notificaciones | Mejorar la claridad y utilidad de las notificaciones para familiares |
 
-The backlog reflects the product direction that should be pursued if the experiment results confirm the expected benefits. This keeps the development effort focused on the improvements that create the strongest value for the platform.
+El backlog refleja la direccion del producto que deberia seguirse si los resultados del experimento confirman los beneficios esperados. Esto mantiene el esfuerzo de desarrollo enfocado en las mejoras que generan mayor valor para la plataforma.
