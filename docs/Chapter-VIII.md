@@ -74,7 +74,7 @@ Afirmaciones:
 
 #### 8.1.5. Experiment Cards
 
-| Pregunta | Por que | Que | Hipotesis |
+| Question | Why | What | Hypothesis |
 |---|---|---|---|
 | Un dashboard mas visible reducira el tiempo necesario para acceder a informacion de residentes y salud? | Porque el personal necesita acceso rapido a datos criticos durante las rutinas diarias, y una jerarquia visual mas fuerte puede reducir el tiempo de busqueda. | Redisenar el dashboard principal para resaltar residentes, medicamentos, alertas y metricas recientes de salud como los primeros elementos visibles. | Se espera que el tiempo de acceso a tareas disminuya al menos 20 por ciento y que los usuarios reporten mayor claridad en el flujo principal. |
 | Un flujo de navegacion mas simple mejorara la finalizacion de tareas para el personal? | Porque tareas repetitivas como la busqueda de residentes y el registro de medicamentos deben requerir la menor cantidad posible de pasos. | Simplificar la estructura de navegacion y reducir pantallas intermedias innecesarias para las acciones mas frecuentes. | Se espera que disminuya el numero promedio de clics por tarea y que aumente la tasa de finalizacion de los flujos frecuentes. |
