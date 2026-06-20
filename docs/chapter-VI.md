@@ -277,3 +277,168 @@ Feature: Family Portal Activity Viewing
 </div>
 
 
+
+## 6.2. Static testing & Verification
+
+La verificación estática del software se enfoca en evaluar la calidad del código fuente sin necesidad de ejecutar la aplicación. Este enfoque permite detectar defectos tempranos relacionados con estilo, convenciones, diseño, mantenibilidad, posibles vulnerabilidades y consistencia general antes de que el código llegue a las etapas de compilación o prueba dinámica.
+
+En el proyecto **Veyra**, esta práctica se consideró parte esencial del aseguramiento de calidad, ya que el backend fue desarrollado con **Java** y **Spring Boot**, mientras que el frontend utiliza tecnologí­as modernas que requieren disciplina en nomenclatura, organización y revisión. La verificación estática ayudó a reducir retrabajos, mantener la coherencia entre módulos y reforzar la seguridad del producto desde el diseño del código.
+
+Las actividades principales de esta etapa fueron:
+
+- Revisiónn del cumplimiento de estándares de codificación.
+- Validación de convenciones de nombres, estructura y legibilidad.
+- Detección temprana de code smells y deuda tíécnica.
+- Identificación de posibles riesgos de seguridad.
+- Revisión manual del código por parte del equipo.
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/Static.png" alt="Evidencia de prueba de integración testSuccessfulCreateNursingHome" width="90%">
+</div>
+
+### 6.2.1. Static Code Analysis
+
+El análisis estático del código consistió en revisar la base de código del proyecto Veyra sin ejecutar el sistema, con el objetivo de asegurar que la implementación mantenga un nivel aceptable de calidad tíécnica. Esta revisión se centró en la estructura del código, la claridad de los nombres, la coherencia entre capas, el uso correcto de patrones del framework y la detección de riesgos comunes en aplicaciones web.
+
+Para este propósito se aplicaron criterios de inspección manual y buenas prácticas ampliamente aceptadas para Java, Spring Boot, TypeScript, Angular, HTML, CSS y Gherkin. Adicionalmente, se tomaron como referencia principios de diseño limpio, separación de responsabilidades y minimización de acoplamiento entre componentes.
+
+Los beneficios de este análisis fueron:
+
+- Mayor claridad en la arquitectura del código.
+- Menor probabilidad de errores por estilo inconsistente.
+- Detección temprana de código duplicado o difí­cil de mantener.
+- Refuerzo del cumplimiento de buenas prácticas de seguridad.
+- Mejora general de la trazabilidad entre requisitos y código.
+
+<div align="center">
+  <img src="../assets/img/chapter-VI/Clean.png" alt="Evidencia de prueba de integración testSuccessfulCreateNursingHome" width="90%">
+</div>
+
+#### 6.2.1.1. Coding standard & Code conventions.
+
+Las convenciones de codificación adoptadas en Veyra se definieron para mantener uniformidad en todo el repositorio y facilitar la colaboración entre los integrantes del equipo. Estas reglas ayudaron a que el código fuera predecible, entendible y más sencillo de revisar durante las etapas de desarrollo y validación.
+
+En el backend, se aplicaron convenciones compatibles con el ecosistema **Spring Boot** y con el estilo recomendado para Java. En el frontend, se mantuvo una estructura consistente para componentes, servicios, modelos y plantillas, siguiendo patrones de Angular. En ambos casos se priorizó el uso de nombres descriptivos en inglíés, alineados con el lenguaje ubicuo del dominio.
+
+#### Principios aplicados
+
+- Uso de nombres descriptivos para clases, míétodos, variables y endpoints.
+- Separación clara entre capas de presentación, dominio y persistencia.
+- Preferencia por funciones o míétodos pequeños y con una íºnica responsabilidad.
+- Estructura de carpetas coherente con el bounded context o módulo funcional.
+- Uso consistente de indentación, sangrí­a y formato en todo el proyecto.
+
+#### Convenciones para Backend
+
+| Elemento | Convención aplicada | Ejemplo |
+|---|---|---|
+| Clases | `PascalCase` | `ResidentController`, `MedicationService` |
+| Interfaces | `PascalCase` | `UserRepository`, `HealthMetricService` |
+| Míétodos | `camelCase` | `createResident()`, `findById()` |
+| Variables | `camelCase` | `residentId`, `medicationStock` |
+| Constantes | `SCREAMING_SNAKE_CASE` | `MAX_DOSAGE_LIMIT`, `JWT_SECRET` |
+| Endpoints REST | `kebab-case` y plural | `/api/v1/residents`, `/api/v1/medications` |
+| Paquetes | miníºsculas y estructurados por contexto | `com.veyra.nursing.application` |
+
+#### Convenciones para Frontend
+
+| Elemento | Convención aplicada | Ejemplo |
+|---|---|---|
+| Componentes Angular | `PascalCase` para clase y `kebab-case` para archivo | `resident-list.component.ts` |
+| Servicios | `PascalCase` | `ResidentService` |
+| Props y variables | `camelCase` | `residentName`, `currentPlan` |
+| Clases CSS | `kebab-case` | `.resident-card`, `.plan-button` |
+| Rutas | `kebab-case` | `/family-portal`, `/resident-profile` |
+
+#### Criterios de calidad sintáctica
+
+- Se evitó el uso de nombres ambiguos o abreviaturas innecesarias.
+- Se mantuvo consistencia en el uso de comentarios, solo cuando agregaban valor.
+- Se procuró no mezclar lógica de negocio con presentación.
+- Se respetaron los formatos esperados por el framework en controladores, servicios y repositorios.
+- Se procuró mantener el código listo para extensión futura sin depender de soluciones acopladas.
+
+#### 6.2.1.2. Code Quality & Code Security.
+
+La calidad del código en Veyra no se limitó al cumplimiento de estí­lo, sino que tambien incluyó criterios de mantenibilidad, robustez y seguridad. Esta visión permitió revisar si la implementación efectivamente protege los datos, minimiza errores y evita prácticas que puedan comprometer la operación del sistema.
+
+#### Quality aspects evaluated
+
+- Legibilidad y facilidad de mantenimiento.
+- Cohesión de responsabilidades por clase o módulo.
+- Reutilización de componentes comunes.
+- Manejo consistente de excepciones.
+- Validación de entradas y respuestas.
+- Claridad en la separación entre lógica de negocio e infraestructura.
+
+#### Security aspects evaluated
+
+- Validación de datos antes de persistir o procesar información sensible.
+- Protección de endpoints mediante autenticación y autorización.
+- Uso de tokens y configuraciones seguras para acceso al backend.
+- Evitar la exposición de secretos en el código fuente.
+- Control de acceso sobre recursos crí­ticos relacionados con residentes, personal y míétricas de salud.
+- Revisión de mensajes de error para no revelar información interna innecesaria.
+
+#### Riesgos prevenidos mediante verificación estática
+
+| Riesgo | Cómo se mitigó |
+|---|---|
+| Inconsistencia de nombres | Uso de nomenclatura uniforme en todo el repositorio |
+| Código difí­cil de mantener | Separación por capas y funciones pequeñas |
+| Validaciones incompletas | Revisión de entradas en controladores y servicios |
+| Exposición de credenciales | Uso de variables de entorno y exclusión de secretos del repo |
+| Acceso no autorizado | Revisión de seguridad en endpoints protegidos |
+| Errores silenciosos | Manejo explí­cito de excepciones y respuestas controladas |
+
+#### Buenas prácticas de seguridad aplicadas
+
+- Nunca almacenar credenciales en texto plano dentro del repositorio.
+- Utilizar variables de entorno para configuraciones sensibles.
+- Validar tokens y permisos antes de exponer operaciones protegidas.
+- Sanitizar y validar entradas provenientes del usuario.
+- Limitar la información mostrada en respuestas de error.
+- Revisar dependencias y configuraciones antes de integrarlas al proyecto.
+
+En conjunto, esta etapa de análisis permitió mejorar la confiabilidad del producto, ya que un código más limpio y seguro reduce el costo de mantenimiento y baja la probabilidad de defectos crí­ticos en etapas posteriores.
+
+### 6.2.2. Reviews
+
+Las revisiones de código constituyeron una parte clave del proceso de verificación estática en Veyra. A travíés de estas revisiones, el equipo pudo validar que cada cambio cumpliera con los estándares definidos antes de integrarse a la rama principal del proyecto.
+
+Las reviews se realizaron durante el flujo habitual de trabajo con GitHub, principalmente mediante Pull Requests, donde se evaluaron la corrección funcional, el impacto en la arquitectura, la legibilidad del cambio y su alineación con los requisitos del sistema.
+
+#### Objetivos de las reviews
+
+- Confirmar que la implementación resuelve correctamente la necesidad planteada.
+- Detectar errores lógicos o inconsistencias antes de fusionar cambios.
+- Verificar el cumplimiento de las convenciones del proyecto.
+- Revisar el impacto en seguridad, dependencias y estructura.
+- Asegurar que el cambio no rompa comportamiento existente.
+
+#### Aspectos revisados
+
+| Aspecto | Descripción |
+|---|---|
+| Correctness | El cambio implementa lo solicitado sin alterar flujos crí­ticos. |
+| Style | Se respetan convenciones de nombre, formato y organización. |
+| Maintainability | La solución puede extenderse o refactorizarse fácilmente. |
+| Security | No se introducen accesos inseguros o datos sensibles expuestos. |
+| Consistency | El cambio encaja con patrones y decisiones tíécnicas previas. |
+| Traceability | El commit o PR está vinculado a la historia o tarea correspondiente. |
+
+#### Flujo de revisión aplicado
+
+1. El desarrollador implementa el cambio en una rama de trabajo.
+2. Se crea un Pull Request para solicitar revisión.
+3. El equipo verifica el diff, el impacto funcional y la calidad del código.
+4. Se solicitan ajustes si se detectan inconsistencias o riesgos.
+5. Tras la aprobación, el cambio se fusiona a la rama correspondiente.
+
+#### Resultado de las revisiones
+
+Las revisiones permitieron detectar observaciones menores de estilo, ajustar nombres de variables, reforzar validaciones y ordenar mejor ciertos bloques de lógica. Gracias a este proceso, se mantuvo una base de código más estable y alineada con los objetivos del proyecto.
+
+En particular, las reviews ayudaron a asegurar que los módulos relacionados con autenticación, gestión de residentes, seguimiento de salud y administración de medicamentos conservaran un comportamiento coherente y una implementación comprensible para el equipo.
+
+En conclusión, la verificación estática y las revisiones fortalecieron la calidad global de Veyra antes de la ejecución de pruebas dinámicas, reduciendo el riesgo de errores tardí­os y contribuyendo a una entrega de software más confiable.
