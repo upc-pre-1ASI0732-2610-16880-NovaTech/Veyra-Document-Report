@@ -668,6 +668,10 @@ El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y conf
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence 
 <img src="../assets/img/chapter-V/deploy/render-deploy.png" alt="backend">
+
+**Para este nuevo sprint se cambio el entorno de despliegue utilizando ahora Azure Web Service**
+
+<img src="../assets/img/chapter-V/deploy/azure-deploy.png" alt="backend">
 <img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
 
 
@@ -682,4 +686,15 @@ El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y conf
 
 <img src="../assets/img/chapter-V/insights-tp.png" alt="Collaboration Insights ">
 
+**TB2**
 
+**Backend**
+
+<img src="../assets/img/chapter-V/insights-Backend.png" alt="Collaboration Insights ">
+
+**Frontend**
+<img src="../assets/img/chapter-V/Insights-Frontend.png" alt="Collaboration Insights ">
+
+**Report**
+
+<img src="../assets/img/chapter-V/insights-report.png" alt="Collaboration Insights ">
