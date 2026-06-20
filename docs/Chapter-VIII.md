@@ -1,6 +1,6 @@
-## Capitulo VIII: Desarrollo Guiado por Experimentos
-### 8.1. Planeacion del Experimento
-#### 8.1.1. Resumen As-Is
+## Chapter VIII: Desarrollo Guiado por Experimentos
+### 8.1. Experiment Planning
+#### 8.1.1. As-Is Summary
 La plataforma Veyra actualmente ofrece funcionalidades centrales para la gestion de casas de reposo, residentes, medicamentos, seguimiento de salud y comunicacion con familiares. La solucion ya cubre el core operacional del negocio, pero todavia presenta oportunidades claras de aprendizaje sobre la experiencia real de los usuarios y el valor percibido de ciertas mejoras.
 
 Desde la perspectiva del negocio, el sistema permite registrar instituciones, administrar residentes, controlar inventario de medicamentos y almacenar metricas de salud. Sin embargo, no todas las funcionalidades han sido evaluadas aun con suficiente evidencia de uso para confirmar si realmente resuelven los puntos mas criticos del flujo diario del personal, administradores y familiares.
@@ -19,7 +19,7 @@ Objetivos de mejora:
 - Validar si una mejor organizacion de la informacion incrementa la adopcion de la plataforma.
 - Confirmar que las mejoras propuestas aportan valor medible al negocio y a la experiencia del usuario.
 
-#### 8.1.2. Materia Prima: Suposiciones, Vacios de Conocimiento, Ideas, Afirmaciones
+#### 8.1.2. Raw Material: Suposiciones, Vacios de Conocimiento, Ideas, Afirmaciones
 Suposiciones:
 
 - Se asume que el personal de las casas de reposo necesita acceso mas rapido a informacion critica de residentes y medicamentos.
@@ -40,19 +40,19 @@ Ideas:
 
 - Priorizar un dashboard con accesos rapidos a residentes, medicamentos y alertas de salud.
 - Reorganizar la informacion critica para que los flujos frecuentes requieran menos clics.
-- Implementar resuenos visuales mas claros para el estado de cada residente.
+- Implementar resumenes visuales mas claros para el estado de cada residente.
 - Mejorar las notificaciones para familiares con mensajes mas utiles y faciles de entender.
 - Aplicar ajustes de usabilidad para reducir errores y acelerar tareas repetitivas.
 
 Afirmaciones:
 
 - Un dashboard mejor estructurado puede reducir el tiempo de acceso a datos criticos.
-- Mostrar resuenos de salud de forma mas visible puede mejorar la reaccion ante incidentes.
+- Mostrar resumenes de salud de forma mas visible puede mejorar la reaccion ante incidentes.
 - Una navegacion mas simple puede aumentar la satisfaccion del personal que usa la plataforma a diario.
 - Un sistema de notificaciones mas claro puede fortalecer la confianza de los familiares.
 - Una mejor jerarquia visual puede disminuir errores durante registros operativos.
 
-#### 8.1.3. Preguntas Listas para Experimentar
+#### 8.1.3. Experiment Ready Questions
 
 | Pregunta | Confianza | Riesgo | Impacto | Interes | Puntaje total |
 |---|---:|---:|---:|---:|---:|
@@ -62,7 +62,7 @@ Afirmaciones:
 | Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? | 7 | 3 | 8 | 8 | 26 |
 | Una mejor jerarquia de informacion reducira errores operativos al registrar medicamentos y datos de salud? | 8 | 3 | 9 | 7 | 27 |
 
-#### 8.1.4. Backlog de Preguntas
+#### 8.1.4. Question Backlog
 
 | Prioridad | Pregunta |
 |---:|---|
@@ -72,7 +72,7 @@ Afirmaciones:
 | 3 | Un flujo de navegacion mas simple mejorara la finalizacion de tareas para el personal? |
 | 3 | Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? |
 
-#### 8.1.5. Tarjetas de Experimento
+#### 8.1.5. Experiment Cards
 
 | Pregunta | Por que | Que | Hipotesis |
 |---|---|---|---|
@@ -82,8 +82,8 @@ Afirmaciones:
 | Notificaciones para familiares mejoradas aumentaran la confianza y el uso del portal? | Porque las familias necesitan actualizaciones concisas y utiles para sentirse informadas e involucradas en el proceso de cuidado. | Redisenar los mensajes de notificacion para incluir contexto, estado y proximos pasos mas claros para los usuarios familiares. | Se espera que aumenten las aperturas de notificaciones y la interaccion con el portal despues de mejorar la claridad de los mensajes. |
 | Una mejor jerarquia de informacion reducira errores operativos al registrar medicamentos y datos de salud? | Porque los diseños poco claros pueden llevar a registros incorrectos en tareas operativas de alta frecuencia. | Reorganizar formularios y pantallas para que los campos mas importantes aparezcan primero y las acciones criticas queden visualmente resaltadas. | Se espera que disminuyan los errores de entrada y las correcciones durante el registro de medicamentos y salud. |
 
-### 8.2. Diseno del Experimento
-#### 8.2.1. Hipotesis
+### 8.2. Experiment Design
+#### 8.2.1. Hypotheses
 La fase de experimentacion de Veyra fue disenada para validar si las mejoras propuestas realmente resuelven los problemas de usabilidad y operacion detectados durante la planeacion.
 
 Las hipotesis principales son:
@@ -96,7 +96,7 @@ Las hipotesis principales son:
 
 Estas hipotesis se seleccionaron porque estan directamente relacionadas con el valor central de la plataforma y pueden medirse mediante comportamiento observable de los usuarios y analitica del producto.
 
-#### 8.2.2. Metricas de Negocio del Dominio
+#### 8.2.2. Domain Business Metrics
 Las metricas de negocio de Veyra se definieron en torno a los resultados mas importantes de la plataforma de gestion de cuidados. El objetivo no es solo aumentar el uso, sino tambien mejorar la eficiencia operativa, la calidad de la informacion y la confianza de los usuarios.
 
 | Metricas | Descripcion | Por que importa |
@@ -110,7 +110,7 @@ Las metricas de negocio de Veyra se definieron en torno a los resultados mas imp
 
 Estas metricas conectan la experiencia del producto con el valor de negocio porque Veyra se usa en un contexto donde la rapidez, la exactitud y la confianza son esenciales.
 
-#### 8.2.3. Medidas
+#### 8.2.3. Measures
 Para validar las hipotesis, Veyra usa una combinacion de medidas de comportamiento, rendimiento y percepcion. Esto permite observar no solo lo que hacen los usuarios, sino tambien como perciben la experiencia.
 
 | Medida | Tipo | Como se captura |
@@ -125,7 +125,7 @@ Para validar las hipotesis, Veyra usa una combinacion de medidas de comportamien
 
 Las medidas elegidas se mantuvieron simples y practicas para poder compararlas antes y despues de los cambios propuestos.
 
-#### 8.2.4. Condiciones
+#### 8.2.4. Conditions
 Las condiciones de experimentacion definen cuando y como debe evaluarse cada mejora para que los resultados puedan interpretarse con confianza.
 
 | Condicion | Descripcion |
@@ -139,7 +139,7 @@ Las condiciones de experimentacion definen cuando y como debe evaluarse cada mej
 
 Estas condiciones ayudan a aislar el efecto del cambio y reducen el sesgo causado por factores externos.
 
-#### 8.2.5. Calculos de Escala y Decisiones
+#### 8.2.5. Scale Calculations and Decisions
 La escala del experimento se selecciono segun el alcance del producto y el tipo de mejora que se esta probando. Como Veyra es una plataforma operativa, la experimentacion no requiere una muestra muy grande para comenzar a generar informacion util, pero si requiere suficiente cobertura para observar patrones en los perfiles principales de usuario.
 
 Las reglas de decision son:
@@ -151,7 +151,7 @@ Las reglas de decision son:
 
 Para fines practicos, el experimento puede ejecutarse con un grupo pequeno a mediano de usuarios que represente las personas principales de la plataforma. El objetivo es detectar senales fuertes temprano y no esperar una gran muestra perfecta.
 
-#### 8.2.6. Seleccion de Metodos
+#### 8.2.6. Methods Selection
 Los metodos seleccionados combinan validacion cualitativa y cuantitativa para que el equipo pueda entender tanto el comportamiento observado como las razones detras de el.
 
 | Metodo | Proposito | Aplicado a |
@@ -164,7 +164,7 @@ Los metodos seleccionados combinan validacion cualitativa y cuantitativa para qu
 
 Los metodos elegidos fueron seleccionados porque son ligeros, practicos y compatibles con la etapa actual de Veyra.
 
-#### 8.2.7. Analitica de Datos: Objetivos, KPIs y Seleccion de Metricas
+#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
 La estrategia de analitica para Veyra se enfoca en entender si las mejoras del producto realmente fortalecen la eficiencia operativa y la experiencia del usuario. El objetivo es comparar el comportamiento antes y despues de los cambios propuestos y detectar cuales mejoras generan valor medible.
 
 Objetivos:
@@ -207,7 +207,7 @@ Seleccion de metricas:
 
 Estos artefactos apoyan la evaluacion del experimento al proporcionar evidencia que puede compararse con los objetivos y KPI seleccionados.
 
-#### 8.2.8. Plan de Seguimiento Web y Movil
+#### 8.2.8. Web and Mobile Tracking Plan
 El plan de seguimiento define que debe observarse en la experiencia web y movil para que el equipo pueda medir el comportamiento de los usuarios de forma consistente en los principales escenarios de la plataforma.
 
 | Evento | Disparador | Datos capturados |
@@ -229,8 +229,8 @@ Principios de seguimiento:
 
 El plan de seguimiento da al equipo una forma clara de conectar el comportamiento del usuario con las metricas de negocio definidas para el experimento.
 
-### 8.3. Experimentacion
-#### 8.3.1. Historias de Usuario To-Be
+### 8.3. Experimentation
+#### 8.3.1. To-Be User Stories
 La etapa de experimentacion traduce las ideas de mejora validadas en historias de usuario To-Be concretas. Estas historias representan la siguiente version de Veyra despues de considerar los hallazgos de la planeacion y el diseno.
 
 | ID | Historia de usuario | Valor esperado |
@@ -243,7 +243,7 @@ La etapa de experimentacion traduce las ideas de mejora validadas en historias d
 
 Estas historias To-Be alinean la direccion del producto con las hipotesis y con los resultados de negocio mas relevantes.
 
-#### 8.3.2. Backlog de Producto To-Be
+#### 8.3.2. To-Be Product Backlog
 El backlog de producto To-Be contiene las mejoras que deberian implementarse despues de que la experimentacion confirme su valor. El backlog fue priorizado segun impacto de negocio, relevancia operativa y beneficio esperado para el usuario.
 
 | Prioridad | ID | Elemento To-Be | Descripcion |
