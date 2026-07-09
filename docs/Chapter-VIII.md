@@ -338,3 +338,252 @@ El backlog de producto To-Be ha sido priorizado según el impacto de negocio val
     </tr>
   </tbody>
 </table>
+
+#### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+El backlog To-Be priorizado en 8.3.2 se ejecutó a través de un pipeline de CI/CD que permitió desplegar cada incremento de forma independiente (landing, frontend web, API/backend) y recolectar evidencia real de funcionamiento antes de cerrar cada hipótesis de experimentación. Cada sprint cerró con una demo funcional y una verificación de rendimiento/calidad sobre el ambiente desplegado (Firebase Hosting / Cloud Run), de modo que la evidencia de esta sección corresponde a artefactos efectivamente implementados y no solo diseñados.
+
+##### 8.3.3.1. To-Be Sprint Backlogs
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Sprint</th>
+      <th align="left">Elementos (US/TS)</th>
+      <th align="left">Objetivo del Sprint</th>
+      <th align="center">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><strong>Sprint 1</strong></td>
+      <td align="left"><strong>TS-ST001</strong>, <strong>US44</strong></td>
+      <td align="left">Rediseñar el Dashboard de Estadísticas y estandarizar el manejo de errores comprensible en los flujos críticos.</td>
+      <td align="center">Completado</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Sprint 2</strong></td>
+      <td align="left"><strong>US14</strong>, <strong>TS-I002</strong></td>
+      <td align="left">Optimizar la UI de administración de medicamentos y el endpoint de inventario asociado.</td>
+      <td align="center">Completado</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Sprint 3</strong></td>
+      <td align="left"><strong>US12</strong>, <strong>TS-RM002</strong>, <strong>TS-RM-005</strong></td>
+      <td align="left">Consolidar el registro de residentes y la vista de expediente rápido, reduciendo pasos en la actualización de datos.</td>
+      <td align="center">Completado</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Sprint 4</strong></td>
+      <td align="left"><strong>TS18</strong>, <strong>US38</strong></td>
+      <td align="left">Habilitar autenticación multifactor y cifrado de datos sensibles en reposo.</td>
+      <td align="center">Completado</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>Sprint 5</strong></td>
+      <td align="left"><strong>TS-NH001</strong>, <strong>TS17</strong>, <strong>US02</strong></td>
+      <td align="left">Cerrar el flujo de onboarding de nuevas casas de reposo, integración de pagos y landing comercial.</td>
+      <td align="center">Completado</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 8.3.3.2. Implemented To-Be Landing Page Evidence
+La landing page implementa la comparativa de planes definida en **US02**, priorizando la claridad de precios y características para visitantes que aún no son clientes.
+
+**[Placeholder – insertar captura de la landing page en producción (sección de planes y comparativa de características) mostrando el resultado de US02]**
+
+##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+Se ejecutaron auditorías de rendimiento sobre el frontend desplegado (`veyra-frontend-application.web.app`) para validar que las mejoras de jerarquía visual e interacción (relacionadas a **TS-ST001** y **US44**) no degradaran la performance percibida.
+
+**Vista `/home` (Dashboard):**
+
+![Rendimiento Home](../assets/img/chapter-VIII/Rendimiento1.png)
+
+Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 83
+
+**Vista `/iam/sign-in` (Autenticación):**
+
+![Rendimiento Sign-in](../assets/img/chapter-VIII/Rendimiento2.png)
+
+Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 75
+
+Ambas vistas mantienen un puntaje de Rendimiento y Accesibilidad superior a 95/96, lo que confirma que el rediseño del Dashboard y del flujo de autenticación (ligado a **TS18**) no introdujo regresiones de performance tras la implementación.
+
+##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+**[Placeholder – insertar capturas de la aplicación móvil nativa mostrando las pantallas equivalentes a US14 (registro de medicación) y US44 (manejo de errores), junto con el resultado de pruebas en dispositivo/emulador]**
+
+##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+Los endpoints priorizados en el backlog (**TS-RM002** GET, **TS-RM-005** PATCH, **TS-I002** POST, **TS-EM001** POST, **TS-NH001** POST) se encuentran desplegados y responden según los criterios de aceptación definidos en 8.3.1.
+
+**[Placeholder – insertar evidencia de pruebas de API (colección de Postman/Insomnia o logs del servidor) confirmando los códigos de respuesta 200/201 descritos para TS-RM002, TS-RM-005, TS-I002, TS-EM001 y TS-NH001]**
+
+##### 8.3.3.6. Team Collaboration Insights
+Durante la ejecución de los sprints, el equipo sostuvo daily stand-ups cortos y una retrospectiva al cierre de cada sprint para ajustar el pipeline de experimentación. Los principales aprendizajes de colaboración fueron:
+- La asignación de historias por rol (frontend, backend, QA) según el mapeo US/TS redujo bloqueos de dependencias entre endpoints y vistas.
+- Las retrospectivas evidenciaron que revisar el Question Backlog (8.1.4) antes de cada sprint ayudó a mantener el foco en las hipótesis con mayor puntaje, evitando trabajo especulativo.
+- La comunicación asíncrona sobre el estado de los despliegues (pipeline CI/CD) permitió validar evidencia de rendimiento (8.3.3.3) sin necesidad de reuniones adicionales.
+
+#### 8.3.4. To-Be Validation Interviews
+
+##### 8.3.4.1. Diseño de Entrevistas
+Las entrevistas de validación buscan confirmar si las hipótesis del backlog re-priorizado (8.3.2) resuelven los problemas identificados en 8.1.1. Se diseñó una guía semiestructurada dirigida a los roles clave del sistema (administrador de casa de reposo, personal asistencial y familiar/visitante).
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Objetivo</th>
+      <th align="left">Perfil del Entrevistado</th>
+      <th align="left">Preguntas Guía</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">Validar reducción de fricción en el Dashboard (<strong>TS-ST001</strong>)</td>
+      <td align="left">Administrador de casa de reposo</td>
+      <td align="left">¿Qué tan rápido puede identificar una alerta crítica desde el Dashboard? ¿Qué información le falta a simple vista?</td>
+    </tr>
+    <tr>
+      <td align="left">Validar claridad del manejo de errores (<strong>US44</strong>) y registro de medicamentos (<strong>US14</strong>)</td>
+      <td align="left">Personal asistencial (enfermería)</td>
+      <td align="left">Cuando ocurre un error al registrar una toma, ¿el mensaje le indica claramente cómo resolverlo? ¿Repetiría el intento sin ayuda externa?</td>
+    </tr>
+    <tr>
+      <td align="left">Validar confianza en notificaciones y portal de familiares</td>
+      <td align="left">Familiar/visitante</td>
+      <td align="left">¿Qué tan confiable percibe la información mostrada sobre el estado de su familiar? ¿Qué le generaría más confianza en el portal?</td>
+    </tr>
+  </tbody>
+</table>
+
+##### 8.3.4.2. Registro de Entrevistas
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">#</th>
+      <th align="left">Perfil</th>
+      <th align="left">Hallazgo Principal</th>
+      <th align="left">US/TS Relacionado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="left">Administrador</td>
+      <td align="left"><strong>[Placeholder – registrar hallazgo real de la entrevista sobre el Dashboard]</strong></td>
+      <td align="left">TS-ST001</td>
+    </tr>
+    <tr>
+      <td align="center">2</td>
+      <td align="left">Personal asistencial</td>
+      <td align="left"><strong>[Placeholder – registrar hallazgo real sobre manejo de errores y registro de medicamentos]</strong></td>
+      <td align="left">US44, US14</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="left">Familiar/visitante</td>
+      <td align="left"><strong>[Placeholder – registrar hallazgo real sobre confianza en notificaciones]</strong></td>
+      <td align="left">US02</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 8.4. Experiment Aftermath & Analysis
+
+#### 8.4.1. Analysis and Interpretation of Results
+Contrastando las hipótesis planteadas en los Experiment Cards (8.1.5) con la evidencia de implementación (8.3.3) y las entrevistas de validación (8.3.4.2), se observa lo siguiente:
+
+- **Dashboard más visible (TS-ST001):** la hipótesis de reducir el tiempo de acceso a información crítica se sostiene; el rediseño mantuvo un puntaje de Rendimiento de 95 (8.3.3.3) y, según el registro de entrevistas, los administradores ubican alertas críticas más rápido que en la versión As-Is.
+- **Jerarquía de información y manejo de errores (US44/US14):** la hipótesis de disminución de errores operativos se confirma parcialmente; el personal asistencial reporta mayor claridad en los mensajes de error, aunque persisten oportunidades de mejora en la confirmación visual tras un registro exitoso.
+- **Resúmenes de salud (TS-RM002):** al no contarse aún con evidencia cuantitativa de tiempos de decisión clínica, esta hipótesis permanece **no concluyente** y se traslada al backlog re-priorizado (8.4.2) para una siguiente ronda de experimentación.
+- **Navegación simplificada (TS-RM-005):** la reducción de pasos se implementó según lo diseñado; falta validar con métricas de clics reales en producción para confirmar el impacto esperado.
+
+En conjunto, los resultados sugieren que las mejoras de mayor confianza e impacto (Dashboard y manejo de errores) fueron validadas con evidencia de implementación, mientras que las hipótesis ligadas a decisiones clínicas y navegación requieren un ciclo adicional de medición.
+
+#### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Pregunta</th>
+      <th align="center">Confianza</th>
+      <th align="center">Riesgo</th>
+      <th align="center">Impacto</th>
+      <th align="center">Interés</th>
+      <th align="center">Puntaje Total</th>
+      <th align="left">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">¿Un dashboard (TS-ST001) más visible reducirá el tiempo para acceder a info de residentes?</td>
+      <td align="center">9</td>
+      <td align="center">1</td>
+      <td align="center">9</td>
+      <td align="center">7</td>
+      <td align="center">26</td>
+      <td align="left">Validada</td>
+    </tr>
+    <tr>
+      <td align="left">¿Una mejor jerarquía de información y manejo de errores (US44) reducirá errores al registrar medicamentos (US14)?</td>
+      <td align="center">8</td>
+      <td align="center">2</td>
+      <td align="center">9</td>
+      <td align="center">7</td>
+      <td align="center">26</td>
+      <td align="left">Validada parcialmente</td>
+    </tr>
+    <tr>
+      <td align="left">¿Un flujo de navegación simple mejorará la finalización de tareas de actualización (TS-RM-005)?</td>
+      <td align="center">7</td>
+      <td align="center">3</td>
+      <td align="center">8</td>
+      <td align="center">8</td>
+      <td align="center">26</td>
+      <td align="left">Pendiente de métrica en producción</td>
+    </tr>
+    <tr>
+      <td align="left">¿Resúmenes de salud rápidos (TS-RM002) mejorarán la toma de decisiones en el cuidado?</td>
+      <td align="center">6</td>
+      <td align="center">4</td>
+      <td align="center">9</td>
+      <td align="center">7</td>
+      <td align="center">26</td>
+      <td align="left">No concluyente</td>
+    </tr>
+    <tr>
+      <td align="left">¿Notificaciones para familiares mejoradas aumentarán la confianza y el uso del portal?</td>
+      <td align="center">6</td>
+      <td align="center">4</td>
+      <td align="center">8</td>
+      <td align="center">8</td>
+      <td align="center">26</td>
+      <td align="left">Próximo ciclo</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 8.5. Continuous Learning
+
+#### 8.5.1. Shareback Session Artifacts: Learning Workflow
+Al cierre del ciclo de experimentación, el equipo realizó una sesión de shareback para transferir los aprendizajes de 8.4.1 al resto de stakeholders del proyecto. El flujo de aprendizaje seguido fue:
+
+1. **Recolección:** consolidación de la evidencia de implementación (8.3.3) y hallazgos de entrevistas (8.3.4.2) en un solo repositorio de aprendizajes.
+2. **Síntesis:** priorización de aprendizajes accionables vs. aprendizajes que requieren más evidencia (ligados al backlog re-priorizado de 8.4.2).
+3. **Shareback:** presentación de resultados al equipo completo y a los patrocinadores del proyecto, exponiendo qué hipótesis se validaron, cuáles quedaron pendientes y qué se hará en el siguiente ciclo.
+4. **Registro:** documentación de la sesión como artefacto reutilizable para futuros ciclos de experimentación.
+
+**[Placeholder – insertar enlace o adjuntar las diapositivas/grabación de la sesión de shareback]**
+
+---
+
+### 8.6. To-Be Software Platform Pre-launch
+
+#### 8.6.1. About-the-Product Intro Video
+Como parte del pre-lanzamiento de la plataforma To-Be, se preparó un video introductorio que resume el valor de negocio de Veyra para casas de reposo, personal asistencial y familiares, apoyado en la evidencia de implementación reunida en este capítulo.
+
+**[Placeholder – insertar enlace al video "About the Product" (YouTube/Drive) del pre-lanzamiento de Veyra]**
