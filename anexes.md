@@ -49,3 +49,10 @@ En este anexo se incluyen los enlaces correspondientes a los videos about the te
 | ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | TP1     | Segundo about the team del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCdbvBh-yrQQ7iu-7bM2LirATiy4p8WapTYH4yi1ZKBxcE?e=yoaEbq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)                                                                                                                |
 
+## Video App Validation
+
+En este anexo se incluye el enlace al video que evidencia la validación de la aplicación Veyra en su versión To-Be, correspondiente al cierre del ciclo de experimentación descrito en el Capítulo VIII. El video muestra un recorrido funcional de la plataforma desplegada (landing page, frontend web, aplicación móvil y API) y su contraste con los hallazgos de las entrevistas de validación (8.3.4) y el análisis de resultados (8.4.1), evidenciando el estado final de las historias de usuario e historias técnicas priorizadas en el backlog re-priorizado.
+
+| Entrega | Descripción                                                   | Enlace                          |
+| ------- | -------------------------------------------------------------- | -------------------------------- |
+| TB2     | Video de validación de la aplicación Veyra (versión To-Be)      | **[Placeholder – insertar enlace al video de App Validation en Microsoft Stream]** |
