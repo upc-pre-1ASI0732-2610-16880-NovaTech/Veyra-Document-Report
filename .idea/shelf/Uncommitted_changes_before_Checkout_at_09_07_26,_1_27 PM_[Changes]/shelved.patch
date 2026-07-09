@@ -1,0 +1,103 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"dea32e62-3f55-4405-afbf-7f26bf20ce21\" name=\"Changes\" comment=\"docs(chapter-V): update section header for Sprint 2 Backlog\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"CopilotPersistence\">\n    <persistenceIdMap>\n      <entry key=\"_/Users/renzollerena/WebstormProjects/Veyra-Document-Report\" value=\"3Dn14SZRRhDeKSTXIlTfbSCtt6U\" />\n    </persistenceIdMap>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"develop\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"Renxoll\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report.git\",\n    \"accountId\": \"52f5928a-15e0-44d5-88c6-bdd304a74a38\"\n  }\n}]]></component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 4,\n  &quot;fromUser&quot;: false\n}</component>\n  <component name=\"ProjectId\" id=\"3Dn14SZRRhDeKSTXIlTfbSCtt6U\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\n    \"git-widget-placeholder\": \"feature/anexes\",\n    \"javascript.preferred.runtime.type.id\": \"node\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/assets/img/introduction\" />\n      <recent name=\"$PROJECT_DIR$/assets/img/chapter-V/deploy\" />\n      <recent name=\"$PROJECT_DIR$/assets/img/chapter-V\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"dea32e62-3f55-4405-afbf-7f26bf20ce21\" name=\"Changes\" comment=\"\" />\n      <created>1778902829133</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1778902829133</updated>\n      <workItem from=\"1778902830319\" duration=\"45000\" />\n      <workItem from=\"1778902878023\" duration=\"5747000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"docs(chapter-V): update backend deployment image to Render\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778902975015</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778902975015</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"docs(introduction): enhance collaboration report and project flow visuals\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778910020307</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778910020307</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"docs(introduction): update version history and collaboration report for TP1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778910150923</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778910150923</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"docs(introduction): update commits flow image for tp1\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778910212738</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778910212738</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"docs(conclusions): add conclusions and recommendations\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778910499747</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778910499747</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"docs(chapter-V): add Sprint 2 backlog details and update landing page evidence\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778911629333</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778911629333</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"docs(chapter-V): update section header for Sprint 2 Backlog\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1778911725473</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1778911725473</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"docs(chapter-V): update backend deployment image to Render\" />\n    <MESSAGE value=\"docs(introduction): enhance collaboration report and project flow visuals\" />\n    <MESSAGE value=\"docs(introduction): update version history and collaboration report for TP1\" />\n    <MESSAGE value=\"docs(introduction): update commits flow image for tp1\" />\n    <MESSAGE value=\"docs(conclusions): add conclusions and recommendations\" />\n    <MESSAGE value=\"docs(chapter-V): add Sprint 2 backlog details and update landing page evidence\" />\n    <MESSAGE value=\"docs(chapter-V): update section header for Sprint 2 Backlog\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"docs(chapter-V): update section header for Sprint 2 Backlog\" />\n  </component>\n  <component name=\"github-copilot-workspace\">\n    <instructionFileLocations>\n      <option value=\".github/instructions\" />\n    </instructionFileLocations>\n    <promptFileLocations>\n      <option value=\".github/prompts\" />\n    </promptFileLocations>\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e2abdf918fc558bb57b5e98ced8e7e0c4d77002d)
++++ b/.idea/workspace.xml	(date 1783621534699)
+@@ -1,7 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="dea32e62-3f55-4405-afbf-7f26bf20ce21" name="Changes" comment="docs(chapter-V): update section header for Sprint 2 Backlog" />
++    <list default="true" id="dea32e62-3f55-4405-afbf-7f26bf20ce21" name="Changes" comment="feat(ethical-impact): add ethical impact evaluation matrix for engineering decisions">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/anexes.md" beforeDir="false" afterPath="$PROJECT_DIR$/anexes.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/docs/Chapter-VIII.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Chapter-VIII.md" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -20,18 +24,18 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "Renxoll"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Renxoll&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report.git",
+-    "accountId": "52f5928a-15e0-44d5-88c6-bdd304a74a38"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report.git&quot;,
++    &quot;accountId&quot;: &quot;52f5928a-15e0-44d5-88c6-bdd304a74a38&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4,
+   &quot;fromUser&quot;: false
+@@ -48,7 +52,7 @@
+     "RunOnceActivity.git.unshallow": "true",
+     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+     "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "git-widget-placeholder": "feature/anexes",
++    "git-widget-placeholder": "feature/ethical-impact-matrix",
+     "javascript.preferred.runtime.type.id": "node",
+     "nodejs_package_manager_path": "npm",
+     "vue.rearranger.settings.migration": "true"
+@@ -77,6 +81,7 @@
+       <updated>1778902829133</updated>
+       <workItem from="1778902830319" duration="45000" />
+       <workItem from="1778902878023" duration="5747000" />
++      <workItem from="1783617728977" duration="2300000" />
+     </task>
+     <task id="LOCAL-00001" summary="docs(chapter-V): update backend deployment image to Render">
+       <option name="closed" value="true" />
+@@ -134,7 +139,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1778911725473</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="add .gitignore: include additional IDE and project-specific files to be ignored">
++      <option name="closed" value="true" />
++      <created>1783617635799</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1783617635799</updated>
++    </task>
++    <task id="LOCAL-00009" summary="feat(ethical-impact): add ethical impact evaluation matrix for engineering decisions">
++      <option name="closed" value="true" />
++      <created>1783620430718</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1783620430718</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -148,7 +169,9 @@
+     <MESSAGE value="docs(conclusions): add conclusions and recommendations" />
+     <MESSAGE value="docs(chapter-V): add Sprint 2 backlog details and update landing page evidence" />
+     <MESSAGE value="docs(chapter-V): update section header for Sprint 2 Backlog" />
+-    <option name="LAST_COMMIT_MESSAGE" value="docs(chapter-V): update section header for Sprint 2 Backlog" />
++    <MESSAGE value="add .gitignore: include additional IDE and project-specific files to be ignored" />
++    <MESSAGE value="feat(ethical-impact): add ethical impact evaluation matrix for engineering decisions" />
++    <option name="LAST_COMMIT_MESSAGE" value="feat(ethical-impact): add ethical impact evaluation matrix for engineering decisions" />
+   </component>
+   <component name="github-copilot-workspace">
+     <instructionFileLocations>
