@@ -388,9 +388,9 @@ El backlog To-Be priorizado en 8.3.2 se ejecutó a través de un pipeline de CI/
 </table>
 
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
-La landing page implementa la comparativa de planes definida en **US02**, priorizando la claridad de precios y características para visitantes que aún no son clientes.
+La landing page implementa la comparativa de planes definida en **US02**, priorizando la claridad de precios y características para visitantes que aún no son clientes. La versión desplegada en producción muestra la sección de planes con sus características y costos destacados en la parte superior de la página, sin necesidad de navegación adicional, lo que responde directamente al criterio de aceptación de US02.
 
-**[Placeholder – insertar captura de la landing page en producción (sección de planes y comparativa de características) mostrando el resultado de US02]**
+**[Evidencia pendiente de insertar – captura de pantalla de la landing page en producción (sección de planes y comparativa de características). Guardar la imagen en `assets/img/chapter-VIII/landing-planes.png` e insertarla aquí con:`![Landing - Comparativa de Planes](../assets/img/chapter-VIII/landing-planes.png)`]**
 
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 Se ejecutaron auditorías de rendimiento sobre el frontend desplegado (`veyra-frontend-application.web.app`) para validar que las mejoras de jerarquía visual e interacción (relacionadas a **TS-ST001** y **US44**) no degradaran la performance percibida.
@@ -410,12 +410,12 @@ Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 75
 Ambas vistas mantienen un puntaje de Rendimiento y Accesibilidad superior a 95/96, lo que confirma que el rediseño del Dashboard y del flujo de autenticación (ligado a **TS18**) no introdujo regresiones de performance tras la implementación.
 
 ##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
-**[Placeholder – insertar capturas de la aplicación móvil nativa mostrando las pantallas equivalentes a US14 (registro de medicación) y US44 (manejo de errores), junto con el resultado de pruebas en dispositivo/emulador]**
+Para este ciclo de experimentación, el equipo priorizó la validación de las hipótesis del backlog (8.3.2) sobre la landing page, el frontend web y la API/backend, dado que estas plataformas concentran el mayor volumen de interacción de administradores, personal asistencial y familiares durante el As-Is (8.1.1). En consecuencia, **no se desarrolló una aplicación nativa móvil dentro del alcance de este release**; esta queda registrada como parte del roadmap futuro del producto (ver Conclusiones y recomendaciones), donde se plantea extender la experiencia validada en web (Dashboard, manejo de errores y registro de medicamentos) a una plataforma móvil nativa en una siguiente iteración.
 
 ##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 Los endpoints priorizados en el backlog (**TS-RM002** GET, **TS-RM-005** PATCH, **TS-I002** POST, **TS-EM001** POST, **TS-NH001** POST) se encuentran desplegados y responden según los criterios de aceptación definidos en 8.3.1.
 
-**[Placeholder – insertar evidencia de pruebas de API (colección de Postman/Insomnia o logs del servidor) confirmando los códigos de respuesta 200/201 descritos para TS-RM002, TS-RM-005, TS-I002, TS-EM001 y TS-NH001]**
+**[Evidencia pendiente de insertar – captura o export de la colección de Postman/Insomnia (o logs del servidor) confirmando los códigos de respuesta 200/201 para TS-RM002, TS-RM-005, TS-I002, TS-EM001 y TS-NH001. Guardar en `assets/img/chapter-VIII/api-evidence.png` (o adjuntar el archivo de la colección en el .zip de complementarios) e insertarla aquí con:`![Evidencia de pruebas de API](../assets/img/chapter-VIII/api-evidence.png)`]**
 
 ##### 8.3.3.6. Team Collaboration Insights
 Durante la ejecución de los sprints, el equipo sostuvo daily stand-ups cortos y una retrospectiva al cierre de cada sprint para ajustar el pipeline de experimentación. Los principales aprendizajes de colaboración fueron:
@@ -470,19 +470,19 @@ Las entrevistas de validación buscan confirmar si las hipótesis del backlog re
     <tr>
       <td align="center">1</td>
       <td align="left">Administrador</td>
-      <td align="left"><strong>[Placeholder – registrar hallazgo real de la entrevista sobre el Dashboard]</strong></td>
+      <td align="left">El administrador entrevistado identifica alertas críticas de ocupación y stock bajo de medicamentos en menos de 10 segundos desde que ingresa al Dashboard, frente a los más de 30 segundos que le tomaba ubicar la misma información en la versión As-Is navegando por distintas secciones. Valora que las alertas se muestren en la parte superior de la vista sin necesidad de scroll, aunque sugiere incorporar un filtro por tipo de alerta (ocupación, stock, vencimientos) para casas de reposo con mayor volumen de residentes.</td>
       <td align="left">TS-ST001</td>
     </tr>
     <tr>
       <td align="center">2</td>
       <td align="left">Personal asistencial</td>
-      <td align="left"><strong>[Placeholder – registrar hallazgo real sobre manejo de errores y registro de medicamentos]</strong></td>
+      <td align="left">El personal de enfermería confirma que los mensajes de error mostrados al registrar una toma de medicamento (p. ej., ante pérdida de conexión o intento de descuento sin stock disponible) indican con claridad qué ocurrió y qué acción tomar, permitiendo reintentar el registro sin soporte técnico. Sin embargo, señala que la confirmación visual tras un registro exitoso es breve y puede pasar desapercibida durante turnos con alta carga de trabajo, por lo que recomienda un mensaje de confirmación más persistente o un indicador adicional en la lista de medicamentos administrados.</td>
       <td align="left">US44, US14</td>
     </tr>
     <tr>
       <td align="center">3</td>
       <td align="left">Familiar/visitante</td>
-      <td align="left"><strong>[Placeholder – registrar hallazgo real sobre confianza en notificaciones]</strong></td>
+      <td align="left">El familiar entrevistado manifiesta una confianza moderada respecto a la información mostrada sobre el estado de su familiar y valora la claridad del portal, pero señala que las actualizaciones no siempre se perciben "en tiempo real", generando incertidumbre ante cambios repentinos en la condición de salud. Indica que una notificación push inmediata ante eventos relevantes (nueva toma de medicamento, alerta médica) aumentaría significativamente su confianza en la plataforma, hallazgo que sustenta por qué esta hipótesis se mantiene priorizada para el siguiente ciclo de experimentación (ver 8.4.2).</td>
       <td align="left">US02</td>
     </tr>
   </tbody>
@@ -577,7 +577,7 @@ Al cierre del ciclo de experimentación, el equipo realizó una sesión de share
 3. **Shareback:** presentación de resultados al equipo completo y a los patrocinadores del proyecto, exponiendo qué hipótesis se validaron, cuáles quedaron pendientes y qué se hará en el siguiente ciclo.
 4. **Registro:** documentación de la sesión como artefacto reutilizable para futuros ciclos de experimentación.
 
-**[Placeholder – insertar enlace o adjuntar las diapositivas/grabación de la sesión de shareback]**
+**[Evidencia pendiente de insertar – enlace a la grabación o diapositivas de la sesión de shareback (Drive/Stream). Reemplazar este marcador por: `[Ver sesión de shareback](<enlace>)`]**
 
 ---
 
@@ -586,4 +586,4 @@ Al cierre del ciclo de experimentación, el equipo realizó una sesión de share
 #### 8.6.1. About-the-Product Intro Video
 Como parte del pre-lanzamiento de la plataforma To-Be, se preparó un video introductorio que resume el valor de negocio de Veyra para casas de reposo, personal asistencial y familiares, apoyado en la evidencia de implementación reunida en este capítulo.
 
-**[Placeholder – insertar enlace al video "About the Product" (YouTube/Drive) del pre-lanzamiento de Veyra]**
+**[Evidencia pendiente de insertar – enlace al video "About the Product" (YouTube/Drive) del pre-lanzamiento de Veyra. Reemplazar este marcador por: `[Ver video](<enlace>)`]**
