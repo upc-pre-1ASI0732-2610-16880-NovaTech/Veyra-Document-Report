@@ -215,32 +215,32 @@ A partir de los hallazgos de experimentación, se consolida el backlog de produc
     <tr>
       <td align="left"><strong>US14</strong></td>
       <td align="left">Administración de medicamentos</td>
-      <td align="left">Como administrador, quiero controlar la toma de medicamentos con una UI clara que prevenga errores operativos.</td>
-      <td align="left">Dado que se registra una toma, cuando hay stock, el sistema descuenta una unidad y guarda fecha/hora visualmente.</td>
+      <td align="left">Como personal asistencial, quiero registrar la toma de un medicamento del inventario compartido de la casa de reposo, con una acción clara desde el perfil del residente.</td>
+      <td align="left">Dado que se registra una toma con stock suficiente, el sistema descuenta la cantidad del inventario compartido (<strong>TS-I002</strong>) y guarda el registro con fecha/hora. Si el stock es insuficiente, muestra un mensaje de error claro con opción de reintento (<strong>US44</strong>).</td>
     </tr>
     <tr>
       <td align="left"><strong>TS-I002</strong></td>
-      <td align="left">Agregar medicamentos al inventario</td>
-      <td align="left">Como desarrollador, quiero un endpoint POST para que el administrador alimente el catálogo de forma ágil.</td>
-      <td align="left">Dado POST con nombre, lote y fecha, cuando se valida, retorna 201 y el objeto creado.</td>
+      <td align="left">Inventario compartido de medicamentos</td>
+      <td align="left">Como desarrollador, quiero un endpoint POST/GET a nivel de casa de reposo (no por residente) para administrar el catálogo compartido de medicamentos, incluyendo lote.</td>
+      <td align="left">Dado POST con nombre, lote, cantidad y fecha de vencimiento, cuando se valida (sin duplicar nombre+lote), retorna 201 y el objeto creado en el inventario de la casa de reposo.</td>
     </tr>
     <tr>
       <td align="left"><strong>TS-EM001</strong></td>
       <td align="left">Agregar empleado</td>
-      <td align="left">Como desarrollador, quiero un endpoint POST para registrar nuevos empleados (cuidadores, enfermeros) con roles.</td>
-      <td align="left">Dado POST con datos y rol, cuando se crea el perfil, el sistema asigna los permisos correspondientes.</td>
+      <td align="left">Como desarrollador, quiero un endpoint POST para registrar nuevos empleados (cuidadores, enfermeros) y que al asignarles un rol vía contrato, el sistema informe los permisos otorgados.</td>
+      <td align="left">Dado POST con datos y rol, cuando se crea el contrato del empleado, el sistema calcula y devuelve la lista de permisos asignados según su rol (DOCTOR, NURSE, CAREGIVER, COOK, ADMINISTRATIVE).</td>
     </tr>
     <tr>
       <td align="left"><strong>TS18</strong></td>
       <td align="left">Autenticación y MFA</td>
-      <td align="left">Como desarrollador, quiero implementar 2FA para proteger el acceso a información sensible de salud.</td>
-      <td align="left">Dado login correcto, cuando 2FA está activo, el sistema bloquea el acceso hasta verificar el código SMS/TOTP.</td>
+      <td align="left">Como desarrollador, quiero implementar 2FA (TOTP o SMS, a elección del usuario) para proteger el acceso a información sensible de salud.</td>
+      <td align="left">Dado login correcto, cuando MFA está activo, el sistema bloquea el acceso hasta verificar el código recibido por autenticador (TOTP) o por SMS (Twilio), según el método configurado por el usuario.</td>
     </tr>
     <tr>
       <td align="left"><strong>TS17</strong></td>
       <td align="left">Integración con Stripe (pagos)</td>
-      <td align="left">Como desarrollador, quiero integrar pagos para que las familias paguen la mensualidad desde la app.</td>
-      <td align="left">Dado el pago de una cuota, cuando Stripe confirma, el sistema actualiza el estado a "Pagado".</td>
+      <td align="left">Como desarrollador, quiero integrar pagos reales (no simulados) para que las familias paguen la mensualidad desde la app usando su propia tarjeta.</td>
+      <td align="left">Dado el ingreso real de los datos de una tarjeta en el checkout (Stripe Elements), cuando se confirma el pago, el sistema crea la suscripción y el estado del pago queda registrado (SUCCEEDED) en el backend.</td>
     </tr>
     <tr>
       <td align="left"><strong>TS-NH001</strong></td>
@@ -251,26 +251,26 @@ A partir de los hallazgos de experimentación, se consolida el backlog de produc
     <tr>
       <td align="left"><strong>TS-ST001</strong></td>
       <td align="left">Dashboard de Estadísticas</td>
-      <td align="left">Como administrador, quiero un panel priorizado con métricas para tomar decisiones operativas rápidas.</td>
-      <td align="left">Dado el acceso al dashboard, cuando el sistema calcula datos, muestra gráficos de ocupación y alertas críticas en la vista superior.</td>
+      <td align="left">Como administrador, quiero un panel priorizado con métricas de ocupación y alertas críticas para tomar decisiones operativas rápidas.</td>
+      <td align="left">Dado el acceso al dashboard (<code>/analytics/dashboard</code>), el sistema calcula la ocupación real de habitaciones y muestra alertas críticas de stock bajo/vencimiento próximo de medicamentos en la parte superior de la vista.</td>
     </tr>
     <tr>
       <td align="left"><strong>US02</strong></td>
       <td align="left">Visualización de Planes</td>
-      <td align="left">Como visitante, quiero ver los planes en la landing con una comparativa clara para elegir fácilmente.</td>
-      <td align="left">Dado ingreso a la landing, muestra comparativa de características y costos de forma destacada.</td>
+      <td align="left">Como visitante, quiero ver los planes en la landing (sitio independiente de la aplicación web) con una comparativa clara para elegir fácilmente.</td>
+      <td align="left">Dado ingreso a la landing, muestra comparativa de características y costos de forma destacada, con toggle mensual/anual.</td>
     </tr>
     <tr>
       <td align="left"><strong>US38</strong></td>
       <td align="left">Protección de datos (Cifrado)</td>
-      <td align="left">Como administrador, quiero que toda la información médica esté cifrada para cumplir normativas.</td>
-      <td align="left">Dado almacenamiento sensible, al guardarse en BD, se cifran en reposo de forma invisible al usuario.</td>
+      <td align="left">Como administrador, quiero que la información médica sensible del residente (descripción y dosis de medicamentos) esté cifrada para cumplir normativas.</td>
+      <td align="left">Dado almacenamiento de datos médicos sensibles (descripción y dosis de medicación), al guardarse en BD, se cifran en reposo (AES-256-GCM) de forma invisible al usuario, sin afectar la validación de duplicados por nombre/lote.</td>
     </tr>
     <tr>
       <td align="left"><strong>US44</strong></td>
       <td align="left">Manejo de errores comprensible</td>
-      <td align="left">Como usuario, quiero que el sistema me guíe de forma clara cuando ocurre un error (validado en experimentos).</td>
-      <td align="left">Dado un fallo de red o validación, al enviar datos, el sistema muestra un mensaje claro y opción de reintento.</td>
+      <td align="left">Como usuario, quiero que el sistema me guíe de forma clara cuando ocurre un error, con una opción visible para reintentar la acción.</td>
+      <td align="left">Dado un fallo de red o validación (ej. stock insuficiente), al enviar datos, el sistema muestra una notificación (toast) con el mensaje real del backend y un botón "Retry" que reintenta la misma acción.</td>
     </tr>
   </tbody>
 </table>
@@ -388,14 +388,14 @@ El backlog To-Be priorizado en 8.3.2 se ejecutó a través de un pipeline de CI/
 </table>
 
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
-La landing page implementa la comparativa de planes definida en **US02**, priorizando la claridad de precios y características para visitantes que aún no son clientes. La versión desplegada en producción muestra la sección de planes con sus características y costos destacados en la parte superior de la página, sin necesidad de navegación adicional, lo que responde directamente al criterio de aceptación de US02.
+La landing page de Veyra vive en un repositorio y dominio independiente de la aplicación web (`Veyra-Landing-Page`, desplegada en GitHub Pages), e implementa la comparativa de planes definida en **US02**: hero, sección de características ("What We Offer" y "Features"), beneficios, y una sección de planes con toggle mensual/anual, precios destacados y lista de características por plan (Family Plan y Nursing Home Plan).
 
 **[Evidencia pendiente de insertar – captura de pantalla de la landing page en producción (sección de planes y comparativa de características). Guardar la imagen en `assets/img/chapter-VIII/landing-planes.png` e insertarla aquí con:`![Landing - Comparativa de Planes](../assets/img/chapter-VIII/landing-planes.png)`]**
 
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 Se ejecutaron auditorías de rendimiento sobre el frontend desplegado (`veyra-frontend-application.web.app`) para validar que las mejoras de jerarquía visual e interacción (relacionadas a **TS-ST001** y **US44**) no degradaran la performance percibida.
 
-**Vista `/home` (Dashboard):**
+**Vista `/home` (Landing/bienvenida de la app, con acceso a inicio de sesión):**
 
 ![Rendimiento Home](../assets/img/chapter-VIII/Rendimiento1.png)
 
@@ -407,15 +407,64 @@ Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 83
 
 Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 75
 
-Ambas vistas mantienen un puntaje de Rendimiento y Accesibilidad superior a 95/96, lo que confirma que el rediseño del Dashboard y del flujo de autenticación (ligado a **TS18**) no introdujo regresiones de performance tras la implementación.
+Ambas vistas mantienen un puntaje de Rendimiento y Accesibilidad superior a 95/96, lo que confirma que el flujo de autenticación (ligado a **TS18**) no introdujo regresiones de performance tras la implementación. El Dashboard de Estadísticas (**TS-ST001**) vive en la ruta `/analytics/dashboard` (no en `/home`, que es la página de bienvenida de la app) y ahora incluye, además de los gráficos de RR.HH. ya existentes, una tarjeta de **ocupación** (calculada a partir de las habitaciones reales de la casa de reposo) y un panel de **alertas críticas** (medicamentos con stock bajo o próximos a vencer), cerrando la brecha detectada entre lo documentado y lo implementado en la revisión de esta entrega.
+
+**[Evidencia pendiente de insertar – captura de pantalla de `/analytics/dashboard` mostrando la tarjeta de ocupación y el panel de alertas críticas]**
 
 ##### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 Para este ciclo de experimentación, el equipo priorizó la validación de las hipótesis del backlog (8.3.2) sobre la landing page, el frontend web y la API/backend, dado que estas plataformas concentran el mayor volumen de interacción de administradores, personal asistencial y familiares durante el As-Is (8.1.1). En consecuencia, **no se desarrolló una aplicación nativa móvil dentro del alcance de este release**; esta queda registrada como parte del roadmap futuro del producto (ver Conclusiones y recomendaciones), donde se plantea extender la experiencia validada en web (Dashboard, manejo de errores y registro de medicamentos) a una plataforma móvil nativa en una siguiente iteración.
 
 ##### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
-Los endpoints priorizados en el backlog (**TS-RM002** GET, **TS-RM-005** PATCH, **TS-I002** POST, **TS-EM001** POST, **TS-NH001** POST) se encuentran desplegados y responden según los criterios de aceptación definidos en 8.3.1.
+Los endpoints priorizados en el backlog (**TS-RM002** GET, **TS-RM-005** PATCH, **TS-I002** POST, **TS-EM001** POST, **TS-NH001** POST) se encuentran desplegados y responden según los criterios de aceptación definidos en 8.3.1. Como parte del cierre de esta entrega (TB2), se corrigieron y completaron los siguientes endpoints, previamente ausentes o simulados:
 
-**[Evidencia pendiente de insertar – captura o export de la colección de Postman/Insomnia (o logs del servidor) confirmando los códigos de respuesta 200/201 para TS-RM002, TS-RM-005, TS-I002, TS-EM001 y TS-NH001. Guardar en `assets/img/chapter-VIII/api-evidence.png` (o adjuntar el archivo de la colección en el .zip de complementarios) e insertarla aquí con:`![Evidencia de pruebas de API](../assets/img/chapter-VIII/api-evidence.png)`]**
+<table>
+  <thead>
+    <tr>
+      <th align="left">US/TS</th>
+      <th align="left">Endpoint</th>
+      <th align="left">Estado al cierre de TB2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><strong>TS-I002</strong></td>
+      <td align="left"><code>GET/POST /api/v1/nursing-homes/{nursingHomeId}/medications</code></td>
+      <td align="left">Migrado de inventario por residente a inventario compartido por casa de reposo, con campo <code>lot</code>.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>US14</strong></td>
+      <td align="left"><code>POST/GET /api/v1/residents/{residentId}/medications/{medicationId}/administrations</code></td>
+      <td align="left">Endpoint implementado desde cero; antes solo existía la lógica de dominio sin ningún controlador que la expusiera.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-ST001</strong></td>
+      <td align="left"><code>GET /api/v1/nursing-homes/{nursingHomeId}/dashboard/occupancy</code> y <code>/dashboard/alerts</code></td>
+      <td align="left">Endpoints nuevos: ocupación real de habitaciones y alertas críticas de inventario (stock bajo / vencimiento próximo).</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-EM001</strong></td>
+      <td align="left"><code>POST /api/v1/staff/{staffMemberId}/contracts</code></td>
+      <td align="left">La respuesta ahora incluye <code>permissions</code>, calculados según el rol asignado (DOCTOR, NURSE, CAREGIVER, COOK, ADMINISTRATIVE).</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS17</strong></td>
+      <td align="left"><code>POST /api/v1/webhooks/stripe</code></td>
+      <td align="left">Webhook de Stripe expuesto (antes era código inalcanzable); el checkout del frontend ahora tokeniza tarjetas reales vía Stripe Elements en vez de un token de prueba fijo.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS18</strong></td>
+      <td align="left"><code>POST /authentication/mfa/sms/setup</code>, <code>GET /authentication/mfa/status</code></td>
+      <td align="left">Segundo factor por SMS (Twilio) añadido junto al TOTP existente; nuevo endpoint de estado para que el frontend sepa si MFA está activo y con qué método.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>US38</strong></td>
+      <td align="left"><code>Medication.description</code> / <code>Medication.dosage</code></td>
+      <td align="left">Campos cifrados en reposo (AES-256-GCM), antes solo se cifraban los mensajes de comunicación familiar.</td>
+    </tr>
+  </tbody>
+</table>
+
+**[Evidencia pendiente de insertar – captura o export de la colección de Postman/Insomnia (o logs del servidor) confirmando los códigos de respuesta 200/201 para los endpoints de la tabla anterior. Guardar en `assets/img/chapter-VIII/api-evidence.png` e insertarla aquí con:`![Evidencia de pruebas de API](../assets/img/chapter-VIII/api-evidence.png)`]**
 
 ##### 8.3.3.6. Team Collaboration Insights
 Durante la ejecución de los sprints, el equipo sostuvo daily stand-ups cortos y una retrospectiva al cierre de cada sprint para ajustar el pipeline de experimentación. Los principales aprendizajes de colaboración fueron:
@@ -495,12 +544,12 @@ Las entrevistas de validación buscan confirmar si las hipótesis del backlog re
 #### 8.4.1. Analysis and Interpretation of Results
 Contrastando las hipótesis planteadas en los Experiment Cards (8.1.5) con la evidencia de implementación (8.3.3) y las entrevistas de validación (8.3.4.2), se observa lo siguiente:
 
-- **Dashboard más visible (TS-ST001):** la hipótesis de reducir el tiempo de acceso a información crítica se sostiene; el rediseño mantuvo un puntaje de Rendimiento de 95 (8.3.3.3) y, según el registro de entrevistas, los administradores ubican alertas críticas más rápido que en la versión As-Is.
-- **Jerarquía de información y manejo de errores (US44/US14):** la hipótesis de disminución de errores operativos se confirma parcialmente; el personal asistencial reporta mayor claridad en los mensajes de error, aunque persisten oportunidades de mejora en la confirmación visual tras un registro exitoso.
+- **Dashboard más visible (TS-ST001):** la hipótesis de reducir el tiempo de acceso a información crítica se sostiene; el rediseño mantuvo un puntaje de Rendimiento de 95 (8.3.3.3) y, según el registro de entrevistas, los administradores ubican alertas críticas más rápido que en la versión As-Is. Al cierre de esta entrega, la ocupación y las alertas críticas dejaron de ser una aspiración de diseño y pasaron a calcularse en tiempo real a partir de datos de habitaciones e inventario (8.3.3.5), confirmando la hipótesis con evidencia funcional, no solo de rendimiento.
+- **Jerarquía de información y manejo de errores (US44/US14):** la hipótesis de disminución de errores operativos se confirma; el personal asistencial reporta mayor claridad en los mensajes de error, y la observación sobre la "confirmación visual breve" quedó resuelta al reemplazar los banners inline por notificaciones (toast) persistentes con botón de reintento visible, además de habilitarse por primera vez el endpoint real de registro de toma de medicamentos (US14), que hasta esta entrega era lógica de dominio sin ningún endpoint que la invocara.
 - **Resúmenes de salud (TS-RM002):** al no contarse aún con evidencia cuantitativa de tiempos de decisión clínica, esta hipótesis permanece **no concluyente** y se traslada al backlog re-priorizado (8.4.2) para una siguiente ronda de experimentación.
 - **Navegación simplificada (TS-RM-005):** la reducción de pasos se implementó según lo diseñado; falta validar con métricas de clics reales en producción para confirmar el impacto esperado.
 
-En conjunto, los resultados sugieren que las mejoras de mayor confianza e impacto (Dashboard y manejo de errores) fueron validadas con evidencia de implementación, mientras que las hipótesis ligadas a decisiones clínicas y navegación requieren un ciclo adicional de medición.
+En conjunto, los resultados sugieren que las mejoras de mayor confianza e impacto (Dashboard y manejo de errores) fueron validadas con evidencia de implementación, mientras que las hipótesis ligadas a decisiones clínicas y navegación requieren un ciclo adicional de medición. Adicionalmente, el cierre de esta entrega permitió corregir brechas entre lo documentado y lo realmente implementado en TS17 (pagos antes simulados con un token de prueba fijo, ahora tokenización real vía Stripe Elements), TS18 (verificación por SMS agregada junto al TOTP existente) y US38 (cifrado extendido de mensajes de comunicación a datos de medicación), reforzando la responsabilidad profesional de documentar únicamente lo que el sistema efectivamente hace.
 
 #### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
