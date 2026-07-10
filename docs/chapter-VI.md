@@ -282,9 +282,29 @@ Feature: Family Portal Activity Viewing
 ### 6.2.1.2. Code Quality & Code Security. 
 ### 6.2.2. Reviews 
 ## 6.3. Validation Interviews. 
-## 6.3. Validation Interviews. 
 ### 6.3.1. Diseño de Entrevistas. 
+
+La entrevista tuvo como objetivo conocer la opinión del usuario sobre la aplicación Veyra. Para ello, se le mostraron las principales pantallas y funcionalidades de la plataforma y posteriormente se le preguntó qué le parecía, si la consideraba útil y qué aspectos mejoraría. Se utilizó una entrevista semiestructurada, permitiendo que la participante expresara libremente sus comentarios y recomendaciones. 
+Las preguntas principales fueron: 
+- ¿Qué te parece la aplicación? 
+- ¿Consideras que sería útil para una casa de reposo? - ¿Qué funcionalidad te pareció más importante? 
+- ¿Qué aspecto de la aplicación mejorarías? 
+- ¿La información presentada te pareció clara?
+
 ### 6.3.2. Registro de Entrevistas. 
+
+**Segmento 1: Administrador de casas de reposo**
+
+| Campo | Información |
+|---|---|
+| Nombre | Lucía |
+| Apellido | Carbajal |
+| Edad | 19 años |
+| Distrito | Surquillo |
+| Evidencia | ![Entrevista](../assets/img/chapter-II/entrevista1-validacion.png) |
+| Link | [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210334_upc_edu_pe/IQBIUqqLXAH4SJPzByX9OzdGAUNio18RULQrItvzFyKrt3o?e=qwdetZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Resumen | **Perfil y experiencia:**<br>Lucía Carbajal es una joven de 19 años que pertenece al segmento relacionado con la administración y gestión de casas de reposo. Ha realizado voluntariado en este tipo de instituciones, experiencia que le permitió conocer de cerca las actividades del personal y las necesidades de atención de los adultos mayores.<br><br>**Percepción y necesidades:**<br>Considera que la aplicación sería útil y de mucha ayuda para las casas de reposo, ya que permitiría organizar, centralizar y consultar la información de los residentes de manera más rápida. También facilitaría las labores del personal al reducir la dependencia de registros manuales y documentos separados.<br><br>**Mejoras propuestas:**<br>Como principal mejora, Lucía propone que la aplicación permita visualizar de manera más clara y detallada la información de los medicamentos, incluyendo sus nombres, dosis y horarios de administración. Asimismo, considera importante mejorar la visualización de los horarios de los trabajadores, para identificar fácilmente sus turnos, disponibilidad y responsabilidades. |
+
 ### 6.3.3. Evaluaciones según heurísticas. 
 ## 6.4. Auditoría de Experiencias de Usuario.  
 ### 6.4.1. Auditoría realizada. 
