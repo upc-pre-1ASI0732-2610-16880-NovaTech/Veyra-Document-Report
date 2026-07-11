@@ -390,7 +390,7 @@ El backlog To-Be priorizado en 8.3.2 se ejecutó a través de un pipeline de CI/
 ##### 8.3.3.2. Implemented To-Be Landing Page Evidence
 La landing page de Veyra vive en un repositorio y dominio independiente de la aplicación web (`Veyra-Landing-Page`, desplegada en GitHub Pages), e implementa la comparativa de planes definida en **US02**: hero, sección de características ("What We Offer" y "Features"), beneficios, y una sección de planes con toggle mensual/anual, precios destacados y lista de características por plan (Family Plan y Nursing Home Plan).
 
-**[Evidencia pendiente de insertar – captura de pantalla de la landing page en producción (sección de planes y comparativa de características). Guardar la imagen en `assets/img/chapter-VIII/landing-planes.png` e insertarla aquí con:`![Landing - Comparativa de Planes](../assets/img/chapter-VIII/landing-planes.png)`]**
+![Rendimiento Home](../assets/img/chapter-VIII/Plans.png)
 
 ##### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 Se ejecutaron auditorías de rendimiento sobre el frontend desplegado (`veyra-frontend-application.web.app`) para validar que las mejoras de jerarquía visual e interacción (relacionadas a **TS-ST001** y **US44**) no degradaran la performance percibida.
@@ -464,7 +464,7 @@ Los endpoints priorizados en el backlog (**TS-RM002** GET, **TS-RM-005** PATCH, 
   </tbody>
 </table>
 
-**[Evidencia pendiente de insertar – captura o export de la colección de Postman/Insomnia (o logs del servidor) confirmando los códigos de respuesta 200/201 para los endpoints de la tabla anterior. Guardar en `assets/img/chapter-VIII/api-evidence.png` e insertarla aquí con:`![Evidencia de pruebas de API](../assets/img/chapter-VIII/api-evidence.png)`]**
+![Api](../assets/img/chapter-VIII/API.png)
 
 ##### 8.3.3.6. Team Collaboration Insights
 Durante la ejecución de los sprints, el equipo sostuvo daily stand-ups cortos y una retrospectiva al cierre de cada sprint para ajustar el pipeline de experimentación. Los principales aprendizajes de colaboración fueron:
@@ -635,4 +635,6 @@ Al cierre del ciclo de experimentación, el equipo realizó una sesión de share
 #### 8.6.1. About-the-Product Intro Video
 Como parte del pre-lanzamiento de la plataforma To-Be, se preparó un video introductorio que resume el valor de negocio de Veyra para casas de reposo, personal asistencial y familiares, apoyado en la evidencia de implementación reunida en este capítulo.
 
-**[Evidencia pendiente de insertar – enlace al video "About the Product" (YouTube/Drive) del pre-lanzamiento de Veyra. Reemplazar este marcador por: `[Ver video](<enlace>)`]**
+![Entrevista](../assets/img/chapter-VIII/AboutThe.png)
+
+[Link AbouTheProduct](https://youtu.be/-tL0iSsyfU0)
