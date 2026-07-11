@@ -41,6 +41,7 @@
 |---------| ---------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AV1     | 01/05/2026 | Todos los miembros del equipo | Desarrollo inicial del informe del proyecto Veyra. Se elaboraron los Capítulos 1, 2, 3, 4 y 5, incluyendo introducción del proyecto, análisis del problema, entrevistas y Needfinding, definición de épicas e historias de usuario, Product Backlog, diseño UX/UI, arquitectura de software, Landing Page y organización general de la propuesta tecnológica. Además, se realizaron revisiones colaborativas de redacción, coherencia y estructura del documento.                                                                                          |
 | TB1     | 15/05/2026 | Todos los miembros del equipo | Actualización técnica y funcional del proyecto. Se incorporaron actividades relacionadas con pruebas unitarias, pruebas de integración, pruebas de sistema y escenarios BDD. Asimismo, se implementaron procesos de Continuous Integration (CI) y Continuous Delivery/Deployment (CD), incluyendo automatización de compilaciones, validaciones y despliegues. Finalmente, se realizaron correcciones generales del informe, mejoras de redacción, validación de diagramas, revisión de arquitectura y actualización de evidencias y commits del proyecto. |
+| TB2     | 11/07/2026 | Todos los miembros del equipo | Cierre del informe final (Release Review). Se completó el Capítulo VIII reconciliando la documentación con el estado real de lo implementado (MFA, pagos con Stripe, dashboard de ocupación y alertas, cifrado de datos médicos, inventario compartido de medicamentos), incluyendo el Experiment Design (8.2), el backlog re-priorizado (8.4.2) y la sesión de shareback (8.5.1). Se redactó la Matriz de Evaluación Ética y de Impacto, se realizaron y registraron las entrevistas de validación de los segmentos objetivo, y se actualizó el Capítulo V con la evidencia de colaboración del Sprint 3. Finalmente, se corrigieron defectos detectados durante las pruebas en producción (actualización de residentes/personal, onboarding de casas de reposo y flujo de autenticación con MFA) y se documentaron como evidencia de responsabilidad profesional.                     |
 
 
 ---
@@ -70,6 +71,18 @@ Finalmente, estos gráficos representan la cantidad de commits realizados por ca
 
 ![Commits 2](assets/img/introduction/contributions2.png)
 
+**Reporte de colaboración de la entrega del TB2**:
+
+Durante el cierre del proyecto, el equipo Veyra concentró sus esfuerzos en consolidar el informe final: la reconciliación del Capítulo VIII con el estado real de lo implementado, la elaboración de la Matriz de Evaluación Ética y de Impacto, las entrevistas de validación de los distintos segmentos objetivo, y la documentación de las evidencias de despliegue de la aplicación y la API en producción.
+
+En el período del 11 de junio al 11 de julio de 2026, 6 autores contribuyeron con 7 commits a `main` y 51 commits a todas las ramas del repositorio del informe, distribuidos en 3 pull requests fusionados (incluyendo la reconciliación del Capítulo VIII) y 1 pull request abierto (documentación de Evaluaciones Heurísticas y Auditoría UX del Capítulo VI).
+
+![Insights Report TB2](assets/img/introduction/Insights-report-tb2.png)
+
+Al igual que en las entregas anteriores, el siguiente gráfico representa la cantidad de commits realizados por cada miembro del equipo en el repositorio del informe durante este cierre. Renzo Llerena lideró la consolidación final (95 commits), seguido por las contribuciones de Miguel Ángel Román López, Juan Manuel Santos Torres, Adrian Valerio, Yasser Rentería y Camilla Espinoza.
+
+![Contributors Report TB2](assets/img/introduction/contributors-report-tb2.png)
+
 
 
 **Ramificación del proyecto usando GitFlow:**
@@ -82,6 +95,12 @@ Este gráfico ofrece una visualización de las veces que se ha clonado nuestro r
 
 **TB1**
 ![Ramificación 2](assets/img/introduction/flow2.png)
+
+**TB2**
+
+Para el cierre del informe se mantuvo el flujo de ramas `feature/*` sobre `develop` (por ejemplo `feature/chapter-V`, `feature/ethical-impact-matrix`, `feature/anexes`, `feature/introduction`), fusionándose hacia `main` una vez validado el contenido de cada capítulo.
+
+![Ramificación TB2](assets/img/introduction/network-report-tb2.png)
 
 ---
 
