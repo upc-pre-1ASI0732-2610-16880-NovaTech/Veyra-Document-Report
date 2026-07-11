@@ -638,8 +638,7 @@ Al cierre del ciclo de experimentación, el equipo realizó una sesión de share
 3. **Shareback:** presentación de resultados al equipo completo y a los patrocinadores del proyecto, exponiendo qué hipótesis se validaron, cuáles quedaron pendientes y qué se hará en el siguiente ciclo.
 4. **Registro:** documentación de la sesión como artefacto reutilizable para futuros ciclos de experimentación.
 
-**[Evidencia pendiente de insertar – enlace a la grabación o diapositivas de la sesión de shareback (Drive/Stream). Reemplazar este marcador por: `[Ver sesión de shareback](<enlace>)`]**
-
+![Shareback](../assets/img/chapter-VIII/shareback.jpeg)
 ---
 
 ### 8.6. To-Be Software Platform Pre-launch
