@@ -740,6 +740,18 @@ Al cierre del Sprint 3, se capturó evidencia actualizada de colaboración en am
 
 <img src="../assets/img/chapter-V/Network-graph-frontend-sprint3.png" alt="Frontend Network Graph Sprint 3">
 
+**Landing Page – Insights (Pulse)**
+
+<img src="../assets/img/chapter-V/insights-landing-sprint3.png" alt="Landing Page Insights Pulse Sprint 3">
+
+**Landing Page – Contributors**
+
+<img src="../assets/img/chapter-V/landing-contributors-sprint3.png" alt="Landing Page Contributors Sprint 3">
+
+**Landing Page – Network graph**
+
+<img src="../assets/img/chapter-V/landing-network-sprint3.png" alt="Landing Page Network Graph Sprint 3">
+
 **Report**
 
 <img src="../assets/img/chapter-V/insights-report.png" alt="Collaboration Insights ">
