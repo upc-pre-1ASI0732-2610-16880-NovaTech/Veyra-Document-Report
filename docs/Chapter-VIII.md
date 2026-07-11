@@ -409,7 +409,7 @@ Rendimiento: 95 · Accesibilidad: 96 · Recomendaciones: 100 · SEO: 75
 
 Ambas vistas mantienen un puntaje de Rendimiento y Accesibilidad superior a 95/96, lo que confirma que el flujo de autenticación (ligado a **TS18**) no introdujo regresiones de performance tras la implementación. El Dashboard de Estadísticas (**TS-ST001**) vive en la ruta `/analytics/dashboard` (no en `/home`, que es la página de bienvenida de la app) y ahora incluye, además de los gráficos de RR.HH. ya existentes, una tarjeta de **ocupación** (calculada a partir de las habitaciones reales de la casa de reposo) y un panel de **alertas críticas** (medicamentos con stock bajo o próximos a vencer), cerrando la brecha detectada entre lo documentado y lo implementado en la revisión de esta entrega.
 
-![Dashboard Ocupación y Alertas](../assets/img/chapter-VIII/DashboardOcupacionAlertas.png)
+![OcupacionesYAlertas](../assets/img/chapter-VIII/DashboardOcupacionAlertas.png)
 
 La captura anterior corresponde a un ambiente de prueba desplegado (casa de reposo con una habitación de capacidad 2 y un residente asignado, más un medicamento con lote próximo a vencer y stock bajo), y muestra la tarjeta de **Occupancy** (50%, 1/2 ocupado) calculada a partir de habitaciones reales, junto con el panel de **Critical Alerts** listando ambos tipos de alerta definidos en TS-ST001 (`LOW_STOCK` y `EXPIRING_SOON`) en la parte superior de la vista, sin necesidad de scroll.
 
