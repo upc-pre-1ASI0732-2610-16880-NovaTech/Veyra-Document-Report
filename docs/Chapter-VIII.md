@@ -790,12 +790,12 @@ En conjunto, los resultados sugieren que las mejoras de mayor confianza e impact
     </tr>
     <tr>
       <td align="left">¿Un flujo de navegación simple mejorará la finalización de tareas de actualización (TS-RM-005)?</td>
-      <td align="center">7</td>
-      <td align="center">3</td>
+      <td align="center">9</td>
+      <td align="center">1</td>
       <td align="center">8</td>
       <td align="center">8</td>
       <td align="center">26</td>
-      <td align="left">Pendiente de métrica en producción</td>
+      <td align="left">Validada (defecto de reenvío de foto corregido y confirmado en producción; falta métrica de clics)</td>
     </tr>
     <tr>
       <td align="left">¿Resúmenes de salud rápidos (TS-RM002) mejorarán la toma de decisiones en el cuidado?</td>
@@ -815,22 +815,45 @@ En conjunto, los resultados sugieren que las mejoras de mayor confianza e impact
       <td align="center">26</td>
       <td align="left">Próximo ciclo</td>
     </tr>
+    <tr>
+      <td align="left">¿Resolver el desajuste entre <code>userId</code> y <code>administratorId</code> (TS-NH001) permitirá completar el onboarding de una nueva casa de reposo sin fricción?</td>
+      <td align="center">9</td>
+      <td align="center">1</td>
+      <td align="center">8</td>
+      <td align="center">6</td>
+      <td align="center">24</td>
+      <td align="left">Validada (endpoint <code>GET /administrators/by-user/{userId}</code> agregado; onboarding confirmado en producción)</td>
+    </tr>
+    <tr>
+      <td align="left">¿Corregir el flujo de inicio de sesión con MFA (TS18) evitará el bucle de error 401 al no completarse la verificación antes de consultar la suscripción?</td>
+      <td align="center">9</td>
+      <td align="center">2</td>
+      <td align="center">9</td>
+      <td align="center">7</td>
+      <td align="center">27</td>
+      <td align="left">Validada (el ensamblador de sign-in omitía el campo <code>mfaRequired</code>; corregido y confirmado con un flujo TOTP end-to-end)</td>
+    </tr>
   </tbody>
 </table>
+
+Los dos últimos ítems no formaban parte del Question Backlog original (8.1.4): surgieron como defectos operativos críticos detectados durante las pruebas de cierre de esta entrega directamente sobre el ambiente desplegado, y se incorporan aquí siguiendo la misma lógica de re-priorización basada en evidencia real que rige el resto de esta sección.
 
 ---
 
 ### 8.5. Continuous Learning
 
 #### 8.5.1. Shareback Session Artifacts: Learning Workflow
-Al cierre del ciclo de experimentación, el equipo realizó una sesión de shareback para transferir los aprendizajes de 8.4.1 al resto de stakeholders del proyecto. El flujo de aprendizaje seguido fue:
+Al cierre del ciclo de experimentación, el equipo realizó una sesión de shareback en vivo a través de una llamada de Discord, transfiriendo los aprendizajes de 8.4.1 al resto del equipo y demostrando la evidencia funcional recolectada directamente sobre el ambiente desplegado. El flujo de aprendizaje seguido fue:
 
 1. **Recolección:** consolidación de la evidencia de implementación (8.3.3) y hallazgos de entrevistas (8.3.4.2) en un solo repositorio de aprendizajes.
 2. **Síntesis:** priorización de aprendizajes accionables vs. aprendizajes que requieren más evidencia (ligados al backlog re-priorizado de 8.4.2).
-3. **Shareback:** presentación de resultados al equipo completo y a los patrocinadores del proyecto, exponiendo qué hipótesis se validaron, cuáles quedaron pendientes y qué se hará en el siguiente ciclo.
-4. **Registro:** documentación de la sesión como artefacto reutilizable para futuros ciclos de experimentación.
+3. **Shareback:** sesión en vivo por Discord con el equipo completo, donde se compartió pantalla para demostrar en producción el Dashboard de Estadísticas (**TS-ST001**) con datos reales (Occupancy 50%, alerta crítica de stock bajo para "Aspirina"), exponiendo qué hipótesis se validaron, cuáles quedaron pendientes (TS-RM002) y qué se hará en el siguiente ciclo (8.4.2).
+4. **Registro:** captura de la sesión en vivo como artefacto reutilizable para futuros ciclos de experimentación (ver imagen a continuación).
 
 ![Shareback](../assets/img/chapter-VIII/shareback.jpeg)
+
+*Captura de la sesión de shareback en vivo por Discord, con el equipo presente en la llamada mientras se demuestra el Dashboard de Estadísticas desplegado en producción (`veyra-frontend-application.web.app/analytics/dashboard`), evidenciando en tiempo real la tarjeta de Occupancy y el panel de Critical Alerts validados en 8.3.3.3 y 8.4.1.*
+
 ---
 
 ### 8.6. To-Be Software Platform Pre-launch
