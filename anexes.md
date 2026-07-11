@@ -38,15 +38,18 @@
 
 En este anexo se incluyen los enlaces correspondientes a las exposiciones del proyecto publicadas en Microsoft Stream.
 
-| Entrega | Descripción                           | Enlace                                                                                                                                        |
-|---------| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| AV1     | Primera exposición del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCymQroHEv4TarxpFxiz7pJAZYmiUo27PshlP3--gqib5k?e=apAGGl) |
-| TB1     | Segunda exposición del proyecto Veyra |  [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQBZGnBHWD2DRaIoqRp55x76AaPL7oVafhLj2WzRgP8veiQ?e=b1cQV6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)  |
-| TB2     | Segunda exposición del proyecto Veyra |  [Ver video]() |
+| Entrega | Descripción                            | Enlace                                                                                                                                                                                                                          |
+|---------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AV1     | Primera exposición del proyecto Veyra   | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCymQroHEv4TarxpFxiz7pJAZYmiUo27PshlP3--gqib5k?e=apAGGl)                                                                                |
+| TB1     | Segunda exposición del proyecto Veyra   | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQBZGnBHWD2DRaIoqRp55x76AaPL7oVafhLj2WzRgP8veiQ?e=b1cQV6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| TB2     | Última exposición del proyecto Veyra    | [Ver video]()                                                                                                                                                                                                                 |
+
 ## Student Outcome
+
 En este anexo se incluyen los enlaces correspondientes a los videos about the team en Microsoft Stream.
-| Entrega | Descripción                           | Enlace                                                                                                                                        |
-| ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| TB1     | Segundo about the team del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCdbvBh-yrQQ7iu-7bM2LirATiy4p8WapTYH4yi1ZKBxcE?e=yoaEbq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)                                                                                                                |
-| TB2     | Segundo about the team del proyecto Veyra | [Ver video]()                                                                                                                |
+
+| Entrega | Descripción                               | Enlace                                                                                                                                                                                                                          |
+|---------|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TB1     | Segundo about the team del proyecto Veyra | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312399_upc_edu_pe/IQCdbvBh-yrQQ7iu-7bM2LirATiy4p8WapTYH4yi1ZKBxcE?e=yoaEbq&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| TB2     | Último about the team del proyecto Veyra  | [Ver video](https://youtu.be/y8BT2t5zpZ8?si=ES5DnagQiG1Qua36)                                                                                                                                                                 |
 
