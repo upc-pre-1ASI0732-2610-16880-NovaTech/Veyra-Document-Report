@@ -712,6 +712,34 @@ El objetivo principal del Sprint 3 fue cerrar por completo las funcionalidades d
 **Frontend**
 <img src="../assets/img/chapter-V/Insights-Frontend.png" alt="Collaboration Insights ">
 
+**Sprint 3 (cierre de TB2)**
+
+Al cierre del Sprint 3, se capturó evidencia actualizada de colaboración en ambos repositorios (Backend y Frontend) cubriendo el período del 11 de junio al 11 de julio de 2026, cuando se cerraron las funcionalidades de MFA, pagos, dashboard y cifrado.
+
+**Backend – Insights (Pulse)**
+
+<img src="../assets/img/chapter-V/insight-backend-sprint3.png" alt="Backend Insights Pulse Sprint 3">
+
+**Backend – Contributors**
+
+<img src="../assets/img/chapter-V/contributors-backend-sprint3.png" alt="Backend Contributors Sprint 3">
+
+**Backend – Network graph**
+
+<img src="../assets/img/chapter-V/network-backend-sprint3.png" alt="Backend Network Graph Sprint 3">
+
+**Frontend – Insights (Pulse)**
+
+<img src="../assets/img/chapter-V/frontend-insights-sprint3.png" alt="Frontend Insights Pulse Sprint 3">
+
+**Frontend – Contributors**
+
+<img src="../assets/img/chapter-V/contributors-frontend-sprint3.png" alt="Frontend Contributors Sprint 3">
+
+**Frontend – Network graph**
+
+<img src="../assets/img/chapter-V/Network-graph-frontend-sprint3.png" alt="Frontend Network Graph Sprint 3">
+
 **Report**
 
 <img src="../assets/img/chapter-V/insights-report.png" alt="Collaboration Insights ">
