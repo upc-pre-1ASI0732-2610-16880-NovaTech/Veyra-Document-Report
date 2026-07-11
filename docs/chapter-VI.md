@@ -307,20 +307,20 @@ Las preguntas principales fueron:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-A continuación, se presenta la evaluación del prototipo y sistema de la plataforma Veyra basada en las 10 heurísticas de usabilidad de Jakob Nielsen, identificando el nivel de cumplimiento actual de nuestra interfaz.
+A continuación, se presenta la evaluación exhaustiva del sistema de la plataforma Veyra basada en las 10 heurísticas de usabilidad de Jakob Nielsen. Esta evaluación nos permite identificar el nivel de madurez de la interfaz y las interacciones del usuario.
 
 | # | Heurística | Cumple (Sí/No/Parcial) | Observación / Evidencia |
 |---|---|---|---|
-| 1 | Visibilidad del estado del sistema | Sí | El sistema utiliza componentes visuales (Snackbars/Toasts de Angular Material) para confirmar acciones exitosas como el guardado de un residente o la emisión de alertas de error en la API. |
-| 2 | Relación entre el sistema y el mundo real | Sí | Se utiliza terminología familiar para el sector médico y administrativo (Ej. "Nursing Home", "Residents", "Stock de Medicamentos", "Métricas de Salud"). |
-| 3 | Control y libertad del usuario | Parcial | Los usuarios pueden navegar fluidamente entre módulos mediante el Sidebar, pero en algunos flujos de creación (ej. crear empleado) el botón de "Cancelar" o retroceder podría ser más prominente. |
-| 4 | Consistencia y estándares | Sí | Se mantiene una interfaz uniforme en todos los *bounded contexts* mediante el uso consistente de tablas, formularios y paletas de colores definidos por Angular Material. |
-| 5 | Prevención de errores | Parcial | Los formularios (ej. registro de IAM y Nursing) cuentan con validación reactiva en tiempo real; sin embargo, se detectaron áreas de mejora en la prevención visual (ej. alertas antes de que el stock llegue a cero). |
-| 6 | Reconocimiento antes que recuerdo | Sí | El módulo *Analytics* centraliza la información vital (ocupación, residentes) en el Dashboard, evitando que el usuario deba memorizar datos de diferentes pantallas. |
-| 7 | Flexibilidad y eficiencia de uso | Parcial | Existen filtros y buscadores en las listas de residentes e inventario, pero faltan atajos de teclado o vistas resumidas aceleradas para administradores avanzados. |
-| 8 | Estética y diseño minimalista | Sí | La interfaz sigue un enfoque minimalista sin sobrecarga cognitiva, mostrando únicamente las columnas y acciones esenciales en cada tabla de datos. |
-| 9 | Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores | Sí | Al ingresar credenciales inválidas o datos erróneos, el sistema atrapa la excepción del backend (Spring Boot) y muestra un mensaje comprensible en la UI indicando qué falló. |
-| 10 | Ayuda y documentación | Parcial | El sistema es intuitivo, pero carece de un módulo integrado de ayuda ("Help Center") o *tooltips* explicativos detallados para la configuración de planes de pago y roles. |
+| 1 | Visibilidad del estado del sistema | Sí | El sistema utiliza componentes visuales reactivos (Snackbars y Toasts de Angular Material) para confirmar acciones exitosas (ej. registro de pacientes) y notificar sobre procesos en curso como la carga de datos del Dashboard. |
+| 2 | Relación entre el sistema y el mundo real | Sí | Se ha implementado un lenguaje de dominio (Ubiquitous Language) del sector geriátrico y de salud, utilizando términos familiares como "Nursing Home", "Residents", "Health Metrics" y "Inventory". |
+| 3 | Control y libertad del usuario | Parcial | Los usuarios pueden navegar fluidamente entre módulos mediante el Sidebar. Sin embargo, en flujos de creación extensos (ej. registrar un nuevo empleado o residente), faltan botones de "Deshacer" o "Cancelar" más prominentes para salir del flujo rápidamente. |
+| 4 | Consistencia y estándares | Sí | Se mantiene una interfaz uniforme a través de los 10 *bounded contexts*. Las paletas de colores, las tablas de datos, la iconografía y los formularios siguen estrictamente los lineamientos de Angular Material. |
+| 5 | Prevención de errores | Parcial | Los formularios de los módulos IAM y Nursing cuentan con validaciones reactivas. No obstante, se pueden mejorar las advertencias visuales proactivas, como alertar al usuario *antes* de que el stock de un medicamento llegue a cero. |
+| 6 | Reconocimiento antes que recuerdo | Sí | El módulo *Analytics* (Dashboard) centraliza la información vital, como la ocupación y las estadísticas de residentes, evitando que el administrador deba memorizar o buscar datos navegando por múltiples pantallas. |
+| 7 | Flexibilidad y eficiencia de uso | Parcial | Existen buscadores y filtros funcionales en las listas de residentes e inventario. Sin embargo, para usuarios expertos o administradores, la plataforma aún carece de atajos de teclado o acciones masivas (ej. eliminar varios registros a la vez). |
+| 8 | Estética y diseño minimalista | Sí | La interfaz sigue un enfoque minimalista, mostrando únicamente la información esencial en las tablas (ej. Nombre, DNI, Rol, Estado) y delegando la información secundaria a las vistas de detalle. |
+| 9 | Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores | Sí | Al ingresar credenciales inválidas en el login (Módulo IAM) o fallar en una petición de API, el sistema captura las excepciones del backend (Spring Boot) y muestra un mensaje de error HTTP amigable, indicando la acción correctiva. |
+| 10 | Ayuda y documentación | Parcial | Aunque el sistema cuenta con documentación técnica completa en Swagger para los desarrolladores, la interfaz de usuario final carece de tooltips contextuales avanzados o un submódulo de "Centro de Ayuda" integrado. |
 
 ---
 
@@ -328,64 +328,91 @@ A continuación, se presenta la evaluación del prototipo y sistema de la plataf
 
 ### 6.4.1. Auditoría realizada
 
+En esta fase, nuestro equipo (NovaTech) auditó la plataforma web desarrollada por el equipo hermano para evaluar su nivel de madurez en aspectos de seguridad, usabilidad y validación de datos.
+
 #### 6.4.1.1. Información del grupo auditado
 *   **Nombre del Grupo:** EcatLeasing
-*   **Proyecto:** PCpedia
-*   **Integrantes:** Joaquín Enrique Carranza Tesén, Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+*   **Proyecto Auditado:** PCpedia (Plataforma de Autenticación, Soporte, Gestión de Usuarios, Inventario y Facturación)
+*   **Alcance:** Entorno de Staging y Producción. Evaluación bajo criterios OWASP Top 10, OWASP ASVS 4.0, ISO/IEC 25010 y WCAG 2.1.
 
 #### 6.4.1.2. Cronograma de auditoría realizada
 | Actividad | Fecha de Inicio | Fecha de Fin | Responsables (NovaTech) |
 |---|---|---|---|
-| Auditoría de Autenticación, Roles y Seguridad | 06/07/2026 | 06/07/2026 | Equipo Auditor (NovaTech) |
-| Auditoría del Módulo de Clientes y Perfiles | 07/07/2026 | 07/07/2026 | Equipo Auditor (NovaTech) |
-| Auditoría de Módulos de Facturación y Tickets | 07/07/2026 | 07/07/2026 | Equipo Auditor (NovaTech) |
+| Auditoría de Autenticación (Admin Login) y Seguridad | 06/07/2026 | 06/07/2026 | Equipo Auditor 1 y 2 |
+| Auditoría de Gestión de Clientes (Admin Clients) | 07/07/2026 | 07/07/2026 | Equipo Auditor 1 y 2 |
+| Auditoría de Módulos Transaccionales (Contratos, Facturas, Catálogo) | 07/07/2026 | 07/07/2026 | Equipo Auditor 1 y 2 |
+| Evaluación de Tickets de Soporte | 07/07/2026 | 07/07/2026 | Equipo Auditor 1 y 2 |
 
 #### 6.4.1.3. Contenido de auditoría realizada
-Durante la ejecución de la auditoría al aplicativo PCpedia, nuestro equipo encontró los siguientes hallazgos de usabilidad y seguridad de alta criticidad en sus flujos:
+Tras la ejecución exhaustiva del plan de pruebas sobre la plataforma PCpedia, se identificaron vulnerabilidades críticas de seguridad y fallas en la validación de formularios. A continuación, se documentan todos los hallazgos (estado REPROBADO) y los flujos que quedaron PENDIENTES por inestabilidad del sistema:
 
-| ID | Módulo / Componente | Tipo de Hallazgo | Severidad | Descripción del Hallazgo |
+**Hallazgos Reportados (Casos Reprobados):**
+
+| ID Prueba | Módulo Evaluado | Tipo de Hallazgo | Severidad | Descripción del Hallazgo |
 |---|---|---|---|---|
-| H-01 | Admin Login | Seguridad / Funcional | Alta | **Ausencia de control de fuerza bruta:** Al enviar 5 intentos consecutivos de login con contraseña incorrecta, el sistema no bloquea la cuenta ni exige CAPTCHA, permitiendo intentos ilimitados. |
-| H-02 | Admin Login | Seguridad | Alta | **Persistencia de sesión insegura:** El cierre de sesión no revoca el acceso desde el punto de vista del servidor. Es posible reutilizar un token capturado contra endpoints protegidos tras hacer *logout*. |
-| H-03 | Admin Login | Seguridad | Alta | **Falta de validación de estado en peticiones:** Con la sesión vigente, si se desactiva una cuenta desde el panel de administración, el acceso se mantiene activo. El estado solo se valida al hacer login. |
-| H-04 | Admin Clients | Usabilidad / Validación | Media | **Validaciones de longitud deficientes:** Al editar el campo "Teléfono", el sistema permite guardar valores de 6 dígitos o mayores a 9 dígitos, ignorando la regla de negocio de exactamente 9 dígitos numéricos. |
-| H-05 | Admin Clients | Usabilidad / Validación | Baja | **Falta de control de duplicidad:** El sistema permite registrar diferentes clientes utilizando el mismo número de teléfono. |
+| CP1-03 | Admin Login | Seguridad | Alta | **Enumeración de usuarios válidos:** Al intentar iniciar sesión con un correo no registrado, el sistema arroja mensajes diferenciales, permitiendo a un atacante inferir qué correos existen en la base de datos. |
+| CP1-05 | Admin Login | Seguridad | Alta | **Ausencia de control de fuerza bruta:** Se enviaron 5 intentos consecutivos de login con contraseña incorrecta. El sistema no bloqueó la cuenta, no incrementó la latencia ni exigió CAPTCHA. |
+| CP1-06 | Admin Login | Seguridad | Alta | **Falta de penalización:** El sistema permitió un login exitoso de manera inmediata justo después de múltiples intentos fallidos, confirmando la vulnerabilidad de fuerza bruta. |
+| CP1-08 | Admin Login | Seguridad | Crítica | **Persistencia de sesión insegura:** El cierre de sesión en la interfaz (frontend) no revoca el token JWT en el servidor. El token capturado sigue siendo válido para peticiones autenticadas. |
+| CP1-09 | Admin Login | Seguridad | Crítica | **Falta de validación de estado en peticiones:** Se desactivó una cuenta desde el panel de administración, pero la sesión activa de ese usuario no fue expulsada. El estado solo se valida al hacer el primer login. |
+| CP2-08 | Admin Clients | Validación | Media | **Longitud mínima deficiente:** El sistema permitió editar y guardar un número telefónico ingresando solo 6 dígitos, violando la regla de negocio (exactamente 9 dígitos). |
+| CP2-09 | Admin Clients | Validación | Media | **Longitud máxima deficiente:** El sistema permitió guardar un número telefónico con más de 9 dígitos. |
+| CP2-13 | Admin Clients | Validación | Media | **Ausencia de control de duplicidad (Teléfono):** La plataforma permitió registrar un nuevo cliente utilizando el mismo número de teléfono que ya pertenecía a otro usuario registrado. |
+
+**Pruebas Pendientes de Ejecución:**
+Debido a comportamientos inesperados o alcance de tiempo, el bloque de gestión de soporte no pudo ser evaluado completamente. Quedaron **Pendientes** las validaciones del módulo **Tickets (CP3 y CP4)**, las cuales abarcaban:
+*   Pruebas de vulnerabilidad IDOR (Control de acceso horizontal) al intentar ver tickets de otros clientes.
+*   Inyección de payloads XSS (`<script>alert(1)</script>`) en la caja de comentarios de los tickets.
+*   Comportamiento de la paginación de tickets frente a un volumen alto de registros.
 
 ---
 
 ### 6.4.2. Auditoría recibida
 
+En contraparte, nuestra aplicación Veyra fue auditada por el grupo hermano para validar el nivel de cumplimiento funcional frente a los requerimientos documentados en nuestro Informe de Software.
+
 #### 6.4.2.1. Información del grupo auditor
 *   **Nombre del Grupo:** EcatLeasing
 *   **Proyecto:** PCpedia
-*   **Integrantes:** Joaquín Enrique Carranza Tesén (Auditor Líder), Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+*   **Equipo Auditor:** Joaquín Enrique Carranza Tesén (Auditor Líder), Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+*   **Observadores:** Docente Julio M. Noriega Meléndez.
 
 #### 6.4.2.2. Cronograma de auditoría recibida
 | Actividad | Fecha | Detalle de la Sesión |
 |---|---|---|
-| Reunión de Apertura y Mapeo Funcional | 05/07/2026 | Revisión de los criterios de auditoría (ISO/IEC 25010, DDD, UI/UX) y alcance de los módulos de Veyra. |
-| Pruebas de Módulos IAM, Nursing y HCM | 05/07/2026 | Verificación de validaciones en frontend, RBAC, gestión de casas de reposo, stock e inventario. |
-| Pruebas de Módulos Payments y Analytics | 05/07/2026 | Evaluación del Dashboard estadístico, planes de suscripción de Stripe y transacciones. |
-| Reunión de Cierre | 05/07/2026 | Entrega formal del informe detallando No Conformidades (NC) y Oportunidades de Mejora (OM). |
+| Revisión Arquitectónica y CI/CD | 05/07/2026 | Análisis del despliegue en Firebase, Render, Aiven y revisión de los 35 tests en GitHub Actions. |
+| Pruebas de Módulos IAM, Nursing y HCM | 05/07/2026 | Verificación de los *Bounded Contexts*, validaciones de Angular y pruebas de integración ITC-01 a ITC-06. |
+| Pruebas de Módulos Payments y Analytics | 05/07/2026 | Comprobación de integración de la pasarela Stripe y validación de generación de reportes en el Dashboard. |
 
 #### 6.4.2.3. Contenido de auditoría recibida
-El equipo auditor verificó un total de 7 módulos funcionales y 14 *User Stories*, contrastando el sistema en producción contra nuestros requerimientos. Los hallazgos reportados fueron:
+El equipo de EcatLeasing evaluó un total de 7 módulos (IAM, Nursing, HCM, Analytics, Payments, Activities, Questions) cubriendo más de 14 *User Stories*. La auditoría arrojó un resultado general **Conforme**, superando todas las pruebas unitarias y de integración. 
 
-| ID | Módulo Evaluado | Severidad | Descripción del Hallazgo |
-|---|---|---|---|
-| NC-01 | IAM | Menor | **Autenticación multifactor (MFA):** La funcionalidad está documentada en la TS18 pero su implementación en el frontend es solo parcial. |
-| NC-02 | Payments | Menor | **Historial de transacciones:** El registro visual del historial de transacciones (Stripe) no se encuentra completamente implementado en la interfaz. |
-| OM-01 | Nursing / Inventory | Mejora | **Alertas de Stock:** Faltan alertas visuales más prominentes para advertir cuando los medicamentos alcanzan niveles mínimos. |
-| OM-02 | Analytics | Mejora | **Accesibilidad del Dashboard:** Se requiere que el dashboard estadístico sea más visible o tenga un acceso más rápido desde la pantalla de inicio (Home). |
-| OM-03 | Questions | Mejora | **Comunicación en Tiempo Real:** El sistema de mensajería carece de notificaciones por WebSocket para alertar a las familias y al staff en tiempo real. |
+Sin embargo, se reportaron de manera oficial **2 No Conformidades (NC)** y **7 Oportunidades de Mejora (OM)** detalladas a continuación:
+
+| ID | Módulo Evaluado | Severidad | Descripción del Hallazgo (Según Informe) | Referencia |
+|---|---|---|---|---|
+| NC-01 | IAM | Menor | **MFA Parcial:** La autenticación multifactor (MFA) documentada en TS18 se evidencia con implementación parcial en frontend. | Chapter III, TS18 |
+| NC-02 | Payments | Menor | **Historial de transacciones:** El registro visual del historial de transacciones (Stripe) no se encuentra completamente implementado. | Chapter III, TS17 |
+| OM-01 | Nursing / Inventory | Mejora | **Alertas Visuales:** Faltan alertas visuales más prominentes para medicamentos con stock bajo. | Chapter VIII, US14 |
+| OM-02 | Analytics | Mejora | **Accesibilidad:** Dashboard más visible/accesible directamente desde la vista Home (Experimento #1). | Chapter VIII, TS-ST001 |
+| OM-03 | Questions | Mejora | **Notificaciones:** Agregar notificaciones en tiempo real (WebSocket) para la mensajería de comunicación con familias. | Chapter VIII, US20 |
+| OM-04 | Activities | Mejora | **Participación:** Completar la funcionalidad de registro de asistencia/participación en actividades. | Chapter IV |
+| OM-05 | General (DevOps)| Mejora | **Monitoreo:** Implementar monitoreo con Azure Monitor / Application Insights como estaba documentado. | Chapter VII |
+| OM-06 | General (Móvil) | Mejora | **Desarrollo Móvil:** Cumplir con el desarrollo de la app móvil mencionada en las conclusiones futuras. | Conclusions |
+| OM-07 | Nursing (IoT) | Mejora | **Integración IoT:** Planificar integración IoT para monitoreo en tiempo real mediante sensores en residentes. | Chapter I, IV |
 
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
-A partir del informe recibido, el equipo de NovaTech priorizó y ejecutó las siguientes modificaciones en la plataforma Veyra para solucionar los errores:
 
-| ID Hallazgo | Modificación Realizada en el Prototipo / Sistema | Estado |
+Nuestro equipo de desarrollo (NovaTech) procedió a realizar un análisis de impacto de los hallazgos reportados. Todas las No Conformidades fueron corregidas inmediatamente en código, y las Oportunidades de Mejora fueron priorizadas para el *sprint* actual o derivadas al Backlog futuro de la plataforma:
+
+| ID Hallazgo | Modificación y Acción Técnica Realizada en Veyra | Estado Actual |
 |---|---|---|
-| NC-01 | Se completó la implementación del flujo MFA en el Frontend de Angular, añadiendo las pantallas de confirmación de código TOTP vinculadas a las respuestas de la API. | Subsanado |
-| NC-02 | Se diseñó y conectó una tabla en la vista de Pagos que consume y muestra el historial de transacciones previas extraído desde Stripe. | Subsanado |
-| OM-01 | Se agregó lógica condicional en la vista de inventario (`*ngIf`) para mostrar "badges" rojos de advertencia cuando la cantidad de un medicamento es menor al nivel crítico. | Subsanado |
-| OM-02 | Se reestructuró la navegación principal, colocando un acceso directo unificado hacia las métricas del *Analytics Dashboard* nada más iniciar sesión. | Subsanado |
-| OM-03 | Se documentó la arquitectura para implementar WebSockets mediante SignalR/STOMP en el siguiente *sprint* de integración del módulo *Questions*. | En Proceso |
+| **NC-01** | Se implementó y conectó la vista de verificación de código OTP (Time-Based One-Time Password) en Angular, cerrando el flujo completo de autenticación de dos factores con el backend. | **Subsanado** |
+| **NC-02** | Se desarrolló el componente visual `<app-transaction-history>` que consume el endpoint de pagos, listando las suscripciones y montos procesados exitosamente por Stripe. | **Subsanado** |
+| **OM-01** | Se programó una directiva estructural en la tabla de inventario que colorea en rojo la fila y emite un *badge* de advertencia cuando el umbral de un medicamento llega a su mínimo definido. | **Subsanado** |
+| **OM-02** | Se rediseñó el ruteo del frontend (`app-routing.module.ts`) para que el Home actúe directamente como contenedor del Dashboard, reduciendo la cantidad de clics necesarios. | **Subsanado** |
+| **OM-03** | Se inició la configuración de dependencias de `STOMP.js` y `SockJS` en Angular para habilitar WebSockets bidireccionales con Spring Boot en el módulo Questions. | **En Proceso** |
+| **OM-04** | Se incorporó una columna de "Check-in" en el componente de calendario de actividades, permitiendo marcar la asistencia de los residentes con un solo clic. | **Subsanado** |
+| **OM-05** | Se configuró y anidó la instrumentación de *Application Insights* dentro del *pipeline* de despliegue, permitiendo monitorear las latencias y carga en el servidor Render. | **Subsanado** |
+| **OM-06** | El desarrollo móvil ha sido trasladado y formalizado como una Épica principal en el Product Backlog para la Versión 2.0 (Release Futuro), ya que excede el alcance del entregable actual. | **Derivado a Backlog** |
+| **OM-07** | Al igual que la app móvil, el soporte de telemetría IoT ha sido documentado como una historia técnica a investigar para integraciones futuras con *hardware* de las casas de reposo. | **Derivado a Backlog** |
