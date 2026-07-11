@@ -640,6 +640,23 @@ Durante el Sprint 2, el equipo Veyra enfocó sus esfuerzos en fortalecer la cali
 
 El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y confiabilidad de la plataforma Veyra mediante la implementación de pruebas automatizadas, integración continua y despliegue automatizado, además de continuar el desarrollo de funcionalidades críticas relacionadas con la gestión de residentes, medicamentos y seguridad de la información.
 
+## 5.2.1.3. Sprint 3 Backlog
+
+Durante el Sprint 3, el equipo Veyra se enfocó en cerrar las funcionalidades que quedaron en curso al término del Sprint 2 (autenticación multifactor, integración de pagos, dashboard de estadísticas y cifrado de datos), llevándolas a un estado validado y desplegado como parte del entregable TB2.
+
+| Sprint | ID | Tipo | Título | Descripción | Responsable | Estado |
+|--------|----|------|---------|-------------|-------------|--------|
+| Sprint 3 | TS18 | Technical Story | Autenticación y MFA | Finalización de la verificación por código SMS/TOTP y bloqueo de acceso hasta la validación del segundo factor. | Miguel Ángel Junior Román López | Completado |
+| Sprint 3 | TS17 | Technical Story | Integración con Stripe | Cierre de la integración de pagos: confirmación de webhook de Stripe y actualización automática del estado de la cuota a "Pagado". | Camilla Espinoza | Completado |
+| Sprint 3 | TS-ST001 | Technical Story | Dashboard de Estadísticas | Finalización del dashboard con gráficos de ocupación y alertas críticas priorizadas en la vista superior. | Yasser Rentería | Completado |
+| Sprint 3 | US38 | User Story | Protección de datos mediante cifrado | Cierre del cifrado en reposo de la información médica sensible y validación de cumplimiento normativo. | Miguel Ángel Junior Román López | Completado |
+| Sprint 3 | TS-TEST005 | Technical Story | Regression Tests | Ejecución de pruebas de regresión sobre MFA, pagos, dashboard y cifrado para asegurar que no se introdujeron defectos. | Adrian Valerio | Completado |
+| Sprint 3 | TS-CD002 | Technical Story | Despliegue a Producción (Azure) | Migración y validación del despliegue del backend en Azure Web Service para el entorno de release. | Juan Manuel Santos Torres | Completado |
+
+### Sprint Goal
+
+El objetivo principal del Sprint 3 fue cerrar por completo las funcionalidades de seguridad, pagos y analítica que quedaron en curso durante el Sprint 2, dejando la plataforma Veyra lista para el entregable TB2 – Release Review con evidencia de despliegue validada en producción.
+
 ### 5.2.2. Implemented Landing Page Evidence 
 <p><strong>Encabezado y menú de navegación:</strong></p>
 <img src="../assets/img/chapter-V/header-landing-page.png" alt="header landing page">
@@ -668,6 +685,10 @@ El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y conf
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence 
 <img src="../assets/img/chapter-V/deploy/render-deploy.png" alt="backend">
+
+**Para este nuevo sprint se cambio el entorno de despliegue utilizando ahora Azure Web Service**
+
+<img src="../assets/img/chapter-V/deploy/azure-deploy.png" alt="backend">
 <img src="../assets/img/chapter-V/deploy/backend-deploy-2.png" alt="backend">
 
 
@@ -682,4 +703,43 @@ El objetivo principal del Sprint 2 fue fortalecer la calidad, estabilidad y conf
 
 <img src="../assets/img/chapter-V/insights-tp.png" alt="Collaboration Insights ">
 
+**TB2**
 
+**Backend**
+
+<img src="../assets/img/chapter-V/insights-Backend.png" alt="Collaboration Insights ">
+
+**Frontend**
+<img src="../assets/img/chapter-V/Insights-Frontend.png" alt="Collaboration Insights ">
+
+**Sprint 3 (cierre de TB2)**
+
+Al cierre del Sprint 3, se capturó evidencia actualizada de colaboración en ambos repositorios (Backend y Frontend) cubriendo el período del 11 de junio al 11 de julio de 2026, cuando se cerraron las funcionalidades de MFA, pagos, dashboard y cifrado.
+
+**Backend – Insights (Pulse)**
+
+<img src="../assets/img/chapter-V/insight-backend-sprint3.png" alt="Backend Insights Pulse Sprint 3">
+
+**Backend – Contributors**
+
+<img src="../assets/img/chapter-V/contributors-backend-sprint3.png" alt="Backend Contributors Sprint 3">
+
+**Backend – Network graph**
+
+<img src="../assets/img/chapter-V/network-backend-sprint3.png" alt="Backend Network Graph Sprint 3">
+
+**Frontend – Insights (Pulse)**
+
+<img src="../assets/img/chapter-V/frontend-insights-sprint3.png" alt="Frontend Insights Pulse Sprint 3">
+
+**Frontend – Contributors**
+
+<img src="../assets/img/chapter-V/contributors-frontend-sprint3.png" alt="Frontend Contributors Sprint 3">
+
+**Frontend – Network graph**
+
+<img src="../assets/img/chapter-V/Network-graph-frontend-sprint3.png" alt="Frontend Network Graph Sprint 3">
+
+**Report**
+
+<img src="../assets/img/chapter-V/insights-report.png" alt="Collaboration Insights ">
