@@ -549,10 +549,620 @@ Las preguntas principales fueron:
 **Recomendación:** Mostrar marcas temporales en las actualizaciones relevantes del residente, como "actualizado hoy a las 10:30 a. m.", junto con el tipo de evento: medicamento administrado, actividad completada, métrica de salud registrada o comunicación enviada. Esto incrementará la trazabilidad y la percepción de seguridad de la plataforma.
 
 ## 6.4. Auditoría de Experiencias de Usuario
-### 6.4.1. Auditoría realizada.
-#### 6.4.1.1. Información del grupo auditado.
-#### 6.4.1.2. Cronograma de auditoría realizada.
-#### 6.4.1.3. Contenido de auditoría realizada.
+## 6.4.1. Auditoría realizada
+
+La auditoría interna fue realizada sobre la aplicación web **PcPedia**, con el propósito de verificar el cumplimiento de los requisitos funcionales, de seguridad, accesibilidad, control de acceso, integridad de datos y calidad del software.
+
+La revisión comprendió los módulos disponibles para los perfiles de **administrador** y **cliente**, incluyendo autenticación, gestión de clientes, tickets de soporte, solicitudes, cotizaciones, dashboards, contratos, perfiles, catálogo, equipos, pagos, inventario, modelos de producto y facturación.
+
+La auditoría se desarrolló principalmente de manera remota sobre el entorno de **Staging o preproducción**, utilizando cuentas de prueba con diferentes roles. Para su ejecución se emplearon pruebas funcionales manuales, validación de formularios, revisión de permisos, manipulación controlada de identificadores, monitoreo de solicitudes mediante las herramientas de desarrollo del navegador y comprobación de la persistencia de los datos.
+
+El archivo contiene un total de **19 casos de auditoría**, dentro de los cuales se registraron **218 pasos o verificaciones**. Los resultados generales fueron los siguientes:
+
+| Resultado | Cantidad | Porcentaje |
+|---|---:|---:|
+| Aprobadas | 186 | 85.32 % |
+| Reprobadas | 8 | 3.67 % |
+| Pendientes | 24 | 11.01 % |
+| **Total** | **218** | **100 %** |
+
+En la ejecución de las auditorías participaron seis responsables. Cada integrante tuvo asignados diferentes módulos y casos de prueba, por lo que la responsabilidad de la auditoría fue distribuida entre todos los miembros del equipo.
+
+---
+
+### 6.4.1.1. Información del grupo auditado
+
+#### Información general
+
+| Campo | Información |
+|---|---|
+| **Proyecto auditado** | PcPedia |
+| **Tipo de sistema** | Aplicación web para la gestión de clientes, soporte, contratos, equipos, inventario, pagos y facturación |
+| **Grupo auditado** | Equipo de Producto y Desarrollo de PcPedia |
+| **Responsable del proceso auditado** | Equipo de Producto / Product Owner |
+| **Tipo de auditoría** | Auditoría interna de software |
+| **Modalidad** | Remota |
+| **Entorno evaluado** | Staging, preproducción y entorno desplegado de PcPedia |
+| **Perfiles evaluados** | Administrador y cliente |
+| **Prioridad de los casos** | Alta |
+| **Número de casos de auditoría** | 19 casos |
+| **Número de verificaciones** | 218 pasos |
+| **Fecha del plan de auditoría** | 5 de julio de 2026 |
+| **Normas y criterios** | ISO 9001, ISO/IEC 25010, OWASP Top 10, OWASP ASVS 4.0, OWASP API Security Top 10, CWE/SANS Top 25 y WCAG 2.1 nivel AA |
+
+#### Objetivo de la auditoría
+
+El objetivo de la auditoría fue verificar el uso eficaz de los controles de calidad implementados en PcPedia y comprobar que sus módulos cumplieran con los requisitos funcionales, técnicos y de seguridad definidos para el proyecto.
+
+También se buscó identificar posibles vulnerabilidades relacionadas con la autenticación, manejo de sesiones, acceso no autorizado, exposición de información, inyección de código, manipulación de identificadores, duplicidad de datos y falta de validación en formularios.
+
+#### Alcance de la auditoría
+
+La auditoría comprendió los siguientes procesos y módulos:
+
+- Inicio de sesión de administrador y cliente.
+- Gestión administrativa de clientes.
+- Gestión de tickets de soporte.
+- Solicitudes y cotizaciones del cliente.
+- Dashboard de administrador y cliente.
+- Contratos para administrador y cliente.
+- Configuración del perfil de administrador y cliente.
+- Catálogo de productos.
+- Equipos asociados al cliente.
+- Registro y administración de pagos.
+- Gestión del inventario.
+- Modelos de productos.
+- Facturas administrativas.
+- Facturas del cliente.
+
+#### Equipo responsable de las auditorías
+
+| Integrante | Casos de auditoría ejecutados | Verificaciones | Aprobadas | Reprobadas | Pendientes |
+|---|---|---:|---:|---:|---:|
+| **Renzo Llerena** | Login administrador, tickets administrador y tickets cliente | 30 | 1 | 5 | 24 |
+| **Camilla Espinoza** | Clientes, dashboard administrador, login cliente y dashboard cliente | 68 | 65 | 3 | 0 |
+| **Juan Manuel Santos Torres** | Solicitudes y cotizaciones del cliente | 10 | 10 | 0 | 0 |
+| **Miguel Román López** | Contratos administrador, contratos cliente, perfil administrador y perfil cliente | 40 | 40 | 0 | 0 |
+| **Adrian Valerio Garcia** | Catálogo, mis equipos, pagos e inventario | 40 | 40 | 0 | 0 |
+| **Yasser Rentería Palacios** | Modelos de producto, facturas administrador y facturas cliente | 30 | 30 | 0 | 0 |
+| **Total** | **19 casos de auditoría** | **218** | **186** | **8** | **24** |
+
+#### Criterios empleados
+
+| Criterio | Aplicación |
+|---|---|
+| **ISO 9001** | Control de procesos, documentación, registros y calidad |
+| **ISO/IEC 25010** | Calidad funcional, seguridad, usabilidad y confiabilidad del software |
+| **OWASP Top 10** | Identificación de riesgos comunes en aplicaciones web |
+| **OWASP ASVS 4.0** | Validación de controles de autenticación, sesiones y autorización |
+| **OWASP API Security Top 10** | Evaluación de accesos y exposición de información mediante API |
+| **CWE/SANS Top 25** | Identificación de debilidades frecuentes del software |
+| **WCAG 2.1 nivel AA** | Validación básica de accesibilidad y navegación por teclado |
+| **Casos de prueba manuales** | Verificación del comportamiento funcional esperado |
+
+---
+
+### 6.4.1.2. Cronograma de auditoría realizada
+
+El cronograma fue elaborado considerando los casos registrados en cada hoja del archivo. La mayoría de las pruebas se encuentra asociada a fechas de junio y julio de 2026.
+
+| Caso | Módulo auditado | Perfil | Responsable de ejecución | Verificaciones | Resultado |
+|---|---|---|---|---:|---|
+| CP1 | Inicio de sesión del administrador | Administrador | Renzo Llerena | 10 | 1 aprobada, 5 reprobadas y 4 pendientes |
+| CP2 | Gestión de clientes | Administrador | Camilla Espinoza | 18 | 15 aprobadas y 3 reprobadas |
+| CP3 | Tickets de soporte | Administrador | Renzo Llerena | 10 | 10 pendientes |
+| CP4 | Tickets de soporte | Cliente | Renzo Llerena | 10 | 10 pendientes |
+| CP5 | Solicitudes y cotizaciones | Cliente | Juan Manuel Santos Torres | 10 | 10 aprobadas |
+| CP6 | Dashboard | Administrador | Camilla Espinoza | 20 | 20 aprobadas |
+| CP7 | Contratos | Administrador | Miguel Román López | 10 | 10 aprobadas |
+| CP7 | Contratos | Cliente | Miguel Román López | 10 | 10 aprobadas |
+| CP8 | Mi perfil | Administrador | Miguel Román López | 10 | 10 aprobadas |
+| CP8 | Mi perfil | Cliente | Miguel Román López | 10 | 10 aprobadas |
+| CP1 | Inicio de sesión | Cliente | Camilla Espinoza | 10 | 10 aprobadas |
+| CP6 | Dashboard | Cliente | Camilla Espinoza | 20 | 20 aprobadas |
+| CP9 | Catálogo | Cliente | Adrian Valerio Garcia | 10 | 10 aprobadas |
+| CP10 | Mis equipos | Cliente | Adrian Valerio Garcia | 10 | 10 aprobadas |
+| CP11 | Pagos | Administrador | Adrian Valerio Garcia | 10 | 10 aprobadas |
+| CP12 | Inventario | Administrador | Adrian Valerio Garcia | 10 | 10 aprobadas |
+| CP13 | Modelos de producto | Administrador | Yasser Rentería Palacios | 10 | 10 aprobadas |
+| CP14 | Facturas | Administrador | Yasser Rentería Palacios | 10 | 10 aprobadas |
+| CP15 | Facturas | Cliente | Yasser Rentería Palacios | 10 | 10 aprobadas |
+
+#### Distribución de actividades
+
+| Periodo registrado | Actividades principales |
+|---|---|
+| **27 de junio de 2026** | Inicio de las pruebas del módulo Catalog para el perfil cliente |
+| **1 al 5 de julio de 2026** | Pruebas de catálogo, equipos, pagos, inventario, solicitudes, cotizaciones, dashboards, modelos y facturación |
+| **5 de julio de 2026** | Fecha consignada en el plan general de auditoría |
+| **6 de julio de 2026** | Pruebas registradas de login, dashboards y casos asignados a Renzo Llerena |
+| **Fechas por corregir** | Algunas hojas contienen años o fechas inconsistentes respecto del plan general |
+
+#### Inconsistencias de fechas encontradas
+
+Durante la revisión del archivo se identificaron las siguientes inconsistencias:
+
+- La hoja **CP2 Admin Clients** contiene una fecha correspondiente al año **2025**, aunque el plan general pertenece a 2026.
+- Las hojas de **Contratos** y **My Profile**, ejecutadas por Miguel Román López, registran el año **2027**.
+- Algunas fechas fueron almacenadas como valores numéricos de Excel y pueden interpretarse de manera diferente dependiendo de la configuración regional.
+- El plan general tiene fecha **5 de julio de 2026**, pero varias pruebas se encuentran registradas el **6 de julio de 2026**.
+
+Estas fechas deben ser uniformizadas antes de presentar la versión definitiva del informe.
+
+---
+
+### 6.4.1.3. Contenido de auditoría realizada
+
+#### Metodología aplicada
+
+Para cada módulo se utilizó una plantilla de caso de prueba manual que contenía los siguientes elementos:
+
+1. Título de la prueba.
+2. Prioridad.
+3. Identificador del caso.
+4. Número de prueba.
+5. Fecha de ejecución.
+6. Responsable del diseño.
+7. Responsable de la ejecución.
+8. Dependencias necesarias.
+9. Condiciones de prueba.
+10. Descripción de cada paso.
+11. Resultado esperado.
+12. Resultado real.
+13. Estado de aprobación o reprobación.
+14. Notas adicionales.
+
+Las pruebas se ejecutaron utilizando cuentas de administrador y cliente, datos almacenados en la base de datos, servicios API habilitados y herramientas de desarrollo del navegador.
+
+---
+
+#### Auditoría de autenticación
+
+##### Inicio de sesión del administrador
+
+La auditoría del inicio de sesión administrativo fue ejecutada por **Renzo Llerena** y evaluó los siguientes aspectos:
+
+- Inicio de sesión con credenciales correctas.
+- Inicio de sesión con contraseña incorrecta.
+- Inicio de sesión con correos no registrados.
+- Validación de campos vacíos.
+- Protección frente a múltiples intentos fallidos.
+- Control frente a ataques de fuerza bruta.
+- Intentos de inyección SQL.
+- Revocación del token al cerrar sesión.
+- Bloqueo de sesiones pertenecientes a cuentas inactivas.
+- Uso de HTTPS y protección de credenciales.
+
+Los resultados registrados fueron:
+
+| Estado | Cantidad |
+|---|---:|
+| Aprobadas | 1 |
+| Reprobadas | 5 |
+| Pendientes | 4 |
+| **Total** | **10** |
+
+Los principales problemas identificados fueron:
+
+- Ausencia de bloqueo después de múltiples intentos de inicio de sesión fallidos.
+- Posibilidad de iniciar sesión inmediatamente después de varios intentos incorrectos.
+- El token de autenticación continuó funcionando después de cerrar sesión.
+- La sesión permaneció activa después de desactivar la cuenta del administrador.
+- Existencia de una inconsistencia en un paso marcado como reprobado cuyo resultado real señala que está pendiente de ejecución.
+
+##### Inicio de sesión del cliente
+
+La auditoría del inicio de sesión del cliente fue ejecutada por **Camilla Espinoza** y verificó:
+
+- Acceso a la pantalla de autenticación.
+- Inicio de sesión con credenciales creadas desde el perfil administrador.
+- Redirección al dashboard correspondiente.
+- Visualización del menú del cliente.
+- Restricción de módulos administrativos.
+- Persistencia de la sesión.
+- Carga correcta del panel principal.
+- Separación de permisos según el rol.
+- Protección de rutas administrativas.
+- Funcionamiento general del inicio de sesión.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de gestión de clientes
+
+La auditoría del módulo de clientes fue ejecutada por **Camilla Espinoza** y comprendió 18 verificaciones relacionadas con:
+
+- Registro de nuevos clientes.
+- Validación de nombres.
+- Validación de correo electrónico.
+- Validación de RUC.
+- Validación de teléfono.
+- Control de correos duplicados.
+- Control de nombres duplicados.
+- Cambio de estado activo e inactivo.
+- Aplicación de filtros.
+- Edición de información.
+- Validación de longitud del número telefónico.
+- Control de duplicidad del número telefónico.
+
+Los resultados obtenidos fueron:
+
+| Estado | Cantidad |
+|---|---:|
+| Aprobadas | 15 |
+| Reprobadas | 3 |
+| **Total** | **18** |
+
+Las pruebas reprobadas evidenciaron que:
+
+- El sistema permitió guardar un teléfono de solamente seis dígitos.
+- El sistema permitió guardar un teléfono con una longitud superior a la permitida.
+- El sistema permitió registrar el mismo número telefónico para más de un cliente.
+
+---
+
+#### Auditoría de tickets de soporte
+
+##### Tickets del administrador
+
+La auditoría fue asignada a **Renzo Llerena** y contempló las siguientes pruebas:
+
+- Acceso al listado de tickets.
+- Consulta del detalle de los tickets.
+- Cambio de estado.
+- Registro de comentarios.
+- Validación de estados inválidos.
+- Consulta de identificadores inexistentes.
+- Pruebas de inyección de scripts.
+- Revisión de paginación.
+- Restricción de usuarios no autenticados.
+- Reutilización del token después del cierre de sesión.
+
+Las 10 verificaciones permanecen pendientes de ejecución.
+
+##### Tickets del cliente
+
+La auditoría fue asignada a **Renzo Llerena** y contempló las siguientes pruebas:
+
+- Creación de tickets.
+- Validación de campos obligatorios.
+- Consulta de tickets propios.
+- Consulta del detalle.
+- Intentos de acceso a tickets de otros clientes.
+- Registro de comentarios.
+- Restricción para modificar tickets ajenos.
+- Restricción para cambiar estados.
+- Pruebas de inyección XSS.
+- Intentos de acceder al listado general de tickets.
+
+Las 10 verificaciones permanecen pendientes de ejecución.
+
+---
+
+#### Auditoría de solicitudes y cotizaciones
+
+La auditoría fue ejecutada por **Juan Manuel Santos Torres** y comprendió:
+
+- Acceso a la sección de solicitudes.
+- Creación de solicitudes.
+- Validación de la persistencia de información.
+- Intento de modificar solicitudes de otros usuarios.
+- Visualización de cotizaciones.
+- Descarga de cotizaciones en formato PDF.
+- Aceptación de una cotización.
+- Protección del estado de las cotizaciones.
+- Prevención de acceso a cotizaciones de otros usuarios.
+- Verificación de la cotización desde el perfil administrador.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de dashboards
+
+##### Dashboard del administrador
+
+La auditoría fue ejecutada por **Camilla Espinoza** y evaluó los siguientes aspectos:
+
+- Indicadores de clientes.
+- Contratos activos.
+- Solicitudes pendientes.
+- Cotizaciones pendientes.
+- Tickets abiertos.
+- Ingresos del mes.
+- Pagos pendientes.
+- Gráficos de equipos por estado.
+- Gráficos de tickets por prioridad.
+- Leyendas y categorías.
+- Acciones rápidas.
+- Accesos a solicitudes y tickets.
+- Registro de equipos.
+- Registro de clientes.
+- Organización visual del dashboard.
+- Actualización de indicadores.
+- Correcta presentación de la información.
+- Navegación entre módulos.
+- Restricción de información.
+- Funcionamiento general del panel.
+
+Las 20 verificaciones fueron aprobadas.
+
+##### Dashboard del cliente
+
+La auditoría fue ejecutada por **Camilla Espinoza** y evaluó:
+
+- Contratos activos del cliente.
+- Equipos asociados.
+- Solicitudes pendientes.
+- Cotizaciones pendientes.
+- Tickets abiertos.
+- Facturas pendientes.
+- Restricción de indicadores administrativos.
+- Accesos rápidos al catálogo.
+- Creación de solicitudes.
+- Creación de tickets.
+- Menú lateral.
+- Actualización de indicadores.
+- Distribución visual.
+- Correcta presentación de tarjetas.
+- Navegación hacia módulos relacionados.
+- Visualización exclusiva de información propia.
+- Carga de la información.
+- Persistencia de la sesión.
+- Adaptación de la interfaz.
+- Funcionamiento general del dashboard.
+
+Las 20 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de contratos
+
+##### Contratos del administrador
+
+La auditoría fue ejecutada por **Miguel Román López** y evaluó:
+
+- Acceso al módulo.
+- Listado y paginación.
+- Búsqueda por cliente.
+- Pruebas de inyección SQL.
+- Validación de formularios vacíos.
+- Creación de contratos.
+- Validación de montos.
+- Edición de fechas.
+- Protección de identificadores.
+- Anulación o desactivación de contratos.
+
+Las 10 verificaciones fueron aprobadas.
+
+##### Contratos del cliente
+
+La auditoría fue ejecutada por **Miguel Román López** y evaluó:
+
+- Visualización exclusiva de contratos propios.
+- Consulta del detalle.
+- Uso de identificadores inexistentes.
+- Prevención de ataques IDOR.
+- Descarga de contratos en PDF.
+- Protección de documentos de otros usuarios.
+- Navegación mediante teclado.
+- Adaptación a dispositivos móviles.
+- Restricción de rutas administrativas.
+- Flujo completo del módulo.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de perfiles
+
+##### Perfil del administrador
+
+La auditoría fue ejecutada por **Miguel Román López** y evaluó:
+
+- Modificación de nombres y apellidos.
+- Protección del campo de rol.
+- Prevención de ataques XSS.
+- Validación del correo electrónico.
+- Políticas de contraseñas.
+- Cambio de contraseña.
+- Invalidación de otras sesiones.
+- Carga de imágenes.
+- Restricción de archivos maliciosos.
+- Guardado de la información.
+
+Las 10 verificaciones fueron aprobadas.
+
+##### Perfil del cliente
+
+La auditoría fue ejecutada por **Miguel Román López** y evaluó:
+
+- Validación de campos obligatorios.
+- Navegación mediante teclado.
+- Activación de botones mediante teclado.
+- Uso de caracteres especiales.
+- Prevención de inyección de scripts.
+- Descarte de cambios.
+- Intentos de elevar privilegios.
+- Validación de longitud telefónica.
+- Cierre de sesión.
+- Persistencia de la información.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de catálogo y equipos
+
+##### Catálogo
+
+La auditoría fue ejecutada por **Adrian Valerio Garcia** y verificó:
+
+- Acceso del cliente al catálogo.
+- Visualización de productos.
+- Búsqueda de productos.
+- Aplicación de filtros.
+- Consulta del detalle.
+- Visualización de imágenes y descripciones.
+- Restricción de operaciones administrativas.
+- Persistencia de sesión.
+- Respuestas de la API.
+- Navegación integral.
+
+Las 10 verificaciones fueron aprobadas.
+
+##### Mis equipos
+
+La auditoría fue ejecutada por **Adrian Valerio Garcia** y verificó:
+
+- Acceso al listado de equipos.
+- Registro de un nuevo equipo.
+- Validación de campos.
+- Consulta del detalle.
+- Edición de información.
+- Búsqueda y aplicación de filtros.
+- Persistencia de datos.
+- Restricción de acceso a equipos de otros clientes.
+- Control de autorización.
+- Funcionamiento integral del módulo.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de pagos e inventario
+
+##### Pagos
+
+La auditoría fue ejecutada por **Adrian Valerio Garcia** y verificó:
+
+- Acceso administrativo.
+- Visualización de pagos.
+- Filtros por cliente, estado y fecha.
+- Consulta del detalle.
+- Registro de pagos.
+- Validación de montos.
+- Actualización de estados.
+- Control de pagos duplicados.
+- Restricción del perfil cliente.
+- Trazabilidad del flujo.
+
+Las 10 verificaciones fueron aprobadas.
+
+##### Inventario
+
+La auditoría fue ejecutada por **Adrian Valerio Garcia** y verificó:
+
+- Visualización de productos y equipos.
+- Creación de registros.
+- Validación de campos.
+- Control de stock negativo.
+- Edición de registros.
+- Búsquedas y filtros.
+- Entradas y salidas de stock.
+- Control de códigos duplicados.
+- Restricción del perfil cliente.
+- Flujo integral del inventario.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de modelos de producto
+
+La auditoría fue ejecutada por **Yasser Rentería Palacios** y evaluó:
+
+- Listado de modelos.
+- Creación de modelos.
+- Validación de datos.
+- Edición de modelos.
+- Búsqueda y filtros.
+- Asociación de equipos.
+- Control de duplicidad.
+- Restricción de acceso para clientes.
+- Persistencia de la información.
+- Flujo integral del módulo.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Auditoría de facturación
+
+##### Facturas del administrador
+
+La auditoría fue ejecutada por **Yasser Rentería Palacios** y verificó:
+
+- Listado de facturas.
+- Creación de facturas.
+- Asociación con contratos.
+- Validación de montos y fechas.
+- Consulta del detalle.
+- Búsquedas y filtros.
+- Cambio de estado a pagada.
+- Cambio de estado a vencida.
+- Restricción del perfil cliente.
+- Trazabilidad administrativa.
+
+Las 10 verificaciones fueron aprobadas.
+
+##### Facturas del cliente
+
+La auditoría fue ejecutada por **Yasser Rentería Palacios** y verificó:
+
+- Visualización de facturas propias.
+- Confidencialidad de la información.
+- Consulta del detalle.
+- Prevención de acceso a facturas de terceros.
+- Búsquedas y filtros.
+- Visualización de estados de pago.
+- Descarga de comprobantes.
+- Restricción de operaciones administrativas.
+- Persistencia de la información.
+- Flujo integral de facturación.
+
+Las 10 verificaciones fueron aprobadas.
+
+---
+
+#### Resultados consolidados
+
+| Responsable | Casos | Verificaciones | Aprobadas | Reprobadas | Pendientes | Resultado principal |
+|---|---:|---:|---:|---:|---:|---|
+| Renzo Llerena | 3 | 30 | 1 | 5 | 24 | Casos de autenticación y tickets con pruebas reprobadas y pendientes |
+| Camilla Espinoza | 4 | 68 | 65 | 3 | 0 | Casos aprobados, excepto tres validaciones telefónicas |
+| Juan Manuel Santos Torres | 1 | 10 | 10 | 0 | 0 | Todas las verificaciones aprobadas |
+| Miguel Román López | 4 | 40 | 40 | 0 | 0 | Todas las verificaciones aprobadas |
+| Adrian Valerio Garcia | 4 | 40 | 40 | 0 | 0 | Todas las verificaciones aprobadas |
+| Yasser Rentería Palacios | 3 | 30 | 30 | 0 | 0 | Todas las verificaciones aprobadas |
+| **Total** | **19** | **218** | **186** | **8** | **24** | **Auditoría parcialmente satisfactoria** |
+
+#### Hallazgos principales
+
+Los hallazgos más relevantes fueron los siguientes:
+
+1. Ausencia de bloqueo frente a múltiples intentos fallidos de inicio de sesión.
+2. Falta de penalización después de intentos consecutivos incorrectos.
+3. El token continuó siendo válido después del cierre de sesión.
+4. Las sesiones permanecieron activas después de desactivar una cuenta.
+5. Falta de validación de la longitud mínima y máxima del teléfono.
+6. Falta de control de duplicidad del número telefónico.
+7. Las auditorías de tickets de administrador y cliente permanecen pendientes.
+8. Existen inconsistencias entre algunos estados y los resultados reales registrados.
+9. Varias fechas requieren ser corregidas y uniformizadas.
+10. Se requiere completar las pruebas pendientes antes del cierre definitivo de la auditoría.
+
+#### Conclusión
+
+La auditoría permitió evaluar de manera integral los principales módulos de PcPedia para los perfiles administrador y cliente. De las 218 verificaciones registradas, 186 fueron aprobadas, lo que representa un nivel de cumplimiento del **85.32 %**.
+
+Los módulos de solicitudes, cotizaciones, dashboards, contratos, perfiles, catálogo, equipos, pagos, inventario, modelos y facturación obtuvieron resultados mayoritariamente satisfactorios. Sin embargo, se identificaron debilidades importantes en el inicio de sesión administrativo, principalmente en el bloqueo por fuerza bruta, la revocación de sesiones y el control de cuentas inactivas.
+
+También se encontraron deficiencias en la validación de números telefónicos dentro del módulo de clientes. Asimismo, las pruebas de tickets todavía no han sido ejecutadas completamente, por lo que dichos módulos no pueden considerarse conformes hasta cerrar las verificaciones pendientes.
+
+En consecuencia, la auditoría debe considerarse **parcialmente satisfactoria**, debido a que existen ocho pruebas reprobadas, 24 pendientes y varias inconsistencias documentales que requieren corrección antes del cierre definitivo.
+
 ### 6.4.2. Auditoría recibida.
 #### 6.4.2.1. Información del grupo auditor.
 #### 6.4.2.2. Cronograma de auditoría recibida.
