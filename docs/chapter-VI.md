@@ -305,15 +305,87 @@ Las preguntas principales fueron:
 | Link | [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210334_upc_edu_pe/IQBIUqqLXAH4SJPzByX9OzdGAUNio18RULQrItvzFyKrt3o?e=qwdetZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | Resumen | **Perfil y experiencia:**<br>Lucía Carbajal es una joven de 19 años que pertenece al segmento relacionado con la administración y gestión de casas de reposo. Ha realizado voluntariado en este tipo de instituciones, experiencia que le permitió conocer de cerca las actividades del personal y las necesidades de atención de los adultos mayores.<br><br>**Percepción y necesidades:**<br>Considera que la aplicación sería útil y de mucha ayuda para las casas de reposo, ya que permitiría organizar, centralizar y consultar la información de los residentes de manera más rápida. También facilitaría las labores del personal al reducir la dependencia de registros manuales y documentos separados.<br><br>**Mejoras propuestas:**<br>Como principal mejora, Lucía propone que la aplicación permita visualizar de manera más clara y detallada la información de los medicamentos, incluyendo sus nombres, dosis y horarios de administración. Asimismo, considera importante mejorar la visualización de los horarios de los trabajadores, para identificar fácilmente sus turnos, disponibilidad y responsabilidades. |
 
-### 6.3.3. Evaluaciones según heurísticas. 
-## 6.4. Auditoría de Experiencias de Usuario.  
-### 6.4.1. Auditoría realizada. 
-### 6.4.1.1. Información del grupo auditado. 
-### 6.4.1.2. Cronograma de auditoría realizada. 
-### 6.4.1.3. Contenido de auditoría realizada. 
-### 6.4.2. Auditoría recibida. 
-### 6.4.2.1. Información del grupo auditor. 
-### 6.4.2.2. Cronograma de auditoría recibida. 
-### 6.4.2.3. Contenido de auditoría recibida. 
-### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+### 6.3.3. Evaluaciones según heurísticas
 
+A continuación, se presenta la evaluación del prototipo y sistema de la plataforma Veyra basada en las 10 heurísticas de usabilidad de Jakob Nielsen, identificando el nivel de cumplimiento actual de nuestra interfaz.
+
+| # | Heurística | Cumple (Sí/No/Parcial) | Observación / Evidencia |
+|---|---|---|---|
+| 1 | Visibilidad del estado del sistema | Sí | El sistema utiliza componentes visuales (Snackbars/Toasts de Angular Material) para confirmar acciones exitosas como el guardado de un residente o la emisión de alertas de error en la API. |
+| 2 | Relación entre el sistema y el mundo real | Sí | Se utiliza terminología familiar para el sector médico y administrativo (Ej. "Nursing Home", "Residents", "Stock de Medicamentos", "Métricas de Salud"). |
+| 3 | Control y libertad del usuario | Parcial | Los usuarios pueden navegar fluidamente entre módulos mediante el Sidebar, pero en algunos flujos de creación (ej. crear empleado) el botón de "Cancelar" o retroceder podría ser más prominente. |
+| 4 | Consistencia y estándares | Sí | Se mantiene una interfaz uniforme en todos los *bounded contexts* mediante el uso consistente de tablas, formularios y paletas de colores definidos por Angular Material. |
+| 5 | Prevención de errores | Parcial | Los formularios (ej. registro de IAM y Nursing) cuentan con validación reactiva en tiempo real; sin embargo, se detectaron áreas de mejora en la prevención visual (ej. alertas antes de que el stock llegue a cero). |
+| 6 | Reconocimiento antes que recuerdo | Sí | El módulo *Analytics* centraliza la información vital (ocupación, residentes) en el Dashboard, evitando que el usuario deba memorizar datos de diferentes pantallas. |
+| 7 | Flexibilidad y eficiencia de uso | Parcial | Existen filtros y buscadores en las listas de residentes e inventario, pero faltan atajos de teclado o vistas resumidas aceleradas para administradores avanzados. |
+| 8 | Estética y diseño minimalista | Sí | La interfaz sigue un enfoque minimalista sin sobrecarga cognitiva, mostrando únicamente las columnas y acciones esenciales en cada tabla de datos. |
+| 9 | Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores | Sí | Al ingresar credenciales inválidas o datos erróneos, el sistema atrapa la excepción del backend (Spring Boot) y muestra un mensaje comprensible en la UI indicando qué falló. |
+| 10 | Ayuda y documentación | Parcial | El sistema es intuitivo, pero carece de un módulo integrado de ayuda ("Help Center") o *tooltips* explicativos detallados para la configuración de planes de pago y roles. |
+
+---
+
+## 6.4. Auditoría de Experiencias de Usuario
+
+### 6.4.1. Auditoría realizada
+
+#### 6.4.1.1. Información del grupo auditado
+*   **Nombre del Grupo:** EcatLeasing
+*   **Proyecto:** PCpedia
+*   **Integrantes:** Joaquín Enrique Carranza Tesén, Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+
+#### 6.4.1.2. Cronograma de auditoría realizada
+| Actividad | Fecha de Inicio | Fecha de Fin | Responsables (NovaTech) |
+|---|---|---|---|
+| Auditoría de Autenticación, Roles y Seguridad | 06/07/2026 | 06/07/2026 | Equipo Auditor (NovaTech) |
+| Auditoría del Módulo de Clientes y Perfiles | 07/07/2026 | 07/07/2026 | Equipo Auditor (NovaTech) |
+| Auditoría de Módulos de Facturación y Tickets | 07/07/2026 | 07/07/2026 | Equipo Auditor (NovaTech) |
+
+#### 6.4.1.3. Contenido de auditoría realizada
+Durante la ejecución de la auditoría al aplicativo PCpedia, nuestro equipo encontró los siguientes hallazgos de usabilidad y seguridad de alta criticidad en sus flujos:
+
+| ID | Módulo / Componente | Tipo de Hallazgo | Severidad | Descripción del Hallazgo |
+|---|---|---|---|---|
+| H-01 | Admin Login | Seguridad / Funcional | Alta | **Ausencia de control de fuerza bruta:** Al enviar 5 intentos consecutivos de login con contraseña incorrecta, el sistema no bloquea la cuenta ni exige CAPTCHA, permitiendo intentos ilimitados. |
+| H-02 | Admin Login | Seguridad | Alta | **Persistencia de sesión insegura:** El cierre de sesión no revoca el acceso desde el punto de vista del servidor. Es posible reutilizar un token capturado contra endpoints protegidos tras hacer *logout*. |
+| H-03 | Admin Login | Seguridad | Alta | **Falta de validación de estado en peticiones:** Con la sesión vigente, si se desactiva una cuenta desde el panel de administración, el acceso se mantiene activo. El estado solo se valida al hacer login. |
+| H-04 | Admin Clients | Usabilidad / Validación | Media | **Validaciones de longitud deficientes:** Al editar el campo "Teléfono", el sistema permite guardar valores de 6 dígitos o mayores a 9 dígitos, ignorando la regla de negocio de exactamente 9 dígitos numéricos. |
+| H-05 | Admin Clients | Usabilidad / Validación | Baja | **Falta de control de duplicidad:** El sistema permite registrar diferentes clientes utilizando el mismo número de teléfono. |
+
+---
+
+### 6.4.2. Auditoría recibida
+
+#### 6.4.2.1. Información del grupo auditor
+*   **Nombre del Grupo:** EcatLeasing
+*   **Proyecto:** PCpedia
+*   **Integrantes:** Joaquín Enrique Carranza Tesén (Auditor Líder), Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+| Actividad | Fecha | Detalle de la Sesión |
+|---|---|---|
+| Reunión de Apertura y Mapeo Funcional | 05/07/2026 | Revisión de los criterios de auditoría (ISO/IEC 25010, DDD, UI/UX) y alcance de los módulos de Veyra. |
+| Pruebas de Módulos IAM, Nursing y HCM | 05/07/2026 | Verificación de validaciones en frontend, RBAC, gestión de casas de reposo, stock e inventario. |
+| Pruebas de Módulos Payments y Analytics | 05/07/2026 | Evaluación del Dashboard estadístico, planes de suscripción de Stripe y transacciones. |
+| Reunión de Cierre | 05/07/2026 | Entrega formal del informe detallando No Conformidades (NC) y Oportunidades de Mejora (OM). |
+
+#### 6.4.2.3. Contenido de auditoría recibida
+El equipo auditor verificó un total de 7 módulos funcionales y 14 *User Stories*, contrastando el sistema en producción contra nuestros requerimientos. Los hallazgos reportados fueron:
+
+| ID | Módulo Evaluado | Severidad | Descripción del Hallazgo |
+|---|---|---|---|
+| NC-01 | IAM | Menor | **Autenticación multifactor (MFA):** La funcionalidad está documentada en la TS18 pero su implementación en el frontend es solo parcial. |
+| NC-02 | Payments | Menor | **Historial de transacciones:** El registro visual del historial de transacciones (Stripe) no se encuentra completamente implementado en la interfaz. |
+| OM-01 | Nursing / Inventory | Mejora | **Alertas de Stock:** Faltan alertas visuales más prominentes para advertir cuando los medicamentos alcanzan niveles mínimos. |
+| OM-02 | Analytics | Mejora | **Accesibilidad del Dashboard:** Se requiere que el dashboard estadístico sea más visible o tenga un acceso más rápido desde la pantalla de inicio (Home). |
+| OM-03 | Questions | Mejora | **Comunicación en Tiempo Real:** El sistema de mensajería carece de notificaciones por WebSocket para alertar a las familias y al staff en tiempo real. |
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+A partir del informe recibido, el equipo de NovaTech priorizó y ejecutó las siguientes modificaciones en la plataforma Veyra para solucionar los errores:
+
+| ID Hallazgo | Modificación Realizada en el Prototipo / Sistema | Estado |
+|---|---|---|
+| NC-01 | Se completó la implementación del flujo MFA en el Frontend de Angular, añadiendo las pantallas de confirmación de código TOTP vinculadas a las respuestas de la API. | Subsanado |
+| NC-02 | Se diseñó y conectó una tabla en la vista de Pagos que consume y muestra el historial de transacciones previas extraído desde Stripe. | Subsanado |
+| OM-01 | Se agregó lógica condicional en la vista de inventario (`*ngIf`) para mostrar "badges" rojos de advertencia cuando la cantidad de un medicamento es menor al nivel crítico. | Subsanado |
+| OM-02 | Se reestructuró la navegación principal, colocando un acceso directo unificado hacia las métricas del *Analytics Dashboard* nada más iniciar sesión. | Subsanado |
+| OM-03 | Se documentó la arquitectura para implementar WebSockets mediante SignalR/STOMP en el siguiente *sprint* de integración del módulo *Questions*. | En Proceso |
