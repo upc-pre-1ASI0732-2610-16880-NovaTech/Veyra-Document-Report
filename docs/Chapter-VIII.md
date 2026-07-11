@@ -175,7 +175,199 @@ Desde la perspectiva del negocio, el sistema permite registrar instituciones, ad
 
 ### 8.2. Experiment Design
 
-*(Las subsecciones 8.2.1 a 8.2.8 se mantienen con su enfoque metodológico, añadiendo métricas de éxito directamente vinculadas a las US/TS seleccionadas. Por ejemplo, en 8.2.2 Domain Business Metrics, la "Tasa de éxito en registros" validará la **US14**, y la "Tasa de error guiado" validará la **US44**).*
+Esta sección detalla el diseño metodológico utilizado para validar los cuatro Experiment Cards definidos en 8.1.5, estableciendo hipótesis formales, métricas de negocio, condiciones de éxito y el plan de instrumentación necesario para recolectar evidencia objetiva antes de cerrar cada ciclo de experimentación.
+
+#### 8.2.1. Hypotheses
+
+Se formuló una hipótesis Lean UX (formato "Creemos que... Sabremos que es verdad cuando...") por cada Experiment Card, ligada a su US/TS correspondiente.
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">US/TS</th>
+      <th align="left">Hypothesis Statement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><strong>TS-ST001</strong></td>
+      <td align="left">Creemos que rediseñar el Dashboard de Estadísticas priorizando ocupación real y alertas críticas de inventario reducirá el tiempo que un administrador necesita para identificar una situación urgente. Sabremos que es verdad cuando los administradores ubiquen alertas críticas en menos de 10 segundos y el Dashboard mantenga un puntaje de Rendimiento (Lighthouse) igual o superior a 90.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>US44 / US14</strong></td>
+      <td align="left">Creemos que reemplazar los mensajes de error genéricos por notificaciones (toast) con el detalle real del backend y un botón de reintento visible, junto con un endpoint real de registro de toma de medicamentos, reducirá los errores operativos y la necesidad de soporte técnico durante el registro de medicación. Sabremos que es verdad cuando el personal asistencial pueda resolver un error de registro sin ayuda externa y el endpoint <code>POST /residents/{residentId}/medications/{medicationId}/administrations</code> descuente el stock correctamente.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-RM002</strong></td>
+      <td align="left">Creemos que exponer un endpoint GET optimizado con la información del residente permitirá construir, en una siguiente iteración, un resumen de salud rápido que mejore la toma de decisiones clínicas. Sabremos que es verdad cuando el personal asistencial reporte identificar el estado de salud relevante de un residente sin necesidad de navegar por múltiples vistas.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-RM-005</strong></td>
+      <td align="left">Creemos que un endpoint PATCH para actualizaciones puntuales (sin reenviar el registro completo) reducirá los pasos y errores al actualizar datos de residentes y personal. Sabremos que es verdad cuando una actualización parcial (ej. sin cambiar la foto) se complete en un solo envío sin errores 400 y con una reducción medible de clics frente al flujo As-Is.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 8.2.2. Domain Business Metrics
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">US/TS</th>
+      <th align="left">Métrica de Negocio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><strong>TS-ST001</strong></td>
+      <td align="left">Tiempo promedio de identificación de una alerta crítica (ocupación/stock/vencimiento) desde el ingreso al Dashboard.</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>US44 / US14</strong></td>
+      <td align="left">Tasa de éxito en el registro de tomas de medicamento y tasa de error guiado (errores que el usuario resuelve sin soporte técnico).</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-RM002</strong></td>
+      <td align="left">Tiempo de decisión clínica (desde que el personal abre el expediente hasta que actúa sobre la información mostrada).</td>
+    </tr>
+    <tr>
+      <td align="left"><strong>TS-RM-005</strong></td>
+      <td align="left">Número de clics/pasos y tasa de error (400) al completar una actualización de datos de residente o personal.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 8.2.3. Measures
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Métrica</th>
+      <th align="left">Cómo se mide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">Tiempo de identificación de alerta crítica</td>
+      <td align="left">Cronometraje durante la entrevista de validación (8.3.4.2), desde el login/ingreso al Dashboard hasta que el entrevistado señala la alerta correcta.</td>
+    </tr>
+    <tr>
+      <td align="left">Tasa de éxito / error guiado en registro de medicamentos</td>
+      <td align="left">Código de respuesta HTTP del endpoint de administración de medicamentos (200/201 vs. 400) contrastado con la percepción del usuario reportada en la entrevista (¿resolvió el error sin ayuda?).</td>
+    </tr>
+    <tr>
+      <td align="left">Tiempo de decisión clínica</td>
+      <td align="left">Verificación de la existencia y cobertura funcional de la vista de expediente (contacto, alergias, signos vitales) frente a lo que el personal necesita consultar; ante la ausencia de una vista unificada, la métrica no puede recolectarse aún de forma fiable (ver 8.4.1).</td>
+    </tr>
+    <tr>
+      <td align="left">Clics/pasos y tasa de error en actualización</td>
+      <td align="left">Revisión directa del código (assembler de actualización) y pruebas end-to-end contra el ambiente desplegado, verificando que un PATCH sin cambio de foto no produzca error 400.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 8.2.4. Conditions
+
+Se define como condición de éxito para cada hipótesis:
+
+- **TS-ST001:** tiempo de identificación de alerta crítica < 10 segundos y Rendimiento (Lighthouse) ≥ 90.
+- **US44 / US14:** el endpoint de administración de medicamentos responde 200/201 con descuento correcto de stock, y el usuario reporta poder reintentar sin soporte técnico ante un error.
+- **TS-RM002:** el personal asistencial identifica el estado relevante del residente sin navegar por más de una vista adicional a la de detalle.
+- **TS-RM-005:** 0% de tasa de error 400 en actualizaciones parciales que no modifican la foto, verificado en producción.
+
+Una hipótesis se considera **no concluyente** (y no rechazada) cuando no existe aún evidencia cuantitativa suficiente para pronunciarse, en lugar de forzar una conclusión sin sustento (ver el caso de TS-RM002 en 8.4.1).
+
+#### 8.2.5. Scale Calculations and Decisions
+
+Para las métricas cuantitativas (tiempo de identificación de alerta, puntaje de Rendimiento) se utiliza una escala de razón directa (segundos, puntaje 0-100 de Lighthouse), permitiendo comparación directa contra el umbral de la condición de éxito (8.2.4). Para las métricas cualitativas obtenidas por entrevista (percepción de claridad del error, confianza en la información mostrada) se utiliza una escala ordinal de 3 niveles (Baja / Moderada / Alta), registrada textualmente en 8.3.4.2. La decisión de validar, descartar o mantener como no concluyente una hipótesis se toma comparando el resultado obtenido (cuantitativo u ordinal) contra la condición de éxito definida, priorizando siempre la evidencia de implementación real (8.3.3) sobre la percepción subjetiva cuando ambas están disponibles.
+
+#### 8.2.6. Methods Selection
+
+Se seleccionaron los siguientes métodos, combinando validación técnica y de usuario:
+
+- **Entrevistas de validación semiestructuradas** (8.3.4) con un representante de cada rol clave (administrador, personal asistencial, familiar), para capturar percepción cualitativa.
+- **Auditorías de rendimiento (Lighthouse)** sobre el ambiente desplegado, para validar que las mejoras de UI no degradan la performance percibida (8.3.3.3).
+- **Pruebas directas contra la API desplegada** (vía cliente HTTP) para verificar que los endpoints priorizados cumplen sus criterios de aceptación y para reproducir errores reportados en producción antes de cerrarlos como corregidos (8.3.3.5).
+- **Revisión de código contra el informe** (code-to-documentation reconciliation), utilizada específicamente para detectar brechas entre lo documentado y lo implementado, como en los casos de TS17, TS18, US38, TS-RM-005 y TS-NH001.
+
+Se priorizaron métodos de bajo costo y ejecución rápida (entrevistas breves, pruebas directas de API) dado el alcance y tiempo disponible para el ciclo de experimentación de este release.
+
+#### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Goal</th>
+      <th align="left">KPI</th>
+      <th align="left">Métrica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">Reducir el tiempo de acceso a información operativa crítica</td>
+      <td align="left">% de administradores que ubican una alerta crítica en menos de 10s</td>
+      <td align="left">Tiempo de identificación de alerta (TS-ST001)</td>
+    </tr>
+    <tr>
+      <td align="left">Reducir errores operativos en registro de medicación</td>
+      <td align="left">Tasa de error guiado (resuelto sin soporte) vs. tasa de error total</td>
+      <td align="left">Códigos de respuesta HTTP + percepción de claridad del error (US44/US14)</td>
+    </tr>
+    <tr>
+      <td align="left">Mejorar la toma de decisiones clínicas</td>
+      <td align="left">% de personal que identifica el estado relevante sin navegación adicional</td>
+      <td align="left">Cobertura funcional del expediente / tiempo de decisión (TS-RM002)</td>
+    </tr>
+    <tr>
+      <td align="left">Simplificar la actualización de datos</td>
+      <td align="left">Tasa de error 400 en actualizaciones parciales</td>
+      <td align="left">Resultado de pruebas end-to-end sobre PATCH (TS-RM-005)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 8.2.8. Web and Mobile Tracking Plan
+
+Dado que el alcance de este release se concentró en Landing Page, Frontend Web Application y RESTful API/Backend (sin aplicación móvil nativa, según lo indicado en 8.3.3.4), el tracking plan se limita al canal web. Se definen los siguientes eventos mínimos para instrumentar las hipótesis de 8.2.1 en una siguiente iteración con analítica embebida (ej. Google Analytics 4):
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Evento</th>
+      <th align="left">Disparador</th>
+      <th align="left">Propiedades</th>
+      <th align="left">US/TS relacionado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><code>dashboard_alert_viewed</code></td>
+      <td align="left">El usuario visualiza el panel de Critical Alerts en <code>/analytics/dashboard</code></td>
+      <td align="left">tipo de alerta, tiempo desde login</td>
+      <td align="left">TS-ST001</td>
+    </tr>
+    <tr>
+      <td align="left"><code>medication_administration_result</code></td>
+      <td align="left">Respuesta del endpoint de administración de medicamentos</td>
+      <td align="left">status (success/error), mensaje de error, si hubo reintento</td>
+      <td align="left">US14, US44</td>
+    </tr>
+    <tr>
+      <td align="left"><code>resident_record_viewed</code></td>
+      <td align="left">El usuario abre el detalle o historial médico de un residente</td>
+      <td align="left">sección visitada (contacto, alergias), tiempo en la vista</td>
+      <td align="left">TS-RM002</td>
+    </tr>
+    <tr>
+      <td align="left"><code>resident_update_submitted</code></td>
+      <td align="left">Envío del formulario PATCH de residente o personal</td>
+      <td align="left">campos modificados, resultado (200/400), incluyó foto nueva</td>
+      <td align="left">TS-RM-005</td>
+    </tr>
+  </tbody>
+</table>
+
+Esta instrumentación queda registrada como trabajo pendiente para la siguiente iteración (ver 8.4.2), dado que en este release la evidencia se recolectó mediante entrevistas directas y pruebas técnicas en lugar de analítica embebida en producción.
 
 ---
 
