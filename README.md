@@ -38,9 +38,9 @@
 
 
 | Versión | Fecha      | Autor                         | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------- | ---------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TB1     | 01/05/2026 | Todos los miembros del equipo | Desarrollo inicial del informe del proyecto Veyra. Se elaboraron los Capítulos 1, 2, 3, 4 y 5, incluyendo introducción del proyecto, análisis del problema, entrevistas y Needfinding, definición de épicas e historias de usuario, Product Backlog, diseño UX/UI, arquitectura de software, Landing Page y organización general de la propuesta tecnológica. Además, se realizaron revisiones colaborativas de redacción, coherencia y estructura del documento.                                                                                          |
-| TP1     | 15/05/2026 | Todos los miembros del equipo | Actualización técnica y funcional del proyecto. Se incorporaron actividades relacionadas con pruebas unitarias, pruebas de integración, pruebas de sistema y escenarios BDD. Asimismo, se implementaron procesos de Continuous Integration (CI) y Continuous Delivery/Deployment (CD), incluyendo automatización de compilaciones, validaciones y despliegues. Finalmente, se realizaron correcciones generales del informe, mejoras de redacción, validación de diagramas, revisión de arquitectura y actualización de evidencias y commits del proyecto. |
+|---------| ---------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AV1     | 01/05/2026 | Todos los miembros del equipo | Desarrollo inicial del informe del proyecto Veyra. Se elaboraron los Capítulos 1, 2, 3, 4 y 5, incluyendo introducción del proyecto, análisis del problema, entrevistas y Needfinding, definición de épicas e historias de usuario, Product Backlog, diseño UX/UI, arquitectura de software, Landing Page y organización general de la propuesta tecnológica. Además, se realizaron revisiones colaborativas de redacción, coherencia y estructura del documento.                                                                                          |
+| TB1     | 15/05/2026 | Todos los miembros del equipo | Actualización técnica y funcional del proyecto. Se incorporaron actividades relacionadas con pruebas unitarias, pruebas de integración, pruebas de sistema y escenarios BDD. Asimismo, se implementaron procesos de Continuous Integration (CI) y Continuous Delivery/Deployment (CD), incluyendo automatización de compilaciones, validaciones y despliegues. Finalmente, se realizaron correcciones generales del informe, mejoras de redacción, validación de diagramas, revisión de arquitectura y actualización de evidencias y commits del proyecto. |
 
 
 ---
@@ -51,7 +51,7 @@
 
 **Link del repositorio-Informe**: https://github.com/upc-pre-1ASI0732-2610-16880-NovaTech/Veyra-Document-Report
 
-**Reporte de colaboración de la entrega del TB1**:
+**Reporte de colaboración de la entrega del AV1**:
 
 Durante la primera fase de elaboración del informe, el equipo Veyra centró sus esfuerzos en la construcción de los fundamentos conceptuales, de investigación y diseño inicial del proyecto. Cada integrante asumió un rol activo en la redacción, modelado y documentación de secciones clave del reporte, asegurando una coherencia entre la teoría, la metodología y la propuesta tecnológica.
 
@@ -60,7 +60,7 @@ Finalmente, estos gráficos representan la cantidad de commits realizados por ca
 
 ![Commits 1](assets/img/introduction/contributions.png)
 
-**Reporte de colaboración de la entrega del TP1**:
+**Reporte de colaboración de la entrega del TB1**:
 
 Durante la segunda fase de desarrollo del proyecto, el equipo Veyra enfocó sus esfuerzos en la implementación técnica, validación y aseguramiento de calidad del sistema. Cada integrante participó activamente en actividades relacionadas con pruebas de software, integración continua, despliegue automatizado y verificación funcional de la aplicación, contribuyendo al fortalecimiento de la arquitectura y estabilidad de la plataforma.
 
@@ -76,11 +76,11 @@ Finalmente, estos gráficos representan la cantidad de commits realizados por ca
 
 Este gráfico ofrece una visualización de las veces que se ha clonado nuestro repositorio, junto con las fechas correspondientes a cada evento. También muestran datos sobre el número de visitas que ha recibido el repositorio de nuestro equipo a lo largo del tiempo.
 
-**TB1**
+**AV1**
 
 ![Ramificación 1](assets/img/introduction/flow.png)
 
-**TP1**
+**TB1**
 ![Ramificación 2](assets/img/introduction/flow2.png)
 
 ---
