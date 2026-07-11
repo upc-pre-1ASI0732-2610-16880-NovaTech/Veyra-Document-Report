@@ -1163,8 +1163,52 @@ También se encontraron deficiencias en la validación de números telefónicos 
 
 En consecuencia, la auditoría debe considerarse **parcialmente satisfactoria**, debido a que existen ocho pruebas reprobadas, 24 pendientes y varias inconsistencias documentales que requieren corrección antes del cierre definitivo.
 
-### 6.4.2. Auditoría recibida.
-#### 6.4.2.1. Información del grupo auditor.
-#### 6.4.2.2. Cronograma de auditoría recibida.
-#### 6.4.2.3. Contenido de auditoría recibida.
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+### 6.4.2. Auditoría recibida
+
+En contraparte, nuestra aplicación Veyra fue auditada por el grupo hermano para validar el nivel de cumplimiento funcional frente a los requerimientos documentados en nuestro Informe de Software.
+
+#### 6.4.2.1. Información del grupo auditor
+*   **Nombre del Grupo:** EcatLeasing
+*   **Proyecto:** PCpedia
+*   **Equipo Auditor:** Joaquín Enrique Carranza Tesén (Auditor Líder), Rúbens Bendezu Navarro, Sebastian Eduardo Hernandez Poma, Emily Juliette Arroyo Gonzales.
+*   **Observadores:** Docente Julio M. Noriega Meléndez.
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+| Actividad | Fecha | Detalle de la Sesión |
+|---|---|---|
+| Revisión Arquitectónica y CI/CD | 05/07/2026 | Análisis del despliegue en Firebase, Render, Aiven y revisión de los 35 tests en GitHub Actions. |
+| Pruebas de Módulos IAM, Nursing y HCM | 05/07/2026 | Verificación de los *Bounded Contexts*, validaciones de Angular y pruebas de integración ITC-01 a ITC-06. |
+| Pruebas de Módulos Payments y Analytics | 05/07/2026 | Comprobación de integración de la pasarela Stripe y validación de generación de reportes en el Dashboard. |
+
+#### 6.4.2.3. Contenido de auditoría recibida
+El equipo de EcatLeasing evaluó un total de 7 módulos (IAM, Nursing, HCM, Analytics, Payments, Activities, Questions) cubriendo más de 14 *User Stories*. La auditoría arrojó un resultado general **Conforme**, superando todas las pruebas unitarias y de integración. 
+
+Sin embargo, se reportaron de manera oficial **2 No Conformidades (NC)** y **7 Oportunidades de Mejora (OM)** detalladas a continuación:
+
+| ID | Módulo Evaluado | Severidad | Descripción del Hallazgo (Según Informe) | Referencia |
+|---|---|---|---|---|
+| NC-01 | IAM | Menor | **MFA Parcial:** La autenticación multifactor (MFA) documentada en TS18 se evidencia con implementación parcial en frontend. | Chapter III, TS18 |
+| NC-02 | Payments | Menor | **Historial de transacciones:** El registro visual del historial de transacciones (Stripe) no se encuentra completamente implementado. | Chapter III, TS17 |
+| OM-01 | Nursing / Inventory | Mejora | **Alertas Visuales:** Faltan alertas visuales más prominentes para medicamentos con stock bajo. | Chapter VIII, US14 |
+| OM-02 | Analytics | Mejora | **Accesibilidad:** Dashboard más visible/accesible directamente desde la vista Home (Experimento #1). | Chapter VIII, TS-ST001 |
+| OM-03 | Questions | Mejora | **Notificaciones:** Agregar notificaciones en tiempo real (WebSocket) para la mensajería de comunicación con familias. | Chapter VIII, US20 |
+| OM-04 | Activities | Mejora | **Participación:** Completar la funcionalidad de registro de asistencia/participación en actividades. | Chapter IV |
+| OM-05 | General (DevOps)| Mejora | **Monitoreo:** Implementar monitoreo con Azure Monitor / Application Insights como estaba documentado. | Chapter VII |
+| OM-06 | General (Móvil) | Mejora | **Desarrollo Móvil:** Cumplir con el desarrollo de la app móvil mencionada en las conclusiones futuras. | Conclusions |
+| OM-07 | Nursing (IoT) | Mejora | **Integración IoT:** Planificar integración IoT para monitoreo en tiempo real mediante sensores en residentes. | Chapter I, IV |
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+Nuestro equipo de desarrollo (NovaTech) procedió a realizar un análisis de impacto de los hallazgos reportados. Todas las No Conformidades fueron corregidas inmediatamente en código, y las Oportunidades de Mejora fueron priorizadas para el *sprint* actual o derivadas al Backlog futuro de la plataforma:
+
+| ID Hallazgo | Modificación y Acción Técnica Realizada en Veyra | Estado Actual |
+|---|---|---|
+| **NC-01** | Se implementó y conectó la vista de verificación de código OTP (Time-Based One-Time Password) en Angular, cerrando el flujo completo de autenticación de dos factores con el backend. | **Subsanado** |
+| **NC-02** | Se desarrolló el componente visual `<app-transaction-history>` que consume el endpoint de pagos, listando las suscripciones y montos procesados exitosamente por Stripe. | **Subsanado** |
+| **OM-01** | Se programó una directiva estructural en la tabla de inventario que colorea en rojo la fila y emite un *badge* de advertencia cuando el umbral de un medicamento llega a su mínimo definido. | **Subsanado** |
+| **OM-02** | Se rediseñó el ruteo del frontend (`app-routing.module.ts`) para que el Home actúe directamente como contenedor del Dashboard, reduciendo la cantidad de clics necesarios. | **Subsanado** |
+| **OM-03** | Se inició la configuración de dependencias de `STOMP.js` y `SockJS` en Angular para habilitar WebSockets bidireccionales con Spring Boot en el módulo Questions. | **En Proceso** |
+| **OM-04** | Se incorporó una columna de "Check-in" en el componente de calendario de actividades, permitiendo marcar la asistencia de los residentes con un solo clic. | **Subsanado** |
+| **OM-05** | Se configuró y anidó la instrumentación de *Application Insights* dentro del *pipeline* de despliegue, permitiendo monitorear las latencias y carga en el servidor Render. | **Subsanado** |
+| **OM-06** | El desarrollo móvil ha sido trasladado y formalizado como una Épica principal en el Product Backlog para la Versión 2.0 (Release Futuro), ya que excede el alcance del entregable actual. | **Derivado a Backlog** |
+| **OM-07** | Al igual que la app móvil, el soporte de telemetría IoT ha sido documentado como una historia técnica a investigar para integraciones futuras con *hardware* de las casas de reposo. | **Derivado a Backlog** |
