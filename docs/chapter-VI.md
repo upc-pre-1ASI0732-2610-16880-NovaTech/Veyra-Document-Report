@@ -495,3 +495,62 @@ Las preguntas principales fueron:
 | Evidencia | ![Entrevista](../assets/img/chapter-VII/3.png) |
 | Link | [Link Entrevistas](https://1drv.ms/f/c/2c6332e5e5a79287/IgD2yd1BY5a6Sr_hWajsS2ysAbeWTNuVf1aZDLJKQJSIz7k?e=jWO9O3) |
 | Resumen | Paolo Carrillo tuvo una percepción positiva de la aplicación y destacó que puede facilitar considerablemente la administración de una casa de reposo. Consideró útil que la información de los residentes se encuentre organizada y centralizada en una sola plataforma, ya que esto permitiría consultar rápidamente sus datos, necesidades y registros importantes. También valoró que la aplicación podría reducir el trabajo manual del personal y mejorar el control de las actividades realizadas dentro de la institución. |
+
+### 6.3.3. Evaluaciones según heurísticas.
+
+**Heurísticas y Recomendaciones:**
+
+**Problema #1: La información de medicamentos debe mostrarse con mayor detalle y prioridad visual.**
+
+**Heurística violada:** Visibilidad del estado del sistema.
+
+**Descripción del problema:** En las entrevistas se identificó que la información relacionada con medicamentos es uno de los elementos más importantes para la gestión de residentes. Sin embargo, si la interfaz no muestra de forma inmediata el nombre del medicamento, dosis, horario de administración, stock disponible y estado de la próxima toma, el personal puede tener dudas al momento de registrar o consultar un tratamiento.
+
+**Recomendación:** Rediseñar la sección de medicamentos con una vista priorizada por residente, mostrando nombre, dosis, frecuencia, horario, stock y estado de administración. Se recomienda usar etiquetas visuales como "Pendiente", "Administrado", "Stock bajo" o "Próximo a vencer" para que el personal identifique rápidamente la situación de cada medicamento.
+
+**Problema #2: Los horarios del personal necesitan una visualización más clara para turnos, disponibilidad y responsabilidades.**
+
+**Heurística violada:** Reconocimiento antes que recuerdo.
+
+**Descripción del problema:** Se señaló la necesidad de mejorar la visualización de los horarios de trabajadores para identificar fácilmente turnos, disponibilidad y responsabilidades. Si esta información se presenta de manera dispersa, el administrador debe recordar asignaciones o revisar varias secciones antes de tomar decisiones operativas.
+
+**Recomendación:** Implementar una vista de calendario o tablero semanal donde se visualicen los turnos por día, hora, rol y empleado asignado. Además, se recomienda incluir filtros por cargo, disponibilidad y residente relacionado, para que el usuario pueda reconocer la información sin depender de memoria o búsquedas repetidas.
+
+**Problema #3: La plataforma debe reducir aún más la dependencia de registros manuales y documentos separados.**
+
+**Heurística violada:** Flexibilidad y eficiencia de uso.
+
+**Descripción del problema:** Los entrevistados valoraron que Veyra centralice información de residentes, trabajadores, pagos, actividades y procesos administrativos. No obstante, si algunas acciones frecuentes requieren demasiados pasos o no cuentan con accesos directos, el usuario podría seguir recurriendo a registros externos para completar su trabajo diario.
+
+**Recomendación:** Añadir accesos rápidos desde el dashboard hacia las tareas más recurrentes: registrar residente, revisar medicamentos, consultar pagos, gestionar actividades y revisar turnos. También se recomienda mantener un panel de resumen con alertas operativas para reducir navegación innecesaria.
+
+**Problema #4: La consulta de datos del residente debe facilitar una lectura rápida de necesidades y registros importantes.**
+
+**Heurística violada:** Correspondencia entre el sistema y el mundo real.
+
+**Descripción del problema:** Los usuarios destacaron la importancia de consultar rápidamente datos, necesidades y registros importantes de cada adulto mayor. Si el perfil del residente muestra toda la información con la misma jerarquía, puede ser difícil distinguir lo urgente de lo complementario durante una jornada de trabajo.
+
+**Recomendación:** Organizar el perfil del residente en secciones alineadas al trabajo real del personal: datos personales, necesidades de cuidado, medicamentos, métricas de salud, actividades recientes y observaciones. Las alertas clínicas o administrativas deben aparecer en la parte superior para que el usuario pueda actuar de inmediato.
+
+**Problema #5: Los formularios críticos requieren mensajes de error más claros y orientados a la recuperación.**
+
+**Heurística violada:** Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores.
+
+**Descripción del problema:** En procesos como registro de residentes, actualización de datos, control de medicamentos o gestión de pagos, un mensaje de error genérico no indica qué ocurrió ni cómo resolverlo. Esto puede generar confusión, pérdida de tiempo o abandono del registro.
+
+**Recomendación:** Implementar mensajes específicos junto al campo afectado y acompañados de una acción concreta. Por ejemplo: "Complete el horario de administración", "El stock disponible es insuficiente" o "Revise el formato del documento de identidad". Para errores de conexión, se recomienda mostrar un botón visible de reintento.
+
+**Problema #6: El portal familiar debe reforzar la confianza mostrando cuándo fue actualizada la información.**
+
+**Heurística violada:** Visibilidad del estado del sistema.
+
+**Descripción del problema:** La aplicación fue percibida como útil para mantener actualizada la información de los adultos mayores. Sin embargo, para que familiares y administradores confíen en los datos, la interfaz debe comunicar con claridad cuándo se actualizó cada registro y qué tipo de evento fue registrado.
+
+**Recomendación:** Mostrar marcas temporales en las actualizaciones relevantes del residente, como "actualizado hoy a las 10:30 a. m.", junto con el tipo de evento: medicamento administrado, actividad completada, métrica de salud registrada o comunicación enviada. Esto incrementará la trazabilidad y la percepción de seguridad de la plataforma.
+
+#### 6.4.1.3. Contenido de auditoría realizada.
+### 6.4.2. Auditoría recibida.
+#### 6.4.2.1. Información del grupo auditor.
+#### 6.4.2.2. Cronograma de auditoría recibida.
+#### 6.4.2.3. Contenido de auditoría recibida.
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
