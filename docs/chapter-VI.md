@@ -457,7 +457,6 @@ Las preguntas principales fueron:
 
 | Campo | Información |
 |---|---|
-| Segmento | 1 |
 | Nombre | Lucía |
 | Apellido | Carbajal |
 | Edad | 19 años |
@@ -466,14 +465,33 @@ Las preguntas principales fueron:
 | Link | [Link Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210334_upc_edu_pe/IQBIUqqLXAH4SJPzByX9OzdGAUNio18RULQrItvzFyKrt3o?e=qwdetZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | Resumen | **Perfil y experiencia:**<br>Lucía Carbajal es una joven de 19 años que pertenece al segmento relacionado con la administración y gestión de casas de reposo. Ha realizado voluntariado en este tipo de instituciones, experiencia que le permitió conocer de cerca las actividades del personal y las necesidades de atención de los adultos mayores.<br><br>**Percepción y necesidades:**<br>Considera que la aplicación sería útil y de mucha ayuda para las casas de reposo, ya que permitiría organizar, centralizar y consultar la información de los residentes de manera más rápida. También facilitaría las labores del personal al reducir la dependencia de registros manuales y documentos separados.<br><br>**Mejoras propuestas:**<br>Como principal mejora, Lucía propone que la aplicación permita visualizar de manera más clara y detallada la información de los medicamentos, incluyendo sus nombres, dosis y horarios de administración. Asimismo, considera importante mejorar la visualización de los horarios de los trabajadores, para identificar fácilmente sus turnos, disponibilidad y responsabilidades. |
 
-### 6.3.3. Evaluaciones según heurísticas.
-## 6.4. Auditoría de Experiencias de Usuario
-### 6.4.1. Auditoría realizada.
-#### 6.4.1.1. Información del grupo auditado.
-#### 6.4.1.2. Cronograma de auditoría realizada.
-#### 6.4.1.3. Contenido de auditoría realizada.
-### 6.4.2. Auditoría recibida.
-#### 6.4.2.1. Información del grupo auditor.
-#### 6.4.2.2. Cronograma de auditoría recibida.
-#### 6.4.2.3. Contenido de auditoría recibida.
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+
+| Campo | Información |
+|---|---|
+| Nombre | Renato |
+| Apellido | Palacios |
+| Edad | 30 años |
+| Distrito | Chorrillos |
+| Evidencia | ![Entrevista](../assets/img/chapter-VII/1.png) |
+| Link | [Link Entrevistas](https://1drv.ms/f/c/2c6332e5e5a79287/IgD2yd1BY5a6Sr_hWajsS2ysAbeWTNuVf1aZDLJKQJSIz7k?e=jWO9O3) |
+| Resumen | Renato Rentería consideró que la aplicación podría convertirse en una herramienta muy útil para modernizar la gestión de una casa de reposo. Resaltó que permitiría tener un mayor control sobre los residentes, trabajadores, pagos, actividades y demás procesos administrativos. También indicó que la digitalización de estos procedimientos ayudaría a ahorrar tiempo, disminuir errores y ofrecer una atención más organizada, segura y eficiente. |
+
+| Campo | Información |
+|---|---|
+| Nombre | Alison |
+| Apellido | Carbajal |
+| Edad | 25 años |
+| Distrito | Chorrillos |
+| Evidencia | ![Entrevista](../assets/img/chapter-VII/2.png) |
+| Link | [Link Entrevistas](https://1drv.ms/f/c/2c6332e5e5a79287/IgD2yd1BY5a6Sr_hWajsS2ysAbeWTNuVf1aZDLJKQJSIz7k?e=jWO9O3) |
+| Resumen | Alison Carbajal señaló que la aplicación presenta una propuesta clara, ordenada y fácil de comprender. Destacó principalmente su utilidad para llevar un mejor seguimiento de los adultos mayores y mantener actualizada su información. Asimismo, consideró positivo que el sistema ayude al personal administrativo y a los cuidadores a coordinar sus funciones, evitando pérdidas de información y mejorando la atención brindada a los residentes.|
+
+| Campo | Información |
+|---|---|
+| Nombre | Paolo |
+| Apellido | Carrillo |
+| Edad | 25 años |
+| Distrito | Surquillo |
+| Evidencia | ![Entrevista](../assets/img/chapter-VII/3.png) |
+| Link | [Link Entrevistas](https://1drv.ms/f/c/2c6332e5e5a79287/IgD2yd1BY5a6Sr_hWajsS2ysAbeWTNuVf1aZDLJKQJSIz7k?e=jWO9O3) |
+| Resumen | Paolo Carrillo tuvo una percepción positiva de la aplicación y destacó que puede facilitar considerablemente la administración de una casa de reposo. Consideró útil que la información de los residentes se encuentre organizada y centralizada en una sola plataforma, ya que esto permitiría consultar rápidamente sus datos, necesidades y registros importantes. También valoró que la aplicación podría reducir el trabajo manual del personal y mejorar el control de las actividades realizadas dentro de la institución. |
